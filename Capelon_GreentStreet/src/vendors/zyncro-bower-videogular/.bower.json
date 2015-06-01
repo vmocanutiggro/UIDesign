@@ -1,0 +1,19 @@
+{
+  "name": "videogular",
+  "version": "1.0.3",
+  "main": "./videogular.js",
+  "dependencies": {
+    "angular": "1.2.8",
+    "angular-sanitize": "1.2.8"
+  },
+  "homepage": "https://github.com/zyncro/bower-videogular",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.3",
+    "commit": "4ecf4cc1ce36326fba62da194762260d9427abaa"
+  },
+  "_source": "git://github.com/zyncro/bower-videogular.git",
+  "_target": "1.0.3",
+  "_originalSource": "zyncro-bower-videogular"
+}

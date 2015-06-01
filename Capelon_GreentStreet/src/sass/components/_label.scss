@@ -1,0 +1,53 @@
+/* LABEL */
+
+.label-holder {
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto 65px auto;
+	position: relative;
+	&.big {
+		margin: 0 auto 105px auto;
+		@include respond-to(phones) {
+			margin-bottom: 30px;
+		}
+	}
+	@include respond-to(phones) {
+		margin-bottom: 30px;
+	}
+	.arrow {
+		position: absolute;
+		height: 81px;
+		&.left-arrow {
+			background: url(../images/elements/label_left_big.svg) no-repeat center center / cover;
+			left: -56px;
+		    top: 0;
+		    width: 86px;
+		}
+		&.right-arrow {
+			background: url(../images/elements/label_right_big.svg) no-repeat center center / cover;
+			right: -56px;
+		    top: 0;
+		    width: 86px;
+		}
+	}
+}
+.label-inner {
+	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+	z-index: 200;
+	background: url(../images/elements/label_center_big.svg) repeat-x;
+	height: 57px;
+}
+.label-title {
+	font-size: 30px;
+	font-family: $font-bold;
+	line-height: 24px;
+	padding: 13px 14px;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 300;
+	@include respond-to(phones) {
+		font-size: 18px;
+	}
+}

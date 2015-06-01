@@ -1,0 +1,15 @@
+/* STYLES */
+
+#main-content {
+	@include gradient-vertical($start-color: #9fc857, $end-color: #7daa45, $start-percent: 0%, $end-percent: 100%);
+}
+
+
+//Saved holder section
+.saved-holder {
+	background: url(../images/elements/dotted.png) no-repeat center top;
+	@include respond-to(phones) {
+		background: none;
+	}
+}
+

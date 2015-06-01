@@ -1,0 +1,19 @@
+{
+  "name": "videogular-overlay-play",
+  "version": "1.0.3",
+  "main": "./vg-overlay-play.js",
+  "dependencies": {
+    "zyncro-bower-videogular": "1.0.3"
+  },
+  "homepage": "https://github.com/zyncro/bower-videogular-overlay-play",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.3",
+    "commit": "83f7f61755b9b5103ca2bd279df8193896101fe6"
+  },
+  "_source": "git://github.com/zyncro/bower-videogular-overlay-play.git",
+  "_target": "~1.0.3",
+  "_originalSource": "zyncro-videogular-overlay-play",
+  "_direct": true
+}

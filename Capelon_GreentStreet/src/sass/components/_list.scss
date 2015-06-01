@@ -1,0 +1,45 @@
+/* LISTS */
+.list-inline {
+	margin-left: 0;
+}
+
+.list-border {
+	li {
+		line-height: 100%;
+		border-right: 1px solid $color-white;
+		padding-right: 10px;
+		&:last-child {
+			padding-right: 0px;
+			border: none;
+		}
+	}
+}
+.list-icon {
+	>li {
+		padding: 16px 0;
+		>a {
+			color: $color-white;
+			font-size: 24px;
+			display: inline-block;
+			font-family: $font-bold;
+			line-height: 28px;
+			&:hover {
+				color: $color-woodland;
+			}
+			&:before {
+				font-family: 'fontello';
+				@extend .vihti-icon-tick;
+				margin-right: 20px;
+				font-size: 40px;
+				vertical-align: middle;
+				@include respond-to(phones) {
+					font-size: 20px;
+				}
+			}
+			@include respond-to(phones) {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+}

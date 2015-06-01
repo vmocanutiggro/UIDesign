@@ -1,0 +1,29 @@
+/* 	TRANSFORMER */
+.transformer-holder {
+	margin-bottom: 50px;
+}
+.transformator-title {
+	text-align: center;
+	margin: 30px 0;
+}
+.transformator-body {
+	img {
+		max-width: 100%;
+		@extend .center-block;
+	}
+}
+.transformator {
+	width: 100%;
+	max-width: 370px;
+	margin: 0 auto;
+	&.off {
+		.transformator-on {
+			display: none;
+		}
+	}
+	&.on {
+		.transformator-off {
+			display: none;
+		}
+	}
+}

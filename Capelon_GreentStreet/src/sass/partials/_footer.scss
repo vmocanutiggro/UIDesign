@@ -1,0 +1,22 @@
+/* FOOTER */
+footer {
+	padding: 50px 0 20px 0;
+	text-align: center;
+	@include respond-to(phones) {
+		padding-top: 25px;
+	}
+	ul {
+		margin-bottom: 10px;
+		>li {
+			>a {
+				color: $color-white;
+				&:hover, &:focus {
+					color: $color-woodland;
+				}
+			}
+		}
+	}
+}
+.copyright {
+	color: $color-woodland;
+}

@@ -1,0 +1,64 @@
+/* ACCORDION */
+.panel-group {
+	.panel {
+		border-radius: 0;
+	}
+	.panel-heading {
+		border-bottom: 2px solid $color-white;
+		border-radius: 0;
+	}
+	.panel-body {
+		border: none;
+		background: $color-sushi-dark;
+	}
+}
+.panel {
+	background: transparent;
+	box-shadow: none;
+}
+.panel-title {
+	>a {
+		display: block;
+	}
+}
+.panel-title {
+	font-size: 20px;
+	@include respond-to(phones) {
+		font-size: 14px;
+	}
+	@inlude clearfix();
+	>a {
+		.icon-arrow {
+			&:before {
+				font-family: 'fontello';
+				@extend .vihti-icon-up;
+			}
+		}
+		&.collapsed {
+			.icon-arrow {
+				&:before {
+					font-family: 'fontello';
+					@extend .vihti-icon-arrow_down;
+				}
+			}
+		}
+	}
+	span {
+		font-size: 16px;
+		float: right;
+		line-height: 28px;
+		font-family: $font-regular;
+		@include respond-to(tablets-small) {
+			line-height: 20px;
+		}
+		@include respond-to(phones) {
+			font-size: 12px;
+		}
+	}
+	.icon-map {
+		margin-right: 5px;
+	}
+	.icon-arrow {
+		margin-left: 5px;
+	}
+}
