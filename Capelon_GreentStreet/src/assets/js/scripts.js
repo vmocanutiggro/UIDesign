@@ -89,9 +89,9 @@ $(function () {
             buttonBorderWidth: 0,
             buttonBorderRadius: 7,
             trackBackgroundColor: '#688f3b',
-            trackBorderWidth: 1,
+            trackBorderWidth: false,
             trackBorderRadius: 8,
-            trackBorderColor: '#CCC'
+            trackBorderColor: false
         },
         series: [
             {
