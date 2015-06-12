@@ -2,9 +2,6 @@
 footer {
 	background: $footer-bg;
 	padding: 20px 0;
-	@include respond-to(tablets-small) {
-		@extend .mobile-text-center;
-	}
 	.footer-list {
 		>li {
 			>a {

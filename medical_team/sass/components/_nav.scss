@@ -24,21 +24,19 @@
 	}
 }
 .header-nav {
-	display: table;
-	width: 100%;
+	display: block;
 	border-top: 10px solid $color-elm;
 	border-bottom: 10px solid $color-crimson;
-	text-align: center;
-	background: $color-crimson; 
+	background: $color-elm; 
 	@include respond-to(phones) {
-		display: block;
 		border: none;
 		background: transparent;
 	}
 	>li {
-		display: table-cell;
+		display: inline-block;
 		border-right: 1px solid $color-elm; 
 		border-left: 1px solid $color-keppel;
+		text-align: center;
 		@include respond-to(phones) {
 			display: block;
 		}
@@ -49,9 +47,9 @@
 				width: 100%;
 			}
 			>a {
-				padding-bottom: 29px;
+				padding: 29px 15px 29px 15px;
 				@include respond-to(tablets-small) {
-					padding-bottom: 19px;
+					padding: 15px 19px;
 				}
 			}
 		}
