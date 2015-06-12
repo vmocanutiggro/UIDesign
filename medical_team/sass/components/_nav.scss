@@ -1,0 +1,119 @@
+/* NAV */
+.nav {
+	>li {
+		>a {
+			padding-bottom: 14px;
+			&:hover, &:focus {
+				background: transparent
+			}
+			@include respond-to(tablets-large) {
+				padding-top: 13px;
+				padding-bottom: 13px;
+			}
+			@include respond-to(tablets-small) {
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+	}
+}
+.navbar-form {
+	margin-bottom: 6px;
+	@include respond-to(tablets-large) {
+		margin-top: 6px;
+	}
+}
+.header-nav {
+	display: table;
+	width: 100%;
+	border-top: 10px solid $color-elm;
+	border-bottom: 10px solid $color-crimson;
+	text-align: center;
+	background: $color-crimson; 
+	@include respond-to(phones) {
+		display: block;
+		border: none;
+		background: transparent;
+	}
+	>li {
+		display: table-cell;
+		border-right: 1px solid $color-elm; 
+		border-left: 1px solid $color-keppel;
+		@include respond-to(phones) {
+			display: block;
+		}
+		&:first-child {
+			border-left: none;
+			width: 90px;
+			@include respond-to(phones) {
+				width: 100%;
+			}
+			>a {
+				padding-bottom: 29px;
+				@include respond-to(tablets-small) {
+					padding-bottom: 19px;
+				}
+			}
+		}
+		&:last-child {
+			border-right: none;
+		}
+		&.dropdown {
+			&:hover {
+				.dropdown-menu {
+					display: block;
+				}
+			}
+		}
+		>a {
+			@include transition(350ms);
+			background: $color-elm-light;
+			display: block;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			@include respond-to(tablets-small) {
+				padding: 20px 0 ;
+			}
+			@include respond-to(phones) {
+				padding: 15px;
+			}
+			&:hover, &:focus {
+				color: $color-white;
+				background: $color-crimson; 
+			}
+			&.active {
+				background: $color-crimson; 
+			}
+			>i {
+				font-size: 32px;
+				vertical-align: middle;
+				&:before {
+					line-height: 1px;
+				}
+				@include respond-to(phones) {
+					font-size: 24px;
+				}
+			}
+		}
+		>.dropdown-menu {
+			width: 100%;
+			border-radius: 0;
+			margin-top: -1px;
+			background: darken($color-crimson, 5%);
+			>li {
+				>a {
+					color: $color-white;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					&:hover {
+						background: $color-crimson;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+

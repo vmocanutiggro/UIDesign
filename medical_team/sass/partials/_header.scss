@@ -1,0 +1,63 @@
+/* HEADER */
+.header-top-holder {
+	padding: 0 15px;
+	background: $header-bg;
+	position: relative;
+}
+.logo {
+	display: inline-block;
+	background: $color-white;
+	padding: 13px 15px;
+	margin-left: -15px;
+	max-width: 100%;
+	width: 100%;
+	img {
+		max-width: 100%;
+	}
+	@include respond-to(phones) {
+		background: transparent;
+		max-width: 200px;
+		padding: 15px;
+	}
+}
+.navbar-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 14px 10px;
+	border: none;
+	i {
+		font-size: 22px;
+	}
+}
+.header-middle-holder {
+	padding: 30px 30px;
+}
+.header-title {
+	margin-top: 20px;
+}
+.team-img {
+	margin-top: -20px;
+	margin-bottom: -60px;
+}
+#navbar-collapse {
+	&.header-nav-holder {
+		margin: 0 -15px;
+	}
+}
+.header-nav-holder {
+	position: relative;
+	z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+/* STYLES */
+#main-content {
+	padding: 30px 0 70px 0;
+}
+
+.publications-item {
+	@include clearfix();
+	margin-bottom: 20px;
+	.date-text {
+		padding-top: 10px;
+	}
+	.left-part {
+		padding: 15px;
+		float: left;
+		text-align: center;
+		background: $color-wild-watermelon;
+	}
+	.right-part {
+		overflow: hidden;
+		background: $color-citrus;
+		padding: 15px 60px 15px 15px;
+		text-transform: uppercase;
+		color: $color-white;
+		width: 100%;
+		position: relative;
+		.publications-title {
+			margin-bottom: 2px;
+			color: $color-white;
+		}
+		p {
+			margin-bottom: 2px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&:after {
+			@include transition(250ms);
+			z-index: 1;
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: $color-white;
+			@include translate3d(0px, 100%, 0px);
+		}
+		&:hover {
+			color: $color-citrus; 
+			&:after {
+				@include translate3d(0px, 0px, 0px);
+			}
+			.publications-title {
+				color: $color-citrus;
+			}
+			.counter {
+				color: $color-white;
+			}
+			.counter-inner {
+				&:before {
+					color: $color-citrus;
+				}
+			}
+		}
+	}
+	.counter {
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		margin-top: -10px;
+		color: $color-citrus; 
+		z-index: 100;
+		.counter-inner {
+			position: absolute;
+			right: 25px;
+			&:before {
+				margin-right: -15px;
+				right: 50%;
+				z-index: -1;
+				color: $color-white;
+				position: absolute;
+				font-size: 30px;
+				font-family: 'fontello';
+				@extend .medicalteam-icon-comment;
+			}
+		}
+	}
+	.publication-body {
+		position: relative;
+		z-index: 100;
+	}
+}
+

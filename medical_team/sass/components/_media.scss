@@ -1,0 +1,43 @@
+/* MEDIA */
+.media {
+	color: $color-dove-gray;
+	a {
+		color: $color-crimson;
+		&:hover, &:focus {
+			color: $color-elm-light;
+		}
+		i {
+			margin-right: 5px;
+		}
+	}
+	p {
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.media-left {
+		padding-right: 20px;
+		>a {
+			>img {
+				@include respond-to(phones) {
+					width: 90px;
+					height: 90px;
+				}
+			}
+		}
+	}
+	&.media-border {
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid $color-tasman;
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border: none;
+		}
+	}
+}
+.media-title {
+	margin-bottom: 2px;
+}

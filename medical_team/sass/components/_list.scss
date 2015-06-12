@@ -1,0 +1,77 @@
+/* LIST */
+.game-preview-list {
+	font-size: 0;
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	>li {
+		font-size: 14px;
+		display: table-cell;
+		color: $color-white;
+		text-align: center;
+		vertical-align: middle;
+		&.color-pink {
+			background: $color-wild-watermelon;
+		}
+		&.color-orange {
+			background: $color-web-otange;
+		}
+		p {
+			@extend .date-text;
+		}
+		i {
+			font-size: 28px;
+		}
+		>a {
+			padding: 25px 15px;
+			display: block;
+			&:hover {
+				color: $color-crimson;
+				background: $color-white;
+			}
+		}
+	}
+}
+
+.list-arrow {
+	>li {
+		>a {
+			display: block;
+			padding: 10px 15px 10px 15px;
+			background: $color-white;
+			color: $color-dove-gray;
+			position: relative;
+			&:before {
+				color: $color-crimson;
+				font-family: 'fontello';
+				@extend .medicalteam-icon-right-open;
+				margin-right: 15px;
+			}
+			&:hover, &:focus, &.active {
+				color: $color-white;
+				background: $color-crimson;
+				&:before {
+					color: $color-white;
+				}
+			}
+		}
+	}
+}
+.footer-list {
+	>li {
+		display: inline-block;
+		>a {
+			width: 44px;
+			height: 44px;
+			display: inline-block;
+			border-radius: 50%;
+			text-align: center;
+			background: $color-eden;
+			i {
+				line-height: 44px;
+			}
+		}
+	}
+}
+
+

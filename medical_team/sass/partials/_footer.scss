@@ -1,0 +1,21 @@
+/* FOOTER */
+footer {
+	background: $footer-bg;
+	padding: 20px 0;
+	@include respond-to(tablets-small) {
+		@extend .mobile-text-center;
+	}
+	.footer-list {
+		>li {
+			>a {
+				background: $color-eden;
+			}
+		}
+	}
+}
+.copyright {
+	line-height: 44px;
+	@include respond-to(phones) {
+		line-height: 22px;;
+	}
+}

@@ -1,0 +1,47 @@
+/* VARIABLES */
+
+//For color names was used site - http://chir.ag/projects/name-that-color
+$color-white: #ffffff;
+$color-black: #000000;
+$color-crimson: #cb1031; //Red color
+$color-web-otange: #ffab00; //Orange color
+$color-wild-watermelon: #FF607C; //Ping color
+$color-dove-gray: #666666; //Main text color
+$body-gradient-start: #c3d2cb;
+$body-gradient-end: #f2faef;
+$color-tasman: #9c9c9c;
+/*Green color group*/
+$color-citrus: #9fc80a; //Green acid
+$color-pistachio: #8EB209; //Green acid dark
+$color-elm: #1a8476; //Green color
+$color-elm-light: #1d9383; //Green light color
+$color-keppel: #3da295; //Green light border
+$color-eden: #146459;
+
+
+/* Font VARIABLES */
+$font-family: 'Open Sans', sans-serif;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+//Body VARIABLES
+$main-text-color: $color-white;
+$body-font-size: 14px;
+$body-line-height: 22px;
+$body-font-family: $font-family;
+$color-title: $color-elm-light;
+
+/* Form VARIABLES */
+$input-color-placeholder: $color-dove-gray;
+$input-font-size-placeholder: $body-font-size;
+$input-line-height-placeholder: $body-line-height;
+
+
+/* Sections VARIABLES */
+
+//Header variables
+$header-bg: $color-elm;
+
+//Footer VARIABLES
+$footer-bg: $color-elm;
