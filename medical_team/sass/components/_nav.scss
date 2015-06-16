@@ -50,6 +50,7 @@
 			}
 			>a {
 				padding: 29px 15px 29px 15px;
+				width: 90px;
 				@include respond-to(tablets-small) {
 					padding: 15px 19px;
 				}
