@@ -118,6 +118,12 @@ a {
 			text-decoration: none;
 		}
 	}
+	&.link-red {
+		color: $color-crimson;
+		&:hover, &:focus {
+			color: darken($color-crimson, 10%);
+		}
+	}
 }
 button {
 	@include transition(150ms);
