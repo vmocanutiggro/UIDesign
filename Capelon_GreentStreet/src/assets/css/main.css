@@ -6921,6 +6921,13 @@ ul, .nav {
 .mb {
   margin-bottom: 20px; }
 
+/* line 68, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_reset.scss */
+.divider {
+  height: 40px; }
+  @media only screen and (max-width: 767px) {
+    .divider {
+      height: 20px; } }
+
 /* Carousel */
 /* line 4, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_carousel.scss */
 .bx-item img {

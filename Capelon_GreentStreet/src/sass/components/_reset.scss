@@ -65,5 +65,11 @@ ul, .nav {
 .mb {
 	margin-bottom: 20px;
 }
+.divider {
+	height: 40px;
+	@include respond-to(phones) {
+		height: 20px;
+	}
+}
 
 
