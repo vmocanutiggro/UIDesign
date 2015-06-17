@@ -3,8 +3,10 @@
 	>li {
 		>a {
 			padding-bottom: 14px;
+			color: $color-white;
 			&:hover, &:focus {
-				background: transparent
+				background: transparent;
+				color: darken($color-crimson, 10%);
 			}
 			@include respond-to(tablets-large) {
 				padding-top: 13px;
@@ -67,6 +69,7 @@
 			}
 		}
 		>a {
+			color: $color-white;
 			@include transition(350ms);
 			background: $color-elm-light;
 			display: block;

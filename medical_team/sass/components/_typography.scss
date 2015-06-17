@@ -106,22 +106,16 @@ h6, .h6 {
 }
 
 a {
-	color: $color-white;
+	color: $color-crimson;
 	@include transition(150ms);
 	&:hover, &:focus {
 		text-decoration: none;
-		color: $color-crimson;
+		color: darken($color-crimson, 10%);
 	}
 	&.underline {
 		text-decoration: underline;
 		&:hover {
 			text-decoration: none;
-		}
-	}
-	&.link-red {
-		color: $color-crimson;
-		&:hover, &:focus {
-			color: darken($color-crimson, 10%);
 		}
 	}
 }
