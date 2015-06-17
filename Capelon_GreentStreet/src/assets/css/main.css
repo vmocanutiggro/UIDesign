@@ -6857,6 +6857,13 @@ p {
         font-size: 14px;
         line-height: 20px; } }
 
+/* line 48, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+.list-bullet li {
+  list-style: disc outside;
+  font-size: 20px;
+  font-family: 'quicksandbold';
+  line-height: 26px; }
+
 /* Reset styles */
 /* line 3, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_reset.scss */
 section {

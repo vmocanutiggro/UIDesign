@@ -43,3 +43,13 @@
 		}
 	}
 }
+
+.list-bullet {
+	li {
+		list-style: disc outside;
+		font-size: 20px;
+		font-family: $font-bold;
+		line-height: 26px;
+	}
+}
+
