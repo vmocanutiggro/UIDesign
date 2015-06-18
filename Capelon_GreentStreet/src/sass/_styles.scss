@@ -12,3 +12,12 @@
 		background: none;
 	}
 }
+.stod-logo {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto 20px auto;
+	display: block;
+	@include respond-to(phones) { 
+		max-width: 220px;
+	}
+}

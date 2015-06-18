@@ -7402,7 +7402,7 @@ ul.bxslider {
   z-index: 300; }
   @media only screen and (max-width: 767px) {
     .label-title {
-      font-size: 18px; } }
+      font-size: 11px; } }
 
 /* 	TRANSFORMER */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
@@ -7527,3 +7527,13 @@ footer {
   @media only screen and (max-width: 767px) {
     .saved-holder {
       background: none; } }
+
+/* line 15, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
+.stod-logo {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  display: block; }
+  @media only screen and (max-width: 767px) {
+    .stod-logo {
+      max-width: 220px; } }
