@@ -1,7 +1,7 @@
 /* FOOTER */
 footer {
-	padding: 50px 0 20px 0;
-	text-align: center;
+	background: $footer-bg;
+	padding: 50px 0 50px 0;
 	@include respond-to(phones) {
 		padding-top: 25px;
 	}
@@ -17,6 +17,20 @@ footer {
 		}
 	}
 }
-.copyright {
-	color: $color-woodland;
+.footer-top-holder {
+	margin-bottom: 30px;
+}
+address {
+	>a {
+		color: $color-white;
+		&:hover, &:focus {
+			color: $color-white;
+			text-decoration: underline;
+		}
+	}
+}
+.footer-left-logo {
+	width: 100%;
+	max-width: 220px;
+	display: inline-block;
 }

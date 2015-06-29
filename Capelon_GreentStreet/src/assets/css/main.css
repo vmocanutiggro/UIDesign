@@ -6652,7 +6652,7 @@ button.close {
 
 /* '' */
 /* line 120, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_fonts.scss */
-.vihti-icon-tick:before, .list-icon > li > a:before {
+.vihti-icon-tick:before, .list-icon > li > a:before, .list-icon .list-inner > li > a:before {
   content: '\e807'; }
 
 /* '' */
@@ -6830,37 +6830,76 @@ p {
     padding-right: 0px;
     border: none; }
 
-/* line 18, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
-.list-icon > li {
-  padding: 16px 0; }
-  /* line 20, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
-  .list-icon > li > a {
-    color: #ffffff;
-    font-size: 24px;
-    display: inline-block;
-    font-family: 'quicksandbold';
-    line-height: 28px; }
-    /* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
-    .list-icon > li > a:hover {
-      color: #345229; }
-    /* line 29, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
-    .list-icon > li > a:before {
-      font-family: 'fontello';
-      margin-right: 20px;
-      font-size: 40px;
-      vertical-align: middle; }
+/* line 17, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+.list-icon {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; }
+  /* line 21, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+  .list-icon > li {
+    padding: 16px 0; }
+    /* line 23, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+    .list-icon > li > a {
+      color: #ffffff;
+      font-size: 24px;
+      display: inline-block;
+      font-family: 'quicksandbold';
+      line-height: 28px; }
+      /* line 29, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+      .list-icon > li > a:hover {
+        color: #345229; }
+      /* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+      .list-icon > li > a:before {
+        font-family: 'fontello';
+        margin-right: 20px;
+        font-size: 40px;
+        vertical-align: middle; }
+        @media only screen and (max-width: 767px) {
+          .list-icon > li > a:before {
+            font-size: 20px; } }
       @media only screen and (max-width: 767px) {
-        .list-icon > li > a:before {
-          font-size: 20px; } }
+        .list-icon > li > a {
+          font-size: 14px;
+          line-height: 20px; } }
+  /* line 48, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+  .list-icon .list-inner {
+    text-align: left;
+    padding-left: 65px;
+    margin-top: 15px; }
     @media only screen and (max-width: 767px) {
-      .list-icon > li > a {
-        font-size: 14px;
-        line-height: 20px; } }
+      .list-icon .list-inner {
+        padding-left: 35px; } }
+    /* line 55, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+    .list-icon .list-inner > li {
+      padding: 8px 0; }
+      /* line 57, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+      .list-icon .list-inner > li > a {
+        color: #ffffff;
+        font-size: 20px;
+        display: inline-block;
+        font-family: 'quicksandbold';
+        line-height: 24px; }
+        /* line 63, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+        .list-icon .list-inner > li > a:hover {
+          color: #345229; }
+        /* line 66, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+        .list-icon .list-inner > li > a:before {
+          font-family: 'fontello';
+          margin-right: 20px;
+          font-size: 22px;
+          vertical-align: middle; }
+          @media only screen and (max-width: 767px) {
+            .list-icon .list-inner > li > a:before {
+              font-size: 16px; } }
+        @media only screen and (max-width: 767px) {
+          .list-icon .list-inner > li > a {
+            font-size: 14px;
+            line-height: 20px; } }
 
-/* line 48, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+/* line 86, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
 .list-bullet li {
   list-style: disc inside;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'quicksandbold';
   line-height: 26px; }
 
@@ -7493,8 +7532,8 @@ ul.bxslider {
 /* FOOTER */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
 footer {
-  padding: 50px 0 20px 0;
-  text-align: center; }
+  background: #345229;
+  padding: 50px 0 50px 0; }
   @media only screen and (max-width: 767px) {
     footer {
       padding-top: 25px; } }
@@ -7509,26 +7548,41 @@ footer {
         color: #345229; }
 
 /* line 20, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
-.copyright {
-  color: #345229; }
+.footer-top-holder {
+  margin-bottom: 30px; }
+
+/* line 24, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
+address > a {
+  color: #ffffff; }
+  /* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
+  address > a:hover, address > a:focus {
+    color: #ffffff;
+    text-decoration: underline; }
+
+/* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
+.footer-left-logo {
+  width: 100%;
+  max-width: 220px;
+  display: inline-block; }
 
 /* STYLES */
 /* line 3, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
 #main-content {
+  padding-bottom: 35px;
   background-image: -webkit-linear-gradient(top, #9fc857 0%, #7daa45 100%);
   background-image: -o-linear-gradient(top, #9fc857 0%, #7daa45 100%);
   background-image: linear-gradient(to bottom, #9fc857 0%, #7daa45 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9FC857', endColorstr='#FF7DAA45', GradientType=0); }
 
-/* line 9, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
+/* line 10, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
 .saved-holder {
   background: url(../images/elements/dotted.png) no-repeat center top; }
   @media only screen and (max-width: 767px) {
     .saved-holder {
       background: none; } }
 
-/* line 15, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
+/* line 16, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
 .stod-logo {
   width: 100%;
   max-width: 300px;

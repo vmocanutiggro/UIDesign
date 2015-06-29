@@ -15,6 +15,9 @@
 	}
 }
 .list-icon {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
 	>li {
 		padding: 16px 0;
 		>a {
@@ -42,12 +45,47 @@
 			}
 		}
 	}
+	.list-inner {
+		text-align: left;
+		padding-left: 65px;
+		margin-top: 15px;
+		@include respond-to(phones) {
+			padding-left: 35px;
+		}
+		>li {
+			padding: 8px 0;
+			>a {
+				color: $color-white;
+				font-size: 20px;
+				display: inline-block;
+				font-family: $font-bold;
+				line-height: 24px;
+				&:hover {
+					color: $color-woodland;
+				}
+				&:before {
+					font-family: 'fontello';
+					@extend .vihti-icon-tick;
+					margin-right: 20px;
+					font-size: 22px;
+					vertical-align: middle;
+					@include respond-to(phones) {
+						font-size: 16px;
+					}
+				}
+				@include respond-to(phones) {
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
 }
 
 .list-bullet {
 	li {
 		list-style: disc inside;
-		font-size: 20px;
+		font-size: 16px;
 		font-family: $font-bold;
 		line-height: 26px;
 	}

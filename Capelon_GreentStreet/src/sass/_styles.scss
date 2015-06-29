@@ -1,6 +1,7 @@
 /* STYLES */
 
 #main-content {
+	padding-bottom: 35px;
 	@include gradient-vertical($start-color: #9fc857, $end-color: #7daa45, $start-percent: 0%, $end-percent: 100%);
 }
 
