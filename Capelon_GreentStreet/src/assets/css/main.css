@@ -6835,20 +6835,23 @@ p {
   width: 100%;
   max-width: 600px;
   margin: 0 auto; }
-  /* line 21, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+  @media only screen and (max-width: 767px) {
+    .list-icon {
+      text-align: left; } }
+  /* line 24, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
   .list-icon > li {
     padding: 16px 0; }
-    /* line 23, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+    /* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
     .list-icon > li > a {
       color: #ffffff;
       font-size: 24px;
       display: inline-block;
       font-family: 'quicksandbold';
       line-height: 28px; }
-      /* line 29, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+      /* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
       .list-icon > li > a:hover {
         color: #345229; }
-      /* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+      /* line 35, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
       .list-icon > li > a:before {
         font-family: 'fontello';
         margin-right: 20px;
@@ -6856,33 +6859,38 @@ p {
         vertical-align: middle; }
         @media only screen and (max-width: 767px) {
           .list-icon > li > a:before {
-            font-size: 20px; } }
+            font-size: 20px;
+            margin-left: -42px; } }
       @media only screen and (max-width: 767px) {
         .list-icon > li > a {
           font-size: 14px;
-          line-height: 20px; } }
-  /* line 48, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+          line-height: 20px;
+          padding-left: 40px; } }
+  /* line 53, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
   .list-icon .list-inner {
     text-align: left;
     padding-left: 65px;
     margin-top: 15px; }
     @media only screen and (max-width: 767px) {
       .list-icon .list-inner {
-        padding-left: 15px; } }
-    /* line 55, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+        padding-left: 40px; } }
+    /* line 60, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
     .list-icon .list-inner > li {
       padding: 8px 0; }
-      /* line 57, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+      /* line 62, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
       .list-icon .list-inner > li > a {
         color: #ffffff;
         font-size: 20px;
         display: inline-block;
         font-family: 'quicksandbold';
         line-height: 24px; }
-        /* line 63, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+        @media only screen and (max-width: 767px) {
+          .list-icon .list-inner > li > a {
+            padding-left: 40px; } }
+        /* line 71, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
         .list-icon .list-inner > li > a:hover {
           color: #345229; }
-        /* line 66, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+        /* line 74, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
         .list-icon .list-inner > li > a:before {
           font-family: 'fontello';
           margin-right: 20px;
@@ -6890,13 +6898,14 @@ p {
           vertical-align: middle; }
           @media only screen and (max-width: 767px) {
             .list-icon .list-inner > li > a:before {
-              font-size: 16px; } }
+              font-size: 16px;
+              margin-left: -38px; } }
         @media only screen and (max-width: 767px) {
           .list-icon .list-inner > li > a {
             font-size: 14px;
             line-height: 20px; } }
 
-/* line 86, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
+/* line 95, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
 .list-bullet li {
   list-style: disc inside;
   font-size: 16px;
@@ -7395,7 +7404,10 @@ ul.bxslider {
   display: inline-block;
   margin: 0 auto 65px auto;
   position: relative; }
-  /* line 8, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
+  @media only screen and (max-width: 767px) {
+    .label-holder {
+      width: 100%; } }
+  /* line 11, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
   .label-holder.big {
     margin: 0 auto 105px auto; }
     @media only screen and (max-width: 767px) {
@@ -7404,24 +7416,27 @@ ul.bxslider {
   @media only screen and (max-width: 767px) {
     .label-holder {
       margin-bottom: 30px; } }
-  /* line 17, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
+  /* line 20, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
   .label-holder .arrow {
     position: absolute;
     height: 81px; }
-    /* line 20, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
+    @media only screen and (max-width: 767px) {
+      .label-holder .arrow {
+        display: none; } }
+    /* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
     .label-holder .arrow.left-arrow {
       background: url(../images/elements/label_left_big.svg) no-repeat center center/cover;
       left: -56px;
       top: 0;
       width: 86px; }
-    /* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
+    /* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
     .label-holder .arrow.right-arrow {
       background: url(../images/elements/label_right_big.svg) no-repeat center center/cover;
       right: -56px;
       top: 0;
       width: 86px; }
 
-/* line 34, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
+/* line 40, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
 .label-inner {
   text-transform: uppercase;
   display: inline-block;
@@ -7429,8 +7444,11 @@ ul.bxslider {
   z-index: 200;
   background: url(../images/elements/label_center_big.svg) repeat-x;
   height: 57px; }
+  @media only screen and (max-width: 767px) {
+    .label-inner {
+      width: 100%; } }
 
-/* line 42, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
+/* line 51, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_label.scss */
 .label-title {
   font-size: 30px;
   font-family: 'quicksandbold';
@@ -7441,7 +7459,8 @@ ul.bxslider {
   z-index: 300; }
   @media only screen and (max-width: 767px) {
     .label-title {
-      font-size: 11px; } }
+      font-size: 20px;
+      line-height: 27px; } }
 
 /* 	TRANSFORMER */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */

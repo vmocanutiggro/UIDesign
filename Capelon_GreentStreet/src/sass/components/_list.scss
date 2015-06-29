@@ -18,6 +18,9 @@
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
+	@include respond-to(phones) {
+		text-align: left;
+	}
 	>li {
 		padding: 16px 0;
 		>a {
@@ -37,11 +40,13 @@
 				vertical-align: middle;
 				@include respond-to(phones) {
 					font-size: 20px;
+					margin-left: -42px;
 				}
 			}
 			@include respond-to(phones) {
 				font-size: 14px;
 				line-height: 20px;
+				padding-left: 40px;
 			}
 		}
 	}
@@ -50,7 +55,7 @@
 		padding-left: 65px;
 		margin-top: 15px;
 		@include respond-to(phones) {
-			padding-left: 15px;
+			padding-left: 40px;
 		}
 		>li {
 			padding: 8px 0;
@@ -60,6 +65,9 @@
 				display: inline-block;
 				font-family: $font-bold;
 				line-height: 24px;
+				@include respond-to(phones) {
+					padding-left: 40px;
+				}
 				&:hover {
 					color: $color-woodland;
 				}
@@ -71,6 +79,7 @@
 					vertical-align: middle;
 					@include respond-to(phones) {
 						font-size: 16px;
+						margin-left: -38px;
 					}
 				}
 				@include respond-to(phones) {

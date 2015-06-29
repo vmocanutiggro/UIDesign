@@ -5,6 +5,9 @@
 	display: inline-block;
 	margin: 0 auto 65px auto;
 	position: relative;
+	@include respond-to(phones) {
+		width: 100%;
+	}
 	&.big {
 		margin: 0 auto 105px auto;
 		@include respond-to(phones) {
@@ -17,6 +20,9 @@
 	.arrow {
 		position: absolute;
 		height: 81px;
+		@include respond-to(phones) {
+			display: none;
+		}
 		&.left-arrow {
 			background: url(../images/elements/label_left_big.svg) no-repeat center center / cover;
 			left: -56px;
@@ -38,6 +44,9 @@
 	z-index: 200;
 	background: url(../images/elements/label_center_big.svg) repeat-x;
 	height: 57px;
+	@include respond-to(phones) {
+		width: 100%;
+	}
 }
 .label-title {
 	font-size: 30px;
@@ -48,6 +57,7 @@
 	position: relative;
 	z-index: 300;
 	@include respond-to(phones) {
-		font-size: 11px;
+		font-size: 20px;
+		line-height: 27px;
 	}
 }
