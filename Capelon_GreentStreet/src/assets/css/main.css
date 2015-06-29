@@ -7551,19 +7551,32 @@ footer {
 .footer-top-holder {
   margin-bottom: 30px; }
 
-/* line 24, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
+@media only screen and (max-width: 767px) {
+  address {
+    text-align: center; } }
+/* line 27, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
 address > a {
   color: #ffffff; }
-  /* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
+  /* line 29, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
   address > a:hover, address > a:focus {
     color: #ffffff;
     text-decoration: underline; }
 
-/* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
+/* line 35, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_footer.scss */
 .footer-left-logo {
   width: 100%;
   max-width: 220px;
-  display: inline-block; }
+  display: block; }
+  @media only screen and (max-width: 767px) {
+    .footer-left-logo {
+      margin: 0 auto; } }
+
+@media only screen and (max-width: 767px) {
+  .footer-right-logo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 180px;
+    display: block; } }
 
 /* STYLES */
 /* line 3, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
