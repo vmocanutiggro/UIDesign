@@ -6868,7 +6868,7 @@ p {
     margin-top: 15px; }
     @media only screen and (max-width: 767px) {
       .list-icon .list-inner {
-        padding-left: 35px; } }
+        padding-left: 15px; } }
     /* line 55, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
     .list-icon .list-inner > li {
       padding: 8px 0; }
