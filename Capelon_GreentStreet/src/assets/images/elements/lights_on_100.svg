@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 547 246" enable-background="new 0 0 547 246" xml:space="preserve">
-<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M87.7,18.2L0,246h221L122.6,14.6L87.7,18.2z"/>
+<path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M87.7,18.2L0,246h221L122.6,14.6L87.7,18.2z"/>
 <g>
 	<path fill="#E6E6E6" d="M78,11.9C38.8,22.2,38.8,46.6,38.8,47.6V182h4V47.6c0-0.9,0.5-22,36.2-31.4L78,11.9z"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" d="M76.6,10.3v7.8c0,0,10.2,5.2,24.7,5.2c14.4,0,22.4-4.2,26-7.8
@@ -16,7 +16,7 @@
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M24.8,241h32.1v5H24.8V241z"/>
 	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" points="40.8,241 52.8,241 48.8,187 40.8,187 	"/>
 </g>
-<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M250.7,18.2L163,246h221L285.6,14.6L250.7,18.2z"/>
+<path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M250.7,18.2L163,246h221L285.6,14.6L250.7,18.2z"/>
 <g>
 	<path fill="#E6E6E6" d="M241,11.9c-39.2,10.3-39.2,34.8-39.2,35.8V182h4V47.6c0-0.9,0.5-22,36.2-31.4L241,11.9z"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" d="M239.6,10.3v7.8c0,0,10.2,5.2,24.7,5.2c14.4,0,22.4-4.2,26-7.8
@@ -29,7 +29,7 @@
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M187.8,241h32.1v5h-32.1V241z"/>
 	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" points="203.8,241 215.8,241 211.8,187 203.8,187 	"/>
 </g>
-<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M413.7,18.2L326,246h221L448.6,14.6L413.7,18.2z"/>
+<path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M413.7,18.2L326,246h221L448.6,14.6L413.7,18.2z"/>
 <g>
 	<path fill="#E6E6E6" d="M404,11.9c-39.2,10.3-39.2,34.8-39.2,35.8V182h4V47.6c0-0.9,0.5-22,36.2-31.4L404,11.9z"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" d="M402.6,10.3v7.8c0,0,10.2,5.2,24.7,5.2c14.4,0,22.4-4.2,26-7.8

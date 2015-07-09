@@ -6656,6 +6656,26 @@ button.close {
   content: '\e807'; }
 
 /* '' */
+/* line 121, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_fonts.scss */
+.vihti-icon-right-open:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 122, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_fonts.scss */
+.vihti-icon-left-open:before {
+  content: '\e809'; }
+
+/* '' */
+/* line 123, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_fonts.scss */
+.vihti-icon-right-open-1:before {
+  content: '\e80a'; }
+
+/* '' */
+/* line 124, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_fonts.scss */
+.vihti-icon-left-open-1:before {
+  content: '\e80b'; }
+
+/* '' */
 /* VARIABLES */
 /* Font VARIABLES */
 /* Form VARIABLES */
@@ -6782,7 +6802,27 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
-/* line 142, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+/* line 143, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+.back {
+  color: #ffffff; }
+  /* line 145, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+  .back:hover, .back:focus {
+    color: #345229; }
+  /* line 148, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+  .back span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background: #658a38;
+    margin-right: 10px;
+    text-align: center; }
+    /* line 157, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+    .back span i {
+      line-height: 28px; }
+
+/* line 162, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
 button {
   -webkit-transition: 150ms;
   -o-transition: 150ms;
@@ -6790,30 +6830,72 @@ button {
   border: none;
   background: none; }
 
-/* line 147, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+/* line 167, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
 p {
   margin-bottom: 20px; }
-  /* line 149, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+  /* line 169, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
   p:last-child {
     margin-bottom: 0; }
 
-/* line 153, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+/* line 173, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
 .uppercase {
   text-transform: uppercase; }
 
-/* line 157, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+/* line 177, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
 .color-white {
   color: #ffffff; }
 
-/* line 160, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+/* line 180, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
 .color-blue {
   color: #80b3c0; }
 
-/* line 163, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
+/* line 183, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_typography.scss */
 .color-yellow {
   color: #fffb91; }
 
 /* BUTTONS */
+/* line 2, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_buttons.scss */
+.btn {
+  box-shadow: none;
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px 28px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 22px;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 767px) {
+    .btn {
+      font-size: 10px; } }
+  /* line 17, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_buttons.scss */
+  .btn:hover, .btn:focus {
+    color: #ffffff;
+    text-decoration: none; }
+    /* line 20, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_buttons.scss */
+    .btn:hover i, .btn:focus i {
+      color: #ffffff; }
+  /* line 24, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_buttons.scss */
+  .btn.btn-blue {
+    border-bottom: 2px solid #005282;
+    background-image: -webkit-linear-gradient(top, #0081cc 0%, #0066a2 100%);
+    background-image: -o-linear-gradient(top, #0081cc 0%, #0066a2 100%);
+    background-image: linear-gradient(to bottom, #0081cc 0%, #0066a2 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0081CC', endColorstr='#FF0066A2', GradientType=0); }
+    /* line 27, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_buttons.scss */
+    .btn.btn-blue:hover, .btn.btn-blue:focus {
+      background-image: -webkit-linear-gradient(top, #0066a2 0%, #0066a2 100%);
+      background-image: -o-linear-gradient(top, #0066a2 0%, #0066a2 100%);
+      background-image: linear-gradient(to bottom, #0066a2 0%, #0066a2 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0066A2', endColorstr='#FF0066A2', GradientType=0); }
+  /* line 31, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_buttons.scss */
+  .btn.btn-block {
+    display: block; }
+
 /* FORMS */
 /* LISTS */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_list.scss */
@@ -7609,12 +7691,13 @@ address > a {
 
 /* line 10, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
 .saved-holder {
-  background: url(../images/elements/dotted.png) no-repeat center top; }
+  padding-top: 20px;
+  background: url(../images/elements/dotted.png) no-repeat center 20px; }
   @media only screen and (max-width: 767px) {
     .saved-holder {
       background: none; } }
 
-/* line 16, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
+/* line 17, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
 .stod-logo {
   width: 100%;
   max-width: 300px;

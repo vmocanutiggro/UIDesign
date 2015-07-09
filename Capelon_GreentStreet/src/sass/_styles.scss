@@ -8,7 +8,8 @@
 
 //Saved holder section
 .saved-holder {
-	background: url(../images/elements/dotted.png) no-repeat center top;
+	padding-top: 20px;
+	background: url(../images/elements/dotted.png) no-repeat center 20px;
 	@include respond-to(phones) {
 		background: none;
 	}
