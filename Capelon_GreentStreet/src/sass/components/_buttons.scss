@@ -1,1 +1,34 @@
 /* BUTTONS */
+.btn {
+	box-shadow: none;
+	display: inline-block;
+	color: $color-white;
+	padding: 10px 28px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 22px;
+	border: none;
+	border-radius: 3px;
+	position: relative;
+	text-transform: uppercase;
+	@include respond-to(phones) {
+		font-size: 10px;
+	}
+	&:hover, &:focus {
+		color: $color-white;
+		text-decoration: none;
+		i {
+			color: $color-white;
+		}
+	}
+	&.btn-blue {
+		border-bottom: 2px solid $color-orient;
+		@include gradient-vertical($start-color: #0081cc, $end-color: #0066a2, $start-percent: 0%, $end-percent: 100%);
+		&:hover, &:focus {
+			@include gradient-vertical($start-color: #0066a2, $end-color: #0066a2, $start-percent: 0%, $end-percent: 100%);
+		}
+	}
+	&.btn-block {
+		display: block;
+	}
+}

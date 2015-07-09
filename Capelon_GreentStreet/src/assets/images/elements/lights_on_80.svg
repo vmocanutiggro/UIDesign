@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="384px" height="246px" viewBox="0 0 384 246" enable-background="new 0 0 384 246" xml:space="preserve">
-<path opacity="0.4" fill="#FFFB91" enable-background="new    " d="M87.667,18.167L0,246h221L122.583,14.583L87.667,18.167z"/>
+	 viewBox="0 0 547 246" enable-background="new 0 0 547 246" xml:space="preserve">
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M87.7,18.2L0,246h221L122.6,14.6L87.7,18.2z"/>
 <g>
-	<path fill="#E6E6E6" d="M78.031,11.866c-39.21,10.34-39.197,34.755-39.197,35.759V182h4V47.606c0-0.894,0.538-21.997,36.152-31.388
-		L78.031,11.866z"/>
-	<path fill="#CDCDCD" d="M76.614,10.333v7.75c0,0,10.22,5.167,24.658,5.167s22.387-4.198,25.956-7.75c3.569-3.552,0-7.75,0-7.75
-		S121.063,0,106.463,0S84.401,5.651,76.614,10.333z"/>
-	<path fill="#FFFFFF" d="M84.229,17.917c0,0,8.598,2.583,19.467,2.583s20.765-6.458,20.765-6.458s-10.027,0.766-20.765,2.583
-		C96.146,17.903,93.024,15.587,84.229,17.917z"/>
-	<path fill="#F0EDEC" d="M28.853,181.958h24v5h-24V181.958z"/>
-	<rect x="38.833" y="178" fill="#D0D0D0" width="4" height="4"/>
-	<polygon fill="#DCDCDC" points="52.833,241 28.853,241 32.833,187 48.833,187 	"/>
-	<path fill="#F0EDEC" d="M24.789,241h32.127v5H24.789V241z"/>
-	<polygon fill="#CDCDCD" points="40.833,241 52.833,241 48.833,187 40.833,187 	"/>
+	<path fill="#E6E6E6" d="M78,11.9C38.8,22.2,38.8,46.6,38.8,47.6V182h4V47.6c0-0.9,0.5-22,36.2-31.4L78,11.9z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" d="M76.6,10.3v7.8c0,0,10.2,5.2,24.7,5.2c14.4,0,22.4-4.2,26-7.8
+		c3.6-3.6,0-7.7,0-7.7S121.1,0,106.5,0S84.4,5.7,76.6,10.3z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M84.2,17.9c0,0,8.6,2.6,19.5,2.6c10.9,0,20.8-6.5,20.8-6.5
+		s-10,0.8-20.8,2.6C96.1,17.9,93,15.6,84.2,17.9z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M28.9,182h24v5h-24V182z"/>
+	<rect x="38.8" y="178" fill-rule="evenodd" clip-rule="evenodd" fill="#D0D0D0" width="4" height="4"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" points="52.8,241 28.9,241 32.8,187 48.8,187 	"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M24.8,241h32.1v5H24.8V241z"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" points="40.8,241 52.8,241 48.8,187 40.8,187 	"/>
 </g>
-<path opacity="0.4" fill="#FFFB91" enable-background="new    " d="M250.667,18.167L163,246h221L285.583,14.583L250.667,18.167z"/>
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M250.7,18.2L163,246h221L285.6,14.6L250.7,18.2z"/>
 <g>
-	<path fill="#E6E6E6" d="M241.031,11.866c-39.21,10.34-39.197,34.755-39.197,35.759V182h4V47.606
-		c0-0.894,0.538-21.997,36.152-31.388L241.031,11.866z"/>
-	<path fill="#CDCDCD" d="M239.614,10.333v7.75c0,0,10.22,5.167,24.658,5.167s22.387-4.198,25.956-7.75s0-7.75,0-7.75
-		S284.063,0,269.463,0C254.863,0,247.401,5.651,239.614,10.333z"/>
-	<path fill="#FFFFFF" d="M247.229,17.917c0,0,8.598,2.583,19.467,2.583c10.869,0,20.764-6.458,20.764-6.458
-		s-10.027,0.766-20.764,2.583C259.146,17.903,256.024,15.587,247.229,17.917z"/>
-	<path fill="#F0EDEC" d="M191.853,181.958h24v5h-24V181.958z"/>
-	<rect x="201.833" y="178" fill="#D0D0D0" width="4" height="4"/>
-	<polygon fill="#DCDCDC" points="215.833,241 191.853,241 195.833,187 211.833,187 	"/>
-	<path fill="#F0EDEC" d="M187.789,241h32.127v5h-32.127V241z"/>
-	<polygon fill="#CDCDCD" points="203.833,241 215.833,241 211.833,187 203.833,187 	"/>
+	<path fill="#E6E6E6" d="M241,11.9c-39.2,10.3-39.2,34.8-39.2,35.8V182h4V47.6c0-0.9,0.5-22,36.2-31.4L241,11.9z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" d="M239.6,10.3v7.8c0,0,10.2,5.2,24.7,5.2c14.4,0,22.4-4.2,26-7.8
+		c3.6-3.6,0-7.7,0-7.7S284.1,0,269.5,0C254.9,0,247.4,5.7,239.6,10.3z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M247.2,17.9c0,0,8.6,2.6,19.5,2.6c10.9,0,20.8-6.5,20.8-6.5
+		s-10,0.8-20.8,2.6C259.1,17.9,256,15.6,247.2,17.9z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M191.9,182h24v5h-24V182z"/>
+	<rect x="201.8" y="178" fill-rule="evenodd" clip-rule="evenodd" fill="#D0D0D0" width="4" height="4"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" points="215.8,241 191.9,241 195.8,187 211.8,187 	"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M187.8,241h32.1v5h-32.1V241z"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" points="203.8,241 215.8,241 211.8,187 203.8,187 	"/>
+</g>
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFB91" d="M413.7,18.2L326,246h221L448.6,14.6L413.7,18.2z"/>
+<g>
+	<path fill="#E6E6E6" d="M404,11.9c-39.2,10.3-39.2,34.8-39.2,35.8V182h4V47.6c0-0.9,0.5-22,36.2-31.4L404,11.9z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" d="M402.6,10.3v7.8c0,0,10.2,5.2,24.7,5.2c14.4,0,22.4-4.2,26-7.8
+		c3.6-3.6,0-7.7,0-7.7S447.1,0,432.5,0S410.4,5.7,402.6,10.3z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M410.2,17.9c0,0,8.6,2.6,19.5,2.6c10.9,0,20.8-6.5,20.8-6.5
+		s-10,0.8-20.8,2.6C422.1,17.9,419,15.6,410.2,17.9z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M354.9,182h24v5h-24V182z"/>
+	<rect x="364.8" y="178" fill-rule="evenodd" clip-rule="evenodd" fill="#D0D0D0" width="4" height="4"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" points="378.8,241 354.9,241 358.8,187 374.8,187 	"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#F0EDEC" d="M350.8,241h32.1v5h-32.1V241z"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#CDCDCD" points="366.8,241 378.8,241 374.8,187 366.8,187 	"/>
 </g>
 </svg>

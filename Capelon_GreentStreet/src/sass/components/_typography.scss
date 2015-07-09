@@ -139,6 +139,26 @@ a {
 		text-decoration: none;
 	}
 }
+
+.back {
+	color: $color-white;
+	&:hover, &:focus {
+		color: $color-woodland;
+	}
+	span {
+		display: inline-block;
+		border-radius: 50%;
+		width: 28px;
+		height: 28px;
+		vertical-align: middle;
+		background: $color-pesto;
+		margin-right: 10px;
+		text-align: center;
+		i {
+			line-height: 28px;
+		}
+	}
+}
 button {
 	@include transition(150ms);
 	border: none;
