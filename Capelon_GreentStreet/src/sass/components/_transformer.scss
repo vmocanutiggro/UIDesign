@@ -11,11 +11,23 @@
 		max-width: 100%;
 		@extend .center-block;
 	}
+	.lamp-holder {
+		max-width: 416px;
+		width: 100%;
+		margin: 0 auto;
+		&.small {
+			max-width: 250px;
+		}
+	}
 }
 .transformator {
 	width: 100%;
-	max-width: 370px;
+	max-width: 134px;
 	margin: 0 auto;
+	padding-top: 20px;
+	@include respond-to(phones) {
+		padding-top: 0;
+	}
 	&.off {
 		.transformator-on {
 			display: none;
@@ -25,5 +37,8 @@
 		.transformator-off {
 			display: none;
 		}
+	}
+	img {
+		max-width: 100%;
 	}
 }
