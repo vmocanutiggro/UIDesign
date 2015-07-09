@@ -7129,7 +7129,7 @@ ul, .nav {
 /* line 66, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_carousel.scss */
 .carousel-title {
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 60px; }
   /* line 70, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_carousel.scss */
   .carousel-title.shadow {
@@ -7557,18 +7557,33 @@ ul.bxslider {
 /* line 10, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
 .transformator-body img {
   max-width: 100%; }
+/* line 14, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
+.transformator-body .lamp-holder {
+  max-width: 416px;
+  width: 100%;
+  margin: 0 auto; }
+  /* line 18, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
+  .transformator-body .lamp-holder.small {
+    max-width: 250px; }
 
-/* line 15, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
+/* line 23, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
 .transformator {
   width: 100%;
-  max-width: 370px;
-  margin: 0 auto; }
-  /* line 20, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
+  max-width: 134px;
+  margin: 0 auto;
+  padding-top: 20px; }
+  @media only screen and (max-width: 767px) {
+    .transformator {
+      padding-top: 0; } }
+  /* line 32, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
   .transformator.off .transformator-on {
     display: none; }
-  /* line 25, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
+  /* line 37, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
   .transformator.on .transformator-off {
     display: none; }
+  /* line 41, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/components/_transformer.scss */
+  .transformator img {
+    max-width: 100%; }
 
 /* HEADER */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/partials/_header.scss */
@@ -7706,3 +7721,7 @@ address > a {
   @media only screen and (max-width: 767px) {
     .stod-logo {
       max-width: 220px; } }
+
+/* line 26, /Users/Nagalsky/Dropbox/repos/Capelon/Capelon_GreentStreet/src/sass/_styles.scss */
+.worker {
+  margin-left: -20px; }
