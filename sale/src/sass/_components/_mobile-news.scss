@@ -1,0 +1,19 @@
+/* MOBILE NEWS HOLDER */
+.mobile-news-holder {
+
+}
+
+.mobile-news-item {
+	position: relative;
+	margin-bottom: 25px;
+	background: $color-mine-shaft;
+	padding: 15px 15px 15px 60px;
+}
+.mobile-news-pic {
+	border-radius: 50%;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 60px;
+	height: 60px;
+}

@@ -1,0 +1,11 @@
+/* DROPDOWN */
+.dropdown-menu {
+	border-radius: 3px;
+	background: $color-mine-shaft;
+	border: none;
+	>li {
+		>a {
+			color: $color-orange-peel;
+		}
+	}
+}

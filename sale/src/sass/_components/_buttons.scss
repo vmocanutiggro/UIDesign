@@ -1,0 +1,35 @@
+/* BUTTONS */
+.button {
+	box-shadow: none;
+	display: inline-block;
+	color: $color-white;
+	padding: 10px 28px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 22px;
+	border: none;
+	border-radius: 3px;
+	position: relative;
+	font-weight: $font-regular;
+	@include respond-to(mobile) {
+		padding: 4px 20px;
+	}
+	&:hover, &:focus {
+		color: $color-white;
+		text-decoration: none;
+	}
+	&.button-black {
+		background: $color-mine-shaft;
+		color: $color-orange-peel;
+		&:hover, &:focus {
+			background: darken($color-mine-shaft, 10%);
+			color: $color-orange-peel;
+		}
+	}
+	&.button-circle {
+		border-radius: 20px;
+	}
+	&.button-block {
+		display: block;
+	}
+}

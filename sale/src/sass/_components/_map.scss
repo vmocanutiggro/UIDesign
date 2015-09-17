@@ -1,0 +1,107 @@
+/* MAP HOLDER */
+.map-holder {
+	position: relative;
+}
+.map-dropdown-holder {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	img {
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	}
+	&.first {
+		top: 60px;
+		left: 80px;
+		@include respond-to(tablet-landscape) {
+			top: 40px;
+		}
+	}
+	&.second {
+		top: 95px;
+		left: 430px;
+		@include respond-to(tablet-landscape) {
+			top: 80px;
+			left: 340px;
+		}
+	}
+	&.third {
+		top: 160px;
+		left: 505px;
+		@include respond-to(tablet-landscape) {
+			top: 120px;
+			left: 420px;
+		}
+	}
+	&.fourth {
+		top: 230px;
+		left: 450px;
+		@include respond-to(tablet-landscape) {
+			top: 200px;
+			left: 350px;
+		}
+	}
+	&.fifth {
+		top: 310px;
+		left: 720px;
+		@include respond-to(tablet-landscape) {
+			top: 240px;
+			left: 580px;
+		}
+	}
+	.trigger {
+		border-radius: 3px;
+		background: $color-mine-shaft;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 0px;
+		bottom: -5px;
+		text-align: center;
+		span {
+			width: 2px;
+			height: 2px;
+			background: $color-orange-peel;
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			margin-left: -1px;
+			top: 50%;
+			margin-top: -1px;
+			&:before, &:after {
+				width: 2px;
+			    height: 2px;
+			    background: $color-orange-peel;
+			    display: inline-block;
+			    position: absolute;
+			    content: '';
+			    top: 50%;
+				margin-top: -1px;
+			}
+			&:before {
+				left: 5px;
+			}
+			&:after {
+				right: 5px;
+			}
+		}
+	}
+	.dropdown-menu {
+		border-radius: 3px;
+		background: $color-mine-shaft;
+		width: 22px;
+		padding: 10px;
+		border: none;
+		width: 220px;
+		right: auto;
+		left: 40px;
+		top: 40px;
+	}
+}
+
+.map-dropdown-title {
+	margin-bottom: 5px;
+}
+
+

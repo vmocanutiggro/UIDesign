@@ -1,0 +1,165 @@
+/* TYPOGRAPHY */
+html, body {
+	font-family: $body-main-font;
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	color: $main-text-color;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	min-height: 100%;
+    @include respond-to(tablet-portrait) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+* {
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-bold;
+	color: $title-color;
+	margin-top: 0;
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.margin-small {
+		margin-bottom: 5px;
+	}
+	small {
+		font-size: 11px;
+		color: inherit;
+	}
+}
+
+h1, .h1 {
+	font-size: 30px;
+	line-height: 40px;
+    margin-bottom: 20px;
+    @include respond-to(tablet-portrait) {
+    	font-size: 26px;
+    	line-height: 32px;
+    }
+}
+
+h2, .h2 {
+	font-size: 24px;
+	line-height: 26px;
+	@include respond-to(tablet-portrait) {
+    	font-size: 20px;
+    	line-height: 26px;
+    }
+}
+
+h3, .h3 {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	@include respond-to(tablet-portrait) {
+    	font-size: 18px;
+    	line-height: 22px;
+    }
+}
+
+h4, .h4 {
+	font-size: 18px;
+	line-height: 22px;
+	@include respond-to(tablet-landscape) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+h5, .h5 {
+	font-size: 16px;
+	line-height: 20px;
+	@include respond-to(tablet-portrait) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+h6, .h6 {
+	font-size: 11px;
+	line-height: 14px;
+	margin-bottom: 5px;
+}
+
+a {
+	color: $link-color;
+	@include transition(150ms);
+	&:hover, &:focus {
+		color: $link-color-hover;
+		text-decoration: none;
+	}
+	&.link-with-line {
+		display: block;
+		text-align: right;
+		position: relative;
+		&:before {
+			content: '';
+			height: 1px;
+			background: $color-alto;
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			margin-top: -0.5px;
+			left: 0;
+			z-index: 1;
+		}
+		span {
+			padding: 5px 10px;
+			position: relative;
+			z-index: 2;
+			background: $color-white;
+		}
+	}
+}
+button {
+	@include transition(150ms);
+	border: none;
+	background: none;
+}
+p {
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.font-size-mobile {
+	font-size: 12px;
+}
+
+/*Font classes*/
+.font-light {
+	font-family: $font-light;
+}
+.font-regular {
+	font-family: $font-regular;
+}
+.font-bold {
+	font-family: $font-bold;
+}
+
+/*Color classes*/
+.color-white {
+	color: $color-white;
+}
+.color-orange {
+	color: $color-orange-peel;
+}
+
+hr {
+	border-color: $color-alto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
