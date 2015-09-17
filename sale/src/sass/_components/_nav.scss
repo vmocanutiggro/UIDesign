@@ -1,0 +1,54 @@
+/* NAV */
+.nav {
+	margin-top: -2px;
+	>li {
+		&.open {
+			a {
+				background: transparent;
+				&:hover, &:focus {
+					background: transparent;
+					color: $link-color-hover;
+				}
+			}
+		}
+		>a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			&.profile-image {
+				padding-top: 0;
+				padding-bottom: 0;
+				@include respond-to(mobile) {
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+			}
+			&:hover, &:focus {
+				background: transparent;
+				color: $link-color-hover;
+			}
+			>img {
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				margin-top: -4px;
+				vertical-align: text-bottom;
+			}
+			@include respond-to(mobile) {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+.navbar-collapse {
+	box-shadow: none;
+	border: none;
+}
+.navbar-toggle {
+	margin: 0;
+	padding-top: 4px;
+	>span {
+		background: $color-white;
+	}
+}

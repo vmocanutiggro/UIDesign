@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Evgeniy Nagalskiy <evgeniy.nagalskiy@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap-sass-official": "latest"
+  }
+}

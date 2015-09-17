@@ -1,0 +1,26 @@
+/* FORMS */
+.form-control {
+	-webkit-appearance:none;
+	border-radius: 0;
+	box-shadow: none;
+	border-color: $color-alto;
+	background: $color-mercury;
+	&:focus {
+		box-shadow: none;
+	}
+}
+.form-group {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.content-form {
+	margin-bottom: 20px;
+	.form-control {
+		height: 60px;
+	}
+	.button {
+		margin-top: 9px;
+	}
+}
