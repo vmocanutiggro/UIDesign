@@ -108,6 +108,28 @@ ul {
 		padding-left: 15px;
 	}
 }
+.row-table {
+	display: table;
+	width: 100%;
+	@include respond-to(mobile) {
+		display: block;
+	}
+	>div {
+		position: relative;
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+		@include respond-to(mobile) {
+			display: block;
+		}
+		&.middle {
+			vertical-align: middle;
+			&.bottom {
+				vertical-align: bottom;
+			}
+		}
+	}
+}
 .divider {
 	height: 25px;
 }

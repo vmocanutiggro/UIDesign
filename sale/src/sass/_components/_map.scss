@@ -50,6 +50,13 @@
 			left: 580px;
 		}
 	}
+	&.sixth {
+		top: 260px;
+		left: 230px;
+		@include respond-to(tablet-landscape) {
+			top: 40px;
+		}
+	}
 	.trigger {
 		border-radius: 3px;
 		background: $color-mine-shaft;
