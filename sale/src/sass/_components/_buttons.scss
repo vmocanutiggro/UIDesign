@@ -3,7 +3,7 @@
 	box-shadow: none;
 	display: inline-block;
 	color: $color-white;
-	padding: 10px 28px;
+	padding: 6px 28px;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 22px;
@@ -12,7 +12,7 @@
 	position: relative;
 	font-weight: $font-regular;
 	@include respond-to(mobile) {
-		padding: 4px 20px;
+		padding: 6px 20px;
 	}
 	&:hover, &:focus {
 		color: $color-white;
@@ -26,10 +26,22 @@
 			color: $color-orange-peel;
 		}
 	}
+	&.button-orange {
+		background: $color-fire-bush;
+		color: $color-tundora-boulder;
+		&:hover, &:focus {
+			background: darken($color-fire-bush, 5%);
+			color: $color-tundora-boulder;
+		}
+	}
 	&.button-circle {
 		border-radius: 20px;
 	}
 	&.button-block {
 		display: block;
+		width: 100%;
+	}
+	&.button-large {
+		padding: 10px 28px;
 	}
 }

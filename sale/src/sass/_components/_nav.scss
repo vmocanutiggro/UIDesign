@@ -1,42 +1,82 @@
 /* NAV */
 .nav {
 	margin-top: -2px;
+	@include respond-to(mobile) {
+		margin-top: 10px;
+	}
 	>li {
+		margin-right: 30px;
+		@include respond-to(tablet-landscape) {
+			margin-right: 20px;
+		}
+		@include respond-to(tablet-portrait) {
+			margin-right: 5px;
+		}
+		@include respond-to(mobile) {
+			margin-right: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&.profile {
+			bottom: -6px;
+			@include respond-to(tablet-landscape) {
+				bottom: -2px;
+			}
+			@include respond-to(mobile) {
+				bottom: 0;
+			}
+			a {
+				padding-top: 0;
+				padding-bottom: 0;
+				&:hover, &:focus {
+					background: transparent;
+				}
+				@include respond-to(mobile) {
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+				>img {
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					margin-top: -4px;
+					vertical-align: text-bottom;
+					@include respond-to(tablet-landscape) {
+						width: 50px;
+						height: 50px;
+					}
+				}
+			}
+		}
 		&.open {
 			a {
 				background: transparent;
 				&:hover, &:focus {
 					background: transparent;
-					color: $link-color-hover;
+					color: $link-color;
 				}
 			}
 		}
 		>a {
+			text-transform: uppercase;
 			padding-top: 5px;
 			padding-bottom: 5px;
-			&.profile-image {
-				padding-top: 0;
-				padding-bottom: 0;
-				@include respond-to(mobile) {
-					padding-top: 15px;
-					padding-bottom: 15px;
-				}
-			}
+			border-radius: 3px;
+			font-size: 12px;
 			&:hover, &:focus {
-				background: transparent;
-				color: $link-color-hover;
+				background: $color-mine-shaft-boulder;
+				color: $link-color;
 			}
-			>img {
-				width: 35px;
-				height: 35px;
-				border-radius: 50%;
-				margin-top: -4px;
-				vertical-align: text-bottom;
+			@include respond-to(tablet-portrait) {
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 11px;
 			}
 			@include respond-to(mobile) {
-				padding-top: 15px;
-				padding-bottom: 15px;
-				font-size: 14px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: 12px;
 			}
 		}
 	}

@@ -1,13 +1,15 @@
 /* MOBILE NEWS HOLDER */
 .mobile-news-holder {
-
+	.dropdown-footer {
+		margin: 5px -15px 0px -60px;
+	}
 }
 
 .mobile-news-item {
 	position: relative;
 	margin-bottom: 25px;
 	background: $color-mine-shaft;
-	padding: 15px 15px 15px 60px;
+	padding: 15px 15px 0px 60px;
 }
 .mobile-news-pic {
 	border-radius: 50%;

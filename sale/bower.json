@@ -14,6 +14,8 @@
   ],
   "dependencies": {
     "jquery": "latest",
-    "bootstrap-sass-official": "latest"
+    "bootstrap-sass-official": "latest",
+    "bootstrap-datepicker": "~1.4.1",
+    "bootstrap-timepicker": "~0.5.1"
   }
 }
