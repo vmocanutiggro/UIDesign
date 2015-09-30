@@ -6,10 +6,27 @@ section {
 	&.no-space-top {
 		padding-top: 0;
 	}
+	&.big-space {
+		padding: 100px 0;
+		@include respond-to(tablet-portrait) {
+			padding: 50px 0;
+		}
+		@include respond-to(mobile) {
+			padding: 25px 0;
+		}
+	}
+}
+.padding {
+	padding: 20px;
 }
 .section-padding {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+.container-small {
+	width: 100%;
+	max-width: 620px;
+	margin: 0 auto;
 }
 * {
 	&:hover, &:focus, &:active {
@@ -79,11 +96,30 @@ ul {
 		float: none !important;
 	}
 }
-
+.custom-col-left {
+	padding-right: 0;
+	@include respond-to(mobile) {
+		padding-right: 15px;
+	}
+}
+.custom-col-right {
+	padding-left: 0;
+	@include respond-to(mobile) {
+		padding-left: 15px;
+	}
+}
 .divider {
 	height: 25px;
 }
 .full-width {
 	width: 100%;
 }
-
+.margin-small {
+	margin-bottom: 10px;
+}
+hr {
+	&.hr-negative {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}

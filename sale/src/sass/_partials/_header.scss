@@ -2,13 +2,17 @@
 
 header {
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	background: url(../images/bg/header-bg.jpg) no-repeat top center / cover;
 	position: relative;
 	@include clearfix();
 	@include respond-to(mobile) {
 		background: $color-black;
 		padding: 15px 0;
+	}
+	&.header-light {
+		padding: 15px 0;
+		background: $color-black;
 	}
 }
 #logo {
@@ -20,5 +24,13 @@ header {
 	}
 	@include respond-to(mobile) {
 		margin-top: 2px;
+	}
+}
+.back-to {
+	float: left;
+	margin: 2px 15px 0 0;
+	font-size: 12px;
+	@include respond-to(mobile) {
+		margin-top: 4px;
 	}
 }

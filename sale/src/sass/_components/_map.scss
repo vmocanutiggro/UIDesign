@@ -28,7 +28,7 @@
 	}
 	&.third {
 		top: 160px;
-		left: 505px;
+		left: 545px;
 		@include respond-to(tablet-landscape) {
 			top: 120px;
 			left: 420px;
@@ -36,7 +36,7 @@
 	}
 	&.fourth {
 		top: 230px;
-		left: 450px;
+		left: 415px;
 		@include respond-to(tablet-landscape) {
 			top: 200px;
 			left: 350px;
@@ -88,12 +88,12 @@
 		}
 	}
 	.dropdown-menu {
-		border-radius: 3px;
+		border-radius: 2px;
 		background: $color-mine-shaft;
 		width: 22px;
-		padding: 10px;
+		padding: 25px 20px 0px 20px;
 		border: none;
-		width: 220px;
+		width: 310px;
 		right: auto;
 		left: 40px;
 		top: 40px;
@@ -102,6 +102,20 @@
 
 .map-dropdown-title {
 	margin-bottom: 5px;
+}
+
+.close-dropdown {
+	color: $color-boulder;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	font-size: 18px;
+}
+
+.dropdown-footer {
+	background: $color-tundora;
+	padding: 15px 20px;
+	margin: 5px -20px 0 -20px;
 }
 
 

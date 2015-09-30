@@ -16,26 +16,30 @@
 }
 
 // Placeholder text
-@mixin custom-placeholder($color: $placeholder-color, $font-size: $placeholder-font-size, $line-height: $placeholder-line-height) {
+@mixin custom-placeholder($color: $placeholder-color, $font-size: $placeholder-font-size, $line-height: $placeholder-line-height, $font-style: $placeholder-italic) {
     &:-moz-placeholder {
         color: $color;
         font-size: $font-size;
         line-height: $line-height;
+        font-style: $font-style;
     }
     &::-moz-placeholder {
         color: $color;
         font-size: $font-size;
         line-height: $line-height;
+        font-style: $font-style;
     }
     &:-ms-input-placeholder {
         color: $color;
         font-size: $font-size;
         line-height: $line-height;
+        font-style: $font-style;
     }
     &::-webkit-input-placeholder {
         color: $color;
         font-size: $font-size;
         line-height: $line-height;
+        font-style: $font-style;
     }
 }
 

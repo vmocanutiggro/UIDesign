@@ -2910,7 +2910,7 @@ output {
   color: #555555; }
 
 /* line 114, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-control {
+.form-control, .bootstrap-timepicker-hour, .bootstrap-timepicker-minute, .bootstrap-timepicker-meridian {
   display: block;
   width: 100%;
   height: 34px;
@@ -2928,31 +2928,31 @@ output {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   /* line 57, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-  .form-control:focus {
+  .form-control:focus, .bootstrap-timepicker-hour:focus, .bootstrap-timepicker-minute:focus, .bootstrap-timepicker-meridian:focus {
     border-color: #66afe9;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
   /* line 103, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes */
-  .form-control::-moz-placeholder {
+  .form-control::-moz-placeholder, .bootstrap-timepicker-hour::-moz-placeholder, .bootstrap-timepicker-minute::-moz-placeholder, .bootstrap-timepicker-meridian::-moz-placeholder {
     color: #999;
     opacity: 1; }
   /* line 107, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes */
-  .form-control:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, .bootstrap-timepicker-hour:-ms-input-placeholder, .bootstrap-timepicker-minute:-ms-input-placeholder, .bootstrap-timepicker-meridian:-ms-input-placeholder {
     color: #999; }
   /* line 108, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes */
-  .form-control::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, .bootstrap-timepicker-hour::-webkit-input-placeholder, .bootstrap-timepicker-minute::-webkit-input-placeholder, .bootstrap-timepicker-meridian::-webkit-input-placeholder {
     color: #999; }
   /* line 142, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  .form-control[disabled], [disabled].bootstrap-timepicker-hour, [disabled].bootstrap-timepicker-minute, [disabled].bootstrap-timepicker-meridian, .form-control[readonly], [readonly].bootstrap-timepicker-hour, [readonly].bootstrap-timepicker-minute, [readonly].bootstrap-timepicker-meridian, fieldset[disabled] .form-control, fieldset[disabled] .bootstrap-timepicker-hour, fieldset[disabled] .bootstrap-timepicker-minute, fieldset[disabled] .bootstrap-timepicker-meridian {
     background-color: #eeeeee;
     opacity: 1; }
   /* line 148, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  .form-control[disabled], fieldset[disabled] .form-control {
+  .form-control[disabled], [disabled].bootstrap-timepicker-hour, [disabled].bootstrap-timepicker-minute, [disabled].bootstrap-timepicker-meridian, fieldset[disabled] .form-control, fieldset[disabled] .bootstrap-timepicker-hour, fieldset[disabled] .bootstrap-timepicker-minute, fieldset[disabled] .bootstrap-timepicker-meridian {
     cursor: not-allowed; }
 
 /* line 156, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-textarea.form-control {
+textarea.form-control, textarea.bootstrap-timepicker-hour, textarea.bootstrap-timepicker-minute, textarea.bootstrap-timepicker-meridian {
   height: auto; }
 
 /* line 168, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
@@ -2961,13 +2961,13 @@ input[type="search"] {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* line 187, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
+  input[type="date"].form-control, input[type="date"].bootstrap-timepicker-hour, input[type="date"].bootstrap-timepicker-minute, input[type="date"].bootstrap-timepicker-meridian, input[type="time"].form-control, input[type="time"].bootstrap-timepicker-hour, input[type="time"].bootstrap-timepicker-minute, input[type="time"].bootstrap-timepicker-meridian, input[type="datetime-local"].form-control, input[type="datetime-local"].bootstrap-timepicker-hour, input[type="datetime-local"].bootstrap-timepicker-minute, input[type="datetime-local"].bootstrap-timepicker-meridian, input[type="month"].form-control, input[type="month"].bootstrap-timepicker-hour, input[type="month"].bootstrap-timepicker-minute, input[type="month"].bootstrap-timepicker-meridian {
     line-height: 34px; }
   /* line 192, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .input-group-sm > input[type="date"].input-group-addon, .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm input[type="date"], input[type="time"].input-sm, .input-group-sm > input[type="time"].form-control, .input-group-sm > input[type="time"].input-group-addon, .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm input[type="time"], input[type="datetime-local"].input-sm, .input-group-sm > input[type="datetime-local"].form-control, .input-group-sm > input[type="datetime-local"].input-group-addon, .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm input[type="datetime-local"], input[type="month"].input-sm, .input-group-sm > input[type="month"].form-control, .input-group-sm > input[type="month"].input-group-addon, .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm input[type="month"] {
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .input-group-sm > input[type="date"].bootstrap-timepicker-hour, .input-group-sm > input[type="date"].bootstrap-timepicker-minute, .input-group-sm > input[type="date"].bootstrap-timepicker-meridian, .input-group-sm > input[type="date"].input-group-addon, .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm input[type="date"], input[type="time"].input-sm, .input-group-sm > input[type="time"].form-control, .input-group-sm > input[type="time"].bootstrap-timepicker-hour, .input-group-sm > input[type="time"].bootstrap-timepicker-minute, .input-group-sm > input[type="time"].bootstrap-timepicker-meridian, .input-group-sm > input[type="time"].input-group-addon, .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm input[type="time"], input[type="datetime-local"].input-sm, .input-group-sm > input[type="datetime-local"].form-control, .input-group-sm > input[type="datetime-local"].bootstrap-timepicker-hour, .input-group-sm > input[type="datetime-local"].bootstrap-timepicker-minute, .input-group-sm > input[type="datetime-local"].bootstrap-timepicker-meridian, .input-group-sm > input[type="datetime-local"].input-group-addon, .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm input[type="datetime-local"], input[type="month"].input-sm, .input-group-sm > input[type="month"].form-control, .input-group-sm > input[type="month"].bootstrap-timepicker-hour, .input-group-sm > input[type="month"].bootstrap-timepicker-minute, .input-group-sm > input[type="month"].bootstrap-timepicker-meridian, .input-group-sm > input[type="month"].input-group-addon, .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm input[type="month"] {
     line-height: 30px; }
   /* line 197, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .input-group-lg > input[type="date"].input-group-addon, .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control, .input-group-lg > input[type="time"].input-group-addon, .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control, .input-group-lg > input[type="datetime-local"].input-group-addon, .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control, .input-group-lg > input[type="month"].input-group-addon, .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg input[type="month"] {
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .input-group-lg > input[type="date"].bootstrap-timepicker-hour, .input-group-lg > input[type="date"].bootstrap-timepicker-minute, .input-group-lg > input[type="date"].bootstrap-timepicker-meridian, .input-group-lg > input[type="date"].input-group-addon, .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control, .input-group-lg > input[type="time"].bootstrap-timepicker-hour, .input-group-lg > input[type="time"].bootstrap-timepicker-minute, .input-group-lg > input[type="time"].bootstrap-timepicker-meridian, .input-group-lg > input[type="time"].input-group-addon, .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control, .input-group-lg > input[type="datetime-local"].bootstrap-timepicker-hour, .input-group-lg > input[type="datetime-local"].bootstrap-timepicker-minute, .input-group-lg > input[type="datetime-local"].bootstrap-timepicker-meridian, .input-group-lg > input[type="datetime-local"].input-group-addon, .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control, .input-group-lg > input[type="month"].bootstrap-timepicker-hour, .input-group-lg > input[type="month"].bootstrap-timepicker-minute, .input-group-lg > input[type="month"].bootstrap-timepicker-meridian, .input-group-lg > input[type="month"].input-group-addon, .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg input[type="month"] {
     line-height: 46px; }
  }
 
@@ -3033,12 +3033,12 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
   margin-bottom: 0;
   min-height: 34px; }
   /* line 310, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > .form-control-static.input-group-addon, .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > .form-control-static.input-group-addon, .input-group-sm > .input-group-btn > .form-control-static.btn {
+  .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > .form-control-static.bootstrap-timepicker-hour, .input-group-lg > .form-control-static.bootstrap-timepicker-minute, .input-group-lg > .form-control-static.bootstrap-timepicker-meridian, .input-group-lg > .form-control-static.input-group-addon, .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > .form-control-static.bootstrap-timepicker-hour, .input-group-sm > .form-control-static.bootstrap-timepicker-minute, .input-group-sm > .form-control-static.bootstrap-timepicker-meridian, .input-group-sm > .form-control-static.input-group-addon, .input-group-sm > .input-group-btn > .form-control-static.btn {
     padding-left: 0;
     padding-right: 0; }
 
 /* line 71, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
+.input-sm, .input-group-sm > .form-control, .input-group-sm > .bootstrap-timepicker-hour, .input-group-sm > .bootstrap-timepicker-minute, .input-group-sm > .bootstrap-timepicker-meridian, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3046,27 +3046,27 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
   border-radius: 3px; }
 
 /* line 79, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn {
+select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select.bootstrap-timepicker-hour, .input-group-sm > select.bootstrap-timepicker-minute, .input-group-sm > select.bootstrap-timepicker-meridian, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn {
   height: 30px;
   line-height: 30px; }
 
 /* line 84, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn {
+textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > textarea.bootstrap-timepicker-hour, .input-group-sm > textarea.bootstrap-timepicker-minute, .input-group-sm > textarea.bootstrap-timepicker-meridian, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .input-group-sm > select[multiple].bootstrap-timepicker-hour, .input-group-sm > select[multiple].bootstrap-timepicker-minute, .input-group-sm > select[multiple].bootstrap-timepicker-meridian, .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn {
   height: auto; }
 
 /* line 327, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-group-sm .form-control {
+.form-group-sm .form-control, .form-group-sm .bootstrap-timepicker-hour, .form-group-sm .bootstrap-timepicker-minute, .form-group-sm .bootstrap-timepicker-meridian {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px; }
 /* line 334, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-group-sm select.form-control {
+.form-group-sm select.form-control, .form-group-sm select.bootstrap-timepicker-hour, .form-group-sm select.bootstrap-timepicker-minute, .form-group-sm select.bootstrap-timepicker-meridian {
   height: 30px;
   line-height: 30px; }
 /* line 339, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-group-sm textarea.form-control, .form-group-sm select[multiple].form-control {
+.form-group-sm textarea.form-control, .form-group-sm textarea.bootstrap-timepicker-hour, .form-group-sm textarea.bootstrap-timepicker-minute, .form-group-sm textarea.bootstrap-timepicker-meridian, .form-group-sm select[multiple].form-control, .form-group-sm select[multiple].bootstrap-timepicker-hour, .form-group-sm select[multiple].bootstrap-timepicker-minute, .form-group-sm select[multiple].bootstrap-timepicker-meridian {
   height: auto; }
 /* line 342, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
 .form-group-sm .form-control-static {
@@ -3077,7 +3077,7 @@ textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > te
   line-height: 1.5; }
 
 /* line 71, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-.input-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+.input-lg, .input-group-lg > .form-control, .input-group-lg > .bootstrap-timepicker-hour, .input-group-lg > .bootstrap-timepicker-minute, .input-group-lg > .bootstrap-timepicker-meridian, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3085,27 +3085,27 @@ textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > te
   border-radius: 6px; }
 
 /* line 79, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-select.input-lg, .input-group-lg > select.form-control, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn {
+select.input-lg, .input-group-lg > select.form-control, .input-group-lg > select.bootstrap-timepicker-hour, .input-group-lg > select.bootstrap-timepicker-minute, .input-group-lg > select.bootstrap-timepicker-meridian, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn {
   height: 46px;
   line-height: 46px; }
 
 /* line 84, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn, select[multiple].input-lg, .input-group-lg > select[multiple].form-control, .input-group-lg > select[multiple].input-group-addon, .input-group-lg > .input-group-btn > select[multiple].btn {
+textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > textarea.bootstrap-timepicker-hour, .input-group-lg > textarea.bootstrap-timepicker-minute, .input-group-lg > textarea.bootstrap-timepicker-meridian, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn, select[multiple].input-lg, .input-group-lg > select[multiple].form-control, .input-group-lg > select[multiple].bootstrap-timepicker-hour, .input-group-lg > select[multiple].bootstrap-timepicker-minute, .input-group-lg > select[multiple].bootstrap-timepicker-meridian, .input-group-lg > select[multiple].input-group-addon, .input-group-lg > .input-group-btn > select[multiple].btn {
   height: auto; }
 
 /* line 353, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-group-lg .form-control {
+.form-group-lg .form-control, .form-group-lg .bootstrap-timepicker-hour, .form-group-lg .bootstrap-timepicker-minute, .form-group-lg .bootstrap-timepicker-meridian {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px; }
 /* line 360, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-group-lg select.form-control {
+.form-group-lg select.form-control, .form-group-lg select.bootstrap-timepicker-hour, .form-group-lg select.bootstrap-timepicker-minute, .form-group-lg select.bootstrap-timepicker-meridian {
   height: 46px;
   line-height: 46px; }
 /* line 365, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.form-group-lg textarea.form-control, .form-group-lg select[multiple].form-control {
+.form-group-lg textarea.form-control, .form-group-lg textarea.bootstrap-timepicker-hour, .form-group-lg textarea.bootstrap-timepicker-minute, .form-group-lg textarea.bootstrap-timepicker-meridian, .form-group-lg select[multiple].form-control, .form-group-lg select[multiple].bootstrap-timepicker-hour, .form-group-lg select[multiple].bootstrap-timepicker-minute, .form-group-lg select[multiple].bootstrap-timepicker-meridian {
   height: auto; }
 /* line 368, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
 .form-group-lg .form-control-static {
@@ -3119,7 +3119,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-feedback {
   position: relative; }
   /* line 387, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  .has-feedback .form-control {
+  .has-feedback .form-control, .has-feedback .bootstrap-timepicker-hour, .has-feedback .bootstrap-timepicker-minute, .has-feedback .bootstrap-timepicker-meridian {
     padding-right: 42.5px; }
 
 /* line 392, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
@@ -3136,13 +3136,13 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   pointer-events: none; }
 
 /* line 406, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .input-group-lg + .form-control-feedback, .form-group-lg .form-control + .form-control-feedback {
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .bootstrap-timepicker-hour + .form-control-feedback, .input-group-lg > .bootstrap-timepicker-minute + .form-control-feedback, .input-group-lg > .bootstrap-timepicker-meridian + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .input-group-lg + .form-control-feedback, .form-group-lg .form-control + .form-control-feedback, .form-group-lg .bootstrap-timepicker-hour + .form-control-feedback, .form-group-lg .bootstrap-timepicker-minute + .form-control-feedback, .form-group-lg .bootstrap-timepicker-meridian + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px; }
 
 /* line 413, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm + .form-control-feedback, .form-group-sm .form-control + .form-control-feedback {
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .bootstrap-timepicker-hour + .form-control-feedback, .input-group-sm > .bootstrap-timepicker-minute + .form-control-feedback, .input-group-sm > .bootstrap-timepicker-meridian + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm + .form-control-feedback, .form-group-sm .form-control + .form-control-feedback, .form-group-sm .bootstrap-timepicker-hour + .form-control-feedback, .form-group-sm .bootstrap-timepicker-minute + .form-control-feedback, .form-group-sm .bootstrap-timepicker-meridian + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px; }
@@ -3151,12 +3151,12 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d; }
 /* line 21, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-.has-success .form-control {
+.has-success .form-control, .has-success .bootstrap-timepicker-hour, .has-success .bootstrap-timepicker-minute, .has-success .bootstrap-timepicker-meridian {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 24, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-  .has-success .form-control:focus {
+  .has-success .form-control:focus, .has-success .bootstrap-timepicker-hour:focus, .has-success .bootstrap-timepicker-minute:focus, .has-success .bootstrap-timepicker-meridian:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -3173,12 +3173,12 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b; }
 /* line 21, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-.has-warning .form-control {
+.has-warning .form-control, .has-warning .bootstrap-timepicker-hour, .has-warning .bootstrap-timepicker-minute, .has-warning .bootstrap-timepicker-meridian {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 24, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-  .has-warning .form-control:focus {
+  .has-warning .form-control:focus, .has-warning .bootstrap-timepicker-hour:focus, .has-warning .bootstrap-timepicker-minute:focus, .has-warning .bootstrap-timepicker-meridian:focus {
     border-color: #66512c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -3195,12 +3195,12 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
   color: #a94442; }
 /* line 21, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-.has-error .form-control {
+.has-error .form-control, .has-error .bootstrap-timepicker-hour, .has-error .bootstrap-timepicker-minute, .has-error .bootstrap-timepicker-meridian {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 24, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/forms */
-  .has-error .form-control:focus {
+  .has-error .form-control:focus, .has-error .bootstrap-timepicker-hour:focus, .has-error .bootstrap-timepicker-minute:focus, .has-error .bootstrap-timepicker-meridian:focus {
     border-color: #843534;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
@@ -3235,7 +3235,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     vertical-align: middle; }
 
   /* line 479, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  .form-inline .form-control {
+  .form-inline .form-control, .form-inline .bootstrap-timepicker-hour, .form-inline .bootstrap-timepicker-minute, .form-inline .bootstrap-timepicker-meridian {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -3249,11 +3249,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     display: inline-table;
     vertical-align: middle; }
     /* line 496, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-    .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control {
+    .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control, .form-inline .input-group .bootstrap-timepicker-hour, .form-inline .input-group .bootstrap-timepicker-minute, .form-inline .input-group .bootstrap-timepicker-meridian {
       width: auto; }
 
   /* line 502, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-  .form-inline .input-group > .form-control {
+  .form-inline .input-group > .form-control, .form-inline .input-group > .bootstrap-timepicker-hour, .form-inline .input-group > .bootstrap-timepicker-minute, .form-inline .input-group > .bootstrap-timepicker-meridian {
     width: 100%; }
 
   /* line 506, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
@@ -4023,7 +4023,7 @@ tbody.collapse.in {
     padding-left: 0;
     padding-right: 0; }
   /* line 19, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups */
-  .input-group .form-control {
+  .input-group .form-control, .input-group .bootstrap-timepicker-hour, .input-group .bootstrap-timepicker-minute, .input-group .bootstrap-timepicker-meridian {
     position: relative;
     z-index: 2;
     float: left;
@@ -4031,10 +4031,10 @@ tbody.collapse.in {
     margin-bottom: 0; }
 
 /* line 56, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups */
-.input-group-addon, .input-group-btn, .input-group .form-control {
+.input-group-addon, .input-group-btn, .input-group .form-control, .input-group .bootstrap-timepicker-hour, .input-group .bootstrap-timepicker-minute, .input-group .bootstrap-timepicker-meridian {
   display: table-cell; }
   /* line 59, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups */
-  .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+  .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child), .input-group .bootstrap-timepicker-hour:not(:first-child):not(:last-child), .input-group .bootstrap-timepicker-minute:not(:first-child):not(:last-child), .input-group .bootstrap-timepicker-meridian:not(:first-child):not(:last-child) {
     border-radius: 0; }
 
 /* line 65, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups */
@@ -4069,7 +4069,7 @@ tbody.collapse.in {
     margin-top: 0; }
 
 /* line 110, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups */
-.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+.input-group .form-control:first-child, .input-group .bootstrap-timepicker-hour:first-child, .input-group .bootstrap-timepicker-minute:first-child, .input-group .bootstrap-timepicker-meridian:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
@@ -4078,7 +4078,7 @@ tbody.collapse.in {
   border-right: 0; }
 
 /* line 122, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/input-groups */
-.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+.input-group .form-control:last-child, .input-group .bootstrap-timepicker-hour:last-child, .input-group .bootstrap-timepicker-minute:last-child, .input-group .bootstrap-timepicker-meridian:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -4476,7 +4476,7 @@ tbody.collapse.in {
       vertical-align: middle; }
 
     /* line 479, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-    .navbar-form .form-control {
+    .navbar-form .form-control, .navbar-form .bootstrap-timepicker-hour, .navbar-form .bootstrap-timepicker-minute, .navbar-form .bootstrap-timepicker-meridian {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -4490,11 +4490,11 @@ tbody.collapse.in {
       display: inline-table;
       vertical-align: middle; }
       /* line 496, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-      .navbar-form .input-group .input-group-addon, .navbar-form .input-group .input-group-btn, .navbar-form .input-group .form-control {
+      .navbar-form .input-group .input-group-addon, .navbar-form .input-group .input-group-btn, .navbar-form .input-group .form-control, .navbar-form .input-group .bootstrap-timepicker-hour, .navbar-form .input-group .bootstrap-timepicker-minute, .navbar-form .input-group .bootstrap-timepicker-meridian {
         width: auto; }
 
     /* line 502, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
-    .navbar-form .input-group > .form-control {
+    .navbar-form .input-group > .form-control, .navbar-form .input-group > .bootstrap-timepicker-hour, .navbar-form .input-group > .bootstrap-timepicker-minute, .navbar-form .input-group > .bootstrap-timepicker-meridian {
       width: 100%; }
 
     /* line 506, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/forms */
@@ -6710,24 +6710,92 @@ button.close {
 /*Fontello*/
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?73234182');
-  src: url('../fonts/fontello.eot?73234182#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?73234182') format('woff'), url('../fonts/fontello.ttf?73234182') format('truetype'), url('../fonts/fontello.svg?73234182#fontello') format('svg');
+  src: url('../fonts/fontello.eot?98263042');
+  src: url('../fonts/fontello.eot?98263042#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?98263042') format('woff'), url('../fonts/fontello.ttf?98263042') format('truetype'), url('../fonts/fontello.svg?98263042#fontello') format('svg');
   font-weight: normal;
   font-style: normal; }
 
 /* line 57, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
-[class^="fontello-"]:before, [class*=" fontello-"]:before {
+[class^="sale-icon-"]:before, [class*=" sale-icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
   display: inline-block;
   text-decoration: inherit;
+  width: 1em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
-  line-height: 1em; }
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
+/* line 74, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-menu:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 75, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-cancel:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 76, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-angle-double-right:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 77, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-camera:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 78, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-users:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 79, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-location:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 80, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-left-open:before {
+  content: '\e806'; }
+
+/* '' */
+/* line 81, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-right-open:before {
+  content: '\e807'; }
+
+/* '' */
+/* line 82, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-up-open:before, .bootstrap-timepicker-widget .glyphicon.glyphicon-chevron-up:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 83, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-down-open:before, .bootstrap-timepicker-widget .glyphicon.glyphicon-chevron-down:before {
+  content: '\e809'; }
+
+/* '' */
+/* line 84, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-clock:before {
+  content: '\e80a'; }
+
+/* '' */
+/* line 85, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-chat:before {
+  content: '\e80b'; }
+
+/* '' */
+/* line 86, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_fonts.scss */
+.sale-icon-thumbs-up:before {
+  content: '\e80c'; }
+
+/* '' */
 /* VARIABLES */
 /*Black group*/
 /*Orange group*/
@@ -6735,6 +6803,7 @@ button.close {
 /*Link color*/
 /* Font VARIABLES */
 /*Title color*/
+/*Form VARIABLES*/
 /* Sections VARIABLES */
 /* MIXINS */
 /* TYPOGRAPHY */
@@ -6858,8 +6927,11 @@ a {
       position: relative;
       z-index: 2;
       background: #ffffff; }
+  /* line 120, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+  a.text-undeline {
+    text-decoration: underline; }
 
-/* line 121, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 124, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 button {
   -webkit-transition: 150ms;
   -o-transition: 150ms;
@@ -6867,40 +6939,48 @@ button {
   border: none;
   background: none; }
 
-/* line 126, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 129, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 p {
   margin-bottom: 10px; }
-  /* line 128, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+  /* line 131, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
   p:last-child {
     margin-bottom: 0; }
 
-/* line 133, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 136, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 .font-size-mobile {
   font-size: 12px; }
 
 /*Font classes*/
-/* line 138, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 141, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 .font-light {
   font-family: 'Helvetica-Light'; }
 
-/* line 141, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 144, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 .font-regular {
   font-family: 'Helvetica-Regular'; }
 
-/* line 144, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 147, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 .font-bold {
   font-family: 'Helvetica-Bold'; }
 
 /*Color classes*/
-/* line 149, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 152, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 .color-white {
   color: #ffffff; }
 
-/* line 152, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 155, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 .color-orange {
   color: #FF9900; }
 
-/* line 156, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+/* line 158, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+.color-gray {
+  color: #898989; }
+
+/* line 161, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
+.color-black {
+  color: #000000; }
+
+/* line 165, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_typography.scss */
 hr {
   border-color: #E0E0E0;
   margin-top: 10px;
@@ -6912,7 +6992,7 @@ hr {
   box-shadow: none;
   display: inline-block;
   color: #ffffff;
-  padding: 10px 28px;
+  padding: 6px 28px;
   text-align: center;
   vertical-align: middle;
   line-height: 22px;
@@ -6922,7 +7002,7 @@ hr {
   font-weight: 'Helvetica-Regular'; }
   @media only screen and (max-width: 767px) {
     .button {
-      padding: 4px 20px; } }
+      padding: 6px 20px; } }
   /* line 17, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
   .button:hover, .button:focus {
     color: #ffffff;
@@ -6936,37 +7016,103 @@ hr {
       background: #1a1a1a;
       color: #FF9900; }
   /* line 29, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
+  .button.button-orange {
+    background: #e59724;
+    color: #444444; }
+    /* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
+    .button.button-orange:hover, .button.button-orange:focus {
+      background: #d68a19;
+      color: #444444; }
+  /* line 37, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
   .button.button-circle {
     border-radius: 20px; }
-  /* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
+  /* line 40, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
   .button.button-block {
-    display: block; }
+    display: block;
+    width: 100%; }
+  /* line 44, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_buttons.scss */
+  .button.button-large {
+    padding: 10px 28px; }
 
 /* FORMS */
 /* line 2, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
-.form-control {
+.form-control, .bootstrap-timepicker-hour, .bootstrap-timepicker-minute, .bootstrap-timepicker-meridian {
   -webkit-appearance: none;
   border-radius: 0;
   box-shadow: none;
   border-color: #E0E0E0;
-  background: #f8f8f8; }
-  /* line 8, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
-  .form-control:focus {
+  background: #f8f8f8;
+  resize: none; }
+  /* line 9, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+  .form-control:focus, .bootstrap-timepicker-hour:focus, .bootstrap-timepicker-minute:focus, .bootstrap-timepicker-meridian:focus {
     box-shadow: none; }
+  /* line 20, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mixins.scss */
+  .form-control.form-control-italic:-moz-placeholder, .form-control-italic.bootstrap-timepicker-hour:-moz-placeholder, .form-control-italic.bootstrap-timepicker-minute:-moz-placeholder, .form-control-italic.bootstrap-timepicker-meridian:-moz-placeholder {
+    color: #898989;
+    font-size: 14px;
+    line-height: 22px;
+    font-style: italic; }
+  /* line 26, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mixins.scss */
+  .form-control.form-control-italic::-moz-placeholder, .form-control-italic.bootstrap-timepicker-hour::-moz-placeholder, .form-control-italic.bootstrap-timepicker-minute::-moz-placeholder, .form-control-italic.bootstrap-timepicker-meridian::-moz-placeholder {
+    color: #898989;
+    font-size: 14px;
+    line-height: 22px;
+    font-style: italic; }
+  /* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mixins.scss */
+  .form-control.form-control-italic:-ms-input-placeholder, .form-control-italic.bootstrap-timepicker-hour:-ms-input-placeholder, .form-control-italic.bootstrap-timepicker-minute:-ms-input-placeholder, .form-control-italic.bootstrap-timepicker-meridian:-ms-input-placeholder {
+    color: #898989;
+    font-size: 14px;
+    line-height: 22px;
+    font-style: italic; }
+  /* line 38, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mixins.scss */
+  .form-control.form-control-italic::-webkit-input-placeholder, .form-control-italic.bootstrap-timepicker-hour::-webkit-input-placeholder, .form-control-italic.bootstrap-timepicker-minute::-webkit-input-placeholder, .form-control-italic.bootstrap-timepicker-meridian::-webkit-input-placeholder {
+    color: #898989;
+    font-size: 14px;
+    line-height: 22px;
+    font-style: italic; }
 
-/* line 13, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+/* line 17, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
 .form-group:last-child {
   margin-bottom: 0; }
+/* line 20, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+.form-group.no-margin {
+  margin-bottom: 0; }
 
-/* line 18, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+/* line 25, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
 .content-form {
   margin-bottom: 20px; }
-  /* line 20, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
-  .content-form .form-control {
+  /* line 27, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+  .content-form .form-control, .content-form .bootstrap-timepicker-hour, .content-form .bootstrap-timepicker-minute, .content-form .bootstrap-timepicker-meridian {
     height: 60px; }
-  /* line 23, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+  /* line 30, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
   .content-form .button {
     margin-top: 9px; }
+
+/* line 34, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+legend {
+  border: none;
+  color: #444444;
+  font-family: 'Helvetica-Bold';
+  line-height: 28px; }
+
+/* line 40, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+label {
+  color: #444444;
+  font-family: 'Helvetica-Bold'; }
+
+/* line 44, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+fieldset {
+  margin-bottom: 25px; }
+  /* line 46, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+  fieldset:last-child {
+    margin-bottom: 0; }
+
+/*Login form*/
+/* line 52, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_forms.scss */
+.form-login {
+  padding: 20px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #ffffff; }
 
 /* Reset styles */
 /* line 2, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
@@ -6983,31 +7129,50 @@ section {
   /* line 6, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
   section.no-space-top {
     padding-top: 0; }
+  /* line 9, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+  section.big-space {
+    padding: 100px 0; }
+    @media only screen and (max-width: 991px) {
+      section.big-space {
+        padding: 50px 0; } }
+    @media only screen and (max-width: 767px) {
+      section.big-space {
+        padding: 25px 0; } }
 
-/* line 10, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 19, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+.padding {
+  padding: 20px; }
+
+/* line 22, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .section-padding {
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 15, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 26, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+.container-small {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto; }
+
+/* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 *:hover, *:focus, *:active {
   outline: none !important; }
 
-/* line 20, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 37, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 a:hover, a:focus, a:visited {
   text-decoration: none;
   outline: none; }
 
-/* line 27, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 44, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 49, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 ul {
   margin-bottom: 20px; }
-  /* line 34, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+  /* line 51, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
   ul:last-child {
     margin-bottom: 0; }
 
@@ -7031,19 +7196,19 @@ ul {
   .push-down {
     margin-bottom: 15px; } }
 
-/* line 64, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 81, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .relative {
   position: relative; }
 
-/* line 67, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 84, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .block {
   display: block; }
 
-/* line 70, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 87, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 74, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 91, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .mb {
   margin-bottom: 15px; }
 
@@ -7051,13 +7216,36 @@ ul {
   .mobile-float-reset {
     float: none !important; } }
 
-/* line 83, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 99, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+.custom-col-left {
+  padding-right: 0; }
+  @media only screen and (max-width: 767px) {
+    .custom-col-left {
+      padding-right: 15px; } }
+
+/* line 105, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+.custom-col-right {
+  padding-left: 0; }
+  @media only screen and (max-width: 767px) {
+    .custom-col-right {
+      padding-left: 15px; } }
+
+/* line 111, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .divider {
   height: 25px; }
 
-/* line 86, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+/* line 114, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
 .full-width {
   width: 100%; }
+
+/* line 117, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+.margin-small {
+  margin-bottom: 10px; }
+
+/* line 121, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_reset.scss */
+hr.hr-negative {
+  margin-left: -15px;
+  margin-right: -15px; }
 
 /* CONTENT HOLDER */
 /* line 2, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_content-holder.scss */
@@ -7071,6 +7259,24 @@ ul {
   /* line 4, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_news-holder.scss */
   .news-holder:last-child {
     margin-bottom: 0; }
+
+/* line 8, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_news-holder.scss */
+.aside-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #787878; }
+  /* line 12, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_news-holder.scss */
+  .aside-link:last-child {
+    margin-bottom: 0; }
+  /* line 15, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_news-holder.scss */
+  .aside-link i {
+    color: #FF9900;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms; }
+  /* line 20, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_news-holder.scss */
+  .aside-link:hover i, .aside-link:focus i {
+    color: #787878; }
 
 /* MAP HOLDER */
 /* line 2, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_map.scss */
@@ -7105,7 +7311,7 @@ ul {
   /* line 29, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_map.scss */
   .map-dropdown-holder.third {
     top: 160px;
-    left: 505px; }
+    left: 545px; }
     @media only screen and (max-width: 1199px) {
       .map-dropdown-holder.third {
         top: 120px;
@@ -7113,7 +7319,7 @@ ul {
   /* line 37, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_map.scss */
   .map-dropdown-holder.fourth {
     top: 230px;
-    left: 450px; }
+    left: 415px; }
     @media only screen and (max-width: 1199px) {
       .map-dropdown-holder.fourth {
         top: 200px;
@@ -7165,12 +7371,12 @@ ul {
         right: 5px; }
   /* line 90, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_map.scss */
   .map-dropdown-holder .dropdown-menu {
-    border-radius: 3px;
+    border-radius: 2px;
     background: #333333;
     width: 22px;
-    padding: 10px;
+    padding: 25px 20px 0px 20px;
     border: none;
-    width: 220px;
+    width: 310px;
     right: auto;
     left: 40px;
     top: 40px; }
@@ -7179,15 +7385,33 @@ ul {
 .map-dropdown-title {
   margin-bottom: 5px; }
 
+/* line 107, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_map.scss */
+.close-dropdown {
+  color: #767676;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  font-size: 18px; }
+
+/* line 115, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_map.scss */
+.dropdown-footer {
+  background: #494949;
+  padding: 15px 20px;
+  margin: 5px -20px 0 -20px; }
+
 /* MOBILE NEWS HOLDER */
-/* line 6, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mobile-news.scss */
+/* line 3, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mobile-news.scss */
+.mobile-news-holder .dropdown-footer {
+  margin: 5px -15px 0px -60px; }
+
+/* line 8, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mobile-news.scss */
 .mobile-news-item {
   position: relative;
   margin-bottom: 25px;
   background: #333333;
-  padding: 15px 15px 15px 60px; }
+  padding: 15px 15px 0px 60px; }
 
-/* line 12, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mobile-news.scss */
+/* line 14, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_mobile-news.scss */
 .mobile-news-pic {
   border-radius: 50%;
   position: absolute;
@@ -7226,6 +7450,68 @@ ul {
   display: block;
   padding: 3px 0; }
 
+/* line 15, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+.bullet-list.bullet-list-dark > li > a:after {
+  background: #787878; }
+/* line 21, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+.bullet-list > li {
+  position: relative;
+  display: inline-block;
+  margin-right: 4px;
+  color: #ffffff; }
+  /* line 27, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+  .bullet-list > li > a:after {
+    content: '';
+    background: #ffffff;
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 8px; }
+  /* line 38, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+  .bullet-list > li:last-child {
+    margin-right: 0; }
+    /* line 41, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+    .bullet-list > li:last-child a:after {
+      content: none; }
+
+/* line 48, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+.list-with-line {
+  display: block;
+  text-align: right;
+  position: relative; }
+  /* line 52, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+  .list-with-line:before {
+    content: '';
+    height: 1px;
+    background: #E0E0E0;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    margin-top: -0.5px;
+    left: 0;
+    z-index: 1; }
+  /* line 63, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+  .list-with-line li {
+    padding: 0 2px;
+    margin-right: 0;
+    background: #ffffff;
+    z-index: 100;
+    position: relative; }
+    /* line 70, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+    .list-with-line li > a:after {
+      margin-right: 0; }
+
+/* line 77, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+.form-add-list {
+  padding: 6px 12px;
+  background: #f8f8f8;
+  border: 1px solid #E0E0E0; }
+  /* line 81, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_list.scss */
+  .form-add-list > li {
+    color: #444444; }
+
 /* DROPDOWN */
 /* line 2, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_dropdown.scss */
 .dropdown-menu {
@@ -7240,60 +7526,674 @@ ul {
 /* line 2, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
 .nav {
   margin-top: -2px; }
-  /* line 6, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
-  .nav > li.open a {
-    background: transparent; }
-    /* line 8, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
-    .nav > li.open a:hover, .nav > li.open a:focus {
-      background: transparent;
-      color: #cc7a00; }
-  /* line 14, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
-  .nav > li > a {
-    padding-top: 5px;
-    padding-bottom: 5px; }
-    /* line 17, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
-    .nav > li > a.profile-image {
-      padding-top: 0;
-      padding-bottom: 0; }
-      @media only screen and (max-width: 767px) {
-        .nav > li > a.profile-image {
-          padding-top: 15px;
-          padding-bottom: 15px; } }
-    /* line 25, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
-    .nav > li > a:hover, .nav > li > a:focus {
-      background: transparent;
-      color: #cc7a00; }
-    /* line 29, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
-    .nav > li > a > img {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      margin-top: -4px;
-      vertical-align: text-bottom; }
+  @media only screen and (max-width: 767px) {
+    .nav {
+      margin-top: 10px; } }
+  /* line 7, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+  .nav > li {
+    margin-right: 30px; }
+    @media only screen and (max-width: 1199px) {
+      .nav > li {
+        margin-right: 20px; } }
+    @media only screen and (max-width: 991px) {
+      .nav > li {
+        margin-right: 5px; } }
     @media only screen and (max-width: 767px) {
-      .nav > li > a {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 14px; } }
+      .nav > li {
+        margin-right: 0; } }
+    /* line 18, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+    .nav > li:last-child {
+      margin-right: 0; }
+    /* line 21, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+    .nav > li.profile {
+      bottom: -6px; }
+      @media only screen and (max-width: 1199px) {
+        .nav > li.profile {
+          bottom: -2px; } }
+      @media only screen and (max-width: 767px) {
+        .nav > li.profile {
+          bottom: 0; } }
+      /* line 29, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+      .nav > li.profile a {
+        padding-top: 0;
+        padding-bottom: 0; }
+        /* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+        .nav > li.profile a:hover, .nav > li.profile a:focus {
+          background: transparent; }
+        @media only screen and (max-width: 767px) {
+          .nav > li.profile a {
+            padding-top: 15px;
+            padding-bottom: 15px; } }
+        /* line 39, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+        .nav > li.profile a > img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-top: -4px;
+          vertical-align: text-bottom; }
+          @media only screen and (max-width: 1199px) {
+            .nav > li.profile a > img {
+              width: 50px;
+              height: 50px; } }
+    /* line 53, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+    .nav > li.open a {
+      background: transparent; }
+      /* line 55, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+      .nav > li.open a:hover, .nav > li.open a:focus {
+        background: transparent;
+        color: #FF9900; }
+    /* line 61, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+    .nav > li > a {
+      text-transform: uppercase;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 3px;
+      font-size: 12px; }
+      /* line 67, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+      .nav > li > a:hover, .nav > li > a:focus {
+        background: #343434;
+        color: #FF9900; }
+      @media only screen and (max-width: 991px) {
+        .nav > li > a {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 11px; } }
+      @media only screen and (max-width: 767px) {
+        .nav > li > a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 12px; } }
 
-/* line 44, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+/* line 84, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
 .navbar-collapse {
   box-shadow: none;
   border: none; }
 
-/* line 48, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+/* line 88, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
 .navbar-toggle {
   margin: 0;
   padding-top: 4px; }
-  /* line 51, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
+  /* line 91, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_nav.scss */
   .navbar-toggle > span {
     background: #ffffff; }
+
+/* MODAL */
+/* line 3, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_modal.scss */
+.modal .close {
+  border-radius: 50%;
+  border: 1px solid #767676;
+  width: 24px;
+  height: 24px;
+  opacity: 1; }
+  /* line 9, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_modal.scss */
+  .modal .close span {
+    color: #767676;
+    font-size: 18px;
+    margin-top: -3px;
+    display: block; }
+/* line 16, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_modal.scss */
+.modal .media-object {
+  width: 60px;
+  height: 60px; }
+
+/* line 21, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_modal.scss */
+.modal-content {
+  border-radius: 0; }
+
+/* line 24, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_modal.scss */
+.modal-header {
+  border: none; }
+
+/* line 28, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_modal.scss */
+.modal-body.no-padding-top {
+  padding-top: 0; }
+
+/* DATEPICKER */
+/*!
+ * Datepicker for Bootstrap v1.4.1 (https://github.com/eternicode/bootstrap-datepicker)
+ *
+ * Copyright 2012 Stefan Petre
+ * Improvements by Andrew Rowls
+ * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+ */
+/* line 9, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker {
+  padding: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  direction: ltr; }
+
+/* line 16, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-inline {
+  width: 220px; }
+
+/* line 19, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker.datepicker-rtl {
+  direction: rtl; }
+
+/* line 22, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker.datepicker-rtl table tr td span {
+  float: right; }
+
+/* line 25, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown {
+  top: 0;
+  left: 0; }
+
+/* line 29, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown:before {
+  content: '';
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-top: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  position: absolute; }
+
+/* line 39, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown:after {
+  content: '';
+  display: inline-block;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-top: 0;
+  position: absolute; }
+
+/* line 48, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: 6px; }
+
+/* line 51, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-left:after {
+  left: 7px; }
+
+/* line 54, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-right:before {
+  right: 6px; }
+
+/* line 57, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-right:after {
+  right: 7px; }
+
+/* line 60, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-top:before {
+  top: -7px; }
+
+/* line 63, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-top:after {
+  top: -6px; }
+
+/* line 66, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-bottom:before {
+  bottom: -7px;
+  border-bottom: 0;
+  border-top: 7px solid #999; }
+
+/* line 71, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-bottom:after {
+  bottom: -6px;
+  border-bottom: 0;
+  border-top: 6px solid #ffffff; }
+
+/* line 76, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker > div {
+  display: none; }
+
+/* line 81, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker.days .datepicker-days, .datepicker.months .datepicker-months, .datepicker.years .datepicker-years {
+  display: block; }
+
+/* line 84, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table {
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 94, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker td, .datepicker th {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none; }
+
+/* line 104, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.table-striped .datepicker table tr td, .table-striped .datepicker table tr th {
+  background-color: transparent; }
+
+/* line 108, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+  background: #eeeeee;
+  cursor: pointer; }
+
+/* line 113, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.old, .datepicker table tr td.new {
+  color: #999999; }
+
+/* line 117, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+  background: none;
+  color: #999999;
+  cursor: default; }
+
+/* line 125, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+  background-color: #fde19a;
+  background-image: -moz-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: -ms-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdd49a), to(#fdf59a));
+  background-image: -webkit-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: -o-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: linear-gradient(top, #fdd49a, #fdf59a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdd49a', endColorstr='#fdf59a', GradientType=0);
+  border-color: #fdf59a #fdf59a #fbed50;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #000; }
+
+/* line 159, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.today:hover, .datepicker table tr td.today:hover:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active, .datepicker table tr td.today.disabled, .datepicker table tr td.today:hover.disabled, .datepicker table tr td.today.disabled.disabled, .datepicker table tr td.today.disabled:hover.disabled, .datepicker table tr td.today[disabled], .datepicker table tr td.today:hover[disabled], .datepicker table tr td.today.disabled[disabled], .datepicker table tr td.today.disabled:hover[disabled] {
+  background-color: #fdf59a; }
+
+/* line 169, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.today:active, .datepicker table tr td.today:hover:active, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled:hover:active, .datepicker table tr td.today.active, .datepicker table tr td.today:hover.active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today.disabled:hover.active {
+  background-color: #fbf069 \9; }
+
+/* line 172, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.today:hover:hover {
+  color: #000; }
+
+/* line 175, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.today.active:hover {
+  color: #fff; }
+
+/* line 181, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.range, .datepicker table tr td.range:hover, .datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:hover {
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+/* line 190, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.range.today, .datepicker table tr td.range.today:hover, .datepicker table tr td.range.today.disabled, .datepicker table tr td.range.today.disabled:hover {
+  background-color: #f3d17a;
+  background-image: -moz-linear-gradient(top, #f3c17a, #f3e97a);
+  background-image: -ms-linear-gradient(top, #f3c17a, #f3e97a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3c17a), to(#f3e97a));
+  background-image: -webkit-linear-gradient(top, #f3c17a, #f3e97a);
+  background-image: -o-linear-gradient(top, #f3c17a, #f3e97a);
+  background-image: linear-gradient(top, #f3c17a, #f3e97a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c17a', endColorstr='#f3e97a', GradientType=0);
+  border-color: #f3e97a #f3e97a #edde34;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+/* line 226, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.range.today:hover, .datepicker table tr td.range.today:hover:hover, .datepicker table tr td.range.today.disabled:hover, .datepicker table tr td.range.today.disabled:hover:hover, .datepicker table tr td.range.today:active, .datepicker table tr td.range.today:hover:active, .datepicker table tr td.range.today.disabled:active, .datepicker table tr td.range.today.disabled:hover:active, .datepicker table tr td.range.today.active, .datepicker table tr td.range.today:hover.active, .datepicker table tr td.range.today.disabled.active, .datepicker table tr td.range.today.disabled:hover.active, .datepicker table tr td.range.today.disabled, .datepicker table tr td.range.today:hover.disabled, .datepicker table tr td.range.today.disabled.disabled, .datepicker table tr td.range.today.disabled:hover.disabled, .datepicker table tr td.range.today[disabled], .datepicker table tr td.range.today:hover[disabled], .datepicker table tr td.range.today.disabled[disabled], .datepicker table tr td.range.today.disabled:hover[disabled] {
+  background-color: #f3e97a; }
+
+/* line 236, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.range.today:active, .datepicker table tr td.range.today:hover:active, .datepicker table tr td.range.today.disabled:active, .datepicker table tr td.range.today.disabled:hover:active, .datepicker table tr td.range.today.active, .datepicker table tr td.range.today:hover.active, .datepicker table tr td.range.today.disabled.active, .datepicker table tr td.range.today.disabled:hover.active {
+  background-color: #efe24b \9; }
+
+/* line 242, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.selected, .datepicker table tr td.selected:hover, .datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover {
+  background-color: #9e9e9e;
+  background-image: -moz-linear-gradient(top, #b3b3b3, #808080);
+  background-image: -ms-linear-gradient(top, #b3b3b3, #808080);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(#808080));
+  background-image: -webkit-linear-gradient(top, #b3b3b3, #808080);
+  background-image: -o-linear-gradient(top, #b3b3b3, #808080);
+  background-image: linear-gradient(top, #b3b3b3, #808080);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3b3b3', endColorstr='#808080', GradientType=0);
+  border-color: #808080 #808080 #595959;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+/* line 277, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.selected:hover, .datepicker table tr td.selected:hover:hover, .datepicker table tr td.selected.disabled:hover, .datepicker table tr td.selected.disabled:hover:hover, .datepicker table tr td.selected:active, .datepicker table tr td.selected:hover:active, .datepicker table tr td.selected.disabled:active, .datepicker table tr td.selected.disabled:hover:active, .datepicker table tr td.selected.active, .datepicker table tr td.selected:hover.active, .datepicker table tr td.selected.disabled.active, .datepicker table tr td.selected.disabled:hover.active, .datepicker table tr td.selected.disabled, .datepicker table tr td.selected:hover.disabled, .datepicker table tr td.selected.disabled.disabled, .datepicker table tr td.selected.disabled:hover.disabled, .datepicker table tr td.selected[disabled], .datepicker table tr td.selected:hover[disabled], .datepicker table tr td.selected.disabled[disabled], .datepicker table tr td.selected.disabled:hover[disabled] {
+  background-color: #808080; }
+
+/* line 287, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.selected:active, .datepicker table tr td.selected:hover:active, .datepicker table tr td.selected.disabled:active, .datepicker table tr td.selected.disabled:hover:active, .datepicker table tr td.selected.active, .datepicker table tr td.selected:hover.active, .datepicker table tr td.selected.disabled.active, .datepicker table tr td.selected.disabled:hover.active {
+  background-color: #666666 \9; }
+
+/* line 293, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(top, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+/* line 328, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active[disabled], .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active.disabled:hover[disabled] {
+  background-color: #0044cc; }
+
+/* line 338, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active {
+  background-color: #003399 \9; }
+
+/* line 341, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+/* line 353, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span:hover {
+  background: #eeeeee; }
+
+/* line 357, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span.disabled, .datepicker table tr td span.disabled:hover {
+  background: none;
+  color: #999999;
+  cursor: default; }
+
+/* line 365, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(top, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+/* line 400, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active:hover.disabled, .datepicker table tr td span.active.disabled.disabled, .datepicker table tr td span.active.disabled:hover.disabled, .datepicker table tr td span.active[disabled], .datepicker table tr td span.active:hover[disabled], .datepicker table tr td span.active.disabled[disabled], .datepicker table tr td span.active.disabled:hover[disabled] {
+  background-color: #0044cc; }
+
+/* line 410, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active {
+  background-color: #003399 \9; }
+
+/* line 414, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker table tr td span.old, .datepicker table tr td span.new {
+  color: #999999; }
+
+/* line 417, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker .datepicker-switch {
+  width: 145px; }
+
+/* line 421, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker thead tr:first-child th, .datepicker tfoot tr th {
+  cursor: pointer; }
+
+/* line 425, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
+  background: #eeeeee; }
+
+/* line 428, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker .cw {
+  font-size: 10px;
+  width: 12px;
+  padding: 0 2px 0 5px;
+  vertical-align: middle; }
+
+/* line 434, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.datepicker thead tr:first-child .cw {
+  cursor: default;
+  background-color: transparent; }
+
+/* line 439, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.input-append.date .add-on, .input-prepend.date .add-on {
+  cursor: pointer; }
+
+/* line 443, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+  margin-top: 3px; }
+
+/* line 446, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.input-daterange input {
+  text-align: center; }
+
+/* line 449, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.input-daterange .add-on {
+  display: inline-block;
+  width: auto;
+  min-width: 16px;
+  height: 18px;
+  padding: 4px 5px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  vertical-align: middle;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  margin-left: -5px;
+  margin-right: -5px; }
+
+/* line 467, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+.dropdown-menu.datepicker-dropdown, .dropdown-menu.bootstrap-timepicker-widget {
+  background: #ffffff; }
+
+/* line 472, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+#datepicker .input-group-addon {
+  border-color: #E0E0E0; }
+/* line 475, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_datepicker.scss */
+#datepicker .form-control, #datepicker .bootstrap-timepicker-hour, #datepicker .bootstrap-timepicker-minute, #datepicker .bootstrap-timepicker-meridian {
+  padding-left: 5px;
+  text-align: left;
+  padding-right: 5px; }
+
+/*!
+ * Timepicker Component for Twitter Bootstrap
+ *
+ * Copyright 2013 Joris de Wit
+ *
+ * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+/* line 11, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker {
+  position: relative; }
+  /* line 16, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu {
+    left: auto;
+    right: 0; }
+    /* line 20, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:before {
+      left: auto;
+      right: 12px; }
+    /* line 24, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:after {
+      left: auto;
+      right: 13px; }
+  /* line 32, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker .input-group-addon {
+    cursor: pointer; }
+    /* line 34, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker .input-group-addon i {
+      display: inline-block;
+      width: 16px;
+      height: 16px; }
+
+/* line 42, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.dropdown-menu {
+  padding: 4px; }
+  /* line 44, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker-widget.dropdown-menu.open {
+    display: inline-block; }
+  /* line 47, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker-widget.dropdown-menu:before {
+    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute; }
+  /* line 55, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker-widget.dropdown-menu:after {
+    border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute; }
+/* line 65, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-left:before {
+  left: 6px; }
+/* line 68, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-left:after {
+  left: 7px; }
+/* line 73, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-right:before {
+  right: 6px; }
+/* line 76, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-right:after {
+  right: 7px; }
+/* line 81, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-top:before {
+  top: -7px; }
+/* line 84, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-top:after {
+  top: -6px; }
+/* line 89, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-bottom:before {
+  bottom: -7px;
+  border-bottom: 0;
+  border-top: 7px solid #999; }
+/* line 94, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget.timepicker-orient-bottom:after {
+  bottom: -6px;
+  border-bottom: 0;
+  border-top: 6px solid #ffffff; }
+/* line 100, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget a.btn, .bootstrap-timepicker-widget input {
+  border-radius: 4px; }
+/* line 104, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget table {
+  width: 100%;
+  margin: 0; }
+  /* line 108, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker-widget table td {
+    text-align: center;
+    height: 30px;
+    margin: 0;
+    padding: 2px; }
+    /* line 114, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker-widget table td:not(.separator) {
+      min-width: 30px; }
+    /* line 118, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker-widget table td span {
+      width: 100%; }
+    /* line 121, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker-widget table td a {
+      border: 1px transparent solid;
+      width: 100%;
+      display: inline-block;
+      margin: 0;
+      padding: 8px 0;
+      outline: 0;
+      color: #333; }
+      /* line 130, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+      .bootstrap-timepicker-widget table td a:hover {
+        text-decoration: none;
+        background-color: #eee;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        border-color: #ddd; }
+      /* line 139, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+      .bootstrap-timepicker-widget table td a i {
+        margin-top: 2px;
+        font-size: 18px; }
+    /* line 144, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker-widget table td input {
+      width: 25px;
+      margin: 0;
+      text-align: center; }
+
+/* line 153, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget .modal-content {
+  padding: 4px; }
+
+/* line 157, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-widget .glyphicon {
+  font-family: 'fontello'; }
+  /* line 159, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker-widget .glyphicon:before {
+    font-family: 'fontello'; }
+
+/* line 176, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.timepicker .input-group-addon {
+  border-radius: 0;
+  border-color: #E0E0E0; }
+/* line 180, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.timepicker .form-control, .timepicker .bootstrap-timepicker-hour, .timepicker .bootstrap-timepicker-minute, .timepicker .bootstrap-timepicker-meridian {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/* line 185, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+.bootstrap-timepicker-hour, .bootstrap-timepicker-minute, .bootstrap-timepicker-meridian {
+  padding: 0;
+  width: 41px !important; }
+
+@media (min-width: 767px) {
+  /* line 192, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker-widget.modal {
+    width: 200px;
+    margin-left: -100px; }
+ }
+
+@media (max-width: 767px) {
+  /* line 199, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+  .bootstrap-timepicker {
+    width: 100%; }
+    /* line 202, /Users/Nagalsky/Dropbox/sale/src/sass/_components/_timepicker.scss */
+    .bootstrap-timepicker .dropdown-menu {
+      width: 100%; }
+ }
 
 /* HEADER */
 /* line 3, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
 header {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   background: url(../images/bg/header-bg.jpg) no-repeat top center/cover;
   position: relative; }
   /* line 15, /Users/Nagalsky/Dropbox/sale/src/vendors/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/clearfix */
@@ -7307,18 +8207,31 @@ header {
     header {
       background: #000000;
       padding: 15px 0; } }
+  /* line 13, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
+  header.header-light {
+    padding: 15px 0;
+    background: #000000; }
 
-/* line 14, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
+/* line 18, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
 #logo {
   display: block;
   float: left;
   width: 120px; }
-  /* line 18, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
+  /* line 22, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
   #logo img {
     width: 120px; }
   @media only screen and (max-width: 767px) {
     #logo {
       margin-top: 2px; } }
+
+/* line 29, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_header.scss */
+.back-to {
+  float: left;
+  margin: 2px 15px 0 0;
+  font-size: 12px; }
+  @media only screen and (max-width: 767px) {
+    .back-to {
+      margin-top: 4px; } }
 
 /* FOOTER */
 /* line 3, /Users/Nagalsky/Dropbox/sale/src/sass/_partials/_footer.scss */
@@ -7333,3 +8246,14 @@ footer {
   padding: 0 15px 20px 15px; }
 
 /* STYLES */
+/* line 3, /Users/Nagalsky/Dropbox/sale/src/sass/_styles.scss */
+.signup-bg-holder {
+  background: url(../images/bg/login-bg.jpg) no-repeat center center/cover;
+  filter: blur(45px);
+  -webkit-filter: blur(45px);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1; }

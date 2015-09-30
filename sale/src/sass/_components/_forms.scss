@@ -5,12 +5,19 @@
 	box-shadow: none;
 	border-color: $color-alto;
 	background: $color-mercury;
+	resize: none;
 	&:focus {
 		box-shadow: none;
+	}
+	&.form-control-italic {
+		@include custom-placeholder($color: $placeholder-color, $font-size: $placeholder-font-size, $line-height: $placeholder-line-height, $font-style: $placeholder-italic);
 	}
 }
 .form-group {
 	&:last-child {
+		margin-bottom: 0;
+	}
+	&.no-margin {
 		margin-bottom: 0;
 	}
 }
@@ -23,4 +30,27 @@
 	.button {
 		margin-top: 9px;
 	}
+}
+legend {
+	border: none;
+	color: $color-tundora-boulder;
+	font-family: $font-bold;
+	line-height: 28px;
+}
+label {
+	color: $color-tundora-boulder;
+	font-family: $font-bold;
+}
+fieldset {
+	margin-bottom: 25px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*Login form*/
+.form-login {
+	padding: 20px;
+	box-shadow: 0px 0px 4px 1px rgba($color-black, .4);
+	background: $color-white;
 }
