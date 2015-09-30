@@ -10,7 +10,7 @@
 		box-shadow: none;
 	}
 	&.form-control-italic {
-		@include custom-placeholder($color: $placeholder-color, $font-size: $placeholder-font-size, $line-height: $placeholder-line-height, $font-style: $placeholder-italic);
+		@include custom-placeholder($color: $placeholder-color, $font-style: $placeholder-italic);
 	}
 }
 .form-group {
@@ -27,9 +27,21 @@
 	.form-control {
 		height: 60px;
 	}
-	.button {
-		margin-top: 9px;
+	textarea {
+		min-height: 150px;
 	}
+	.form-add-list {
+		margin-top: -3px;
+	}
+}
+.close-form {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 24px;
+}
+.form-hidden-item {
+	display: none;
 }
 legend {
 	border: none;
