@@ -64,7 +64,7 @@
 			padding-bottom: 5px;
 			border-radius: 3px;
 			font-size: 12px;
-			&:hover, &:focus {
+			&:hover, &:focus, &.active {
 				background: $color-mine-shaft-boulder;
 				color: $link-color;
 			}
