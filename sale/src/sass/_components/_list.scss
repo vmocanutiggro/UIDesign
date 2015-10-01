@@ -23,6 +23,9 @@
 		display: inline-block;
 		margin-right: 4px;
 		color: $color-white;
+		&.color-black {
+			color: $color-black;
+		}
 		@include respond-to(mobile) {
 			margin-right: 1px;
 		}
@@ -85,3 +88,17 @@
 		color: $color-tundora-boulder;
 	}
 }
+.contact-list {
+	>li {
+		>a {
+			font-size: 18px;
+			padding: 3px 0;
+			display: inline-block;
+			>i {
+				color: $color-black;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+

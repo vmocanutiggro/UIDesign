@@ -30,6 +30,12 @@ $(document).ready(function(){
 		$(this).closest('.content-form').find('.form-hidden-item').fadeOut(1);
 		$(this).closest('.content-form').find('.middle').removeClass('bottom');
 	});
+
+	//Lightbox initial
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
     
 
 

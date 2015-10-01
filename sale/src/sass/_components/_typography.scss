@@ -131,6 +131,9 @@ p {
 	&:last-child {
 		margin-bottom: 0;
 	}
+	&.margin-bigger {
+		margin-bottom: 20px;
+	}
 }
 
 .font-size-mobile {

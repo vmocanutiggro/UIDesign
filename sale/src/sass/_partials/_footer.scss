@@ -7,9 +7,34 @@ footer {
 	// background-image: url(../images/bg/footer-bg.png);
 	// background-position: top center;
 	// background-repeat: no-repeat;
+	@include respond-to(mobile) {
+		background: $color-black;
+		padding-top: 20px;
+	}
+	&.footer-big {
+		background-size: cover;
+		padding-top: 80px;
+		@include respond-to(mobile) {
+			background: $color-black;
+			padding-top: 20px;
+		}
+	}
 }
 .footer-inner {
 	background-color: $color-black;
 	margin: 0 -15px;
 	padding: 0 15px 20px 15px;
+}
+.footer-item-holder {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid $color-dusty-gray;
+	p {
+		color: $color-white;
+	}
+}
+.footer-title {
+	color: $color-orange-peel;
+	margin-bottom: 5px;
+	line-height: 15px;
 }

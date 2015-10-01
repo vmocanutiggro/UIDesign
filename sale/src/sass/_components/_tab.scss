@@ -1,0 +1,35 @@
+/* TAB */
+.nav-tabs {
+	border: none;
+	>li {
+		float: none;
+		display: inline-block;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			>a {
+				border: none;
+				background: $color-mine-shaft-boulder;
+				color: $color-white;
+				&:hover, &:focus {
+					border: none;
+					background: $color-mine-shaft-boulder;
+					color: $color-white;
+				}
+			}
+		}
+		>a {
+			border: none;
+			padding: 10px;
+			&:hover {
+				color: $color-white;
+			}
+		}
+	}
+}
+
+.tab-content {
+	margin-top: 25px;
+}
