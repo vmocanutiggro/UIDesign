@@ -7117,8 +7117,8 @@ hr {
 /* line 40, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .close-form {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  bottom: 29px;
+  right: 25px;
   font-size: 24px; }
 
 /* line 46, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
@@ -8501,6 +8501,12 @@ header {
 /* line 64, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
 .header-author-holder .media-body {
   padding-top: 10px; }
+/* line 67, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
+.header-author-holder .button-submit {
+  margin-top: 9px; }
+  @media only screen and (max-width: 767px) {
+    .header-author-holder .button-submit {
+      margin-top: 0; } }
 
 /* FOOTER */
 /* line 3, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
