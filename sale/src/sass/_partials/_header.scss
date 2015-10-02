@@ -64,4 +64,10 @@ header {
 	.media-body {
 		padding-top: 10px;
 	}
+	.button-submit {
+		margin-top: 9px;
+		@include respond-to(mobile) {
+			margin-top: 0;
+		}
+	}
 }
