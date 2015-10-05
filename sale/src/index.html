@@ -73,14 +73,17 @@
 								<div class="form-group">
 									<div class="row row-table">
 										<div class="col-lg-9 col-md-8 col-sm-9 push-down">
-											<input type="text" class="form-control input-trigger form-control-italic" placeholder="Name of the event">
-											<textarea name="" id="" cols="30" rows="10" class="form-control form-control-italic form-hidden-item" placeholder="What have you been doing?"></textarea>
-											<ul class="form-add-list bullet-list bullet-list-dark form-hidden-item">
-						        				<li>Add:</li>
-						        				<li><a href="#"><i class="sale-icon-camera"></i> Photos</a></li>
-						        				<li><a href="#"><i class="sale-icon-location"></i> Place</a></li>
-						        			</ul><!-- form-add-list -->
-						        			<a href="#" class="form-hidden-item close-form"><i class="sale-icon-cancel"></i></a>
+											<fieldset class="relative">
+												<input type="text" class="form-control input-trigger form-control-italic" placeholder="Name of the event">
+												<textarea name="" id="" cols="30" rows="10" class="form-control form-control-italic form-hidden-item" placeholder="What have you been doing?"></textarea>
+												<a href="#" class="form-hidden-item close-form"><i class="sale-icon-cancel"></i></a>
+												<ul class="form-add-list bullet-list bullet-list-dark form-hidden-item">
+							        				<li>Add:</li>
+							        				<li><a href="#" class="upload-images-holder-trigger"><i class="sale-icon-camera"></i> Photos</a></li>
+							        				<li><a href="#"><i class="sale-icon-location"></i> Place</a></li>
+							        			</ul><!-- form-add-list -->
+						        			</fieldset>
+
 										</div><!-- col -->
 
 										<div class="col-lg-3 col-md-4 col-sm-3 middle">
@@ -88,6 +91,18 @@
 										</div><!-- col -->
 									</div><!-- row -->
 								</div><!-- form-group -->
+
+								<div class="form-group">
+			        				<div class="upload-images-holder">
+
+										<h4>Please select image you want to add</h4>
+
+										<p><input type="file" class="file-inputs button button-orange button-small" title="Select image"></p>
+										<p><input type="file" class="file-inputs button button-orange button-small" title="Select image"></p>
+										<p><input type="file" class="file-inputs button button-orange button-small" title="Select image"></p>
+									</div><!-- upload-images-holder -->
+			        			</div><!-- form-group -->
+
 							</form>
 						</div><!-- content-form -->
 						
