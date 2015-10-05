@@ -33,10 +33,12 @@ $(document).ready(function(){
 
 	//Lightbox initial
 	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
+    	event.preventDefault();
+    	$(this).ekkoLightbox();
+	});
     
+    //Input type file
+    $('.file-inputs').bootstrapFileInput();
 
 
 });
