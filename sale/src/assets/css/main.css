@@ -7061,6 +7061,9 @@ hr {
   /* line 44, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_buttons.scss */
   .button.button-large {
     padding: 10px 28px; }
+  /* line 47, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_buttons.scss */
+  .button.button-small {
+    padding: 5px 10px; }
 
 /* FORMS */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
@@ -7115,37 +7118,49 @@ hr {
     margin-top: -3px; }
 
 /* line 40, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+textarea {
+  min-height: 100px; }
+
+/* line 44, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+.control-label.control-label-left {
+  text-align: left; }
+
+/* line 48, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .close-form {
   position: absolute;
   bottom: 29px;
   right: 25px;
   font-size: 24px; }
 
-/* line 46, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-hidden-item {
   display: none; }
 
-/* line 49, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 57, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 legend {
   border: none;
   color: #444444;
   font-family: 'Helvetica-Bold';
   line-height: 28px; }
 
-/* line 55, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 63, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 label {
   color: #444444;
   font-family: 'Helvetica-Bold'; }
 
-/* line 59, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 67, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 fieldset {
   margin-bottom: 25px; }
-  /* line 61, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 69, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   fieldset:last-child {
     margin-bottom: 0; }
 
+@media only screen and (max-width: 767px) {
+  .hidden-word {
+    display: none; } }
+
 /*Login form*/
-/* line 67, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 79, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-login {
   padding: 20px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
@@ -8305,12 +8320,42 @@ hr.hr-negative {
     /* line 23, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
     .nav-tabs > li > a {
       border: none;
-      padding: 10px; }
-      /* line 26, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+      padding: 10px;
+      text-transform: none; }
+      /* line 27, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
       .nav-tabs > li > a:hover {
         color: #ffffff; }
+  @media only screen and (max-width: 767px) {
+    .nav-tabs.nav-tabs-mobile > li {
+      margin-right: 5px; }
+      /* line 36, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+      .nav-tabs.nav-tabs-mobile > li:last-child {
+        margin-right: 0; } }
+  @media only screen and (max-width: 767px) {
+    .nav-tabs.nav-tabs-mobile > li > a {
+      padding: 10px 5px; } }
+  /* line 49, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+  .nav-tabs.nav-tabs-account > li > a {
+    background: #E0E0E0; }
+    /* line 51, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+    .nav-tabs.nav-tabs-account > li > a:hover, .nav-tabs.nav-tabs-account > li > a:focus {
+      color: #000000; }
+  /* line 56, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+  .nav-tabs.nav-tabs-account > li.active > a {
+    border: none;
+    background: #343434;
+    color: #ffffff; }
+    /* line 60, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+    .nav-tabs.nav-tabs-account > li.active > a:hover, .nav-tabs.nav-tabs-account > li.active > a:focus {
+      border: none;
+      background: #343434;
+      color: #ffffff; }
 
-/* line 33, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+/* line 71, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
+.tab-pane label {
+  font-size: 12px; }
+
+/* line 76, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_tab.scss */
 .tab-content {
   margin-top: 25px; }
 
@@ -8403,14 +8448,36 @@ hr.hr-negative {
 
 /* MEDIA */
 /* line 2, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+.media {
+  margin-bottom: 20px; }
+  /* line 4, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  .media:last-child {
+    margin: 0; }
+
+/* line 8, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .media-left {
   padding-right: 30px; }
+  /* line 10, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  .media-left.media-left-small {
+    padding-right: 10px; }
+
+/* line 14, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+.label-holder {
+  width: 100px; }
+
+/* line 17, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+.user-picture-holder {
+  margin-bottom: 20px; }
+  /* line 19, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  .user-picture-holder img {
+    height: 100px;
+    width: 100px; }
 
 @media only screen and (max-width: 767px) {
   .media-object {
     width: 50px;
     height: 50px; } }
-/* line 10, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 29, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .media-object.media-object-small {
   width: 60px;
   height: 60px; }
@@ -8419,7 +8486,7 @@ hr.hr-negative {
       width: 50px;
       height: 50px; } }
 
-/* line 19, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 38, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .alphabet-title {
   text-transform: uppercase;
   font-size: 50px;

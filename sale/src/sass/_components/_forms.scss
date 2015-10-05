@@ -37,6 +37,14 @@
 		margin-top: -3px;
 	}
 }
+textarea {
+	min-height: 100px;
+}
+.control-label {
+	&.control-label-left {
+		text-align: left;
+	}
+}
 .close-form {
 	position: absolute;
 	bottom: 29px;
@@ -62,7 +70,11 @@ fieldset {
 		margin-bottom: 0;
 	}
 }
-
+.hidden-word {
+	@include respond-to(mobile) {
+		display: none;
+	}
+}
 /*Login form*/
 .form-login {
 	padding: 20px;

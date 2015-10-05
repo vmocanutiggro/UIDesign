@@ -23,10 +23,53 @@
 		>a {
 			border: none;
 			padding: 10px;
+			text-transform: none;
 			&:hover {
 				color: $color-white;
 			}
 		}
+	}
+	&.nav-tabs-mobile {
+		>li {
+			@include respond-to(mobile) {
+				margin-right: 5px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			>a {
+				@include respond-to(mobile) {
+					padding: 10px 5px;
+				}
+			}
+		}
+	}
+	&.nav-tabs-account {
+		>li {
+			>a {
+				background: $color-alto;
+				&:hover, &:focus {
+					color: $color-black;
+				}
+			}
+			&.active {
+				>a {
+					border: none;
+					background: $color-mine-shaft-boulder;
+					color: $color-white;
+					&:hover, &:focus {
+						border: none;
+						background: $color-mine-shaft-boulder;
+						color: $color-white;
+					}
+				}
+			}
+		}
+	}
+}
+.tab-pane {
+	label {
+		font-size: 12px;
 	}
 }
 
