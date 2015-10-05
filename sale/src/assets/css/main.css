@@ -7128,12 +7128,12 @@ textarea {
 /* line 48, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .close-form {
   position: absolute;
-  bottom: 29px;
-  right: 25px;
+  bottom: 11px;
+  right: 15px;
   font-size: 24px; }
 
 /* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
-.form-hidden-item {
+.form-hidden-item, .upload-images-holder {
   display: none; }
 
 /* line 57, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */

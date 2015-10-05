@@ -28,6 +28,7 @@ $(document).ready(function(){
     $( ".close-form" ).click(function( event ) {
 		event.preventDefault();
 		$(this).closest('.content-form').find('.form-hidden-item').fadeOut(1);
+		$(this).closest('.content-form').find('.upload-images-holder').fadeOut(1);
 		$(this).closest('.content-form').find('.middle').removeClass('bottom');
 	});
 
@@ -39,6 +40,12 @@ $(document).ready(function(){
     
     //Input type file
     $('.file-inputs').bootstrapFileInput();
+
+    //Upload images hidden holder
+    $( ".upload-images-holder-trigger" ).click(function( event ) {
+		event.preventDefault();
+		$(this).closest('.content-form').find('.upload-images-holder').fadeIn(1);
+	});
 
 
 });

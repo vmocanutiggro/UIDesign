@@ -47,11 +47,11 @@ textarea {
 }
 .close-form {
 	position: absolute;
-	bottom: 29px;
-	right: 25px;
+	bottom: 11px;
+	right: 15px;
 	font-size: 24px;
 }
-.form-hidden-item {
+.form-hidden-item, .upload-images-holder {
 	display: none;
 }
 legend {
