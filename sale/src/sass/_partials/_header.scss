@@ -25,6 +25,9 @@ header {
 			padding-bottom: 10px;
 		}
 	}
+	&.header-black {
+		background: $color-black;
+	}
 }
 #logo {
 	display: block;
@@ -46,8 +49,13 @@ header {
 	}
 }
 .header-author-holder {
+	background-image: url(../images/bg/header-bg-big.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	padding: 15px 15px 50px 15px;
 	@include respond-to(mobile) {
-		margin-top: 10px;
+		margin-top: -2px;
 	}
 	.media {
 		color: $color-white;
