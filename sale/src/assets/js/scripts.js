@@ -30,6 +30,8 @@ $(document).ready(function(){
 		$(this).closest('.content-form').find('.form-hidden-item').fadeOut(1);
 		$(this).closest('.content-form').find('.upload-images-holder').fadeOut(1);
 		$(this).closest('.content-form').find('.middle').removeClass('bottom');
+		$(this).closest('form').find('textarea').fadeOut(1);
+		$(this).fadeOut(1);
 	});
 
 	//Lightbox initial
