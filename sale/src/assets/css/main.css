@@ -8621,18 +8621,19 @@ header {
   /* line 64, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
   .header-author-holder .media-object {
     width: 120px;
-    height: 120px; }
+    height: 120px;
+    border-radius: 50%; }
     @media only screen and (max-width: 767px) {
       .header-author-holder .media-object {
         width: 50px;
         height: 50px; } }
-  /* line 72, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
+  /* line 73, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
   .header-author-holder .media-heading {
     color: #ffffff; }
-  /* line 75, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
+  /* line 76, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
   .header-author-holder .media-body {
     padding-top: 10px; }
-  /* line 78, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
+  /* line 79, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
   .header-author-holder .button-submit {
     margin-top: 9px; }
     @media only screen and (max-width: 767px) {
