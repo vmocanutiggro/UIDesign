@@ -35,6 +35,15 @@ $(document).ready(function(){
 		$(this).fadeOut(1);
 	});
 
+	$( ".form-trigger-btn" ).click(function( event ) {
+		event.preventDefault();
+		$(this).closest('body').find('.content-form').find('textarea').fadeIn(1);
+		$(this).closest('body').find('.content-form').find('.form-add-list').fadeIn(1);
+		$(this).closest('body').find('.content-form').find('.close-form').fadeIn(1);
+	});
+
+
+
 	//Lightbox initial
 	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     	event.preventDefault();
