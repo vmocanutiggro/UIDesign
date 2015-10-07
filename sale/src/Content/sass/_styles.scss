@@ -1,0 +1,13 @@
+/* STYLES */
+
+.signup-bg-holder {
+	background: url(../images/bg/login-bg.jpg) no-repeat center center / cover;
+	filter: blur(45px);
+  	-webkit-filter: blur(45px);
+  	left: 0;
+  	top: 0;
+  	bottom: 0;
+  	position: absolute;
+  	right: 0;
+  	z-index: -1;
+}

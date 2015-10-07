@@ -11,3 +11,62 @@
   	right: 0;
   	z-index: -1;
 }
+
+.add_more_lists_holder .collapsable_item .bordered span {
+	width: 110px;
+}
+.input_holder.with_icon i {
+	z-index: 10;
+}
+.collapsable_item {
+	.collapsing_trigger {
+		i {
+			&:before {
+				@extend .sale-icon-up-open-mini;
+			}
+		}
+		&.collapsed {
+			i {
+				&:before {
+					@extend .sale-icon-down-open-mini;
+				}
+			}
+		}
+	}
+}
+.widget {
+	.widget_title {
+		.collapse_arrow {
+			&:before {
+				@extend .sale-icon-up-open-mini;
+			}
+		}
+		&.collapsed {
+			.collapse_arrow {
+				&:before {
+					@extend .sale-icon-down-open-mini;
+				}
+			}
+		}
+	}
+}
+.sidebar_right {
+	background: transparent;
+	.inner {
+		background: #F5F5F5;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.share_box_holder {
+	.media-body {
+		background: #F5F5F5;
+	}
+}
+.media {
+	.tab-content {
+		margin-top: 0;
+	}
+}
+
+

@@ -13,6 +13,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "0d08dbb1dd648a43bdea81b7e6c9e036",
+      "css": "location-1",
+      "code": 59411,
+      "src": "fontawesome"
+    },
+    {
       "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
       "css": "phone",
       "code": 59409,
@@ -22,6 +28,12 @@
       "uid": "559647a6f430b3aeadbecd67194451dd",
       "css": "menu",
       "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59410,
       "src": "fontawesome"
     },
     {
@@ -61,6 +73,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera-1",
+      "code": 59412,
+      "src": "entypo"
+    },
+    {
       "uid": "8704cd847a47b64265b8bb110c8b4d62",
       "css": "down-open",
       "code": 59401,
@@ -85,6 +103,30 @@
       "src": "entypo"
     },
     {
+      "uid": "f11c9e95ae5eaa84d193e8fa1d38c6f9",
+      "css": "down-open-mini",
+      "code": 59414,
+      "src": "entypo"
+    },
+    {
+      "uid": "592717bd601645d61517d2a584d04127",
+      "css": "left-open-mini",
+      "code": 59415,
+      "src": "entypo"
+    },
+    {
+      "uid": "37f6cfbb4062ed0d01b351ec35c334ff",
+      "css": "right-open-mini",
+      "code": 59416,
+      "src": "entypo"
+    },
+    {
+      "uid": "9e251fb8e9e1c71ab09683468e0479a3",
+      "css": "up-open-mini",
+      "code": 59417,
+      "src": "entypo"
+    },
+    {
       "uid": "aklhk54yg779pgovdsjr9r9w22hej00n",
       "css": "camera",
       "code": 59395,
@@ -94,6 +136,12 @@
       "uid": "rrhco7mfj6ro9yzhe4a1rbln9flw47re",
       "css": "cancel",
       "code": 59393,
+      "src": "modernpics"
+    },
+    {
+      "uid": "wcb87qh0k9smu6zukdhbn5zip98zofkh",
+      "css": "cancel-circle",
+      "code": 59413,
       "src": "modernpics"
     },
     {

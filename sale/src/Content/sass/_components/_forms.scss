@@ -1,0 +1,83 @@
+/* FORMS */
+.form-control {
+	-webkit-appearance:none;
+	border-radius: 0;
+	box-shadow: none;
+	border-color: $color-alto;
+	background: $color-mercury;
+	resize: none;
+	&:focus {
+		box-shadow: none;
+	}
+	&.form-control-italic {
+		@include custom-placeholder($color: $placeholder-color, $font-style: $placeholder-italic);
+	}
+}
+.form-group {
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.no-margin {
+		margin-bottom: 0;
+	}
+}
+
+.content-form {
+	margin-bottom: 20px;
+	.form-control {
+		height: 60px;
+		@include respond-to(mobile) {
+			height: 34px;
+		}
+	}
+	textarea {
+		min-height: 150px;
+	}
+	.form-add-list {
+		margin-top: -3px;
+	}
+}
+textarea {
+	min-height: 100px;
+}
+.control-label {
+	&.control-label-left {
+		text-align: left;
+	}
+}
+.close-form {
+	position: absolute;
+	bottom: 11px;
+	right: 15px;
+	font-size: 24px;
+}
+.form-hidden-item, .upload-images-holder {
+	display: none;
+}
+legend {
+	border: none;
+	color: $color-tundora-boulder;
+	font-family: $font-bold;
+	line-height: 28px;
+}
+label {
+	color: $color-tundora-boulder;
+	font-family: $font-bold;
+}
+fieldset {
+	margin-bottom: 25px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.hidden-word {
+	@include respond-to(mobile) {
+		display: none;
+	}
+}
+/*Login form*/
+.form-login {
+	padding: 20px;
+	box-shadow: 0px 0px 4px 1px rgba($color-black, .4);
+	background: $color-white;
+}

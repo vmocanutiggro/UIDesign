@@ -1,0 +1,2188 @@
+﻿<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths formdata" style=""><head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Yugglr - Activity feed</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:700,400" rel="stylesheet" type="text/css">
+
+	<link href="Content/bootstrap-select.min.css" rel="stylesheet">
+	<link href="Content/bootstrap-datetimepicker.css" rel="stylesheet">
+	<link href="Content/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="Content/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="Content/fancybox/helpers/jquery.fancybox-thumbs.css" rel="stylesheet">
+	<link href="Content/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="Scripts/modernizr-2.8.3.js"></script>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/geocoder.js"></script><style type="text/css">.fancybox-margin{margin-right:0px;}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/stats.js"></script><style type="text/css">@-webkit-keyframes _gm7908 {
+0% { -webkit-transform: translate3d(0px,-500px,0); -webkit-animation-timing-function: ease-in; }
+50% { -webkit-transform: translate3d(0px,0px,0); -webkit-animation-timing-function: ease-out; }
+75% { -webkit-transform: translate3d(0px,-20px,0); -webkit-animation-timing-function: ease-in; }
+100% { -webkit-transform: translate3d(0px,0px,0); -webkit-animation-timing-function: ease-out; }
+}
+</style></head>
+
+<body>
+
+	<div class="container">
+		<header class="section-padding">
+			
+		    <div class="navbar-header">
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		      	</button>
+		      	<a href="#" id="logo"><img src="assets/images/elements/logo.png" alt=""></a>
+		    </div><!-- navbar-header -->
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav navbar-right">
+		      		<li><a href="#">OUR COMMUNITY</a></li>
+		      		<li><a href="#">tools</a></li>
+		      		<li><a href="#">COUNTRIES</a></li>
+			        <li><a href="#">CONTACT</a></li>
+			        <li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> SETTINGS</a>
+			          	<ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+			          	</ul>
+			        </li><!-- dropdown -->
+			        <li class="dropdown profile">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/temp/user1.png" alt=""></a>
+			          	<ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+			          	</ul>
+			        </li><!-- dropdown -->
+		      	</ul>
+		    </div><!-- /.navbar-collapse -->
+
+		</header><!-- header -->
+	</div><!-- container -->
+	
+	<section class="section_typical section_activity">
+		<div class="divider"></div>
+		<div class="container">
+			<div>
+				
+
+<div class="col-xs-12 col-sm-12 col-md-8 subsections_holder_column site_column">
+
+	<div class="subsection_activity_feed">
+
+		<div class="title_row">
+			<h3 class="subsection_title col-lg-3">Activity feed</h3>
+
+			<div class="col-lg-4 col-xs-12" style="text-align: right; margin-bottom: 10px">
+				<select id="feed-filter" class="selectpicker" title="Filter" style="display: none;">
+					<option value="All">Show everything</option>
+					<option value="Events">Show all events</option>
+					<option value="Posts">Show all posts</option>
+					<option value="DocumentPosts">Show posts with documents</option>
+					<option value="PhotoPosts">Show posts with photos</option>
+					<option value="LinkPosts">Show posts with links</option>
+					<option value="VideoPosts">Show posts with video</option>
+				</select>
+			</div>
+
+			<div class="col-lg-5 col-xs-12" style="text-align: right">
+				<label for="post-target">Post to feed of</label>
+				<select id="post-target" class="selectpicker" title="Target" style="display: none;">
+					<option value="9ffb1073-a4fa-4ea5-9d9b-4c27605fbe3b;user">Me</option>
+						<option value="8a5922cd-a6c7-43aa-b9fc-a3f96f6eef40;group">Sweden </option>
+						<option value="59fb7aff-7d40-473d-83a0-ad778b3537e6;group">Uganda</option>
+						<option value="96e1b6dc-7567-4978-b655-cc7f18c07229;group">Global </option>
+						<option value="3547f142-fea3-4aff-8033-fc7b1cbf25bf;group">Sweden Leaderboard</option>
+				</select>
+			</div>
+		</div><!-- title_row -->
+
+		<div id="alerts"></div>
+
+		<div class="media share_box_holder">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img src="Images/elements/default_userpicture.png" alt=""></a>
+
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="share_box_controls_holder" style="display: block;">
+					<div class="share_box_tabs_switcher_holder">
+						<a class="share_box_tabs_switcher" href="#share_box_tab_whats_new" data-toggle="tab"></a>
+						<a class="share_box_tabs_switcher" href="#share_box_tab_event" data-toggle="tab"><i class="sale-icon-calendar"></i></a>
+						<a class="share_box_tabs_switcher" href="#share_box_tab_location" data-toggle="tab"><i class="sale-icon-location"></i></a>
+						<a class="share_box_tabs_switcher" href="#share_box_tab_photo" data-toggle="tab"><i class="sale-icon-camera-1"></i></a>
+					</div><!-- share_box_tabs_switcher_holder -->
+
+					<div class="textarea_holder input_row">
+						<textarea class="form-control" placeholder="Tell us what's happening." rows="1" name=""></textarea>
+					</div><!-- textarea_holder -->
+				</div><!-- share_box_controls_holder -->
+
+				<div class="tab-content share_box_tabs_holder">
+
+<div id="share_box_tab_whats_new" class="tab-pane fade in">
+	<form role="form" action="" enctype="multipart/form-data" novalidate="novalidate">
+		<div class="input_row">
+			<div class="textarea_holder">
+				<textarea class="form-control elastic_textarea post-title" placeholder="Tell us what's happening." rows="1" data-val-required="You need to enter a message for the post." data-val="true" name="Body" aria-required="true" style="overflow: hidden; word-wrap: break-word; height: 62px;"></textarea>
+				<input type="hidden" name="AttachmentType" value="None">
+				<a href="#" class="btn_close"><i class="sale-icon-cancel-circle"></i></a>
+			</div><!-- textarea_holder -->
+		</div><!-- input_row -->
+
+		<div class="input_row share_attach_holder">
+			<ul class="nav nav-tabs">
+				<li><a href="#attach_link" data-attachment-type="Url" data-toggle="tab" aria-expanded="true">Link</a></li>
+				<li><a href="#attach_document" data-attachment-type="Document" data-toggle="tab" aria-expanded="true">Document</a></li>
+				<li><a href="#attach_picture" data-attachment-type="Image" data-toggle="tab" aria-expanded="true">Picture</a></li>
+				<li><a href="#attach_video" data-attachment-type="Video" data-toggle="tab" aria-expanded="true">Video</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane" id="attach_link">
+					<input type="url" class="form-control high" placeholder="http://" data-val="true" data-val-url="asd" name="Url">
+				</div><!-- attach_link -->
+
+				<div class="tab-pane" id="attach_document">
+					<input type="text" placeholder="Enter URL or choose file" class="form-control double_width pull-left">
+					<div class="fileinput fileinput-new custom_input_file pull-left" data-provides="fileinput">
+						<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="Document"></span>
+						
+						<div class="file_name_holder">
+							<span class="you_want_upload hidden"><b>Uploading:</b></span>
+							<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+							<span class="fileinput-filename"></span>
+						</div>
+					</div>
+				</div><!-- attach_document -->
+
+				<div class="tab-pane" id="attach_picture">
+					<input type="text" placeholder="Enter URL or choose file" class="form-control double_width pull-left">
+					<div class="fileinput fileinput-new custom_input_file pull-left" data-provides="fileinput">
+						<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="Image"></span>
+						
+						<div class="file_name_holder">
+							<span class="you_want_upload hidden"><b>Uploading:</b></span>
+							<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+							<span class="fileinput-filename"></span>
+						</div>
+					</div>
+				</div><!-- attach_picture -->
+
+				<div class="tab-pane" id="attach_video">
+					<input type="url" class="form-control high video" placeholder="Please insert link for youtube video" data-val="true" data-val-video="asd" name="VideoUrl">
+				</div><!-- attach_video -->
+			</div><!-- tab-content -->
+
+			<div class="input_holder with_icon location-box">
+				<i class="sale-icon-location-1"></i>
+				<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input class="form-control high tt-hint" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input placeholder="Enter your location..." class="form-control high tt-input" name="Location.Address" id="whats_new_location" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'PT Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-0"></div></span></span>
+			</div>
+
+			<div class="location-wrapper media_data_holder" style="display: none;">
+				<div id="whats_new_map" class="location-map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: -11px; top: -40px; z-index: 0; animation-duration: 500ms; animation-iteration-count: 1; animation-name: _gm7908;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: -11px; top: -40px; z-index: 0;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" usemap="#gmimap0" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"><map name="gmimap0" id="gmimap0"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="" style="cursor: pointer;"></map></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=61.998065,15.012703&amp;z=12&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 0px; height: 0px; position: absolute; left: 5px; top: 5px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;"></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px; width: 12px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="display: none;"></span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);"></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@61.9980648,15.0127029,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 0px; right: 0px;"><div class="gmnoprint" style="display: none; position: absolute;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div></div></div><div controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; display: none; position: absolute; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div class="gm-tilt" style="width: 0px; height: 0px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+				<input type="hidden" name="Location.Longitude" class="location-longitude">
+				<input type="hidden" name="Location.Latitude" class="location-latitude">
+			</div>
+		</div><!-- share_attach_holder -->
+		
+
+		<div class="input_row">
+			<button class="button button-orange button-circle button-small">Post</button>
+			<button class="button button-black button-circle button-small return_to_share_box">Cancel</button>
+		</div>
+	</form>
+</div><!-- add_box_tab_event -->
+
+
+
+<div id="share_box_tab_event" class="tab-pane fade">
+	<form role="form" action="" enctype="multipart/form-data" class="event-form" novalidate="novalidate">
+		<div class="input_row">
+			<div class="textarea_holder">
+				<input class="form-control event-title" type="text" placeholder="Event title..." data-val-required="You need to enter a title for the event." data-val="true" name="Title">
+				<a href="#" class="btn_close"><i class="sale-icon-cancel-circle"></i></a>
+			</div><!-- textarea_holder -->
+		</div><!-- input_row -->
+
+		<div class="form-inline input_row">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" id="IsAllDayEvent" value="true" name="IsAllDayEvent"> All day
+				</label>
+			</div>
+		</div><!-- input_row -->
+
+		<div class="row input_row">
+			<div class="col-md-6">
+				<label for="Start">From:</label>
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="text" class="form-control event_date" id="Start" name="Start">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<label for="End">To:</label>
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="text" class="form-control event_date" id="End" name="End">
+					</div>
+				</div>
+			</div>
+		</div><!-- input_row -->
+
+		<div class="input_row">
+			<label for="TimeZoneID">Time zone:</label>
+			<div class="input_holder">
+
+				<select class="form-control" id="TimeZoneID" name="TimeZoneID">
+							<option value="Dateline Standard Time">(UTC-12:00) Dateline Standard Time</option>
+							<option value="UTC-11">(UTC-11:00) UTC-11</option>
+							<option value="Hawaiian Standard Time">(UTC-10:00) Hawaiian Standard Time</option>
+							<option value="Alaskan Standard Time">(UTC-09:00) Alaskan Standard Time</option>
+							<option value="Pacific Standard Time (Mexico)">(UTC-08:00) Pacific Standard Time (Mexico)</option>
+							<option value="Pacific Standard Time">(UTC-08:00) Pacific Standard Time</option>
+							<option value="US Mountain Standard Time">(UTC-07:00) US Mountain Standard Time</option>
+							<option value="Mountain Standard Time (Mexico)">(UTC-07:00) Mountain Standard Time (Mexico)</option>
+							<option value="Mountain Standard Time">(UTC-07:00) Mountain Standard Time</option>
+							<option value="Central America Standard Time">(UTC-06:00) Central America Standard Time</option>
+							<option value="Central Standard Time">(UTC-06:00) Central Standard Time</option>
+							<option value="Central Standard Time (Mexico)">(UTC-06:00) Central Standard Time (Mexico)</option>
+							<option value="Canada Central Standard Time">(UTC-06:00) Canada Central Standard Time</option>
+							<option value="SA Pacific Standard Time">(UTC-05:00) SA Pacific Standard Time</option>
+							<option value="Eastern Standard Time">(UTC-05:00) Eastern Standard Time</option>
+							<option value="US Eastern Standard Time">(UTC-05:00) US Eastern Standard Time</option>
+							<option value="Venezuela Standard Time">(UTC-04:30) Venezuela Standard Time</option>
+							<option value="Paraguay Standard Time">(UTC-04:00) Paraguay Standard Time</option>
+							<option value="Atlantic Standard Time">(UTC-04:00) Atlantic Standard Time</option>
+							<option value="Central Brazilian Standard Time">(UTC-04:00) Central Brazilian Standard Time</option>
+							<option value="SA Western Standard Time">(UTC-04:00) SA Western Standard Time</option>
+							<option value="Pacific SA Standard Time">(UTC-04:00) Pacific SA Standard Time</option>
+							<option value="Newfoundland Standard Time">(UTC-03:30) Newfoundland Standard Time</option>
+							<option value="E. South America Standard Time">(UTC-03:00) E. South America Standard Time</option>
+							<option value="Argentina Standard Time">(UTC-03:00) Argentina Standard Time</option>
+							<option value="SA Eastern Standard Time">(UTC-03:00) SA Eastern Standard Time</option>
+							<option value="Greenland Standard Time">(UTC-03:00) Greenland Standard Time</option>
+							<option value="Montevideo Standard Time">(UTC-03:00) Montevideo Standard Time</option>
+							<option value="Bahia Standard Time">(UTC-03:00) Bahia Standard Time</option>
+							<option value="UTC-02">(UTC-02:00) UTC-02</option>
+							<option value="Mid-Atlantic Standard Time">(UTC-02:00) Mid-Atlantic Standard Time</option>
+							<option value="Azores Standard Time">(UTC-01:00) Azores Standard Time</option>
+							<option value="Cape Verde Standard Time">(UTC-01:00) Cabo Verde Standard Time</option>
+							<option value="Morocco Standard Time">(UTC±00:00) Morocco Standard Time</option>
+							<option value="UTC" selected="selected">(UTC±00:00) Coordinated Universal Time</option>
+							<option value="GMT Standard Time">(UTC±00:00) GMT Standard Time</option>
+							<option value="Greenwich Standard Time">(UTC±00:00) Greenwich Standard Time</option>
+							<option value="W. Europe Standard Time">(UTC+01:00) W. Europe Standard Time</option>
+							<option value="Central Europe Standard Time">(UTC+01:00) Central Europe Standard Time</option>
+							<option value="Romance Standard Time">(UTC+01:00) Romance Standard Time</option>
+							<option value="Central European Standard Time">(UTC+01:00) Central European Standard Time</option>
+							<option value="W. Central Africa Standard Time">(UTC+01:00) W. Central Africa Standard Time</option>
+							<option value="Namibia Standard Time">(UTC+01:00) Namibia Standard Time</option>
+							<option value="Jordan Standard Time">(UTC+02:00) Jordan Standard Time</option>
+							<option value="GTB Standard Time">(UTC+02:00) GTB Standard Time</option>
+							<option value="Middle East Standard Time">(UTC+02:00) Middle East Standard Time</option>
+							<option value="Egypt Standard Time">(UTC+02:00) Egypt Standard Time</option>
+							<option value="Syria Standard Time">(UTC+02:00) Syria Standard Time</option>
+							<option value="E. Europe Standard Time">(UTC+02:00) E. Europe Standard Time</option>
+							<option value="South Africa Standard Time">(UTC+02:00) South Africa Standard Time</option>
+							<option value="FLE Standard Time">(UTC+02:00) FLE Standard Time</option>
+							<option value="Turkey Standard Time">(UTC+02:00) Turkey Standard Time</option>
+							<option value="Israel Standard Time">(UTC+02:00) Jerusalem Standard Time</option>
+							<option value="Kaliningrad Standard Time">(UTC+02:00) Russia TZ 1 Standard Time</option>
+							<option value="Libya Standard Time">(UTC+02:00) Libya Standard Time</option>
+							<option value="Arabic Standard Time">(UTC+03:00) Arabic Standard Time</option>
+							<option value="Arab Standard Time">(UTC+03:00) Arab Standard Time</option>
+							<option value="Belarus Standard Time">(UTC+03:00) Belarus Standard Time</option>
+							<option value="Russian Standard Time">(UTC+03:00) Russia TZ 2 Standard Time</option>
+							<option value="E. Africa Standard Time">(UTC+03:00) E. Africa Standard Time</option>
+							<option value="Iran Standard Time">(UTC+03:30) Iran Standard Time</option>
+							<option value="Arabian Standard Time">(UTC+04:00) Arabian Standard Time</option>
+							<option value="Azerbaijan Standard Time">(UTC+04:00) Azerbaijan Standard Time</option>
+							<option value="Russia Time Zone 3">(UTC+04:00) Russia TZ 3 Standard Time</option>
+							<option value="Mauritius Standard Time">(UTC+04:00) Mauritius Standard Time</option>
+							<option value="Georgian Standard Time">(UTC+04:00) Georgian Standard Time</option>
+							<option value="Caucasus Standard Time">(UTC+04:00) Caucasus Standard Time</option>
+							<option value="Afghanistan Standard Time">(UTC+04:30) Afghanistan Standard Time</option>
+							<option value="West Asia Standard Time">(UTC+05:00) West Asia Standard Time</option>
+							<option value="Ekaterinburg Standard Time">(UTC+05:00) Russia TZ 4 Standard Time</option>
+							<option value="Pakistan Standard Time">(UTC+05:00) Pakistan Standard Time</option>
+							<option value="India Standard Time">(UTC+05:30) India Standard Time</option>
+							<option value="Sri Lanka Standard Time">(UTC+05:30) Sri Lanka Standard Time</option>
+							<option value="Nepal Standard Time">(UTC+05:45) Nepal Standard Time</option>
+							<option value="Central Asia Standard Time">(UTC+06:00) Central Asia Standard Time</option>
+							<option value="Bangladesh Standard Time">(UTC+06:00) Bangladesh Standard Time</option>
+							<option value="N. Central Asia Standard Time">(UTC+06:00) Russia TZ 5 Standard Time</option>
+							<option value="Myanmar Standard Time">(UTC+06:30) Myanmar Standard Time</option>
+							<option value="SE Asia Standard Time">(UTC+07:00) SE Asia Standard Time</option>
+							<option value="North Asia Standard Time">(UTC+07:00) Russia TZ 6 Standard Time</option>
+							<option value="China Standard Time">(UTC+08:00) China Standard Time</option>
+							<option value="North Asia East Standard Time">(UTC+08:00) Russia TZ 7 Standard Time</option>
+							<option value="Singapore Standard Time">(UTC+08:00) Malay Peninsula Standard Time</option>
+							<option value="W. Australia Standard Time">(UTC+08:00) W. Australia Standard Time</option>
+							<option value="Taipei Standard Time">(UTC+08:00) Taipei Standard Time</option>
+							<option value="Ulaanbaatar Standard Time">(UTC+08:00) Ulaanbaatar Standard Time</option>
+							<option value="Tokyo Standard Time">(UTC+09:00) Tokyo Standard Time</option>
+							<option value="Korea Standard Time">(UTC+09:00) Korea Standard Time</option>
+							<option value="Yakutsk Standard Time">(UTC+09:00) Russia TZ 8 Standard Time</option>
+							<option value="Cen. Australia Standard Time">(UTC+09:30) Cen. Australia Standard Time</option>
+							<option value="AUS Central Standard Time">(UTC+09:30) AUS Central Standard Time</option>
+							<option value="E. Australia Standard Time">(UTC+10:00) E. Australia Standard Time</option>
+							<option value="AUS Eastern Standard Time">(UTC+10:00) AUS Eastern Standard Time</option>
+							<option value="West Pacific Standard Time">(UTC+10:00) West Pacific Standard Time</option>
+							<option value="Tasmania Standard Time">(UTC+10:00) Tasmania Standard Time</option>
+							<option value="Magadan Standard Time">(UTC+10:00) Magadan Standard Time</option>
+							<option value="Vladivostok Standard Time">(UTC+10:00) Russia TZ 9 Standard Time</option>
+							<option value="Russia Time Zone 10">(UTC+11:00) Russia TZ 10 Standard Time</option>
+							<option value="Central Pacific Standard Time">(UTC+11:00) Central Pacific Standard Time</option>
+							<option value="Russia Time Zone 11">(UTC+12:00) Russia TZ 11 Standard Time</option>
+							<option value="New Zealand Standard Time">(UTC+12:00) New Zealand Standard Time</option>
+							<option value="UTC+12">(UTC+12:00) UTC+12</option>
+							<option value="Fiji Standard Time">(UTC+12:00) Fiji Standard Time</option>
+							<option value="Kamchatka Standard Time">(UTC+12:00) Kamchatka Standard Time</option>
+							<option value="Tonga Standard Time">(UTC+13:00) Tonga Standard Time</option>
+							<option value="Samoa Standard Time">(UTC+13:00) Samoa Standard Time</option>
+							<option value="Line Islands Standard Time">(UTC+14:00) Line Islands Standard Time</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="input_row">
+			<div class="input_holder with_icon location-box">
+				<i class="sale-icon-location"></i>
+				<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="form-control high tt-hint" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input name="Location.Address" type="text" placeholder="Link this event to a family place" class="form-control high tt-input" id="event_location" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'PT Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-3"></div></span></span>
+			</div><!-- input_holder -->
+
+			<div class="location-wrapper media_data_holder" style="display: none;">
+				<div id="event_map" class="location-map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: -11px; top: -40px; z-index: 0; animation-duration: 500ms; animation-iteration-count: 1; animation-name: _gm7908;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: -11px; top: -40px; z-index: 0;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" usemap="#gmimap3" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"><map name="gmimap3" id="gmimap3"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="" style="cursor: pointer;"></map></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=61.998065,15.012703&amp;z=12&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 0px; height: 0px; position: absolute; left: 5px; top: 5px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;"></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px; width: 12px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="display: none;"></span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);"></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@61.9980648,15.0127029,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 0px; right: 0px;"><div class="gmnoprint" style="display: none; position: absolute;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div></div></div><div controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; display: none; position: absolute; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div class="gm-tilt" style="width: 0px; height: 0px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+				<input type="hidden" name="Location.Longitude" class="location-longitude">
+				<input type="hidden" name="Location.Latitude" class="location-latitude">
+			</div>
+		</div><!-- input_row -->
+
+		<div class="input_row">
+			<div class="input_holder">
+				<textarea name="Description" rows="4" placeholder="Description (Optional)" class="form-control elastic_textarea"></textarea>
+			</div><!-- input_holder -->
+		</div>
+
+		<div class="add_more_lists_holder">
+			<div class="collapsable_item">
+				<h5 class="trigger collapsing_trigger collapsed bordered" data-toggle="collapse" data-target="#collapse_add_participiants" aria-expanded="false"><span>Add participants</span><i class="sale-icon-up-open-mini"></i></h5>
+
+				<div id="collapse_add_participiants" class="add_participiants_holder collapse" aria-expanded="false">
+					<div class="media">
+						<div class="media_left_subholder">
+							<label class="description" for="EventParticipants-UserSearch">Add guest:</label>
+						</div><!-- media_left_subholder -->
+
+						<div class="media-body">
+							<div class="input_row">
+								<div class="input_holder form-inline">
+									<div class="form-group">
+										<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input class="user-search form-control tt-hint" type="text" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input class="user-search form-control tt-input" type="text" id="EventParticipants-UserSearch" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'PT Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-4"></div></span></span>
+									</div>
+								</div><!-- input_holder -->
+							</div><!-- input_row -->
+
+							<ul class="friends_list" data-bind="foreach: InvitedUsers"></ul>
+						</div><!-- media-body -->
+					</div><!-- media -->
+
+					<div class="media">
+						<div class="media_left_subholder">
+							<label class="description" for="EventParticipants-GroupSearch">Add group:</label>
+						</div><!-- media_left_subholder -->
+
+						<div class="media-body">
+							<div class="input_row">
+								<div class="form-inline">
+									<div class="form-group">
+										<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input class="user-search form-control tt-hint" type="text" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input class="user-search form-control tt-input" type="text" id="EventParticipants-GroupSearch" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'PT Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-5"></div><div class="tt-dataset-6"></div></span></span>
+									</div>
+								</div><!-- input_holder -->
+							</div><!-- input_row -->
+
+							<ul class="friends_list" data-bind="foreach: InvitedGroups, visible: (InvitedGroups().length > 0)" style="display: none;"></ul>
+						</div><!-- media-body -->
+					</div><!-- media -->
+					
+				</div><!-- collapse -->
+
+			</div><!-- add_participiants_holder -->
+		</div>
+
+		<div class="input_row">
+			<button class="button button-orange button-circle button-small">Post</button>
+			<button class="button button-black button-circle button-small return_to_share_box">Cancel</button>
+		</div>
+	</form>
+</div><!-- add_box_tab_event -->
+
+
+
+<div id="share_box_tab_location" class="tab-pane fade">
+	<form role="form" action="" enctype="application/x-www-form-urlencoded" novalidate="novalidate">
+		<div class="input_row">
+			<div class="textarea_holder">
+				<textarea class="form-control elastic_textarea post-title" placeholder="Tell your family where you are..." data-val-required="You need to enter a message for the post." data-val="true" rows="1" name="Body"></textarea>
+				<input type="hidden" name="AttachmentType" value="None">
+				<a href="#" class="btn_close"><i class="sale-icon-cancel-circle"></i></a>
+			</div><!-- textarea_holder -->
+		</div><!-- input_row -->
+
+		<div class="input_row">
+			<div class="input_holder with_icon location-box">
+				<i class="sale-icon-location"></i>
+				<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input data-val-required="You need to enter a location for the post." data-val="true" class="form-control high tt-hint" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input placeholder="Enter your location..." data-val-required="You need to enter a location for the post." data-val="true" class="form-control high tt-input" id="location_location" name="Location.Address" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'PT Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-2"></div></span></span>
+			</div>
+
+			<div class="location-wrapper media_data_holder" style="display: none;">
+				<div id="location_map" class="location-map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: -11px; top: -40px; z-index: 0; animation-duration: 500ms; animation-iteration-count: 1; animation-name: _gm7908;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: -11px; top: -40px; z-index: 0;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" usemap="#gmimap2" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"><map name="gmimap2" id="gmimap2"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="" style="cursor: pointer;"></map></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=61.998065,15.012703&amp;z=12&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 0px; height: 0px; position: absolute; left: 5px; top: 5px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;"></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px; width: 12px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="display: none;"></span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);"></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@61.9980648,15.0127029,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 0px; right: 0px;"><div class="gmnoprint" style="display: none; position: absolute;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div></div></div><div controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; display: none; position: absolute; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div class="gm-tilt" style="width: 0px; height: 0px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+				<input type="hidden" name="Location.Longitude" class="location-longitude">
+				<input type="hidden" name="Location.Latitude" class="location-latitude">
+			</div>
+		</div><!-- input_row -->
+
+		<div class="input_row">
+			<button class="button button-orange button-circle button-small">Post</button>
+			<button class="button button-black button-circle button-small return_to_share_box">Cancel</button>
+		</div>
+	</form>
+</div><!-- add_box_tab_location -->
+
+
+
+<div id="share_box_tab_photo" class="tab-pane fade">
+	<form role="form" action="" enctype="multipart/form-data" novalidate="novalidate">
+		<div class="input_row">
+			<div class="textarea_holder">
+				<textarea class="form-control elastic_textarea post-title" placeholder="Enter text for the photo..." rows="1" name="Body" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+				<input type="hidden" name="AttachmentType" value="None">
+				<a href="#" class="btn_close"><i class="sale-icon-cancel-circle"></i></a>
+			</div><!-- textarea_holder -->
+		</div><!-- input_row -->
+
+		<div class="input_row">
+			<div class="fileinput fileinput-new custom_input_file" data-provides="fileinput">
+				<span class="btn btn-default btn-file custom_input_file_btn">
+					<span class="fileinput-new custom_input_file_btn_text"><i class="sale-icon-camera-1"></i>Click here to upload a photo</span>
+					<span class="fileinput-exists">Change the photo</span>
+					<input type="file" data-val="true" data-val-required="You need to choose an image to upload." name="Image">
+				</span>
+				<span class="you_want_upload hidden"><b>Uploading:</b></span>
+				<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+				<span class="fileinput-filename"></span>
+			</div>
+
+			<div class="input_holder with_icon location-box">
+				<i class="sale-icon-location"></i>
+				<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input class="form-control high tt-hint" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input placeholder="Enter your location..." class="form-control high tt-input" id="photo_location" name="Location.Address" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'PT Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-1"></div></span></span>
+			</div>
+
+			<div class="location-wrapper media_data_holder" style="display: none;">
+				<div id="photo_map" class="location-map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -208px; top: -146px;"></div></div></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: -11px; top: -40px; z-index: 0; animation-duration: 500ms; animation-iteration-count: 1; animation-name: _gm7908;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: -11px; top: -40px; z-index: 0;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png" draggable="false" usemap="#gmimap1" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"><map name="gmimap1" id="gmimap1"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="" style="cursor: pointer;"></map></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=61.998065,15.012703&amp;z=12&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 0px; height: 0px; position: absolute; left: 5px; top: 5px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;"></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px; width: 12px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="display: none;"></span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);"></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@61.9980648,15.0127029,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 0px; right: 0px;"><div class="gmnoprint" style="display: none; position: absolute;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div></div></div><div controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; display: none; position: absolute; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div class="gm-tilt" style="width: 0px; height: 0px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+				<input type="hidden" name="Location.Longitude" class="location-longitude">
+				<input type="hidden" name="Location.Latitude" class="location-latitude">
+			</div>
+		</div><!-- input_row -->
+
+		<div class="input_row">
+			<button class="button button-orange button-circle button-small" data-loading-text="Posting...">Post</button>
+			<button class="button button-black button-circle button-small return_to_share_box">Cancel</button>
+		</div>
+	</form>
+</div><!-- add_box_tab_photo -->
+
+				</div><!-- tab-content -->
+
+			</div><!-- add_box_body -->
+		</div><!-- add_box_item -->
+
+		<div id="activity-feed" data-bind="template: { name: SelectTemplate, foreach: Items, afterRender: function(elements) { $('a.fancybox-image', $(elements)).fancybox(); } }">
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="c6c1606f-82aa-406e-a94d-5e0f7ec45c7a">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/69e68c9e-e16e-4a61-90ba-4c79b66d3713/w50h50/user1.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  -->
+						<i class="fontello-documents"></i>
+						<!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  --><!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="text: From.Name, attr: { href: From.Url }">Viorel Mocanu</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">2 hours ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)">
+				<p><a data-bind="text: DocumentName, attr: { href: DocumentUrl }" href="/DocumentStore/attachment/1bfbbb79-fd38-40d5-b9da-ae6b0c0b10d0/item.jpg">item.jpg</a></p>
+			</div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)">
+					<a class="location-collapse" href="#">
+						<i class="sale-icon-location"></i>
+						Location:
+						<span data-bind="text: MapAddress">Stockholm, Sweden</span>
+						<i class="fontello-down-open"></i>
+						<i class="sale-icon-up-open-mini"></i>
+					</a>
+				</p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)">
+						<div class="map_holder">
+							<div class="map_overlay">
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_ovfontaerlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+							</div>
+							<img class="map_canvas" data-bind="attr: { src: MapUrl }" alt="map" src="https://maps.googleapis.com/maps/api/staticmap?center=59.3293234%2C18.0685808&amp;size=500x245&amp;language=en&amp;zoom=16&amp;markers=color%3Agreen%7C59.3293234%2C18.0685808">
+						</div><!-- map_holder -->
+					</div><!-- media_holder -->
+					<p data-bind="text: Body">a document sample</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">1 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 1 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }">
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="41d85d26-4e27-492c-8c19-9a98e7c10eb4">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/69e68c9e-e16e-4a61-90ba-4c79b66d3713/w50h50/user1.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="text: From.Name, attr: { href: From.Url }">Viorel Mocanu</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">2 hours ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“comment”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="13ce6cb0-467e-4560-a889-9641ca9b1d22">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/69e68c9e-e16e-4a61-90ba-4c79b66d3713/w50h50/user1.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  --><!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="text: From.Name, attr: { href: From.Url }">Viorel Mocanu</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">2 hours ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)">
+				<p><a data-bind="text: Url, attr: { href: Url }" href="http://yahoo.com">http://yahoo.com</a></p>
+			</div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)">
+					<a class="location-collapse" href="#">
+						<i class="sale-icon-location"></i>
+						Location:
+						<span data-bind="text: MapAddress">Stockholm, Sweden</span>
+						<i class="fontello-down-open"></i>
+						<i class="sale-icon-up-open-mini"></i>
+					</a>
+				</p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)">
+						<div class="map_holder">
+							<div class="map_overlay">
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+							</div>
+							<img class="map_canvas" data-bind="attr: { src: MapUrl }" alt="map" src="https://maps.googleapis.com/maps/api/staticmap?center=59.3293234%2C18.0685808&amp;size=500x245&amp;language=en&amp;zoom=16&amp;markers=color%3Agreen%7C59.3293234%2C18.0685808">
+						</div><!-- map_holder -->
+					</div><!-- media_holder -->
+					<p data-bind="text: Body">A link</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes" style="display: none;">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">0 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 2 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }">
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="0af840fa-5484-4957-926b-41df42332244">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/69e68c9e-e16e-4a61-90ba-4c79b66d3713/w50h50/user1.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="text: From.Name, attr: { href: From.Url }">Viorel Mocanu</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">2 hours ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“comment a”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="de12ec73-d5e6-443a-80e9-d5c143501360">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/69e68c9e-e16e-4a61-90ba-4c79b66d3713/w50h50/user1.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/viorel.mocanu%40tiggro.com" data-bind="text: From.Name, attr: { href: From.Url }">Viorel Mocanu</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">2 hours ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“some comment here”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-event-id': EventId }" data-event-id="d43a1c81-01c2-4b7c-b06e-db6b13864e6f">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" data-bind="attr: { href: From.Url, title: From.Name }" title="Global "><img data-bind="attr: { src: From.CoverPhotoUrl, alt: From.Name }" alt="Global " src="Images/elements/default_group.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<i class="sale-icon-calendar"></i>
+					</div>
+
+					<div class="post_info_box main_event">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="/en/profile/me/event/d43a1c81-01c2-4b7c-b06e-db6b13864e6f" data-bind="text: Title, attr: { href: Url }">tets</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 days ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<p data-bind="text: Description">weqqew</p>
+
+			<div class="where_and_when_holder location-container">
+				<!-- ko if: (MapUrl) -->
+				<span>
+					<a class="location-collapse" href="#">
+						<i class="sale-icon-location"></i>
+						<span data-bind="text: MapAddress">Stockholm, Sweden</span>
+						<i class="fontello-down-open"></i>
+						<i class="sale-icon-up-open-mini"></i>
+					</a>
+				</span>
+				<!-- /ko -->
+				
+				<span>
+					<i class="sale-icon-clock"></i>
+					<span data-bind="text: When()">10/02/2015 3:00 AM</span>
+				</span>
+				
+				<div class="post_text_holder" data-bind="if: (MapUrl)">
+					<div class="media_data_holder">
+						<div class="map_holder">
+							<div class="map_overlay">
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+							</div>
+							<img class="map_canvas" data-bind="attr: { src: MapUrl }" alt="map" src="https://maps.googleapis.com/maps/api/staticmap?center=59.329%2C18.0689999&amp;size=500x245&amp;language=en&amp;zoom=16&amp;markers=color%3Agreen%7C59.329%2C18.0689999">
+						</div><!-- map_holder -->
+					</div><!-- media_holder -->
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="invited_people_holder" data-bind="foreach: Attendees, visible: Attendees().length > 0">
+				<div class="invited_item">
+					<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/mikael.eriksson%40yugglr.com" data-bind="attr: { href: Url, title: Name }" title="Mikael Eriksson"><img src="Images/elements/default_userpicture.png" alt="Mikael Eriksson" data-bind="attr: { src: CoverPhotoUrl, alt: Name }"></a>
+					<a class="invited_name" href="http://nfsale2.azurewebsites.net/en/user/mikael.eriksson%40yugglr.com" data-bind="attr: { href: Url }, text: Name">Mikael Eriksson</a>
+				</div><!-- invited_item -->
+			</div><!-- invited_people_holder -->
+
+			<div class="questions_set_holder" data-bind="if: !HasRequest() &amp;&amp; IsMember">
+				<div class="questions_set_row pseudobuttons_row">
+					<h4 class="question">Will you be attending this event?</h4>
+					<div class="pseudobutton_item">
+						<input type="radio" name="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_att" value="yes" data-bind="attr: { id: EventId + '_yes', name: EventId + '_att' }, checked: Attendance" id="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_yes">
+						<label class="btn btn_custom btn_custom_small btn_custom_gradiented_green" data-bind="attr: { for: EventId + '_yes' }" for="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_yes">Yes</label>
+					</div>
+					<div class="pseudobutton_item">
+						<input type="radio" name="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_att" value="no" data-bind="attr: { id: EventId + '_no', name: EventId + '_att' }, checked: Attendance" id="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_no">
+						<label class="button button-black button-circle button-small" data-bind="attr: { for: EventId + '_no' }" for="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_no">No</label>
+					</div>
+					<div class="pseudobutton_item">
+						<input type="radio" name="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_att" value="maybe" data-bind="attr: { id: EventId + '_maybe', name: EventId + '_att' }, checked: Attendance" id="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_maybe">
+						<label class="button button-black button-circle button-small" data-bind="attr: { for: EventId + '_maybe' }" for="d43a1c81-01c2-4b7c-b06e-db6b13864e6f_maybe">Maybe</label>
+					</div>
+				</div><!-- btn_row -->
+			</div><!-- questions_set_holder -->
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0" style="display: none;">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes" style="display: none;">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">0 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div>
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="e418e1f7-5afa-44ad-b12f-eb5ecc71de08">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/ulf.stenerhag%40thurne.se" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/92a707a8-4a01-4ed0-a14f-bcfbf95034e8/w50h50/618A4695.jpg"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/ulf.stenerhag%40thurne.se" data-bind="text: From.Name, attr: { href: From.Url }">Ulf Stenerhag</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">4 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">Hi ambassador team Uganda, Ulf Stenerhag here checking out functionality of the beta version of this platform.</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">1 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="94db71d3-296d-48b6-b9eb-0fec87879b0c">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/aqrchetdiana%40gmail.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/aqrchetdiana%40gmail.com" data-bind="text: From.Name, attr: { href: From.Url }">AQRCHET DIANA</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">together we can. #Notforsale</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">5 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="20e82240-1b90-4e58-9c04-a53f28222973">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/kabsdancun%40gmail.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/kabsdancun%40gmail.com" data-bind="text: From.Name, attr: { href: From.Url }">Dancun Kabagambe</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">Soo humbled to be an ambassador. 
+#notforsale. Ambition is priceless</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">6 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="89808a1d-f35d-4601-9885-1aec8c2c632f">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/atglbrt%40gmail.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/a3b14cb8-cc83-4f29-a8db-98af61d596d8/w50h50/nt 4sale.JPG"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  -->
+						<i class="sale-icon-camera-1"></i>
+						<!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  --><!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/atglbrt%40gmail.com" data-bind="text: From.Name, attr: { href: From.Url }">Gilbert Ataho</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)">
+				<div class="media_data_holder">
+					<a class="fancybox-image" data-bind="attr: { href: FullImageUrl }" href="/ImageStore/98a573c3-cbb5-4cfd-9d8a-a24640763557/w1280/nt 4sale.JPG"><img data-bind="attr: { src: ImageUrl }" alt="" class="img-responsive" src="http://nfsale2.azurewebsites.net/ImageStore/98a573c3-cbb5-4cfd-9d8a-a24640763557/w499h250/nt 4sale.JPG"></a>
+				</div><!-- media_holder -->
+			</div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container collapsed" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">A bit of a frican touch added to Not for Sale ale bottle, Here to make avery big difference. 
+#ItStartsWithYou.
+
+Creating a world where every one is not for sale.</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">4 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="e6858fad-b95f-4336-b9c3-9ca5c40f0aaf">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/sofia.uddeholt%40yugglr.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/sofia.uddeholt%40yugglr.com" data-bind="text: From.Name, attr: { href: From.Url }">Sofia  Uddeholt</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">Testar. Nu är vi några i den här gruppen - Daniel, Micaela och Raymond kan jag se. Är Ulf med här? Och ska Daniel bjuda in Alexander, ambassadör Sverige? 
+</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">5 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 5 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }">
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="c48cc0ae-4b1e-4ee6-b23a-3c56c729e1a9">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/riedberg%40gmail.com" data-bind="text: From.Name, attr: { href: From.Url }">Sander Riedberg</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">4 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“Jag är med också!”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="47efbbbd-5bf0-4736-9176-6975db1e6832">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/daniel%40esterfenol.se" data-bind="text: From.Name, attr: { href: From.Url }">Daniel Olderius</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“Nu är vi 2st Daniel här med”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="23f711ea-d755-413c-8341-0deb94f1be84">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/daniel.berggren%40thurne.se" data-bind="text: From.Name, attr: { href: From.Url }">Daniel  Berggren</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“Det där hade redan frågats ser jag nu..."Pucktvåa"”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="7a9704db-7b53-411b-9342-a2359bdf5170">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/sofia.uddeholt%40yugglr.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/sofia.uddeholt%40yugglr.com" data-bind="text: From.Name, attr: { href: From.Url }">Sofia  Uddeholt</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">Hi! I am working with this communication platform. It would be very useful for our continued development to know what mobile phones you all have. And which browsers you use in your phones or on desktop. </p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">3 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 5 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }">
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="b558030b-01bd-47bf-9744-a5df842cef7b">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/sofia.uddeholt%40yugglr.com" data-bind="text: From.Name, attr: { href: From.Url }">Sofia  Uddeholt</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“Thank you:-)”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="9338ed69-16ed-4c4c-8385-cd799126447c">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="http://nfsale2.azurewebsites.net/ImageStore/a3b14cb8-cc83-4f29-a8db-98af61d596d8/w50h50/nt 4sale.JPG"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/atglbrt%40gmail.com" data-bind="text: From.Name, attr: { href: From.Url }">Gilbert Ataho</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“SAMSANG GALAXY CORE (OPERA MINI) AND PC (CHROME AND OPERA MINI) ”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }" data-comment-id="15d14723-2c05-4477-8caa-5104dc2e0a01">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/sofia.uddeholt%40yugglr.com" data-bind="text: From.Name, attr: { href: From.Url }">Sofia  Uddeholt</a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'">“Thank you. Some more of you who could give me info about your phones, please. ”</p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }" data-post-id="ea18ec28-9d1a-451d-a393-a8d3be7a293f">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="http://nfsale2.azurewebsites.net/en/user/enomatik%40gmail.com" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt="" src="Images/elements/default_userpicture.png"></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit" style="display: none;"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="http://nfsale2.azurewebsites.net/en/user/enomatik%40gmail.com" data-bind="text: From.Name, attr: { href: From.Url }">Tayebwa Enock</a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()">5 months ago</p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)"></div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)"></div>
+
+			<div class="post_text_holder" data-bind="if: (Url)"></div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)"></div>
+
+			<div class="location-container" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)"></p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)" style="display: none;"></div><!-- media_holder -->
+					<p data-bind="text: Body">Right here,  we are not for sale</p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'">3 people like it</span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</div>
+
+	</div><!-- subsection_activity_feed -->
+
+</div><!-- subsections_holder_column -->
+<script type="text/html" id="template-post-event">
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-event-id': EventId }">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#" data-bind="attr: { href: From.Url, title: From.Name }"><img data-bind="attr: { src: From.CoverPhotoUrl, alt: From.Name }" alt=""></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<i class="sale-icon-calendar"></i>
+					</div>
+
+					<div class="post_info_box main_event">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="#" data-bind="text: Title, attr: { href: Url }"></a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()"></p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<p data-bind="text: Description"></p>
+
+			<div class="where_and_when_holder location-container">
+				<!-- ko if: (MapUrl) -->
+				<span>
+					<a class="location-collapse" href="#">
+						<i class="sale-icon-location"></i>
+						<span data-bind="text: MapAddress"></span>
+						<i class="fontello-down-open"></i>
+						<i class="sale-icon-up-open-mini"></i>
+					</a>
+				</span>
+				<!-- /ko -->
+				
+				<span>
+					<i class="sale-icon-clock"></i>
+					<span data-bind="text: When()"></span>
+				</span>
+				
+				<div class="post_text_holder" data-bind="if: (MapUrl)">
+					<div class="media_data_holder">
+						<div class="map_holder">
+							<div class="map_overlay">
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+							</div>
+							<img class="map_canvas" data-bind="attr: { src: MapUrl }" alt="map" />
+						</div><!-- map_holder -->
+					</div><!-- media_holder -->
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="invited_people_holder" data-bind="foreach: Attendees, visible: Attendees().length > 0">
+				<div class="invited_item">
+					<a class="userpic" href="#" data-bind="attr: { href: Url, title: Name }"><img src="" alt="" data-bind="attr: { src: CoverPhotoUrl, alt: Name }"></a>
+					<a class="invited_name" href="#" data-bind="attr: { href: Url }, text: Name"></a>
+				</div><!-- invited_item -->
+			</div><!-- invited_people_holder -->
+
+			<div class="questions_set_holder" data-bind="if: !HasRequest() && IsMember">
+				<div class="questions_set_row pseudobuttons_row">
+					<h4 class="question">Will you be attending this event?</h4>
+					<div class="pseudobutton_item">
+						<input type="radio" name="temp_pseudobutton" value="yes" data-bind="attr: { id: EventId + '_yes', name: EventId + '_att' }, checked: Attendance">
+						<label class="btn btn_custom btn_custom_small btn_custom_gradiented_green" data-bind="attr: { for: EventId + '_yes' }">Yes</label>
+					</div>
+					<div class="pseudobutton_item">
+						<input type="radio" name="temp_pseudobutton" value="no" data-bind="attr: { id: EventId + '_no', name: EventId + '_att' }, checked: Attendance">
+						<label class="button button-black button-circle button-small" data-bind="attr: { for: EventId + '_no' }">No</label>
+					</div>
+					<div class="pseudobutton_item">
+						<input type="radio" name="temp_pseudobutton" value="maybe" data-bind="attr: { id: EventId + '_maybe', name: EventId + '_att' }, checked: Attendance">
+						<label class="button button-black button-circle button-small" data-bind="attr: { for: EventId + '_maybe' }">Maybe</label>
+					</div>
+				</div><!-- btn_row -->
+			</div><!-- questions_set_holder -->
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'"></span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) --><!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div>
+</script>
+
+<script type="text/html" id="template-post-post">
+	<div class="media media_holder_post feed-item-root" data-bind="attr: { 'data-post-id': PostId }">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#" data-bind="attr: { href: From.Url }"><img data-bind="attr: { src: From.CoverPhotoUrl }" alt=""></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_type_icon_box">
+						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  -->
+						<i class="sale-icon-camera-1"></i>
+						<!-- /ko -->
+						<!-- ko if: AttachmentType == "Document"  -->
+						<i class="fontello-documents"></i>
+						<!-- /ko -->
+						<!-- ko if: AttachmentType == "Url"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+						<!-- ko if: AttachmentType == "None"  -->
+						<i class="fontello-comment"></i>
+						<!-- /ko -->
+					</div>
+
+					<div class="post_info_box main_post">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="#" data-bind="text: From.Name, attr: { href: From.Url }"></a>
+						</h4>
+						<p class="info_line" data-bind="text: CreatedWhen()"></p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder" data-bind="if: (ImageUrl)">
+				<div class="media_data_holder">
+					<a class="fancybox-image" data-bind="attr: { href: FullImageUrl }"><img data-bind="attr: { src: ImageUrl }" alt="" class="img-responsive"></a>
+				</div><!-- media_holder -->
+			</div>
+
+			<div class="post_text_holder" data-bind="if: (VideoCode)">
+				<div class="media_data_holder" data-bind="html: VideoCode">
+				</div><!-- media_holder -->
+			</div>
+
+			<div class="post_text_holder" data-bind="if: (Url)">
+				<p><a data-bind="text: Url, attr: { href: Url }"></a></p>
+			</div>
+
+			<div class="post_text_holder" data-bind="if: (DocumentUrl)">
+				<p><a data-bind="text: DocumentName, attr: { href: DocumentUrl }"></a></p>
+			</div>
+
+			<div class="location-container collapsed" data-bind="attr: { 'class': 'location-container' + ((AttachmentType == 'None' || AttachmentType == 'Url' || AttachmentType == 'Document') ? '' : ' collapsed') }">
+				<p data-bind="if: (MapUrl)">
+					<a class="location-collapse" href="#">
+						<i class="sale-icon-location"></i>
+						Location:
+						<span data-bind="text: MapAddress"></span>
+						<i class="fontello-down-open"></i>
+						<i class="sale-icon-up-open-mini"></i>
+					</a>
+				</p>
+				<div class="post_text_holder">
+					<div class="media_data_holder" data-bind="visible: (MapUrl), if: (MapUrl)">
+						<div class="map_holder">
+							<div class="map_overlay">
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+								<div class="map_overlay_column"></div>
+							</div>
+							<img class="map_canvas" data-bind="attr: { src: MapUrl }" alt="map" />
+						</div><!-- map_holder -->
+					</div><!-- media_holder -->
+					<p data-bind="text: Body"></p>
+				</div><!-- post_text_holder -->
+			</div>
+
+			<div class="row_with_icons post_actions_holder">
+				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
+					<i class="fontello-heart"></i>
+					<a href="#">Like</a>
+				</span>
+				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
+					<i class="fontello-comment"></i>
+					<a href="#">Comment</a>
+				</span>
+			</div><!-- row_with_icons -->
+
+			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
+				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
+					<i class="fontello-heart"></i>
+					<span data-bind="text: NumLikes() + ' people like it'"></span>
+				</a>
+				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
+					<i class="fontello-comment"></i>
+					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) --><!-- /ko -->
+				</a>
+			</div><!-- view_more_comments_holder -->
+
+			<div class="comments" style="display: none;" data-bind="template: { name: 'template-post-comment', foreach: Comments }"></div>
+
+			<div class="reply_holder">
+				<form>
+					<div class="btn_holder">
+						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Send</button>
+					</div><!-- btn_holder -->
+					<div class="ribbon_holder">
+						<textarea class="form-control elastic_textarea" rows="1" placeholder="Leave a comment" data-val="true" data-val-required="You need to enter a message for the post."></textarea>
+					</div>
+				</form>
+			</div><!-- reply_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</script>
+
+<script type="text/html" id="template-post-comment">
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-comment-id': Id }">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: From.CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt=""></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<a href="#" class="move_to_trash" data-bind="visible: CanEdit"><i class="fontello-trash"></i></a>
+						<h4 class="subject_title">
+							<a href="#" data-bind="text: From.Name, attr: { href: From.Url }"></a>
+						</h4>
+						<p class="info_line" data-bind="text: TimeString"></p>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+
+		<div class="post_content_holder">
+			<div class="post_text_holder">
+				<p data-bind="text: '“' + Text + '”'"></p>
+			</div><!-- post_text_holder -->
+		</div><!-- post_content_holder -->
+	</div><!-- media_holder_post -->
+</script>
+
+<script type="text/html" id="template-post-like">
+	<div class="media media_holder_post inner_post" data-bind="attr: { 'data-like-id': Id }">
+		<div class="media_title_row">
+			<div class="media_left_subholder userpic_holder">
+				<a class="userpic" href="#"><img class="img-responsive" data-bind="attr: { src: CoverPhotoUrl || '/images/elements/default_userpicture.png' }" alt=""></a>
+			</div><!-- post_item_side_column -->
+
+			<div class="media-body">
+				<div class="post_info_holder">
+					<div class="post_info_box">
+						<h4 class="subject_title">
+							<a href="#" data-bind="text: Name, attr: { href: Url }"></a>
+						</h4>
+					</div><!-- post_item_titles_box -->
+				</div><!-- post_title_holder -->
+			</div><!-- media-body -->
+		</div><!-- media_title_row -->
+	</div><!-- media_holder_post -->
+</script>
+
+
+
+
+<div class="modal fade" id="confirmation_modal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="confirmation_model_label">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">×</button>
+				<h4 id="add_photo_modal_label" class="modal-title"></h4>
+			</div>
+
+			<div class="modal-body">
+			</div>
+
+			<div class="modal-footer form-group">
+				<div class="col-sm-12 buttons_holder">
+					<button type="button" class="btn btn_custom btn_custom_small btn_custom_gradiented_green confirm-btn"></button>
+					<button type="button" class="button button-black button-circle button-small deny-btn" data-dismiss="modal"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/html" data-confirm-text="Yes" data-deny-text="No" data-title="Delete Comment" id="delete-comment-message">
+	<p>Are you sure you want to delete this comment?</p>
+</script>
+
+<script type="text/html" data-confirm-text="Yes" data-deny-text="No" data-title="Delete Post" id="delete-post-message">
+	<p>Are you sure you want to delete this post?</p>
+</script>
+
+<script type="text/html" data-confirm-text="Yes" data-deny-text="No" data-title="Delete Event" id="delete-event-message">
+	<p>Are you sure you want to delete this event?</p>
+</script>
+
+<div class="modal fade" id="all-likes-modal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="all-likes-modal-label">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form role="form" class="form-horizontal" action="" enctype="multipart/form-data">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">×</button>
+					<h4 id="all-likes-modal-label" class="modal-title">See all likes</h4>
+				</div>
+
+				<div class="modal-body">
+					<div class="pre-scrollable">
+						<div data-bind="template: { name: 'template-post-like', foreach: Likes }"></div>
+
+						<button type="button" id="more-likes-btn" class="btn btn-block btn_custom btn_custom_small btn_custom_gradiented_green" data-bind="visible: HasMore" style="display: none;">See more</button>
+					</div>
+				</div>
+
+				<div class="modal-footer form-group">
+					<div class="col-sm-12 buttons_holder">
+						<button type="button" class="btn btn_custom btn_custom_small btn_custom_gradiented_green" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<div class="hidden-xs col-md-4 col-sm-12 sidebar sidebar_right site_column">
+	<div class="inner">
+		
+
+<div class="sidebar-item sidebar-item-calendar">
+    <div class="bordered-box">
+        <h3 class="sidebar-item-title">Calendar</h3>
+
+        <div class="items-holder" data-bind="visible: RecentEvents().length > 0, foreach: RecentEvents">
+            <div class="item" data-bind="attr: {'data-event-id':Id}">
+                <div class="part-left" data-bind="click: function() { $root.OnViewEvent(Id()); return true; }">
+                    <i class="sale-icon-calendar icon"></i>
+                </div><!-- left-part -->
+
+                <div class="media-body">
+                    <p class="title">
+                        <a href="#" data-bind="text: Title, click: function() { if ($root.IsAdmin){$root.OnEditEvent(Id())} else $root.OnViewEvent(Id()); return true; }"></a>
+                    </p>
+                    <span class="date" data-bind="click: function() { $root.OnViewEvent(Id()); return true; }"><i class="sale-icon-clock"></i><span data-bind="text: IsAllDay()?Start().format('YYYY-MM-DD'):Start().format('YYYY-MM-DD HH:mm')"></span></span>
+                        <!-- ko if: $root.IsAdmin -->
+                        <button title="Edit" class="close" aria-hidden="true" data-bind="click: function() { $root.OnEditEvent(Id()); return true; }" type="button">…</button>
+                        <!-- /ko -->
+                </div><!-- media-body -->
+            </div><!-- item -->
+        </div><!-- items-holder -->
+        <div class="text-center">
+                <!-- ko if: IsAdmin -->
+                        <a href="#" class="add-new-event" data-bind="visible: IsAdmin, text: 'Add new event',  click: function() { $data.OnAddEvent(); return true; }"></a>
+                <!-- /ko -->
+        </div>
+    </div><!-- bordered-box -->
+</div><!-- sidebar-item-links -->
+
+		
+
+<div class="widget">
+	<h4 class="widget_title" data-toggle="collapse" data-target="#widget_favorite_groups">Favorite groups <i class="collapse_arrow"></i></h4>
+	<div id="widget_favorite_groups" class="widget_body collapse in">
+		<div class="favorite_group_item">
+			<a href="#" class="logo_holder"><img src="Images/public/favorite_group_1.jpg" alt=""></a>
+			<a href="#"><span class="underlined">Läxgänget</span></a>
+		</div>
+
+		<div class="favorite_group_item">
+			<a href="#" class="logo_holder"><img src="Images/public/favorite_group_2.jpg" alt=""></a>
+			<a href="#"><span class="underlined">Blackens tjejer</span></a>
+		</div>
+	</div><!-- widget_body -->
+</div><!-- widget -->
+
+
+		
+
+		
+
+		
+	</div><!-- inner -->
+</div><!-- sidebar_left -->
+			</div>
+		</div>
+	</section><!-- section_activity -->
+	
+	<footer class="section-padding footer-big">
+		<div class="footer-inner">
+
+			<div class="container container-custom">
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+			</div><!-- container-custom -->
+
+		</div><!-- footer-inner -->
+	</footer><!-- section-padding -->
+
+
+
+	
+
+	<script src="https://maps.googleapis.com/maps/api/js?language=en&amp;key=AIzaSyBK-NNqN-J8UkkCp788MhSLrZnASVLbf9s&amp;sensor=true"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/main.js"></script>
+	<script src="Scripts/jquery-2.1.1.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+	<script src="Scripts/jquery.validate.unobtrusive.js"></script>
+	<script src="Scripts/jquery.validate.xtensions.js"></script>
+	<script src="Scripts/jquery.iframe-transport.js"></script>
+	<script src="Scripts/bootstrap.js"></script>
+	<script src="Scripts/jasny-bootstrap.js"></script>
+	<script src="Scripts/bootstrap-select.min.js"></script>
+	<script src="Scripts/moment-with-locales.js"></script>
+	<script src="Scripts/bootstrap-datetimepicker.js"></script>
+	<script src="Scripts/jquery.autosize.js"></script>
+	<script src="Scripts/fancybox/jquery.fancybox.js"></script>
+	<script src="Scripts/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+	<script src="Scripts/underscore.js"></script>
+	<script src="Scripts/knockout-3.3.0.debug.js"></script>
+	<script src="Scripts/typeahead.bundle.js"></script>
+	<script src="Scripts/Yugglr/Common.js"></script>
+	<script src="Scripts/Yugglr/Video.js"></script>
+	<script src="Scripts/Yugglr/Url.js"></script>
+	<script src="Scripts/Yugglr/Ajax.js"></script>
+	<script src="Scripts/Yugglr/Alert.js"></script>
+	<script src="Scripts/Yugglr/Date.js"></script>
+	<script src="Scripts/Yugglr/Validation.js"></script>
+	<script src="Scripts/Yugglr/Confirm.js"></script>
+	<script src="Scripts/Yugglr/ViewModels.js"></script>
+	<script src="Scripts/Yugglr/FeedRepository.js"></script>
+	<script src="Scripts/Yugglr/EventsRepository.js"></script>
+	<script src="Scripts/Yugglr/UsersRepository.js"></script>
+	<script src="Scripts/Yugglr/GroupsRepositories.js"></script>
+	<script src="Scripts/Yugglr/Feed.js"></script>
+	<script src="Scripts/Yugglr/Feed.ShareBox.js"></script>
+	<script src="Scripts/Yugglr/Documents.js"></script>
+	<script src="Scripts/Yugglr/Requests.js"></script>
+	<script src="Scripts/Yugglr/Messages.js"></script>
+	<script src="Scripts/Yugglr/ViewableSearch.js"></script>
+	<script src="Scripts/Yugglr/GroupAside.js"></script>
+	<script src="Scripts/Yugglr/Groups.js"></script>
+	<script src="Scripts/Yugglr/Gallery.js"></script>
+	<script src="Scripts/Yugglr/Album.js"></script>
+	<script src="Scripts/Yugglr/GoogleMaps.js"></script>
+	<script src="Scripts/Yugglr/AccountSettings.js"></script>
+	<script src="Scripts/Yugglr/Calendar.js"></script>
+	<script src="Scripts/Yugglr/CalendarEvent.js"></script>
+	<script src="Scripts/Yugglr/CalendarWidget.js"></script>
+	<script src="Scripts/Yugglr/ProfileGroupSettings.js"></script>
+	<script src="Scripts/Yugglr/EventWidget.js"></script>
+	<script src="Scripts/Yugglr/Scripts.js"></script>
+
+	
+	<script>
+		var _errorMessages = {
+			TooLargeFile: 'Uploaded file is too large',
+			FailedToPost: 'Failed to post message'
+		};
+		Yugglr.Feed.Init('me', '9ffb1073-a4fa-4ea5-9d9b-4c27605fbe3b', 'me', 'user', _errorMessages);
+	</script>
+
+
+
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: 'PT Sans', sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; white-space: pre-wrap; line-height: 17px; width: 525.984px;" class="autosizejs" id="autosizejs"></textarea></body></html>

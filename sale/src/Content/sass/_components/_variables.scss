@@ -1,0 +1,61 @@
+/* VARIABLES */
+
+//For color names was used site - http://chir.ag/projects/name-that-color
+$color-white: #ffffff; //White
+/*Black group*/
+$color-black: #000000; //Black
+$color-mine-shaft: #333333;
+$color-mine-shaft-boulder: #343434;
+/*Orange group*/
+$color-orange-peel: #FF9900;
+$color-fire-bush: #e59724;
+/*Gray group*/
+$color-gray: #898989;
+$color-dove-gray: #666666;
+$color-mercury: #f8f8f8; //Fields bg
+$color-alto: #E0E0E0; //Border color
+$color-boulder: #767676;
+$color-boulder-boulder: #787878;
+$color-tundora: #494949;
+$color-tundora-boulder: #444444;
+$color-dusty-gray: #979797;
+
+/*Link color*/
+$link-color: $color-orange-peel;
+$link-color-hover: darken($color-orange-peel, 10%);
+
+/* Font VARIABLES */
+$main-font: 'Helvetica-Regular';
+$font-light: 'Helvetica-Light';
+$font-regular: 'Helvetica-Regular';
+$font-bold: 'Helvetica-Bold';
+
+
+
+
+//Body VARIABLES
+$main-text-color: $color-dove-gray;
+$body-font-size: 14px;
+$body-line-height: 22px;
+$body-main-font: $main-font;
+
+/*Title color*/
+$title-color: $color-mine-shaft;
+
+/*Form VARIABLES*/
+$placeholder-color: $color-gray;
+$placeholder-font-size: $body-font-size;
+$placeholder-line-height: $body-line-height;
+$placeholder-italic: italic;
+
+
+
+/* Sections VARIABLES */
+
+//OffCanvas
+
+
+
+
+
+

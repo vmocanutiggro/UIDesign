@@ -1,0 +1,35 @@
+$minimal: 479px;
+
+@mixin respond-to($media) {
+  @if $media == minimal {
+    @media only screen and (max-width: $minimal) { @content; }
+  }
+  @if $media == phones {
+    @media only screen and (max-width: $screen-xs-max) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (max-width: $screen-sm-max - 1) { @content; }
+  }
+  @else if $media == desktops {
+    @media only screen and (min-width: $screen-md-min) { @content; }
+  }
+}
+
+@mixin cc_color($color_class_name, $color) {
+    .cc_#{$color_class_name} {
+        background: none $color;
+        &.single_event {
+            background: none;
+            color: #{darken($color, 15%)};
+            &:before {
+                background: none $color;
+            }
+        }
+    }
+    .cc_#{$color_class_name}:hover {
+        text-decoration: underline;
+        &.single_event {
+            background: none;
+        }
+    }
+}

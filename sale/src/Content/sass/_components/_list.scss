@@ -1,0 +1,104 @@
+/* LIST */
+.footer-list {
+	>li {
+		a {
+			display: block;
+			padding: 3px 0;
+		}
+	}
+}
+
+.bullet-list {
+	&.bullet-list-dark {
+		>li {
+			>a {
+				&:after {
+					background: $color-boulder-boulder;
+				}
+			}
+		}
+	}
+	>li {
+		position: relative;
+		display: inline-block;
+		margin-right: 4px;
+		color: $color-white;
+		&.color-black {
+			color: $color-black;
+		}
+		@include respond-to(mobile) {
+			margin-right: 1px;
+		}
+		>a {
+			&:after {
+				content: '';
+				background: $color-white;
+				width: 2px;
+				height: 2px;
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 50%;
+				margin-left: 8px;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+			a {
+				&:after {
+					content: none;
+				}
+			}
+		}
+	}
+}
+.list-with-line {
+	display: block;
+	text-align: right;
+	position: relative;
+	&:before {
+		content: '';
+		height: 1px;
+		background: $color-alto;
+		position: absolute;
+		width: 30%;
+		top: 50%;
+		margin-top: -0.5px;
+		left: 0;
+		z-index: 1;
+	}
+	li {
+		padding: 0 2px;
+		margin-right: 0;
+		background: $color-white;
+		z-index: 100;
+		position: relative;
+		>a {
+			&:after {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.form-add-list {
+	padding: 10px 12px;
+	background: $color-mercury;
+	border: 1px solid $color-alto;
+	>li {
+		color: $color-tundora-boulder;
+	}
+}
+.contact-list {
+	>li {
+		>a {
+			font-size: 18px;
+			padding: 3px 0;
+			display: inline-block;
+			>i {
+				color: $color-black;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+

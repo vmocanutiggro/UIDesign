@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+a:hover, a:focus, a:visited {
+	text-decoration: none;
+	outline: none !important;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+textarea {
+	resize: none;
+	overflow: hidden;
+}

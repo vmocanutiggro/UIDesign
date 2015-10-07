@@ -1,0 +1,80 @@
+.share_box_holder .input_row textarea {
+    padding: 13px 6px;
+    height: 45px; }
+  .share_box_holder .fileinput-new .file_name_holder {
+    display: none; }
+  .share_box_holder .fileinput {
+    margin-bottom: 7px; }
+
+  /* MY ACCOUNT PAGE styles */
+.settings_tabs_holder .media {
+  margin: 0 0 10px 0; }
+  @media only screen and (max-width: 767px) {
+    .settings_tabs_holder .media:last-child {
+      margin-bottom: 0; } }
+.settings_tabs_holder .description {
+  margin-top: 6px; }
+.settings_tabs_holder .input_row .input_holder input[type='text'], .settings_tabs_holder .input_row .input_holder input[type='password'] select, .settings_tabs_holder .input_row .input_holder .checkbox, .settings_tabs_holder .input_row .input_holder .radio, .settings_tabs_holder .input_row .input_holder textarea {
+  float: left;
+  margin-right: 10px;
+  margin-left: 0; }
+  @media only screen and (max-width: 767px) {
+    .settings_tabs_holder .input_row .input_holder input[type='text'], .settings_tabs_holder .input_row .input_holder input[type='password'] select, .settings_tabs_holder .input_row .input_holder .checkbox, .settings_tabs_holder .input_row .input_holder .radio, .settings_tabs_holder .input_row .input_holder textarea {
+      float: none;
+      display: block;
+      margin-bottom: 10px;
+      width: 100%; }
+      .settings_tabs_holder .input_row .input_holder input[type='text']:last-child, .settings_tabs_holder .input_row .input_holder input[type='password'] select:last-child, .settings_tabs_holder .input_row .input_holder .checkbox:last-child, .settings_tabs_holder .input_row .input_holder .radio:last-child, .settings_tabs_holder .input_row .input_holder textarea:last-child {
+        margin-bottom: 0; } }
+.settings_tabs_holder .input_row .input_holder .checkbox, .settings_tabs_holder .input_row .input_holder .radio {
+  margin-top: 5px; }
+.settings_tabs_holder .input_row .fixed_width {
+  float: left;
+  margin-right: 10px;
+  margin-left: 0; }
+  @media only screen and (max-width: 767px) {
+    .settings_tabs_holder .input_row .fixed_width {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px; } }
+.settings_tabs_holder .items_set {
+  margin-bottom: 25px; }
+.settings_tabs_holder .btn_row {
+  margin-top: 25px;
+  margin-bottom: 20px; }
+.settings_tabs_holder .tab_section_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #4a4a4a; }
+.settings_tabs_holder .elastic_textarea {
+  min-height: 100px; }
+.settings_tabs_holder .user_picture_holder {
+  margin-bottom: 30px; }
+  .settings_tabs_holder .user_picture_holder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    margin-bottom: 15px; }
+.settings_tabs_holder .social_accounts a {
+  display: block;
+  float: left;
+  margin-right: 20px; }
+  @media only screen and (max-width: 767px) {
+    .settings_tabs_holder .social_accounts a {
+      float: none;
+      margin-bottom: 15px; }
+      .settings_tabs_holder .social_accounts a:last-child {
+        margin-bottom: 0; } }
+.settings_tabs_holder .profile_image_holder .input_row {
+  margin-bottom: 20px; }
+  .settings_tabs_holder .profile_image_holder .input_row:last-child {
+    margin-bottom: 0; }
+.settings_tabs_holder .legal_notice_text {
+  color: #888888;
+  margin-bottom: 0; }
+
+.input-validation-error-element .input-validation-error {
+  border-width: 2px;
+  border-color: #dfd1ce;
+  background-color: #ffebeb; }

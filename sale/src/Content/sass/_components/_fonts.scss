@@ -1,0 +1,92 @@
+/* FONTS */
+@font-face {
+    font-family:'Helvetica-Light';
+    src: url('../fonts/Helvetica-Light_gdi.eot');
+    src: url('../fonts/Helvetica-Light_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica-Light_gdi.woff') format('woff'),
+        url('../fonts/Helvetica-Light_gdi.ttf') format('truetype'),
+        url('../fonts/Helvetica-Light_gdi.svg#Helvetica-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+@font-face {
+    font-family:'Helvetica-Regular';
+    src: url('../fonts/Helvetica_gdi.eot');
+    src: url('../fonts/Helvetica_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica_gdi.woff') format('woff'),
+        url('../fonts/Helvetica_gdi.ttf') format('truetype'),
+        url('../fonts/Helvetica_gdi.svg#Helvetica-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+@font-face {
+    font-family:'Helvetica-Bold';
+    src: url('../fonts/Helvetica-Bold_gdi.eot');
+    src: url('../fonts/Helvetica-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica-Bold_gdi.woff') format('woff'),
+        url('../fonts/Helvetica-Bold_gdi.ttf') format('truetype'),
+        url('../fonts/Helvetica-Bold_gdi.svg#Helvetica-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+
+
+
+
+
+
+/*Fontello*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?98263042');
+  src: url('../fonts/fontello.eot?98263042#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?98263042') format('woff'),
+       url('../fonts/fontello.ttf?98263042') format('truetype'),
+       url('../fonts/fontello.svg?98263042#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ [class^="sale-icon-"]:before, [class*=" sale-icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.sale-icon-menu:before { content: '\e800'; } /* '' */
+.sale-icon-cancel:before { content: '\e801'; } /* '' */
+.sale-icon-angle-double-right:before { content: '\e802'; } /* '' */
+.sale-icon-camera:before { content: '\e803'; } /* '' */
+.sale-icon-users:before { content: '\e804'; } /* '' */
+.sale-icon-location:before { content: '\e805'; } /* '' */
+.sale-icon-left-open:before { content: '\e806'; } /* '' */
+.sale-icon-right-open:before { content: '\e807'; } /* '' */
+.sale-icon-up-open:before { content: '\e808'; } /* '' */
+.sale-icon-down-open:before { content: '\e809'; } /* '' */
+.sale-icon-clock:before { content: '\e80a'; } /* '' */
+.sale-icon-chat:before { content: '\e80b'; } /* '' */
+.sale-icon-thumbs-up:before { content: '\e80c'; } /* '' */
+.sale-icon-twitter:before { content: '\e80d'; } /* '' */
+.sale-icon-facebook-squared:before { content: '\e80e'; } /* '' */
+.sale-icon-linkedin-squared:before { content: '\e80f'; } /* '' */
+.sale-icon-at:before { content: '\e810'; } /* '' */
+.sale-icon-phone:before { content: '\e811'; } /* '' */
+
