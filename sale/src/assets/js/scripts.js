@@ -31,6 +31,7 @@ $(document).ready(function(){
 		$(this).closest('.content-form').find('.upload-images-holder').fadeOut(1);
 		$(this).closest('.content-form').find('.middle').removeClass('bottom');
 		$(this).closest('form').find('textarea').fadeOut(1);
+		$(this).closest('form').find('.form-add-list').fadeOut(1);
 		$(this).fadeOut(1);
 	});
 
