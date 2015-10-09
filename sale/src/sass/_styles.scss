@@ -1,9 +1,12 @@
 /* STYLES */
-
-.signup-bg-holder {
+.signup-bg {
 	background: url(../images/bg/login-bg.jpg) no-repeat center center / cover;
-	filter: blur(45px);
-  	-webkit-filter: blur(45px);
+}
+.signup-bg-holder {
+	// filter: url(blur.svg#blur);
+	// -webkit-filter: blur(45px);
+	// filter: blur(45px);
+	// filter: progid:DXImageTransform.Microsoft.blur(MakeShadow='false', PixelRadius='45',ShadowOpacity='0.75'); 
   	left: 0;
   	top: 0;
   	bottom: 0;
