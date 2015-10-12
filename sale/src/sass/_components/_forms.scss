@@ -26,9 +26,6 @@
 	margin-bottom: 20px;
 	.form-control {
 		height: 60px;
-		@include respond-to(mobile) {
-			height: 34px;
-		}
 	}
 	textarea {
 		min-height: 150px;

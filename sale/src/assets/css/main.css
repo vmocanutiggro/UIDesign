@@ -7147,51 +7147,48 @@ hr {
   /* line 27, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   .content-form .form-control, .content-form .bootstrap-timepicker-hour, .content-form .bootstrap-timepicker-minute, .content-form .bootstrap-timepicker-meridian {
     height: 60px; }
-    @media only screen and (max-width: 767px) {
-      .content-form .form-control, .content-form .bootstrap-timepicker-hour, .content-form .bootstrap-timepicker-minute, .content-form .bootstrap-timepicker-meridian {
-        height: 34px; } }
-  /* line 33, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 30, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   .content-form textarea {
     min-height: 150px; }
-  /* line 36, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 33, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   .content-form .form-add-list {
     margin-top: -3px; }
 
-/* line 40, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 37, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 textarea {
   min-height: 100px; }
 
-/* line 44, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 41, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .control-label.control-label-left {
   text-align: left; }
 
-/* line 48, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 45, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .close-form {
   position: absolute;
   bottom: 11px;
   right: 15px;
   font-size: 24px; }
 
-/* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 51, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-hidden-item, .upload-images-holder {
   display: none; }
 
-/* line 57, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 legend {
   border: none;
   color: #444444;
   font-family: 'Helvetica-Bold';
   line-height: 28px; }
 
-/* line 63, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 60, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 label {
   color: #444444;
   font-family: 'Helvetica-Bold'; }
 
-/* line 67, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 64, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 fieldset {
   margin-bottom: 25px; }
-  /* line 69, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 66, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   fieldset:last-child {
     margin-bottom: 0; }
 
@@ -7200,7 +7197,7 @@ fieldset {
     display: none; } }
 
 /*Login form*/
-/* line 79, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 76, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-login {
   padding: 20px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
