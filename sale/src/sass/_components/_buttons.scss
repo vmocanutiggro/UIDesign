@@ -28,10 +28,18 @@
 	}
 	&.button-orange {
 		background: $color-fire-bush;
-		color: $color-tundora-boulder;
+		color: $color-white;
 		&:hover, &:focus {
 			background: darken($color-fire-bush, 5%);
 			color: $color-tundora-boulder;
+		}
+	}
+	&.button-gray {
+		background: $color-powder-ash;
+		color: $color-white;
+		&:hover, &:focus {
+			background: darken($color-powder-ash, 10%);
+			color: $color-white;
 		}
 	}
 	&.button-circle {

@@ -1,4 +1,5 @@
-﻿<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths formdata" style=""><head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+﻿<html lang="en">
+	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Yugglr - Activity feed</title>
@@ -531,7 +532,7 @@
 					<div class="post_type_icon_box">
 						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Document"  -->
-						<i class="fontello-documents"></i>
+						<i class="sale-icon-calendar"></i>
 						<!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  --><!-- /ko -->
@@ -565,7 +566,7 @@
 						<i class="sale-icon-location"></i>
 						Location:
 						<span data-bind="text: MapAddress">Stockholm, Sweden</span>
-						<i class="fontello-down-open"></i>
+						
 						<i class="sale-icon-up-open-mini"></i>
 					</a>
 				</p>
@@ -588,22 +589,22 @@
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">1 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 1 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -661,7 +662,7 @@
 						<!-- ko if: AttachmentType == "Video" || AttachmentType == "Image"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  --><!-- /ko -->
 					</div>
@@ -694,7 +695,7 @@
 						<i class="sale-icon-location"></i>
 						Location:
 						<span data-bind="text: MapAddress">Stockholm, Sweden</span>
-						<i class="fontello-down-open"></i>
+						
 						<i class="sale-icon-up-open-mini"></i>
 					</a>
 				</p>
@@ -717,22 +718,22 @@
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes" style="display: none;">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">0 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 2 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -836,7 +837,7 @@
 					<a class="location-collapse" href="#">
 						<i class="sale-icon-location"></i>
 						<span data-bind="text: MapAddress">Stockholm, Sweden</span>
-						<i class="fontello-down-open"></i>
+						
 						<i class="sale-icon-up-open-mini"></i>
 					</a>
 				</span>
@@ -890,22 +891,22 @@
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0" style="display: none;">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes" style="display: none;">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">0 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -938,7 +939,7 @@
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -972,22 +973,22 @@
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">1 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1020,7 +1021,7 @@
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -1054,22 +1055,22 @@
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">5 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1102,7 +1103,7 @@
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -1137,22 +1138,22 @@
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">6 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1226,22 +1227,22 @@ Creating a world where every one is not for sale.</p>
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">4 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1274,7 +1275,7 @@ Creating a world where every one is not for sale.</p>
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -1309,22 +1310,22 @@ Creating a world where every one is not for sale.</p>
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">5 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 5 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1435,7 +1436,7 @@ Creating a world where every one is not for sale.</p>
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -1469,22 +1470,22 @@ Creating a world where every one is not for sale.</p>
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment has-items" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">3 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 5 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1595,7 +1596,7 @@ Creating a world where every one is not for sale.</p>
 						<!-- ko if: AttachmentType == "Document"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  --><!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -1629,22 +1630,22 @@ Creating a world where every one is not for sale.</p>
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like has-items" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'">3 people like it</span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments" style="display: none;">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) -->See all 0 comments<!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1701,7 +1702,7 @@ Creating a world where every one is not for sale.</p>
 					<a class="location-collapse" href="#">
 						<i class="sale-icon-location"></i>
 						<span data-bind="text: MapAddress"></span>
-						<i class="fontello-down-open"></i>
+						
 						<i class="sale-icon-up-open-mini"></i>
 					</a>
 				</span>
@@ -1755,22 +1756,22 @@ Creating a world where every one is not for sale.</p>
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'"></span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) --><!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -1805,13 +1806,13 @@ Creating a world where every one is not for sale.</p>
 						<i class="sale-icon-camera-1"></i>
 						<!-- /ko -->
 						<!-- ko if: AttachmentType == "Document"  -->
-						<i class="fontello-documents"></i>
+						<i class="sale-icon-calendar"></i>
 						<!-- /ko -->
 						<!-- ko if: AttachmentType == "Url"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 						<!-- ko if: AttachmentType == "None"  -->
-						<i class="fontello-comment"></i>
+						<i class="sale-icon-comment"></i>
 						<!-- /ko -->
 					</div>
 
@@ -1852,7 +1853,7 @@ Creating a world where every one is not for sale.</p>
 						<i class="sale-icon-location"></i>
 						Location:
 						<span data-bind="text: MapAddress"></span>
-						<i class="fontello-down-open"></i>
+						
 						<i class="sale-icon-up-open-mini"></i>
 					</a>
 				</p>
@@ -1875,22 +1876,22 @@ Creating a world where every one is not for sale.</p>
 
 			<div class="row_with_icons post_actions_holder">
 				<span class="item action_box action_box_like" data-bind="attr: { class: 'item action_box action_box_like' + (NumLikes() > 0 ? ' has-items' : '') }">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<a href="#">Like</a>
 				</span>
 				<span class="item action_box action_box_comment" data-bind="attr: { class: 'item action_box action_box_comment' + (NumComments() > 0 ? ' has-items' : '') }">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<a href="#">Comment</a>
 				</span>
 			</div><!-- row_with_icons -->
 
 			<div class="row_with_icons view_more_comments_holder" data-bind="visible: NumLikes() > 0 || NumComments() > 0">
 				<a href="#" class="item people_like_it pull-left" data-bind="visible: NumLikes" data-provides="see-all-likes">
-					<i class="fontello-heart"></i>
+					<i class="sale-icon-heart"></i>
 					<span data-bind="text: NumLikes() + ' people like it'"></span>
 				</a>
 				<a href="#" class="item people_comment_it pull-right" data-bind="visible: NumComments" data-provides="see-all-comments">
-					<i class="fontello-comment"></i>
+					<i class="sale-icon-comment"></i>
 					<!-- ko text: 'See all {0} comments'.replace('{0}', NumComments()) --><!-- /ko -->
 				</a>
 			</div><!-- view_more_comments_holder -->
@@ -2180,7 +2181,7 @@ Creating a world where every one is not for sale.</p>
 			TooLargeFile: 'Uploaded file is too large',
 			FailedToPost: 'Failed to post message'
 		};
-		Yugglr.Feed.Init('me', '9ffb1073-a4fa-4ea5-9d9b-4c27605fbe3b', 'me', 'user', _errorMessages);
+		// Yugglr.Feed.Init('me', '9ffb1073-a4fa-4ea5-9d9b-4c27605fbe3b', 'me', 'user', _errorMessages);
 	</script>
 
 

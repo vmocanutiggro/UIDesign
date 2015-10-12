@@ -1,18 +1,6 @@
 /* MODAL */
 .modal {
-	.close {
-		border-radius: 50%;
-		border: 1px solid $color-boulder;
-		width: 24px;
-		height: 24px;
-		opacity: 1;
-		span {
-			color: $color-boulder;
-			font-size: 18px;
-			margin-top: -3px;
-			display: block;
-		}
-	}
+	
 	.media-object {
 		width: 60px;
 		height: 60px;

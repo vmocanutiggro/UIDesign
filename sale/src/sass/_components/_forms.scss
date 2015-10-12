@@ -78,3 +78,18 @@ fieldset {
 	box-shadow: 0px 0px 4px 1px rgba($color-black, .4);
 	background: $color-white;
 }
+/*Search group form*/
+.form-search-group {
+	margin-bottom: 20px;
+	input.form-control {
+		padding-right: 35px;
+	}
+	.button-search {
+		position: absolute;
+		height: 100%;
+		right: 5px;
+		top: 0;
+	}
+}
+
+

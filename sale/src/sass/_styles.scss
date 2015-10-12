@@ -71,5 +71,17 @@
 		margin-top: 0;
 	}
 }
+.location-container {
+	&.collapsed {
+		.sale-icon-up-open-mini {
+			&:before {
+				@extend .sale-icon-down-open-mini;
+			}
+		}
+	}
+}
+.media_holder_post .post_info_holder .post_type_icon_box i {
+	color: $color-dove-gray;
+}
 
 

@@ -13,7 +13,6 @@ footer {
 		padding-top: 20px;
 	}
 	&.footer-big {
-		background-size: cover;
 		padding-top: 80px;
 		@include respond-to(mobile) {
 			background: $color-black;
