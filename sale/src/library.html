@@ -1,0 +1,328 @@
+﻿<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Library</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:700,400" rel="stylesheet" type="text/css">
+
+	<link href="Content/bootstrap-select.min.css" rel="stylesheet">
+	<link href="Content/bootstrap-datetimepicker.css" rel="stylesheet">
+	<link href="Content/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="Content/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="Content/fancybox/helpers/jquery.fancybox-thumbs.css" rel="stylesheet">
+	<link href="Content/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="Scripts/modernizr-2.8.3.js"></script>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/geocoder.js"></script><style type="text/css">.fancybox-margin{margin-right:0px;}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/stats.js"></script><style type="text/css">@-webkit-keyframes _gm7908 {
+0% { -webkit-transform: translate3d(0px,-500px,0); -webkit-animation-timing-function: ease-in; }
+50% { -webkit-transform: translate3d(0px,0px,0); -webkit-animation-timing-function: ease-out; }
+75% { -webkit-transform: translate3d(0px,-20px,0); -webkit-animation-timing-function: ease-in; }
+100% { -webkit-transform: translate3d(0px,0px,0); -webkit-animation-timing-function: ease-out; }
+}
+</style></head>
+
+<body>
+
+	<div class="container">
+		<header class="section-padding">
+			
+		    <div class="navbar-header">
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		      	</button>
+		      	<a href="#" id="logo"><img src="assets/images/elements/logo.png" alt=""></a>
+		    </div><!-- navbar-header -->
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav navbar-right">
+		      		<li><a href="#">OUR COMMUNITY</a></li>
+		      		<li><a href="#">tools</a></li>
+		      		<li><a href="#">COUNTRIES</a></li>
+			        <li><a href="#">CONTACT</a></li>
+			        <li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> SETTINGS</a>
+			          	<ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+			          	</ul>
+			        </li><!-- dropdown -->
+			        <li class="dropdown profile">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/temp/user1.png" alt=""></a>
+			          	<ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+			          	</ul>
+			        </li><!-- dropdown -->
+		      	</ul>
+		    </div><!-- /.navbar-collapse -->
+
+		</header><!-- header -->
+	</div><!-- container -->
+	
+	<section class="section_typical section_activity">
+		<div class="divider"></div>
+		<div class="container">
+			<div class="subsections_holder_column">
+				<div class="title_row">
+					<h3 class="subsection_title">NFSA Ambassador program files - global</h3>
+				</div><!-- title_row -->
+				
+				<ol class="breadcrumb">
+				    <li><a href="#">Global</a></li>
+				    <li><a href="#">Documents</a></li>
+				    <li class="active">NFSA Ambassador program files - global</li>
+				</ol><!-- breadcrumb -->
+
+				<p><button class="button button-gray" data-target="#add-document-modal" data-toggle="modal">Upload document</button></p>
+
+				<div class="table-responsive">
+					<table id="libraries" class="table table-striped">
+						<thead>
+							<tr>
+								<td>Name</td>
+								<td>Modified</td>
+								<td>Created</td>
+								<td>Description</td>
+								<td></td>
+							</tr>
+						</thead>
+						<tbody data-bind="visible: Libraries().length == 0">
+							<tr>
+								<td><a href="#">NFSA Ambassador program files - global</a></td>
+								<td>
+									<p class="date">2015-10-13 10:37:14</p>
+								</td>
+								<td>
+									<p class="date">2015-10-13 10:37:14</p>
+								</td>
+								<td>
+									<p>NFSA Ambassador documents</p>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tbody data-bind="visible: Libraries().length > 0, template: { name: 'template-library', foreach: Libraries }"></tbody>
+					</table>
+				</div><!-- table-responsive -->
+
+				
+
+			</div><!-- subsections_holder_column -->
+			
+		</div><!-- container -->
+	</section><!-- section_activity -->
+
+
+
+
+	
+	<footer class="section-padding footer-big">
+		<div class="footer-inner">
+
+			<div class="container container-custom">
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+
+				<div class="footer-item-holder">
+					<h3 class="footer-title">Lorem Ipsum Dolor Sit</h3>
+					<p>Curabitur mollis massa tortor, ac ultricies felis cursus non. Integer varius consequat rutrum.</p>
+					<a href="#">Read more</a>
+				</div><!-- footer-item-holder -->
+			</div><!-- container-custom -->
+
+		</div><!-- footer-inner -->
+	</footer><!-- section-padding -->
+
+
+	<div class="modal fade" id="add-document-modal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="add-document-modal-label">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form role="form" class="form-horizontal" action="" enctype="multipart/form-data">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">&times;</button>
+						<h4 id="add-document-modal-label" class="modal-title">Add new document</h4>
+					</div>
+
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label class="col-sm-4 control-label" for="newDocument_Description">Description</label>
+							<div class="col-sm-8">
+								<textarea class="form-control elastic_textarea" cols="20" id="newDocument_Description" name="newDocument.Description" rows="1"></textarea>
+							</div>
+						</div><!-- input_row -->
+
+						<div class="form-group">
+							<label class="col-sm-4 control-label" for="newDocument_Document">Document</label>
+							<div class="fileinput fileinput-new custom_input_file col-sm-8" data-provides="fileinput">
+								<span class="btn btn-default btn-file custom_input_file_btn">
+									<span class="fileinput-new custom_input_file_btn_text"><i class="sale-icon-camera"></i> Click here to upload a photo</span>
+									<span class="fileinput-exists">Change the photo</span>
+									<input type="file" name="newDocument.Document" id="newDocument_Document" data-val="true" data-val-required="You must upload an image.">
+								</span>
+								<span class="you_want_upload hidden"><b>Uploading:</b></span>
+								<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+								<span class="fileinput-filename"></span>
+							</div>
+						</div><!-- input_row -->
+
+					</div>
+
+					<div class="modal-footer form-group">
+						<div class="col-sm-12 buttons_holder">
+							<button type="button" class="btn btn_custom btn_custom_small btn_custom_gradiented_green" data-action="create">Send</button>
+							<button type="button" class="btn btn_custom btn_custom_small btn_custom_gradiented_grey" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+				</form>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+
+	
+
+	<script src="https://maps.googleapis.com/maps/api/js?language=en&amp;key=AIzaSyBK-NNqN-J8UkkCp788MhSLrZnASVLbf9s&amp;sensor=true"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/22/7/main.js"></script>
+	<script src="Scripts/jquery-2.1.1.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+	<script src="Scripts/jquery.validate.unobtrusive.js"></script>
+	<script src="Scripts/jquery.validate.xtensions.js"></script>
+	<script src="Scripts/jquery.iframe-transport.js"></script>
+	<script src="Scripts/bootstrap.js"></script>
+	<script src="Scripts/jasny-bootstrap.js"></script>
+	<script src="Scripts/bootstrap-select.min.js"></script>
+	<script src="Scripts/moment-with-locales.js"></script>
+	<script src="Scripts/bootstrap-datetimepicker.js"></script>
+	<script src="Scripts/jquery.autosize.js"></script>
+	<script src="Scripts/fancybox/jquery.fancybox.js"></script>
+	<script src="Scripts/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+	<script src="Scripts/underscore.js"></script>
+	<script src="Scripts/knockout-3.3.0.debug.js"></script>
+	<script src="Scripts/typeahead.bundle.js"></script>
+	<script src="Scripts/Yugglr/Common.js"></script>
+	<script src="Scripts/Yugglr/Video.js"></script>
+	<script src="Scripts/Yugglr/Url.js"></script>
+	<script src="Scripts/Yugglr/Ajax.js"></script>
+	<script src="Scripts/Yugglr/Alert.js"></script>
+	<script src="Scripts/Yugglr/Date.js"></script>
+	<script src="Scripts/Yugglr/Validation.js"></script>
+	<script src="Scripts/Yugglr/Confirm.js"></script>
+	<script src="Scripts/Yugglr/ViewModels.js"></script>
+	<script src="Scripts/Yugglr/FeedRepository.js"></script>
+	<script src="Scripts/Yugglr/EventsRepository.js"></script>
+	<script src="Scripts/Yugglr/UsersRepository.js"></script>
+	<script src="Scripts/Yugglr/GroupsRepositories.js"></script>
+	<script src="Scripts/Yugglr/Feed.js"></script>
+	<script src="Scripts/Yugglr/Feed.ShareBox.js"></script>
+	<script src="Scripts/Yugglr/Documents.js"></script>
+	<script src="Scripts/Yugglr/Requests.js"></script>
+	<script src="Scripts/Yugglr/Messages.js"></script>
+	<script src="Scripts/Yugglr/ViewableSearch.js"></script>
+	<script src="Scripts/Yugglr/GroupAside.js"></script>
+	<script src="Scripts/Yugglr/Groups.js"></script>
+	<script src="Scripts/Yugglr/Gallery.js"></script>
+	<script src="Scripts/Yugglr/Album.js"></script>
+	<script src="Scripts/Yugglr/GoogleMaps.js"></script>
+	<script src="Scripts/Yugglr/AccountSettings.js"></script>
+	<script src="Scripts/Yugglr/Calendar.js"></script>
+	<script src="Scripts/Yugglr/CalendarEvent.js"></script>
+	<script src="Scripts/Yugglr/CalendarWidget.js"></script>
+	<script src="Scripts/Yugglr/ProfileGroupSettings.js"></script>
+	<script src="Scripts/Yugglr/EventWidget.js"></script>
+	<script src="Scripts/Yugglr/Scripts.js"></script>
+
+	
+	<script>
+		var _errorMessages = {
+			TooLargeFile: 'Uploaded file is too large',
+			FailedToPost: 'Failed to post message'
+		};
+		// Yugglr.Feed.Init('me', '9ffb1073-a4fa-4ea5-9d9b-4c27605fbe3b', 'me', 'user', _errorMessages);
+	</script>
+
+
+
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: 'PT Sans', sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; white-space: pre-wrap; line-height: 17px; width: 525.984px;" class="autosizejs" id="autosizejs"></textarea></body></html>

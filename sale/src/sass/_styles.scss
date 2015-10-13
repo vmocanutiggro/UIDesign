@@ -57,8 +57,8 @@
 	background: transparent;
 	.inner {
 		background: #F5F5F5;
-		padding-left: 15px;
-		padding-right: 15px;
+		// padding-left: 15px;
+		// padding-right: 15px;
 	}
 }
 .share_box_holder {
@@ -82,6 +82,10 @@
 }
 .media_holder_post .post_info_holder .post_type_icon_box i {
 	color: $color-dove-gray;
+}
+.breadcrumb {
+	background: transparent;
+	padding: 0;
 }
 
 

@@ -2028,66 +2028,108 @@ Creating a world where every one is not for sale.</p>
 
 
 
-<div class="hidden-xs col-md-4 col-sm-12 sidebar sidebar_right site_column">
-	<div class="inner">
-		
+		<div class="hidden-xs col-md-4 col-sm-12 sidebar sidebar_right site_column">
+			<div class="inner">
 
-<div class="sidebar-item sidebar-item-calendar">
-    <div class="bordered-box">
-        <h3 class="sidebar-item-title">Calendar</h3>
+				<div class="widget">
+					<h4 class="widget_title" data-toggle="collapse" data-target="#widget_calendar">Calendar <i class="collapse_arrow"></i></h4>
+					<div id="widget_calendar" class="widget_body collapse in">
+						Calendar holder
+					</div><!-- widget_body -->
+				</div><!-- widget -->
 
-        <div class="items-holder" data-bind="visible: RecentEvents().length > 0, foreach: RecentEvents">
-            <div class="item" data-bind="attr: {'data-event-id':Id}">
-                <div class="part-left" data-bind="click: function() { $root.OnViewEvent(Id()); return true; }">
-                    <i class="sale-icon-calendar icon"></i>
-                </div><!-- left-part -->
+				<div class="widget">
+					<h4 class="widget_title" data-toggle="collapse" data-target="#widget-group-member">Group Members <i class="collapse_arrow"></i></h4>
+					<div id="widget-group-member" class="widget_body collapse in">
+						<h5 class="text-uppercase">Members</h5>
+						<div class="media">
+							<div class="media-left media-left-small">
+								<a href="#" class="userpic">
+									<img src="assets/images/elements/default_userpicture.png" alt="" class="">
+								</a>
+							</div><!-- media-left -->
+							<div class="media-body">
+								<p><a href="#" class="text-underline">Mikael Eriksson</a></p>
+							</div><!-- media-body -->
+						</div><!-- media -->
 
-                <div class="media-body">
-                    <p class="title">
-                        <a href="#" data-bind="text: Title, click: function() { if ($root.IsAdmin){$root.OnEditEvent(Id())} else $root.OnViewEvent(Id()); return true; }"></a>
-                    </p>
-                    <span class="date" data-bind="click: function() { $root.OnViewEvent(Id()); return true; }"><i class="sale-icon-clock"></i><span data-bind="text: IsAllDay()?Start().format('YYYY-MM-DD'):Start().format('YYYY-MM-DD HH:mm')"></span></span>
-                        <!-- ko if: $root.IsAdmin -->
-                        <button title="Edit" class="close" aria-hidden="true" data-bind="click: function() { $root.OnEditEvent(Id()); return true; }" type="button">…</button>
-                        <!-- /ko -->
-                </div><!-- media-body -->
-            </div><!-- item -->
-        </div><!-- items-holder -->
-        <div class="text-center">
-                <!-- ko if: IsAdmin -->
-                        <a href="#" class="add-new-event" data-bind="visible: IsAdmin, text: 'Add new event',  click: function() { $data.OnAddEvent(); return true; }"></a>
-                <!-- /ko -->
-        </div>
-    </div><!-- bordered-box -->
-</div><!-- sidebar-item-links -->
+						<p class="text-center"><a href="#" data-toggle="modal" data-target="#invite-members-modal">Invite Members</a></p>
 
-		
+						<p class="text-center"><a href="#">Show More..</a></p>
 
-<div class="widget">
-	<h4 class="widget_title" data-toggle="collapse" data-target="#widget_favorite_groups">Favorite groups <i class="collapse_arrow"></i></h4>
-	<div id="widget_favorite_groups" class="widget_body collapse in">
-		<div class="favorite_group_item">
-			<a href="#" class="logo_holder"><img src="Images/public/favorite_group_1.jpg" alt=""></a>
-			<a href="#"><span class="underlined">Läxgänget</span></a>
-		</div>
+					</div><!-- widget_body -->
+				</div><!-- widget -->
 
-		<div class="favorite_group_item">
-			<a href="#" class="logo_holder"><img src="Images/public/favorite_group_2.jpg" alt=""></a>
-			<a href="#"><span class="underlined">Blackens tjejer</span></a>
-		</div>
-	</div><!-- widget_body -->
-</div><!-- widget -->
+				<div class="widget">
+					<h4 class="widget_title" data-toggle="collapse" data-target="#widget-documents">Recent Documents  <i class="collapse_arrow"></i></h4>
+					<div id="widget-documents" class="widget_body collapse in">
+						
+						<div class="holder mb">
+							<div class="media_data_holder">
+				                <a href="#" class="" data-bind="text: Name, attr: { href: Url }">
+									user1.png
+				                </a>
+				                <div class="posted_by_holder">
+				                    <p class="by_user">Posted: <span class="when" data-bind="text: Modified">2015-10-13 10:36:25</span></p>
+				                </div><!-- posted_by_holder -->
+							</div><!-- media_data_holder -->
+
+							<div class="media_data_holder">
+				                <a href="#" class="" data-bind="text: Name, attr: { href: Url }">
+									user1.png
+				                </a>
+				                <div class="posted_by_holder">
+				                    <p class="by_user">Posted: <span class="when" data-bind="text: Modified">2015-10-13 10:36:25</span></p>
+				                </div><!-- posted_by_holder -->
+							</div><!-- media_data_holder -->
+
+							<div class="media_data_holder">
+				                <a href="#" class="" data-bind="text: Name, attr: { href: Url }">
+									user1.png
+				                </a>
+				                <div class="posted_by_holder">
+				                    <p class="by_user">Posted: <span class="when" data-bind="text: Modified">2015-10-13 10:36:25</span></p>
+				                </div><!-- posted_by_holder -->
+							</div><!-- media_data_holder -->
+
+							<div class="media_data_holder">
+				                <a href="#" class="" data-bind="text: Name, attr: { href: Url }">
+									user1.png
+				                </a>
+				                <div class="posted_by_holder">
+				                    <p class="by_user">Posted: <span class="when" data-bind="text: Modified">2015-10-13 10:36:25</span></p>
+				                </div><!-- posted_by_holder -->
+							</div><!-- media_data_holder -->
+
+							<div class="media_data_holder">
+				                <a href="#" class="" data-bind="text: Name, attr: { href: Url }">
+									user1.png
+				                </a>
+				                <div class="posted_by_holder">
+				                    <p class="by_user">Posted: <span class="when" data-bind="text: Modified">2015-10-13 10:36:25</span></p>
+				                </div><!-- posted_by_holder -->
+							</div><!-- media_data_holder -->
+						</div><!-- holder -->
+
+						<p class="text-center"><a href="#">View Documents</a></p>
+
+					</div><!-- widget_body -->
+				</div><!-- widget -->
 
 
-		
+				<div class="widget">
+					<h4 class="widget_title" data-toggle="collapse" data-target="#widget-photos">Recent Photos <i class="collapse_arrow"></i></h4>
+					<div id="widget-photos" class="widget_body collapse in">
 
-		
+						<p class="text-center"><a href="#">View Gallery</a></p>
 
-		
-	</div><!-- inner -->
-</div><!-- sidebar_left -->
-			</div>
-		</div>
+					</div><!-- widget_body -->
+				</div><!-- widget -->
+
+			</div><!-- inner -->
+		</div><!-- sidebar_left -->
+	</div>
+</div>
 	</section><!-- section_activity -->
 	
 	<footer class="section-padding footer-big">
@@ -2121,6 +2163,49 @@ Creating a world where every one is not for sale.</p>
 
 		</div><!-- footer-inner -->
 	</footer><!-- section-padding -->
+
+
+
+	<div class="modal fade" id="invite-members-modal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="confirmation_model_label">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">×</button>
+					<h4 id="add_photo_modal_label" class="modal-title">Add member</h4>
+				</div>
+
+				<div class="modal-body">
+					<form role="form" action="" class="form-inline" enctype="multipart/form-data">
+						<div class="form-group">
+							<label for="UserSearch">User</label>
+							<input class="user-search form-control" type="text" id="UserSearch" name="UserSearch" />
+						</div>
+					</form>
+
+					<div class="panel">
+						<div class="panel-heading">
+							Selected users
+						</div>
+						<div class="panel-body">
+							<ul class="list-group" data-bind="foreach: SelectedUsers">
+								<li class="list-group-item">
+									<button title="Remove" class="close" aria-hidden="true" data-bind="attr: { 'data-user-id': Id }" type="button">&times;</button>
+									<span data-bind="text: Name"></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer form-group">
+					<div class="col-sm-12 buttons_holder">
+						<button type="button" class="btn btn-add btn_custom btn_custom_small btn_custom_gradiented_green">Add</button>
+						<button type="button" class="btn btn_custom btn_custom_small btn_custom_gradiented_grey" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
