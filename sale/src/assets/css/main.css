@@ -6886,6 +6886,16 @@ button.close {
   content: '\e81e'; }
 
 /* '' */
+/* line 105, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_fonts.scss */
+.sale-icon-folder-open:before {
+  content: '\e81f'; }
+
+/* '' */
+/* line 106, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_fonts.scss */
+.sale-icon-folder:before {
+  content: '\e820'; }
+
+/* '' */
 /* VARIABLES */
 /*Black group*/
 /*Orange group*/
@@ -8635,6 +8645,11 @@ header .navbar-nav {
   /* line 4, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_table.scss */
   .table i {
     font-size: 15px; }
+
+/* line 8, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_table.scss */
+.table-folder {
+  font-size: 20px;
+  margin-right: 10px; }
 
 /* HEADER */
 /* line 3, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_header.scss */
