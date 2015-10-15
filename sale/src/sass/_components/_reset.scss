@@ -154,3 +154,13 @@ hr {
 		margin-right: -15px;
 	}
 }
+
+.disabled {
+	color: #777;
+	&:hover, &:focus {
+		color: #777;
+		text-decoration: none;
+		background-color: transparent;
+		background-image: none;
+	}
+}

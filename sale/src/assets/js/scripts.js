@@ -59,6 +59,12 @@ $(document).ready(function(){
 		$(this).closest('.content-form').find('.upload-images-holder').fadeIn(1);
 	});
 
+	$( ".like-btn" ).click(function( event ) {
+		event.preventDefault();
+		$(this).toggleClass('disabled');
+	});
+
+
 
 });
 
