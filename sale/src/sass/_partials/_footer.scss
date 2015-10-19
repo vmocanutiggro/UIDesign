@@ -18,6 +18,11 @@ footer {
 			background: $color-black;
 			padding-top: 20px;
 		}
+		.footer-inner {
+			@include respond-to(mobile) {
+				padding-top: 25px;
+			}
+		}
 	}
 	p {
 		float: none;

@@ -7199,39 +7199,40 @@ hr {
 
 /* line 37, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 textarea {
-  min-height: 100px; }
+  min-height: 100px;
+  resize: none; }
 
-/* line 41, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 42, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .control-label.control-label-left {
   text-align: left; }
 
-/* line 45, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 46, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .close-form {
   position: absolute;
   bottom: 11px;
   right: 15px;
   font-size: 24px; }
 
-/* line 51, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 52, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-hidden-item, .upload-images-holder {
   display: none; }
 
-/* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 55, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 legend {
   border: none;
   color: #444444;
   font-family: 'Helvetica-Bold';
   line-height: 28px; }
 
-/* line 60, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 61, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 label {
   color: #444444;
   font-family: 'Helvetica-Bold'; }
 
-/* line 64, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 65, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 fieldset {
   margin-bottom: 25px; }
-  /* line 66, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 67, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   fieldset:last-child {
     margin-bottom: 0; }
 
@@ -7240,20 +7241,20 @@ fieldset {
     display: none; } }
 
 /*Login form*/
-/* line 76, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 77, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-login {
   padding: 20px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
   background: #ffffff; }
 
 /*Search group form*/
-/* line 82, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+/* line 83, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
 .form-search-group {
   margin-bottom: 20px; }
-  /* line 84, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 85, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   .form-search-group input.form-control, .form-search-group input.bootstrap-timepicker-hour, .form-search-group input.bootstrap-timepicker-minute, .form-search-group input.bootstrap-timepicker-meridian {
     padding-right: 35px; }
-  /* line 87, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
+  /* line 88, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_forms.scss */
   .form-search-group .button-search {
     position: absolute;
     height: 100%;
@@ -7293,39 +7294,47 @@ section {
 .section-padding {
   padding-left: 15px;
   padding-right: 15px; }
+  @media only screen and (max-width: 767px) {
+    .section-padding {
+      padding-left: 0;
+      padding-right: 0; } }
 
-/* line 26, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 30, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .container-small {
   width: 100%;
   max-width: 620px;
   margin: 0 auto; }
 
-/* line 32, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 36, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .container.container-custom {
   width: 720px; }
   @media only screen and (max-width: 767px) {
     .container.container-custom {
       width: 100%; } }
 
-/* line 40, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 43, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+.mt {
+  margin-top: 10px; }
+
+/* line 47, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 *:hover, *:focus, *:active {
   outline: none !important; }
 
-/* line 45, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 52, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 a:hover, a:focus, a:visited {
   text-decoration: none;
   outline: none; }
 
-/* line 52, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 59, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 57, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 64, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 ul {
   margin-bottom: 20px; }
-  /* line 59, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+  /* line 66, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
   ul:last-child {
     margin-bottom: 0; }
 
@@ -7349,19 +7358,19 @@ ul {
   .push-down {
     margin-bottom: 15px; } }
 
-/* line 89, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 96, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .relative {
   position: relative; }
 
-/* line 92, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 99, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .block {
   display: block; }
 
-/* line 95, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 102, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 99, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 106, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .mb {
   margin-bottom: 15px; }
 
@@ -7369,21 +7378,21 @@ ul {
   .mobile-float-reset {
     float: none !important; } }
 
-/* line 107, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 114, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .custom-col-left {
   padding-right: 0; }
   @media only screen and (max-width: 767px) {
     .custom-col-left {
       padding-right: 15px; } }
 
-/* line 113, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 120, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .custom-col-right {
   padding-left: 0; }
   @media only screen and (max-width: 767px) {
     .custom-col-right {
       padding-left: 15px; } }
 
-/* line 119, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 126, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .row-table {
   display: table;
   width: 100%; }
@@ -7391,7 +7400,7 @@ ul {
     .row-table {
       display: block;
       width: auto; } }
-  /* line 126, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+  /* line 133, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
   .row-table > [class*=col-] {
     position: relative;
     display: table-cell;
@@ -7400,34 +7409,34 @@ ul {
     @media only screen and (max-width: 767px) {
       .row-table > [class*=col-] {
         display: block; } }
-    /* line 134, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+    /* line 141, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
     .row-table > [class*=col-].middle {
       vertical-align: middle; }
-      /* line 136, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+      /* line 143, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
       .row-table > [class*=col-].middle.bottom {
         vertical-align: bottom; }
 
-/* line 142, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 149, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .divider {
   height: 25px; }
 
-/* line 145, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 152, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .full-width {
   width: 100%; }
 
-/* line 148, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 155, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .margin-small {
   margin-bottom: 10px; }
 
-/* line 152, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 159, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 hr.hr-negative {
   margin-left: -15px;
   margin-right: -15px; }
 
-/* line 158, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+/* line 165, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
 .disabled {
   color: #777; }
-  /* line 160, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
+  /* line 167, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_reset.scss */
   .disabled:hover, .disabled:focus {
     color: #777;
     text-decoration: none;
@@ -7835,16 +7844,20 @@ header .navbar-nav {
 .modal .media-object {
   width: 60px;
   height: 60px; }
+/* line 7, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
+.modal .form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px; }
 
-/* line 8, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
+/* line 12, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
 .modal-content {
   border-radius: 0; }
 
-/* line 11, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
+/* line 15, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
 .modal-header {
   border: none; }
 
-/* line 15, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
+/* line 19, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_modal.scss */
 .modal-body.no-padding-top {
   padding-top: 0; }
 
@@ -8555,22 +8568,51 @@ header .navbar-nav {
   /* line 10, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
   .media .userpic {
     width: 50px; }
+  /* line 13, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  .media.media-likes, .media.media-comment {
+    padding: 10px;
+    border: medium none;
+    background: #F9FAF9;
+    box-shadow: none;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+    /* line 20, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+    .media.media-likes .media-left, .media.media-comment .media-left {
+      padding-right: 10px; }
+    /* line 23, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+    .media.media-likes .userpic, .media.media-comment .userpic {
+      width: 100%;
+      display: block;
+      max-width: 50px; }
+      /* line 27, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+      .media.media-likes .userpic img, .media.media-comment .userpic img {
+        border-radius: 4px;
+        width: 50px;
+        height: 50px; }
+    /* line 33, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+    .media.media-likes p, .media.media-comment p {
+      margin-bottom: 7.5px;
+      font-size: 12px;
+      line-height: 100%; }
+      /* line 37, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+      .media.media-likes p:last-child, .media.media-comment p:last-child {
+        margin-bottom: 0; }
 
-/* line 14, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 43, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .media-left {
   padding-right: 30px; }
-  /* line 16, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  /* line 45, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
   .media-left.media-left-small {
     padding-right: 10px; }
 
-/* line 20, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 49, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .label-holder {
   width: 100px; }
 
-/* line 23, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 52, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .user-picture-holder {
   margin-bottom: 20px; }
-  /* line 25, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  /* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
   .user-picture-holder img {
     height: 100px;
     width: 100px; }
@@ -8579,7 +8621,7 @@ header .navbar-nav {
   .media-object {
     width: 50px;
     height: 50px; } }
-/* line 35, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 64, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .media-object.media-object-small {
   width: 60px;
   height: 60px; }
@@ -8588,7 +8630,7 @@ header .navbar-nav {
       width: 50px;
       height: 50px; } }
 
-/* line 44, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 73, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .alphabet-title {
   text-transform: uppercase;
   font-size: 50px;
@@ -8599,16 +8641,22 @@ header .navbar-nav {
     .alphabet-title {
       font-size: 30px; } }
 
-/* line 54, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+/* line 83, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
 .media_data_holder {
   padding: 8px;
   border: 1px solid #DEDEDE;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
   position: relative; }
-  /* line 60, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+  /* line 89, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
   .media_data_holder:last-child {
     margin-bottom: 0; }
+
+/* line 94, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_media.scss */
+.delete-comment-item {
+  color: #898989;
+  float: right;
+  font-size: 18px; }
 
 /* SELECT */
 /* line 4, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_components/_select.scss */
@@ -8779,26 +8827,29 @@ footer {
       footer.footer-big {
         background: #000000;
         padding-top: 20px; } }
-  /* line 22, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
+    @media only screen and (max-width: 767px) {
+      footer.footer-big .footer-inner {
+        padding-top: 25px; } }
+  /* line 27, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
   footer p {
     float: none; }
 
-/* line 26, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
+/* line 31, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
 .footer-inner {
   background-color: #000000;
   margin: 0 -15px;
   padding: 0 15px 20px 15px; }
 
-/* line 31, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
+/* line 36, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
 .footer-item-holder {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid #979797; }
-  /* line 35, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
+  /* line 40, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
   .footer-item-holder p {
     color: #ffffff; }
 
-/* line 39, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
+/* line 44, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_partials/_footer.scss */
 .footer-title {
   color: #FF9900;
   margin-bottom: 5px;
@@ -8849,3 +8900,17 @@ footer {
 .breadcrumb {
   background: transparent;
   padding: 0; }
+
+/* line 91, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_styles.scss */
+.counter-holder {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  margin-bottom: 20px; }
+  /* line 96, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_styles.scss */
+  .counter-holder:last-child {
+    margin-bottom: 0; }
+
+/* line 100, /Users/Nagalsky/Dropbox/repos/Mikael/sale/src/sass/_styles.scss */
+.hidden-comment-holder {
+  display: none; }

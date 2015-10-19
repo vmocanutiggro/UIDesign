@@ -65,6 +65,12 @@ $(document).ready(function(){
 	});
 
 
+	$( ".comment-trigger" ).click(function( event ) {
+		event.preventDefault();
+		$(this).closest('body').find('.hidden-comment-holder').slideToggle('slow');
+	});
+
+
 
 });
 
