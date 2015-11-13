@@ -24,8 +24,9 @@
 	>li {
 		padding: 16px 0;
 		>a {
+			padding-left: 40px;
 			color: $color-white;
-			font-size: 24px;
+			font-size: 26px;
 			display: inline-block;
 			font-family: $font-bold;
 			line-height: 28px;
@@ -37,16 +38,17 @@
 				@extend .vihti-icon-tick;
 				margin-right: 20px;
 				font-size: 40px;
+				margin-left: -60px;
 				vertical-align: middle;
 				@include respond-to(phones) {
 					font-size: 20px;
-					margin-left: -42px;
+					margin-left: -30px;
 				}
 			}
 			@include respond-to(phones) {
 				font-size: 14px;
 				line-height: 20px;
-				padding-left: 40px;
+				padding-left: 30px;
 			}
 		}
 	}
