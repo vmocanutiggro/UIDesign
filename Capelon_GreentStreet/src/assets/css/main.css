@@ -8128,6 +8128,33 @@ p:last-child {
   color: #fffb91;
 }
 
+.font-regular-holder {
+  margin-bottom: 25px;
+}
+
+.font-regular-holder:last-child {
+  margin-bottom: 0;
+}
+
+.font-regular-holder p {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .font-regular-holder p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .font-regular-holder p {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
 /* BUTTONS */
 .btn {
   box-shadow: none;
@@ -8199,7 +8226,7 @@ p:last-child {
 .list-icon {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8558,7 +8585,6 @@ ul:last-child, .nav:last-child {
   position: absolute;
   right: 0;
   top: 48%;
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 4px 0 0 4px;
   z-index: 8000;
 }
@@ -8577,16 +8603,7 @@ ul:last-child, .nav:last-child {
   height: 8px;
   width: 8px;
   margin: 7px;
-  background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
-}
-
-#carousel-holder .bx-controls .bx-pager-item a:hover {
-  background: white;
-}
-
-#carousel-holder .bx-controls .bx-pager-item a.active {
-  background: white;
 }
 
 /***
@@ -8635,7 +8652,6 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(../../vendors/bx-slider.js/src/images/images/bx_loader.gif) center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -8655,7 +8671,6 @@ ul.bxslider {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
   text-indent: -9999px;
   display: block;
   width: 10px;
@@ -8663,12 +8678,6 @@ ul.bxslider {
   margin: 0 5px;
   outline: 0;
   border-radius: 5px;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
 }
 
 .bx-wrapper .bx-pager-item,
@@ -8686,22 +8695,10 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url(images/controls.png) no-repeat 0 -32px;
-}
-
-.bx-wrapper .bx-prev:hover,
-.bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
 }
 
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url(images/controls.png) no-repeat -43px -32px;
-}
-
-.bx-wrapper .bx-next:hover,
-.bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -8730,14 +8727,7 @@ ul.bxslider {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url(images/controls.png) -86px -11px no-repeat;
   margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active,
-.bx-wrapper .bx-controls-auto .bx-start:focus {
-  background-position: -86px 0;
 }
 
 .bx-wrapper .bx-controls-auto .bx-stop {
@@ -8746,14 +8736,7 @@ ul.bxslider {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url(images/controls.png) -86px -44px no-repeat;
   margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active,
-.bx-wrapper .bx-controls-auto .bx-stop:focus {
-  background-position: -86px -33px;
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
@@ -8772,8 +8755,6 @@ ul.bxslider {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666;
-  background: rgba(80, 80, 80, 0.75);
   width: 100%;
 }
 
