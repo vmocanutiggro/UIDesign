@@ -44,7 +44,7 @@
       font-size: 70px;
     }
     @include respond-to(tablets-large) {
-      font-size: 55px;
+      font-size: 62px;
     }
     @include respond-to(tablets-small) {
       //font-size: 70px;
@@ -66,7 +66,7 @@
 .carousel-title {
 	text-transform: uppercase;
 	margin-bottom: 15px;
-  font-size: 65px;
+  font-size: 48px;
   &.shadow {
     text-shadow: 1px 1px 1px rgba($color-black, .6);
   }
@@ -74,8 +74,12 @@
     font-size: 48px;
   }
   @include respond-to(tablets-large) {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 55px;
+  }
+  @include respond-to(tablets-small) {
+    font-size: 28px;
+    line-height: 50px;
   }
   @include respond-to(phones) {
     font-size: 28px;
@@ -83,8 +87,8 @@
     margin-bottom: 10px;
   }
   @media (max-width: 550px) {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 24px;
     margin-bottom: 5px;
   }
 	small {

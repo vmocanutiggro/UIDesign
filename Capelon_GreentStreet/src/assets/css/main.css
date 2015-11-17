@@ -8494,7 +8494,7 @@ ul:last-child, .nav:last-child {
 
 @media only screen and (max-width: 1199px) {
   .carousel-caption-holder i {
-    font-size: 55px;
+    font-size: 62px;
   }
 }
 
@@ -8520,7 +8520,7 @@ ul:last-child, .nav:last-child {
 .carousel-title {
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-size: 65px;
+  font-size: 48px;
 }
 
 .carousel-title.shadow {
@@ -8535,8 +8535,15 @@ ul:last-child, .nav:last-child {
 
 @media only screen and (max-width: 1199px) {
   .carousel-title {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 55px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .carousel-title {
+    font-size: 28px;
+    line-height: 50px;
   }
 }
 
@@ -8550,8 +8557,8 @@ ul:last-child, .nav:last-child {
 
 @media (max-width: 550px) {
   .carousel-title {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 24px;
     margin-bottom: 5px;
   }
 }
@@ -8968,7 +8975,7 @@ ul.bxslider {
 
 @media only screen and (max-width: 767px) {
   .label-title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -9181,6 +9188,12 @@ address > a:hover, address > a:focus {
 .saved-holder {
   padding-top: 20px;
   background: url(../images/elements/dotted.png) no-repeat center 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .saved-holder {
+    background-size: 500px 160px;
+  }
 }
 
 @media only screen and (max-width: 767px) {

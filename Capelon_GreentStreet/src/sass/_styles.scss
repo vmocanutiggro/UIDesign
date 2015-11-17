@@ -10,6 +10,9 @@
 .saved-holder {
 	padding-top: 20px;
 	background: url(../images/elements/dotted.png) no-repeat center 20px;
+	@include respond-to(tablets-small) {
+		background-size: 500px 160px;
+}
 	@include respond-to(phones) {
 		background: none;
 	}
