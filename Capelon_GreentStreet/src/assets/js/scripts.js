@@ -22,6 +22,9 @@ $(document).ready(function(){
 	    pager: false
 	});
 	
+    //Bootstrap datepicker initial
+    $('.datepicker-holder').datepicker({
+    });
 
 });
 

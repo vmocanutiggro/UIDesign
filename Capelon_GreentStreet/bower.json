@@ -21,6 +21,7 @@
     "jquery-placeholder": "latest",
     "bx-slider.js": "~4.2.3",
     "zyncro-videogular-overlay-play": "~1.0.3",
-    "highcharts": "~4.1.5"
+    "highcharts": "~4.1.5",
+    "bootstrap-datepicker": "~1.5.0"
   }
 }
