@@ -8519,8 +8519,8 @@ ul:last-child, .nav:last-child {
 
 .carousel-title {
   text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 60px;
+  margin-bottom: 15px;
+  font-size: 65px;
 }
 
 .carousel-title.shadow {

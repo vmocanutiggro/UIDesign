@@ -25,6 +25,8 @@ $(document).ready(function(){
 
 });
 
+
+
 //Charts action
 $(function () {
     // Create the chart
@@ -188,7 +190,13 @@ $(function () {
 
         ]
     });
-
+    // $.datepicker.setDefaults({
+    //     dateFormat: 'yy-mm-dd',
+    //     onSelect: function(dateText) {
+    //         this.onchange();
+    //         this.onblur();
+    //     }
+    // });
 });
 
 $(function () {
