@@ -46,6 +46,11 @@ ul, .nav {
   		margin-bottom: 15px;
 	}
 }
+.push-down-big {
+	@include respond-to(phones) {
+  		margin-bottom: 30px;
+	}
+}
 .relative {
 	position: relative;
 }
@@ -67,6 +72,12 @@ ul, .nav {
 }
 .mb30 {
 	margin-bottom: 30px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mt10 {
+	margin-top: 10px;
 }
 .divider {
 	height: 40px;
