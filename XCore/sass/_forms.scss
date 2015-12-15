@@ -1,0 +1,27 @@
+/* FORMS styles */
+.form-group {
+	margin-bottom: 10px;
+&:last-child {
+	margin-bottom: 0;
+}
+}
+.form-control {
+	padding: 10px 12px;
+	height: 40px;
+	border-radius: 0;
+	box-shadow: none;
+	line-height: 1.385rem;
+	color: $site-color-dusty-gray;
+	background: $site-color-alabaster;
+	@include custom-placeholder($color: $site-color-dusty-gray, $font-size: 1rem, $line-height: 1.385rem);
+	&:focus {
+		box-shadow: none;
+	}
+}
+.search-input {
+	@extend .form-control;
+	&:focus {
+		box-shadow: none;
+		border: none;
+	}
+}

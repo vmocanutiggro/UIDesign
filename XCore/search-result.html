@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<title>X-Core: Search result</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="vendors/owlcarousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owlcarousel/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="vendors/jschab-bootstrap-tabdrop/css/tabdrop.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="part-left">
+					<a href="#" class="logo">
+						<img src="assets/images/elements/logo.svg" alt="">
+					</a>
+				</div><!-- part-left -->
+
+				<div class="part-right">
+					<div class="user-profile-holder">
+						<div class="dropdown userpic-holder" id="userpic-holder">
+							<div class="dropdown-toggle userpic">
+								<img src="assets/images/temp/userpic.jpg" alt="">
+							</div><!-- userpic -->
+						</div><!-- userpic-holder -->
+
+						<div class="profile-actions">
+							<div class="dropdown" id="profile-actions-dropdown-holder">
+								<a href="#" class="dropdown-toggle username" data-toggle="dropdown">
+									Mikael Robert Eriksson<span class="dropdown-icon"></span>
+								</a>
+
+								<ul class="dropdown-menu" id="profile-actions-dropdown-list" role="menu">
+									<li role="presentation">
+										<a role="menuitem" tabindex="-1" href="#">Edit Profile</a>
+									</li>
+									<li role="presentation">
+										<a role="menuitem" tabindex="-1" href="#">Account Settings</a>
+									</li>
+									<li role="presentation">
+										<a role="menuitem" tabindex="-1" href="#">Log Out</a>
+									</li>
+								</ul>
+							</div><!-- dropdown -->
+
+							<span class="post">IT Manager</span>
+						</div><!-- profile-actions -->
+					</div><!-- user-profile-holder -->
+				</div><!-- part-right -->
+
+				<div class="search-field-holder" id="search-field-desktop-place">
+					<div class="fluid-search-field" id="fluid-search-field">
+						<div class="dropdown dropdown-filter-options">
+							<button type="button" href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="fontello-menu-dropdown icon"></span>
+							</button>
+
+							<ul class="dropdown-menu" role="menu">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#" class="checked"><i class="fontello-magnifier icon"></i> All</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-doc icon"></i> Documents</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-doc-text icon"></i> Pages</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-users icon"></i> People</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-globe icon"></i> Site</a>
+								</li>
+							</ul>
+						</div><!-- dropdown-filter-options -->
+
+						<button type="submit" class="search-submit">
+							<i class="fontello-magnifier icon"></i>
+						</button>
+
+						<div class="search-input-holder">
+							<input type="search" class="search-input" placeholder="Sok pa aktiv finans">
+						</div><!-- search-input-holder -->
+					</div><!-- fluid-search-field -->
+				</div><!-- fluid-search-field-holder -->
+			</div><!-- container -->
+		</div><!-- header-top -->
+
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navigation-bar" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom-navi">
+							<i class="fontello-menu"></i>
+						</button>
+						<div class="search-field-holder" id="search-field-mobile-place"></div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="header-bottom-navi">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">
+									<i class="fontello-home"></i>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Grupper<span class="dropdown-icon"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Grupper 1</a></li>
+									<li><a href="#">Grupper 2</a></li>
+									<li><a href="#">Grupper 3</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Outlook</a>
+							</li>
+							<li class="active">
+								<a href="#">Dokument</a>
+							</li>
+							<li>
+								<a href="#">Totaloverview</a>
+							</li>
+							<li>
+								<a href="#">Kontakter</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav><!-- navigation-bar -->
+			</div><!-- container -->
+		</div><!-- header-bottom -->
+	</header>
+
+
+	<section class="main-content">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active">Search results</li>
+			</ol>
+
+			<div class="bordered-box">
+				<h1>Search Results: <span class="color-blue">Gunnar</span></h1>
+				<p>We have found <span class="color-black-thin">43 results</span></p>
+
+				<div class="tabpanel-group-name">
+
+					<ul class="nav nav-tabs nav-tabs-border">
+				    	<li class="active">
+				    		<a href="#tab-all" aria-controls="tab-all" data-toggle="tab">All <span>(43)</span></a>
+				    	</li>
+
+				    	<li>
+				    		<a href="#tab-document" aria-controls="tab-document" data-toggle="tab">Dokument <span>(15)</span></a>
+				    	</li>
+
+				    	<li>
+				    		<a href="#tab-personer" aria-controls="tab-personer" data-toggle="tab">Personer <span>(3)</span></a>
+				    	</li>
+				  	</ul><!-- nav-tabs -->
+
+				  	<div class="tab-content mt">
+
+						<div class="tab-pane active" id="tab-all">
+
+							<div class="content-item-holder">
+								<h3 class="text-uppercase color-black-thin font-bold">persons <span class="color-gray">(3)</span></h3>
+
+								<div class="row">
+									<div class="col-md-3 col-sm-3">
+										<div class="personal-card bordered-box">
+											<div class="media">
+											  	<div class="media-left">
+											    	<a href="#">
+											      		<img class="media-object" src="assets/images/temp/userpic.jpg" alt="...">
+											    	</a>
+											  	</div><!-- media-left -->
+											  	<div class="media-body">
+											   		<h4 class="media-heading">Media heading</h4>
+											   		<ul class="media-list">
+											   			<li>IT Manager</li>
+											   			<li class="active">Admin</li>
+											   		</ul><!-- media-list -->
+											  	</div><!-- media-body -->
+											</div><!-- media -->
+											<address>
+												<a href="tel:08-987-65-43"><i class="fontello-phone address-icon"></i> 08-987-65-43</a><br>
+												<a href="mailto:gunnar.avelin@gmail.com"><i class="fontello-at address-icon"></i> gunnar.avelin@gmail.com</a><br>
+												<p><i class="fontello-home address-icon"></i> Pressbyranm,<br> Mirum Gallerian, Norrkoping</p>
+											</address>
+										</div><!-- personal-card -->
+									</div><!-- col -->
+
+									<div class="col-md-3 col-sm-3">
+										<div class="personal-card bordered-box">
+											<div class="media">
+											  	<div class="media-left">
+											    	<a href="#">
+											      		<img class="media-object" src="assets/images/temp/userpic.jpg" alt="...">
+											    	</a>
+											  	</div><!-- media-left -->
+											  	<div class="media-body">
+											   		<h4 class="media-heading">Media heading</h4>
+											   		<ul class="media-list">
+											   			<li>IT Manager</li>
+											   			<li class="active">Admin</li>
+											   		</ul><!-- media-list -->
+											  	</div><!-- media-body -->
+											</div><!-- media -->
+											<address>
+												<a href="tel:08-987-65-43"><i class="fontello-phone address-icon"></i> 08-987-65-43</a><br>
+												<a href="mailto:gunnar.avelin@gmail.com"><i class="fontello-at address-icon"></i> gunnar.avelin@gmail.com</a><br>
+												<p><i class="fontello-home address-icon"></i> Pressbyranm,<br> Mirum Gallerian, Norrkoping</p>
+											</address>
+										</div><!-- personal-card -->
+									</div><!-- col -->
+
+									<div class="col-md-3 col-sm-3">
+										<div class="personal-card bordered-box">
+											<div class="media">
+											  	<div class="media-left">
+											    	<a href="#">
+											      		<img class="media-object" src="assets/images/temp/userpic.jpg" alt="...">
+											    	</a>
+											  	</div><!-- media-left -->
+											  	<div class="media-body">
+											   		<h4 class="media-heading">Media heading</h4>
+											   		<ul class="media-list">
+											   			<li>IT Manager</li>
+											   			<li class="active">Admin</li>
+											   		</ul><!-- media-list -->
+											  	</div><!-- media-body -->
+											</div><!-- media -->
+											<address>
+												<a href="tel:08-987-65-43"><i class="fontello-phone address-icon"></i> 08-987-65-43</a><br>
+												<a href="mailto:gunnar.avelin@gmail.com"><i class="fontello-at address-icon"></i> gunnar.avelin@gmail.com</a><br>
+												<p><i class="fontello-home address-icon"></i> Pressbyranm,<br> Mirum Gallerian, Norrkoping</p>
+											</address>
+										</div><!-- personal-card -->
+									</div><!-- col -->
+
+									<div class="col-md-3 col-sm-3">
+										<div class="personal-card bordered-box">
+											<div class="media">
+											  	<div class="media-left">
+											    	<a href="#">
+											      		<img class="media-object" src="assets/images/temp/userpic.jpg" alt="...">
+											    	</a>
+											  	</div><!-- media-left -->
+											  	<div class="media-body">
+											   		<h4 class="media-heading">Media heading</h4>
+											   		<ul class="media-list">
+											   			<li>IT Manager</li>
+											   			<li class="active">Admin</li>
+											   		</ul><!-- media-list -->
+											  	</div><!-- media-body -->
+											</div><!-- media -->
+											<address>
+												<a href="tel:08-987-65-43"><i class="fontello-phone address-icon"></i> 08-987-65-43</a><br>
+												<a href="mailto:gunnar.avelin@gmail.com"><i class="fontello-at address-icon"></i> gunnar.avelin@gmail.com</a><br>
+												<p><i class="fontello-home address-icon"></i> Pressbyranm,<br> Mirum Gallerian, Norrkoping</p>
+											</address>
+										</div><!-- personal-card -->
+									</div><!-- col -->
+								</div><!-- row -->
+
+								<nav class="text-center">
+								  	<ul class="pagination">
+									    <li class="active"><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+								    </ul><!-- pagination -->
+								</nav>
+
+							</div><!-- content-item-holder -->
+
+
+							<div class="content-item-holder">
+								<h3 class="text-uppercase color-black-thin font-bold">articles <span class="color-gray">(5)</span></h3>
+
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="article-item">
+										<h4 class="article-title">WinMoSquare Foursquare for Windows Mobile.</h4>
+										<a href="#">WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</a>
+									</div><!-- article-item -->
+									</div><!-- col -->
+
+									<div class="col-sm-4">
+										<div class="article-item">
+										<h4 class="article-title">WinMoSquare Foursquare for Windows Mobile.</h4>
+										<a href="#">WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</a>
+									</div><!-- article-item -->
+									</div><!-- col -->
+
+									<div class="col-sm-4">
+										<div class="article-item">
+										<h4 class="article-title">WinMoSquare Foursquare for Windows Mobile.</h4>
+										<a href="#">WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</a>
+									</div><!-- article-item -->
+									</div><!-- col -->
+
+									<div class="col-sm-4">
+										<div class="article-item">
+										<h4 class="article-title">WinMoSquare Foursquare for Windows Mobile.</h4>
+										<a href="#">WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</a>
+									</div><!-- article-item -->
+									</div><!-- col -->
+
+									<div class="col-sm-4">
+										<div class="article-item">
+										<h4 class="article-title">WinMoSquare Foursquare for Windows Mobile.</h4>
+										<a href="#">WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</a>
+									</div><!-- article-item -->
+									</div><!-- col -->
+
+									<div class="col-sm-4">
+										<div class="article-item">
+										<h4 class="article-title">WinMoSquare Foursquare for Windows Mobile.</h4>
+										<a href="#">WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</a>
+									</div><!-- article-item -->
+									</div><!-- col -->
+								</div><!-- row -->
+
+
+								<nav class="text-center">
+								  	<ul class="pagination">
+									    <li class="active"><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+								    </ul><!-- pagination -->
+								</nav>
+
+							</div><!-- content-item-holder -->
+
+
+							<div class="content-item-holder">
+								<h3 class="text-uppercase color-black-thin font-bold">Dokument <span class="color-gray">(5)</span></h3>
+
+								<div class="document-holder">
+									<p><a href="#">Reports.doc <span class="label label-primary">DOC</span></a></p>
+									<p><a href="#">Eventsprogramm...ochure.pdf <span class="label label-danger">PDF</span></a></p>
+								</div><!--  -->
+
+								<nav class="text-center">
+								  	<ul class="pagination">
+									    <li class="active"><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+								    </ul><!-- pagination -->
+								</nav>
+
+							</div><!-- content-item-holder -->
+
+
+
+						</div><!-- tab-pane -->	
+
+						<div class="tab-pane" id="tab-document">
+							<ol class="breadcrumb">
+					    		<li><a href="#">Documents root</a></li>
+					    		<li class="active">Some folder name</li>
+					    	</ol>
+
+							<div class="buttons-row">
+					    		<button class="btn mobile-icons" type="button">
+					    			<i class="fontello-new-folder icon"></i>
+					    			<span class="button-text">New folder</span>
+					    		</button>
+
+					    		<button class="btn mobile-icons" type="button">
+					    			<i class="fontello-upload icon"></i>
+					    			<span class="button-text">Upload</span>
+					    		</button>
+
+					    		<button class="btn mobile-icons" type="button">
+					    			<i class="fontello-share icon"></i>
+					    			<span class="button-text">Share folder</span>
+					    		</button>
+					    	</div><!-- buttons-row -->
+
+					    	<div class="table-responsive">
+					    		<table class="table-documents">
+					    			<thead>
+					    				<tr>
+					    					<th>Name</th>
+					    					<th>Modified</th>
+					    					<th>Created</th>
+					    					<th colspan="2">Description</th>
+					    				</tr>
+					    			</thead>
+					    			<tbody>
+					    				<tr>
+					    					<td>
+					    						<i class="fontello-folder icon"></i>
+					    						<a href="#" class="item-name">Wall Documents</a>
+					    					</td>
+					    					<td>
+					    						<span class="date">2014-11-14</span>
+					    						<span class="name">11:59:21</span>
+					    					</td>
+					    					<td>
+					    						<span class="date">2014-11-14</span>
+					    						<span class="name">11:59:21</span>
+					    					</td>
+					    					<td>
+					    						Folder Wall Documents
+					    					</td>
+					    					<td class="delete-item-cell">
+					    						<a href="#" class="delete">
+					    							<i class="fontello-trash icon"></i>
+					    						</a>
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						<i class="fontello-folder icon"></i>
+					    						<a href="#" class="item-name">Wall Documents</a>
+					    					</td>
+					    					<td>
+					    						<span class="date">2014-11-14</span>
+					    						<span class="name">11:59:21</span>
+					    					</td>
+					    					<td>
+					    						<span class="date">2014-11-14</span>
+					    						<span class="name">11:59:21</span>
+					    					</td>
+					    					<td>
+					    						Folder Wall Documents
+					    					</td>
+					    					<td class="delete-item-cell">
+					    						<a href="#" class="delete">
+					    							<i class="fontello-trash icon"></i>
+					    						</a>
+					    					</td>
+					    				</tr>
+
+					    				<tr>
+					    					<td>
+					    						<i class="fontello-folder icon"></i>
+					    						<a href="#" class="item-name">Wall Documents</a>
+					    					</td>
+					    					<td>
+					    						<span class="date">2014-11-14</span>
+					    						<span class="name">11:59:21</span>
+					    					</td>
+					    					<td>
+					    						<span class="date">2014-11-14</span>
+					    						<span class="name">11:59:21</span>
+					    					</td>
+					    					<td>
+					    						Folder Wall Documents
+					    					</td>
+					    					<td class="delete-item-cell">
+					    						<a href="#" class="delete">
+					    							<i class="fontello-trash icon"></i>
+					    						</a>
+					    					</td>
+					    				</tr>
+					    			</tbody>
+					    		</table>
+					    	</div><!-- table-responsive -->
+						</div><!-- tab-pane -->	
+
+						<div class="tab-pane" id="tab-personer">
+							<h2>Groupname</h2>
+
+					    	<p class="preamble">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					    	<img class="content-img" src="assets/images/temp/tab-info-img-01.jpg" alt="">
+
+					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					    	<p>Excepteur sint occaecat cupidatat non proident.</p>
+
+					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					    	<br>
+					    	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					    	<hr>
+
+					    	<div class="row">
+					    		<div class="col-md-9 col-sm-8 push-down">
+					    			<p>
+										<b>
+											<i class="fontello-tags color-gray-thin"></i> <span class="color-black-thin">Etiketter:</span>
+										</b>
+										<a href="#">Utveckling</a>,
+										<a href="#">Analys</a>,
+										<a href="#">Finans</a>,
+										<a href="#">Utland</a>
+									</p>
+					    		</div><!-- col -->
+
+					    		<div class="col-md-3 col-sm-4">
+					    			<div class="media">
+					    				<div class="media-left">
+					    					<a href="#">
+					    						<img src="assets/images/temp/member-thumb-01.jpg" alt="" class="media-object">
+					    					</a>
+					    				</div><!-- media-left -->
+
+					    				<div class="media-body">
+					    					<h5 class="media-heading">Mikael Eriksson</h5>
+					    					<span>about a month ago</span>
+					    				</div><!-- media-body -->
+					    			</div><!-- media -->
+					    		</div><!-- col -->
+					    	</div><!-- row -->
+						</div><!-- tab-pane -->	
+
+				  	</div><!-- tab-content -->	
+
+				</div><!-- tabpanel-group-name -->	
+
+			</div><!-- bordered-box -->
+
+		</div><!-- container -->	
+	</section><!-- main-content -->
+
+
+	<div class="prefooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 column column-news-in-pictures">
+					<h3 class="title">News in pictures</h3>
+
+					<div class="news-in-pictures-holder">
+						<div class="items-row">
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-01.jpg" alt="">
+								</a>
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-02.jpg" alt="">
+								</a>
+							</div><!-- item -->
+						</div><!-- items-row -->
+
+						<div class="items-row">
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-03.jpg" alt="">
+								</a>
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-04.jpg" alt="">
+								</a>
+							</div><!-- item -->
+						</div><!-- items-row -->
+					</div><!-- news-in-pictures-holder -->
+				</div><!-- column-news-in-pictures -->
+
+				<div class="col-sm-6 col-md-4 col-md-offset-1 column column-most-viewed-posts">
+					<h3 class="title">Links</h3>
+
+					<div class="items-holder">
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->
+
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->
+
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->	
+					</div><!-- items-holder -->
+				</div><!-- column-most-viewed-posts -->
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-sm-6 col-md-4 column column-social-stream">
+					<h3 class="title">Social stream</h3>
+
+					<div class="items-holder">
+						<div class="item">
+							<a href="#" class="item-image">
+								<img src="assets/images/temp/twit-img-01.jpg" alt="">
+							</a>
+							<div class="item-content">
+								Brightstarr Team BrightStarr_SP @forrester big rise in Intranet as Service. Why not join @WeAreUnily &amp; Microsoft to see what all the fuss is about <a href="#">http://t.co/6fgJew2Tp6</a>
+							</div><!-- item-content -->
+						</div><!-- item -->
+
+						<div class="item">
+							<a href="#" class="item-image">
+								<img src="assets/images/temp/twit-img-02.jpg" alt="">
+							</a>
+							<div class="item-content">
+								Brightstarr Team BrightStarr_SP @forrester big rise in Intranet as Service. Why not join @WeAreUnily &amp; Microsoft to see what all the fuss is about <a href="#">http://t.co/6fgJew2Tp6</a>
+							</div><!-- item-content -->
+						</div><!-- item -->
+					</div><!-- items-holder -->
+				</div><!-- column-social-stream -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<p class="copyright">Copyright 2016 Yintra.com</p>
+
+			<ul class="footer-links-list">
+				<li>
+					<a href="#">Aktiv Finans AB</a>
+				</li>
+
+				<li>
+					<a href="#">Huvudkontor Linköping </a>
+				</li>
+
+				<li class="telephone">
+					<a href="tel:0134850150">Tel 013-485 01 50</a>
+				</li>
+
+				<li>
+					<a href="#">Fax 013-485 01 51</a>
+				</li>
+
+				<li class="email">
+					<a href="mailto:kundservice@aktivfinans.se">kundservice@aktivfinans.se</a>
+				</li>
+			</ul><!-- footer-links-list -->
+		</div><!-- container -->
+	</footer>
+
+
+
+	<script src="vendors/modernizr/modernizr.js"></script>
+	<script src="vendors/html5shiv/dist/html5shiv.min.js"></script>
+	<script src="vendors/respond/dest/respond.min.js"></script>
+	<script src="vendors/jquery/dist/jquery.min.js"></script>
+	<script src="vendors/input-file/input-file.js"></script>
+	<script src="vendors/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+	<script src="vendors/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="vendors/jquery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
+	<script src="vendors/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/jschab-bootstrab-tabdrop/js/bootstrap-tabdrop.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

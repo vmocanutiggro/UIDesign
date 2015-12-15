@@ -1,0 +1,228 @@
+/* PREFOOTER */
+.prefooter {
+	background: $prefooter-bg;
+	padding: 25px 0 0 0;
+	@include respond-to(phones) {
+		padding-top: 20px;
+	}
+	.column {
+		margin-bottom: 25px;
+		.title {
+			font-size: 1.692rem;
+			color: $prefooter-column-title-color;
+			font-weight: 600;
+			margin-bottom: 25px;
+		}
+		&.column-news-in-pictures {
+			.items-row {
+				@extend .clearfix;
+				margin-bottom: 10px;
+				line-height: 0;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			.item {
+				width: 50%;
+				float: left;
+				&:first-child {
+					padding-right: 5px;
+				}
+				&:last-child {
+					padding-left: 5px;
+				}
+				img {
+					@extend .bordered-picture-white;
+				}
+			}
+		}
+		&.column-most-viewed-posts {
+			.item {
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				// border-bottom: 1px solid $prefooter-most-viewed-posts-item-border;
+				&:last-child {
+					padding-bottom: 0;
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+			}
+			.item-title {
+				font-size: 1.231rem;
+				line-height: 1.538rem;
+				margin-bottom: 5px;
+				color: $site-color-white;
+				a {
+					display: block;
+					@include text-overflow();
+				}
+			}
+			.item-text {
+				color: $prefooter-most-viewed-posts-item-text-color;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		&.column-new-posts {
+			.item {
+				@extend .media;
+				margin-top: 10px;
+			}
+			.item-image {
+				margin-right: 10px;
+				float: left;
+				> img {
+					@extend .bordered-picture-white;
+					max-width: 100px;
+				}
+			}
+			.item-content {
+				@extend .media-body;
+				padding-top: 5px;
+				a {
+					color: $site-color-white;
+					font-size: 1.077rem;
+					margin-bottom: 10px;
+					display: inline-block;
+				}
+			}
+			.publication-date {
+				color: $site-color-white;
+				&:before {
+					font-family: 'fontello';
+					content: '\e810';
+					margin-right: 5px;
+				}
+			}
+		}
+		&.column-social-stream {
+			.item {
+				@extend .media;
+				margin-top: 10px;
+			}
+			.item-image {
+				margin-right: 10px;
+				float: left;
+				> img {
+					@extend .img-responsive;
+					width: 100%;
+					max-width: 50px;
+				}
+			}
+			.item-content {
+				@extend .media-body;
+				color: $site-color-white;
+			}
+		}
+	}
+}
+
+
+/* FOOTER */
+footer {
+	background: $footer-bg;
+	padding: 10px 0;
+	@include respond-to(tablets-small) {
+		text-align: center;
+		padding: 20px 0;
+	}
+}
+
+.logo-footer {
+	float: left;
+	img {
+		@extend .img-responsive;
+	}
+	@include respond-to(tablets-large) {
+		max-width: 130px;
+		margin-top: 6px;
+	}
+	@include respond-to(tablets-small) {
+		float: none;
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	@include respond-to(phones) {
+		margin-bottom: 10px;
+	}
+}
+
+.footer-links-list {
+	@extend .list-unstyled;
+	@extend .clearfix;
+	float: right;
+	margin-left: 0;
+	margin: 15px 0;
+	@include respond-to(tablets-small) {
+		float: none;
+		margin: 0;
+	}
+	li {
+		padding-left: 12px;
+		margin-left: 12px;
+		border-left: 1px solid $footer-links-list-color;
+		float: left;
+		line-height: 1rem;
+		@include respond-to(tablets-large) {
+			padding-left: 10px;
+			margin-left: 10px;
+		}
+		@include respond-to(tablets-small) {
+			float: none;
+			display: inline-block;
+		}
+		@include respond-to(phones) {
+			margin-top: 5px;
+		}
+		&:first-child {
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: 0;
+			border-left: none;
+		}
+		a {
+			font-weight: 300;
+			color: $footer-links-list-color;
+			text-transform: uppercase;
+			line-height: 1rem;
+			&:hover, &:focus {
+				color: $footer-links-list-active-color;
+				text-decoration: none;
+			}
+		}
+		&.email {
+			@include respond-to(tablets-small) {
+				display: block;
+				padding-left: 0;
+				margin-left: 0;
+				border-left: none;
+				margin-top: 5px;
+			}
+			a {
+				color: $footer-links-list-active-color;
+			}
+		}
+		&.telephone {
+			@include respond-to(tablets-small) {
+				padding-left: 0;
+				margin-left: 0;
+				border-left: none;
+			}
+		}
+	}
+}
+
+.copyright {
+	color: $site-color-white;
+	float: left;		
+	margin-top: 12px;
+	@include respond-to(tablets-small) {
+		float: none;
+		margin: 0 0 10px 0;
+		text-align: center;
+	}
+}
+

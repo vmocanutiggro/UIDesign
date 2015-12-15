@@ -1,0 +1,326 @@
+/* HEADER */
+.header-top {
+	@extend .clearfix;
+	background: $header-top-bg;
+	padding: 18px 0;
+	@include respond-to(phones) {
+		padding: 10px 0;
+	}
+	.search-field-holder {
+		@extend .clearfix;
+		margin-top: 10px;
+		@include respond-to(tablets-small) {
+			margin-top: 0;
+		}
+	}
+	.part-left {
+		float: left;
+		margin-right: 50px;
+		@extend .clearfix;
+		@include respond-to(tablets-small) {
+			margin-right: 30px;
+		}
+		@include respond-to(phones) {
+			margin-right: 0;
+		}
+	}
+	.part-right {
+		float: right;
+		margin-left: 80px;
+		@extend .clearfix;
+		@include respond-to(tablets-small) {
+			margin-left: 30px;
+		}
+		@include respond-to(phones) {
+			margin-left: 0;
+		}
+		.dropdown-menu {
+			margin-top: 25px;
+			@include respond-to(phones) {
+				margin-top: 15px;
+				left: auto;
+				right: 0;
+			}
+			&:before {
+				left: auto;
+				right: 10px;
+			}
+			&:after {
+				left: auto;
+				right: 9px;
+			}
+		}
+	}
+}
+.logo {
+	float: left;
+	max-width: 175px;
+	@include respond-to(tablets-small) {
+		max-width: 160px;
+	}
+	img {
+		@extend .img-responsive;
+	}
+}
+.user-profile-holder {
+	@extend .clearfix;
+	.userpic-holder {
+		float: left;
+	}
+	.userpic {
+		border: 10px solid $userpic-border;
+		@include respond-to(phones) {
+			border-width: 5px;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			@include respond-to(phones) {
+				width: 28px;
+				height: 28px;
+			}
+		}
+	}
+	.profile-actions {
+		float: left;
+		margin-left: 15px;
+		margin-top: 10px;
+		@include respond-to(phones) {
+			display: none;
+		}
+	}
+	.username {
+		font-weight: 600;
+		color: $username-color;
+		font-size: 1.154rem;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+	.dropdown-icon {
+		margin-left: 3px;
+		color: $username-down-icon-color;
+		&:before {
+			font-family: 'fontello';
+			content: '\e80b';
+			font-size: 0.769rem;
+			vertical-align: top;
+		}
+	}
+	.open {
+		.dropdown-icon {
+			&:before {
+				content: '\e80c';
+			}
+		}
+	}
+	.post {
+		color: $user-post-color;
+	}
+}
+.fluid-search-field {
+	// max-width: 460px;
+	// width: 100%;
+	background: $search-field-bg;
+	.dropdown-filter-options {
+		float: left;
+		border-width: 1px 0 1px 1px;
+		border-style: solid;
+		border-color: $search-field-border;
+		width: 36px;
+		height: 40px;
+		@include respond-to(phones) {
+			border-width: 0;
+		}
+		.dropdown-toggle {
+			border: none;
+			border-radius: none;
+			box-shadow: none;
+			padding: 0;
+			line-height: 38px;
+			text-align: center;
+			width: 35px;
+			height: 38px;
+			background: none;
+			@include respond-to(phones) {
+				line-height: 40px;
+				text-align: center;
+				width: 36px;
+				height: 40px;
+			}
+			.icon {
+				color: $search-field-color;
+			}
+		}
+	}
+	.search-submit {
+		float: right;
+		border: none;
+		border-radius: none;
+		box-shadow: none;
+		padding: 0;
+		line-height: 40px;
+		text-align: center;
+		background: $search-field-submit-bg;
+		width: 40px;
+		height: 40px;
+		.icon {
+			color: $search-field-submit-icon-color;
+			font-size: 18px;
+		}
+	}
+	.search-input-holder {
+		overflow: hidden;
+		padding: 10px 4px;
+		border-width: 1px 0 1px 0;
+		border-style: solid;
+		border-color: $search-field-border;
+		@include respond-to(phones) {
+			border-width: 0;
+			padding: 11px 4px;
+		}
+	}
+	.search-input {
+		color: $search-field-color;
+		line-height: 1.385rem;
+		height: 18px;
+		padding: 0;
+		width: 100%;
+		border: none;
+		@include custom-placeholder($search-field-color, 1rem, 1.385rem);
+	}
+}
+
+.header-bottom {
+	@extend .clearfix;
+	background: $site-color-regal-blue;
+	padding: 15px 0;
+	@include respond-to(phones) {
+		padding: 5px 0;
+	}
+	.search-field-holder {
+		max-width: 220px;
+		float: right;
+		width: 100%;
+	}
+	.navigation-bar {
+		.navbar-toggle {
+			float: left;
+			margin: 0;
+			padding: 0;
+			font-size: 2.000rem;
+			color: $header-navi-mobile-toggle;
+			margin-top: 6px;
+		}
+		.dropdown-icon {
+			color: $header-navi-item-color;
+			margin-left: 5px;
+			&:before {
+				font-family: 'fontello';
+				content: '\e80b';
+				font-size: 0.769rem;
+				vertical-align: top;
+			}
+		}
+		.open {
+			.dropdown-icon {
+				&:before {
+					content: '\e80c';
+				}
+			}
+		}
+	}
+	.navbar-nav {
+		@include respond-to(phones) {
+			margin: 0;
+			padding: 15px 0;
+		}
+		> li {
+			margin-left: 25px;
+			@include respond-to(phones) {
+				margin-left: 0;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			> a {
+				padding: 0;
+				color: $header-navi-item-color;
+				font-size: 1.077rem;
+				line-height: 1.538rem;
+				font-weight: 700;
+				@include respond-to(phones) {
+					line-height: 2.308rem;
+					font-weight: 300;
+					padding: 0 12px;
+				}
+				&:hover, &:focus {
+					color: $header-navi-item-active-color;
+					background: none;
+					@include respond-to(phones) {
+						background: $header-navi-item-active-color;
+						color: $header-navi-item-color;
+						.dropdown-icon {
+							color: $header-navi-item-color;
+						}
+					}
+					.dropdown-icon {
+						color: $header-navi-item-active-color;
+						@include respond-to(phones) {
+							color: $header-navi-item-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-collapse {
+		@include respond-to(phones) {
+			position: absolute;
+			z-index: 20;
+			width: 100%;
+			margin: 5px -15px;
+			background: $header-navbar-collapse-bg;
+			border: none;
+			box-shadow: none;
+		}
+	}
+}
+
+.dropdown.dropdown-sign-in {
+	&.open {
+		.dropdown-toggle {
+			background: $site-color-picton-blue;
+			border-color: $site-color-picton-blue;
+			color: $site-color-white;
+			.icon {
+				color: $site-color-white;
+			}
+		}
+	}
+	.dropdown-toggle {
+		margin-top: 13px;
+		@include respond-to(tablets-small) {
+			margin-top: 3px;
+		}
+	}
+	.dropdown-menu {
+		width: 270px;
+	}
+	.title {
+		color: $site-color-mine-shaft;
+		margin: 5px 0 15px 0;
+	}
+	.btn-holder {
+		text-align: center;
+		margin: 15px 0;
+	}
+	.links-holder {
+		text-align: center;
+		margin: 15px 0 10px 0;
+		a {
+			line-height: 1.538rem;
+			font-size: 1rem;
+		}
+	}
+}

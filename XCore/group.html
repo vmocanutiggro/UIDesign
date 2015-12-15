@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<title>X-Core: Group</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="vendors/owlcarousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owlcarousel/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="vendors/jschab-bootstrap-tabdrop/css/tabdrop.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="part-left">
+					<a href="#" class="logo">
+						<img src="assets/images/elements/logo.svg" alt="">
+					</a>
+				</div><!-- part-left -->
+
+				<div class="part-right">
+					<div class="user-profile-holder">
+						<div class="dropdown userpic-holder" id="userpic-holder">
+							<div class="dropdown-toggle userpic">
+								<img src="assets/images/temp/userpic.jpg" alt="">
+							</div><!-- userpic -->
+						</div><!-- userpic-holder -->
+
+						<div class="profile-actions">
+							<div class="dropdown" id="profile-actions-dropdown-holder">
+								<a href="#" class="dropdown-toggle username" data-toggle="dropdown">
+									Mikael Robert Eriksson<span class="dropdown-icon"></span>
+								</a>
+
+								<ul class="dropdown-menu" id="profile-actions-dropdown-list" role="menu">
+									<li role="presentation">
+										<a role="menuitem" tabindex="-1" href="#">Edit Profile</a>
+									</li>
+									<li role="presentation">
+										<a role="menuitem" tabindex="-1" href="#">Account Settings</a>
+									</li>
+									<li role="presentation">
+										<a role="menuitem" tabindex="-1" href="#">Log Out</a>
+									</li>
+								</ul>
+							</div><!-- dropdown -->
+
+							<span class="post">IT Manager</span>
+						</div><!-- profile-actions -->
+					</div><!-- user-profile-holder -->
+				</div><!-- part-right -->
+
+				<div class="search-field-holder" id="search-field-desktop-place">
+					<div class="fluid-search-field" id="fluid-search-field">
+						<div class="dropdown dropdown-filter-options">
+							<button type="button" href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="fontello-menu-dropdown icon"></span>
+							</button>
+
+							<ul class="dropdown-menu" role="menu">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#" class="checked"><i class="fontello-magnifier icon"></i> All</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-doc icon"></i> Documents</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-doc-text icon"></i> Pages</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-users icon"></i> People</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-globe icon"></i> Site</a>
+								</li>
+							</ul>
+						</div><!-- dropdown-filter-options -->
+
+						<button type="submit" class="search-submit">
+							<i class="fontello-magnifier icon"></i>
+						</button>
+
+						<div class="search-input-holder">
+							<input type="search" class="search-input" placeholder="Sok pa aktiv finans">
+						</div><!-- search-input-holder -->
+					</div><!-- fluid-search-field -->
+				</div><!-- fluid-search-field-holder -->
+			</div><!-- container -->
+		</div><!-- header-top -->
+
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navigation-bar" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom-navi">
+							<i class="fontello-menu"></i>
+						</button>
+						<div class="search-field-holder" id="search-field-mobile-place"></div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="header-bottom-navi">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">
+									<i class="fontello-home"></i>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Grupper<span class="dropdown-icon"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Grupper 1</a></li>
+									<li><a href="#">Grupper 2</a></li>
+									<li><a href="#">Grupper 3</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Outlook</a>
+							</li>
+							<li class="active">
+								<a href="#">Dokument</a>
+							</li>
+							<li>
+								<a href="#">Totaloverview</a>
+							</li>
+							<li>
+								<a href="#">Kontakter</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav><!-- navigation-bar -->
+			</div><!-- container -->
+		</div><!-- header-bottom -->
+	</header>
+
+
+	<section class="main-content">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Grupper</a></li>
+				<li class="active">GroupName</li>
+			</ol>
+
+			<h1>Groupname</h1>
+
+			<div class="row">
+				<div class="col-sm-8 column-content">
+					<div role="tabpanel" class="tabpanel-group-name">
+						<ul class="nav nav-tabs nav-tabs-drop" role="tablist">
+					    	<li role="presentation" class="active">
+					    		<a href="#tab-feed" aria-controls="home" role="tab" data-toggle="tab">Feed</a>
+					    	</li>
+
+					    	<li role="presentation">
+					    		<a href="#tab-document" aria-controls="profile" role="tab" data-toggle="tab">Dokument</a>
+					    	</li>
+
+					    	<li role="presentation">
+					    		<a href="#tab-images" aria-controls="messages" role="tab" data-toggle="tab">Images</a>
+					    	</li>
+
+					    	<li role="presentation">
+					    		<a href="#tab-info" aria-controls="settings" role="tab" data-toggle="tab">Info</a>
+					    	</li>
+					  	</ul>
+
+						<div class="bordered-box">
+							<div class="tab-content">
+							    <div role="tabpanel" class="tab-pane active" id="tab-feed">
+							    	<p>
+							    		<a href="#" class="settings">Settings</a>
+							    	</p>
+
+							    	<h2 class="semi-title">Groupname Aktivity Feed</h2>
+
+							    	<div class="media share_box_holder">
+							    		<div class="media_left_subholder userpic_holder">
+							    			<a class="userpic" href="#"><img src="assets/images/temp/userpic.jpg" alt=""></a>
+							    		</div><!-- post_item_side_column -->
+
+							    		<div class="media-body">
+							    			<div class="share_box_controls_holder">
+							    				<div class="share_box_tabs_switcher_holder">
+							    					<a class="share_box_tabs_switcher" href="#share_box_tab_whats_new" data-toggle="tab"></a>
+							    					<a class="share_box_tabs_switcher" href="#share_box_tab_event" data-toggle="tab"><i class="fontello-event"></i></a>
+							    					<a class="share_box_tabs_switcher" href="#share_box_tab_location" data-toggle="tab"><i class="fontello-location"></i></a>
+							    					<a class="share_box_tabs_switcher" href="#share_box_tab_photo" data-toggle="tab"><i class="fontello-camera"></i></a>
+							    				</div><!-- share_box_tabs_switcher_holder -->
+
+							    				<div class="textarea_holder input_row">
+							    					<textarea id="" class="form-control elastic_textarea" placeholder="What's New?" rows="1" name=""></textarea>
+							    				</div><!-- textarea_holder -->
+							    			</div><!-- share_box_controls_holder -->
+
+							    			<div class="tab-content share_box_tabs_holder">
+							    				<!-- WHATS NEW TAB starts here -->
+							    				<div id="share_box_tab_whats_new" class="tab-pane fade">
+							    					<div class="input_row">
+							    						<div class="textarea_holder">
+							    							<textarea id="" class="form-control elastic_textarea" placeholder="Tell your family where you are..." rows="1" name=""></textarea>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    						</div><!-- textarea_holder -->
+							    					</div><!-- input_row -->
+
+							    					<div class="input_row share_attach_holder">
+							    						<ul class="nav nav-tabs">
+							    							<li><a href="#attach_link" data-toggle="tab">Link</a></li>
+							    							<li><a href="#attach_document" data-toggle="tab">Document</a></li>
+							    							<li><a href="#attach_picture" data-toggle="tab">Picture</a></li>
+							    							<li><a href="#attach_video" data-toggle="tab">Video</a></li>
+							    							<li><a href="#attach_location" data-toggle="tab">Location</a></li>
+							    						</ul>
+
+							    						<div class="tab-content">
+							    							<div class="tab-pane" id="attach_link">
+							    								<input type="text" class="form-control high" placeholder="http://" name="">
+							    							</div><!-- attach_link -->
+
+							    							<div class="tab-pane" id="attach_document">
+							    								<input type="text" placeholder="Enter URL or choose file" class="form-control double_width pull-left">
+							    								<div class="fileinput fileinput-new custom_input_file pull-left" data-provides="fileinput">
+							    									<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
+							    									<div class="file_name_holder">
+							    										<span class="you_want_upload"><b>You want to upload :</b></span>
+							    										<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+							    										<span class="fileinput-filename"></span>
+							    									</div>
+							    								</div>
+							    							</div><!-- attach_document -->
+
+							    							<div class="tab-pane" id="attach_picture">
+							    								<input type="text" placeholder="Enter URL or choose file" class="form-control double_width pull-left">
+							    								<div class="fileinput fileinput-new custom_input_file pull-left" data-provides="fileinput">
+							    									<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
+							    									<div class="file_name_holder">
+							    										<span class="you_want_upload"><b>You want to upload :</b></span>
+							    										<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+							    										<span class="fileinput-filename"></span>
+							    									</div>
+							    								</div>
+							    							</div><!-- attach_picture -->
+
+							    							<div class="tab-pane" id="attach_video">
+							    								<input type="text" class="form-control high" placeholder="Please insert link for youtube video" name="">
+							    							</div><!-- attach_video -->
+
+							    							<div class="tab-pane" id="attach_location">
+							    								<div class="input_holder with_icon">
+							    									<i class="fontello-location"></i>
+							    									<input name="" placeholder="Enter your location..." class="form-control high" id="">
+							    								</div>
+							    							</div><!-- attach_location -->
+							    						</div><!-- tab-content -->
+							    					</div><!-- share_attach_holder -->
+
+							    					<div class="input_row">
+							    						<div class="img_checkbox_holder">
+							    							<div class="label_holder">
+							    								<label class="img_checkbox_label" for="temp_id_1"><input type="checkbox" id="temp_id_1"><span class="img_checkbox family"></span><a href="#" class="img_checkbox_name">Family</a></label>
+							    							</div><!-- label_holder -->
+
+							    							<div class="label_holder">
+							    								<label class="img_checkbox_label" for="temp_id_2"><input type="checkbox" id="temp_id_2"><span class="img_checkbox all"></span><a href="#" class="img_checkbox_name">All</a></label>
+							    							</div><!-- label_holder -->
+
+							    							<div class="label_holder">
+							    								<label class="img_checkbox_label" for="temp_id_3"><input type="checkbox" id="temp_id_3"><span class="img_checkbox"><img src="images/public/user_pic_1.jpg" alt=""></span><a href="#" class="img_checkbox_name">Scarlett</a></label>
+							    							</div><!-- label_holder -->
+
+							    							<div class="label_holder">
+							    								<label class="img_checkbox_label" for="temp_id_4"><input type="checkbox" id="temp_id_4"><span class="img_checkbox"><img src="images/public/user_pic_1.jpg" alt=""></span><a href="#" class="img_checkbox_name">Halle</a></label>
+							    							</div><!-- label_holder -->
+							    						</div><!-- img_checkbox_holder -->
+							    					</div><!-- input_row -->
+
+							    					<div class="row input_row">
+							    						<div class="form-group col-xs-12 col-md-6 input_row">
+							    							<label for="">Add contact:</label>
+							    							<select class="form-control">
+							    								<option>Iaroslav</option>
+							    								<option>Iaroslav</option>
+							    								<option>Iaroslav</option>
+							    								<option>Iaroslav</option>
+							    								<option>Iaroslav</option>
+							    							</select>
+							    						</div>
+
+							    						<div class="form-group col-xs-12 col-md-6 input_row">
+							    							<label for="">Add group:</label>
+							    							<select class="form-control">
+							    								<option>Mikebasketballg</option>
+							    								<option>Mikebasketballg</option>
+							    								<option>Mikebasketballg</option>
+							    								<option>Mikebasketballg</option>
+							    								<option>Mikebasketballg</option>
+							    							</select>
+							    						</div>
+							    					</div><!-- input_row -->
+
+							    					<div class="btn_row">
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Post</button>
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_grey return_to_share_box">Cancel</button>
+							    					</div>
+							    				</div><!-- add_box_tab_event -->
+							    				<!-- WHATS NEW TAB ends here -->
+
+
+							    				<!-- ADD EVENT TAB starts here -->
+							    				<div id="share_box_tab_event" class="tab-pane fade">
+							    					<div class="input_row">
+							    						<div class="textarea_holder">
+							    							<textarea id="" class="form-control elastic_textarea" placeholder="Event Title..." rows="1" name=""></textarea>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    						</div><!-- textarea_holder -->
+							    					</div><!-- input_row -->
+
+							    					<div class="row input_row">
+							    						<div class="col-md-6">
+							    							<label for="">From:</label>
+							    							<div class="row">
+							    								<div class="col-xs-6">
+							    									<input type="text" class="form-control">
+							    								</div>
+
+							    								<div class="col-xs-6">
+							    									<select class="form-control">
+							    										<option>07:00am</option>
+							    										<option>08:00am</option>
+							    										<option>09:00am</option>
+							    										<option>10:00am</option>
+							    										<option>11:00am</option>
+							    									</select>
+							    								</div>
+							    							</div>
+							    						</div>
+
+							    						<div class="col-md-6">
+							    							<label for="">To:</label>
+							    							<div class="row">
+							    								<div class="col-xs-6">
+							    									<input type="text" class="form-control">
+							    								</div>
+
+							    								<div class="col-xs-6">
+							    									<select class="form-control">
+							    										<option>07:00am</option>
+							    										<option>08:00am</option>
+							    										<option>09:00am</option>
+							    										<option>10:00am</option>
+							    										<option>11:00am</option>
+							    									</select>
+							    								</div>
+							    							</div>
+							    						</div>
+							    					</div><!-- input_row -->
+
+							    					<div class="form-inline input_row">
+							    						<div class="checkbox">
+							    							<label>
+							    								<input type="checkbox"> All day
+							    							</label>
+							    						</div>
+							    					</div><!-- input_row -->
+
+							    					<div class="input_row">
+							    						<div class="input_holder with_icon">
+							    							<i class="fontello-location"></i>
+							    							<input name="" type="text" placeholder="Link this event to a family place" class="form-control high" id="">
+							    						</div><!-- input_holder -->
+
+							    						<div class="input_holder">
+							    							<textarea name="" rows="4" placeholder="Description (Optional)" class="form-control" id=""></textarea>
+							    						</div><!-- input_holder -->
+							    					</div>
+
+							    					<div class="add_more_lists_holder">
+							    						<div class="collapsable_item">
+							    							<h5 class="trigger collapsing_trigger collapsed bordered" data-toggle="collapse" data-target="#collapse_add_details"><span>Add more details</span><i class="fontello-up-open"></i></h5>
+
+							    							<div id="collapse_add_details" class="collapse">
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description">Add photo:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="input_holder">
+							    												<input type="text" class="form-control double_width" placeholder="Enter URL or choose file">
+							    											</div><!-- input_holder -->
+							    										</div><!-- input_row -->
+
+							    										<div class="input_row">
+							    											<div class="input_holder">
+							    												<div class="fileinput fileinput-new" data-provides="fileinput">
+							    													<div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+							    													<div>
+							    														<span class="btn btn_custom btn_custom_small btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    														<a href="#" class="btn btn_custom btn_custom_small btn_custom_gradiented_grey btn-file fileinput-exists" data-dismiss="fileinput">Remove</a>
+							    													</div>
+							    												</div>
+							    												<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
+							    											</div><!-- input_holder -->
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description">Add file:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="fileinput fileinput-new custom_input_file" data-provides="fileinput">
+							    												<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    												<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
+							    												<div style="margin-top: 10px;">
+							    													<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+							    													<span class="fileinput-filename"></span>
+							    												</div>
+							    											</div>
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description no_margin_top">Need Ride?</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="checkbox">
+							    												<label>
+							    													<input type="checkbox">
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description no_margin_top">Need Pickup?</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="checkbox">
+							    												<label>
+							    													<input type="checkbox">
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description no_margin_top">Visa mig som:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="form-inline input_row inline_row">
+							    											<div class="radio">
+							    												<label>
+							    													<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							    													Tillganglig
+							    												</label>
+							    											</div>
+							    											<div class="radio">
+							    												<label>
+							    													<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							    													Upptagen
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description no_margin_top">Sekretess:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="form-inline input_row inline_row">
+							    											<div class="radio">
+							    												<label>
+							    													<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							    													Standard
+							    												</label>
+							    											</div>
+							    											<div class="radio">
+							    												<label>
+							    													<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							    													Offentlig
+							    												</label>
+							    											</div>
+							    											<div class="radio">
+							    												<label>
+							    													<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+							    													Privat
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+
+							    										<div class="input_row">
+							    											<a href="#">Las mer om private respektive allmanna handelser</a>
+							    										</div>
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description">Kalender:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="input_holder">
+							    												<select class="form-control double_width">
+							    													<option>Mikael Eriksson</option>
+							    													<option>Mikael Eriksson</option>
+							    													<option>Mikael Eriksson</option>
+							    													<option>Mikael Eriksson</option>
+							    													<option>Mikael Eriksson</option>
+							    												</select>
+							    											</div><!-- input_holder -->
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description no_margin_top">Kalender:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="color_tags_holder">
+							    												<a href="#" class="color_tag_item color_safron"></a>
+							    												<span class="divider"></span>
+							    												<a href="#" class="color_tag_item color_light_coral"></a>
+							    												<a href="#" class="color_tag_item color_coral"></a>
+							    												<a href="#" class="color_tag_item color_jellyfish"></a>
+							    												<a href="#" class="color_tag_item color_denim_blue"></a>
+							    												<a href="#" class="color_tag_item color_slate_blue"></a>
+							    												<a href="#" class="color_tag_item color_purple_flower"></a>
+							    												<a href="#" class="color_tag_item color_sandy_brown"></a>
+							    												<a href="#" class="color_tag_item color_watermelon_pink"></a>
+							    												<a href="#" class="color_tag_item color_chilli_pepper"></a>
+							    												<a href="#" class="color_tag_item color_mauve"></a>
+							    												<a href="#" class="color_tag_item color_grey_goose"></a>
+							    											</div>
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+							    							</div><!-- collapse -->
+							    						</div><!-- collapsable_item -->
+
+							    						<div class="collapsable_item">
+							    							<h5 class="trigger collapsing_trigger collapsed bordered" data-toggle="collapse" data-target="#collapse_add_participiants"><span>Add participiants</span><i class="fontello-up-open"></i></h5>
+
+							    							<div id="collapse_add_participiants" class="add_participiants_holder collapse">
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description">Add guest:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="input_holder form-inline">
+							    												<select class="form-control double_width">
+							    													<option>Barak Obama</option>
+							    													<option>Vladimir Putin</option>
+							    													<option>Santa Claus</option>
+							    												</select>
+
+							    												<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Add</button>
+							    											</div><!-- input_holder -->
+							    										</div><!-- input_row -->
+
+							    										<ul class="friends_list">
+							    											<li>
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder"><i class="fontello-screen"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Halle Berry</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
+							    											</li>
+							    											<li>
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder status_online"><i class="fontello-phone"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Scarlett Johansson</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
+							    											</li>
+							    											<li>
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder"><i class="fontello-phone"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Halle Johansson</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
+							    											</li>
+							    											<li>
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder status_online"><i class="fontello-screen"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Scarlett Johansson</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
+							    											</li>
+							    										</ul>
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description">Add group:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="input_holder form-inline">
+							    												<select class="form-control double_width">
+							    													<option>Barak Obama</option>
+							    													<option>Vladimir Putin</option>
+							    													<option>Santa Claus</option>
+							    												</select>
+
+							    												<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Add</button>
+							    											</div><!-- input_holder -->
+							    										</div><!-- input_row -->
+
+							    										<ul class="friends_list">
+							    											<li class="favorite_group_item">
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_1.jpg"></a>
+							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    											</li>
+							    											<li class="favorite_group_item">
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_2.jpg"></a>
+							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    											</li>
+							    											<li class="favorite_group_item">
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_1.jpg"></a>
+							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    											</li>
+							    											<li class="favorite_group_item">
+							    												<div class="move_to_trash_holder">
+							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+							    												</div>
+							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_2.jpg"></a>
+							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    											</li>
+							    										</ul>
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+
+							    								<div class="media">
+							    									<div class="media_left_subholder">
+							    										<span class="description">Rights:</span>
+							    									</div><!-- media_left_subholder -->
+
+							    									<div class="media-body">
+							    										<div class="input_row">
+							    											<div class="checkbox">
+							    												<label>
+							    													<input type="checkbox"> Andra handelse
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+
+							    										<div class="input_row">
+							    											<div class="checkbox">
+							    												<label>
+							    													<input type="checkbox"> Bjuda in andra
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+
+							    										<div class="input_row">
+							    											<div class="checkbox">
+							    												<label>
+							    													<input type="checkbox"> Visa gastlista
+							    												</label>
+							    											</div>
+							    										</div><!-- input_row -->
+							    									</div><!-- media-body -->
+							    								</div><!-- media -->
+							    							</div><!-- collapse -->
+
+
+							    						</div><!-- add_participiants_holder -->
+							    					</div><!-- add_more_lists_holder -->
+
+							    					<div class="btn_row">
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Post</button>
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_grey return_to_share_box">Cancel</button>
+							    					</div>
+							    				</div><!-- add_box_tab_event -->
+							    				<!-- ADD EVENT TAB ends here -->
+
+
+							    				<!-- ADD LOCATION TAB starts here -->
+							    				<div id="share_box_tab_location" class="tab-pane fade">
+							    					<div class="input_row">
+							    						<div class="textarea_holder">
+							    							<textarea id="" class="form-control elastic_textarea" placeholder="Tell your family where you are..." rows="1" name=""></textarea>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    						</div><!-- textarea_holder -->
+							    					</div><!-- input_row -->
+
+							    					<div class="input_row">
+							    						<div class="input_holder with_icon">
+							    							<i class="fontello-location"></i>
+							    							<input id="" class="form-control high" placeholder="Enter your location..." name="" />
+							    						</div><!-- input_holder -->
+							    					</div><!-- input_row -->
+
+							    					<div class="btn_row">
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Post</button>
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_grey return_to_share_box">Cancel</button>
+							    					</div>
+							    				</div><!-- add_box_tab_location -->
+							    				<!-- ADD LOCATION TAB ends here -->
+
+
+							    				<!-- ADD PHOTO TAB starts here -->
+							    				<div id="share_box_tab_photo" class="tab-pane fade">
+							    					<!-- <form role="form" action=""> -->
+							    					<div class="input_row">
+							    						<div class="textarea_holder">
+							    							<textarea id="" class="form-control elastic_textarea" placeholder="Enter text for the photo..." rows="1" name=""></textarea>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    						</div><!-- textarea_holder -->
+							    					</div><!-- input_row -->
+
+							    					<div class="input_row share_attach_holder">
+							    						<ul class="nav nav-tabs">
+							    							<li class="active"><a href="#tab_photo_subtab_picture" data-toggle="tab">Picture</a></li>
+							    							<li><a href="#tab_photo_subtab_location" data-toggle="tab">Location</a></li>
+							    						</ul>
+
+							    						<div class="tab-content">
+							    							<div class="tab-pane fade in active" id="tab_photo_subtab_picture">
+							    								<div class="input_holder form-inline input_holder_inline">
+							    									<input type="text" class="form-control double_width full_width_m" placeholder="my_summer_holidays.jpg">
+							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_grey">Browse</button>
+							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green return_to_share_box">Upload</button>
+							    								</div>
+
+							    								<div class="input_row">
+							    									<input type="text" id="" class="form-control" placeholder="Tags: #Summmer, #Nice" name="">
+							    								</div>
+							    								<div class="input_row">
+							    									<div class="img_checkbox_holder">
+							    										<div class="label_holder">
+							    											<label for="temp_id_0_1" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_1"><span class="img_checkbox family"></span><a class="img_checkbox_name" href="#">Family</a></label>
+							    										</div><!-- label_holder -->
+
+							    										<div class="label_holder">
+							    											<label for="temp_id_0_2" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_2"><span class="img_checkbox all"></span><a class="img_checkbox_name" href="#">All</a></label>
+							    										</div><!-- label_holder -->
+
+							    										<div class="label_holder">
+							    											<label for="temp_id_0_3" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_3"><span class="img_checkbox"><img alt="" src="images/public/user_pic_1.jpg"></span><a class="img_checkbox_name" href="#">Scarlett</a></label>
+							    										</div><!-- label_holder -->
+
+							    										<div class="label_holder">
+							    											<label for="temp_id_0_4" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_4"><span class="img_checkbox"><img alt="" src="images/public/user_pic_1.jpg"></span><a class="img_checkbox_name" href="#">Halle</a></label>
+							    										</div><!-- label_holder -->
+							    									</div><!-- img_checkbox_holder -->
+							    								</div><!-- input_row -->
+
+							    								<div class="row input_row">
+							    									<div class="form-group col-xs-12 col-md-6 input_row">
+							    										<label for="">Add contact:</label>
+							    										<select class="form-control">
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    										</select>
+							    									</div>
+
+							    									<div class="form-group col-xs-12 col-md-6 input_row">
+							    										<label for="">Add group:</label>
+							    										<select class="form-control">
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    										</select>
+							    									</div>
+							    								</div><!-- input_row -->
+							    							</div><!-- tab_photo_subtab_picture -->
+
+							    							<div class="tab-pane fade" id="tab_photo_subtab_location">
+							    								<div class="input_row">
+							    									<div class="input_holder with_icon">
+							    										<i class="fontello-location"></i>
+							    										<input name="" placeholder="Enter your location..." class="form-control high" id="">
+							    									</div><!-- input_holder -->
+							    								</div><!-- input_row -->
+
+							    								<div class="input_row">
+							    									<div class="img_checkbox_holder">
+							    										<div class="label_holder">
+							    											<label for="temp_id_1_1" class="img_checkbox_label"><input type="checkbox" id="temp_id_1_1"><span class="img_checkbox family"></span><a class="img_checkbox_name" href="#">Family</a></label>
+							    										</div><!-- label_holder -->
+
+							    										<div class="label_holder">
+							    											<label for="temp_id_2_2" class="img_checkbox_label"><input type="checkbox" id="temp_id_2_2"><span class="img_checkbox all"></span><a class="img_checkbox_name" href="#">All</a></label>
+							    										</div><!-- label_holder -->
+
+							    										<div class="label_holder">
+							    											<label for="temp_id_3_3" class="img_checkbox_label"><input type="checkbox" id="temp_id_3_3"><span class="img_checkbox"><img alt="" src="images/public/user_pic_1.jpg"></span><a class="img_checkbox_name" href="#">Scarlett</a></label>
+							    										</div><!-- label_holder -->
+
+							    										<div class="label_holder">
+							    											<label for="temp_id_4_4" class="img_checkbox_label"><input type="checkbox" id="temp_id_4_4"><span class="img_checkbox"><img alt="" src="images/public/user_pic_1.jpg"></span><a class="img_checkbox_name" href="#">Halle</a></label>
+							    										</div><!-- label_holder -->
+							    									</div><!-- img_checkbox_holder -->
+							    								</div><!-- input_row -->
+
+							    								<div class="row input_row">
+							    									<div class="form-group col-xs-12 col-md-6 input_row">
+							    										<label for="">Add contact:</label>
+							    										<select class="form-control">
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    											<option>Iaroslav</option>
+							    										</select>
+							    									</div>
+
+							    									<div class="form-group col-xs-12 col-md-6 input_row">
+							    										<label for="">Add group:</label>
+							    										<select class="form-control">
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    											<option>Mikebasketballg</option>
+							    										</select>
+							    									</div>
+							    								</div><!-- input_row -->
+							    							</div><!-- tab_photo_subtab_location -->
+							    						</div><!-- tab-content -->
+							    					</div><!-- share_attach_holder -->
+
+							    					<div class="btn_row">
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Post</button>
+							    						<button class="btn btn_custom btn_custom_small btn_custom_gradiented_grey return_to_share_box">Cancel</button>
+							    					</div>
+							    					<!-- </form> -->
+							    				</div><!-- add_box_tab_photo -->
+							    				<!-- ADD PHOTO TAB ends here -->
+							    			</div><!-- tab-content -->
+
+							    		</div><!-- add_box_body -->
+							    	</div><!-- add_box_item -->
+							    </div><!-- tab-feed -->
+
+							    <div role="tabpanel" class="tab-pane" id="tab-document">
+									<ol class="breadcrumb">
+							    		<li><a href="#">Documents root</a></li>
+							    		<li class="active">Some folder name</li>
+							    	</ol>
+
+									<div class="buttons-row">
+							    		<button class="btn mobile-icons" type="button">
+							    			<i class="fontello-new-folder icon"></i>
+							    			<span class="button-text">New folder</span>
+							    		</button>
+
+							    		<button class="btn mobile-icons" type="button">
+							    			<i class="fontello-upload icon"></i>
+							    			<span class="button-text">Upload</span>
+							    		</button>
+
+							    		<button class="btn mobile-icons" type="button">
+							    			<i class="fontello-share icon"></i>
+							    			<span class="button-text">Share folder</span>
+							    		</button>
+							    	</div><!-- buttons-row -->
+
+							    	<div class="table-responsive">
+							    		<table class="table-documents">
+							    			<thead>
+							    				<tr>
+							    					<th>Name</th>
+							    					<th>Modified</th>
+							    					<th>Created</th>
+							    					<th colspan="2">Description</th>
+							    				</tr>
+							    			</thead>
+							    			<tbody>
+							    				<tr>
+							    					<td>
+							    						<i class="fontello-folder icon"></i>
+							    						<a href="#" class="item-name">Wall Documents</a>
+							    					</td>
+							    					<td>
+							    						<span class="date">2014-11-14</span>
+							    						<span class="name">11:59:21</span>
+							    					</td>
+							    					<td>
+							    						<span class="date">2014-11-14</span>
+							    						<span class="name">11:59:21</span>
+							    					</td>
+							    					<td>
+							    						Folder Wall Documents
+							    					</td>
+							    					<td class="delete-item-cell">
+							    						<a href="#" class="delete">
+							    							<i class="fontello-trash icon"></i>
+							    						</a>
+							    					</td>
+							    				</tr>
+							    				
+							    				<tr>
+							    					<td>
+							    						<i class="fontello-folder icon"></i>
+							    						<a href="#" class="item-name">Wall Documents</a>
+							    					</td>
+							    					<td>
+							    						<span class="date">2014-11-14</span>
+							    						<span class="name">11:59:21</span>
+							    					</td>
+							    					<td>
+							    						<span class="date">2014-11-14</span>
+							    						<span class="name">11:59:21</span>
+							    					</td>
+							    					<td>
+							    						Folder Wall Documents
+							    					</td>
+							    					<td class="delete-item-cell">
+							    						<a href="#" class="delete">
+							    							<i class="fontello-trash icon"></i>
+							    						</a>
+							    					</td>
+							    				</tr>
+
+							    				<tr>
+							    					<td>
+							    						<i class="fontello-folder icon"></i>
+							    						<a href="#" class="item-name">Wall Documents</a>
+							    					</td>
+							    					<td>
+							    						<span class="date">2014-11-14</span>
+							    						<span class="name">11:59:21</span>
+							    					</td>
+							    					<td>
+							    						<span class="date">2014-11-14</span>
+							    						<span class="name">11:59:21</span>
+							    					</td>
+							    					<td>
+							    						Folder Wall Documents
+							    					</td>
+							    					<td class="delete-item-cell">
+							    						<a href="#" class="delete">
+							    							<i class="fontello-trash icon"></i>
+							    						</a>
+							    					</td>
+							    				</tr>
+							    			</tbody>
+							    		</table>
+							    	</div><!-- table-responsive -->
+							    </div><!-- tab-document -->
+
+							    <div role="tabpanel" class="tab-pane" id="tab-images">
+							    	<ol class="breadcrumb">
+							    		<li><a href="#">Galleries root</a></li>
+							    		<li class="active">Some gallery name</li>
+							    	</ol>
+
+							    	<div class="buttons-row">
+							    		<button class="btn mobile-icons" type="button">
+							    			<i class="fontello-new-folder icon"></i>
+							    			<span class="button-text">New folder</span>
+							    		</button>
+
+							    		<button class="btn mobile-icons" type="button">
+							    			<i class="fontello-upload icon"></i>
+							    			<span class="button-text">Upload image</span>
+							    		</button>
+							    	</div><!-- buttons-row -->
+
+							    	<div class="row custom-row">
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-01.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Best Moments</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-02.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Products</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-03.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Holidays</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-04.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Shared</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-02.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Products</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-03.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Holidays</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+
+							    		<div class="col-sm-6 col-md-3 custom-col">
+							    			<div class="gallery-item">
+							    				<div class="inner">
+							    					<a href="#" class="item-image">
+									    				<img src="assets/images/temp/gallery-img-04.jpg" alt="">
+									    			</a>
+
+									    			<h3 class="gallery-title">
+									    				<a href="#">Shared</a>
+									    			</h3>
+
+									    			<small>5 hours ago</small>
+							    				</div><!-- inner -->
+
+							    				<p class="posted-by">
+							    					<a href="#" class="delete">
+							    						<i class="fontello-trash icon"></i>
+							    					</a>
+							    					Posted by
+							    					<a href="#" class="author">Mikael Eriksson</a>
+							    				</p>
+							    			</div><!-- gallery-item -->
+							    		</div><!-- custom-col -->
+							    	</div><!-- custom-row -->
+							    </div><!-- tab-images -->
+
+							    <div role="tabpanel" class="tab-pane" id="tab-info">
+							    	<h2>Groupname</h2>
+
+							    	<p class="preamble">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							    	<img class="content-img" src="assets/images/temp/tab-info-img-01.jpg" alt="">
+
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							    	<p>Excepteur sint occaecat cupidatat non proident.</p>
+
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							    	<br>
+							    	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							    	<hr>
+
+							    	<div class="row">
+							    		<div class="col-md-9 col-sm-8 push-down">
+							    			<p>
+												<b>
+													<i class="fontello-tags color-gray-thin"></i> <span class="color-black-thin">Etiketter:</span>
+												</b>
+												<a href="#">Utveckling</a>,
+												<a href="#">Analys</a>,
+												<a href="#">Finans</a>,
+												<a href="#">Utland</a>
+											</p>
+							    		</div><!-- col -->
+
+							    		<div class="col-md-3 col-sm-4">
+							    			<div class="media">
+							    				<div class="media-left">
+							    					<a href="#">
+							    						<img src="assets/images/temp/member-thumb-01.jpg" alt="" class="media-object">
+							    					</a>
+							    				</div><!-- media-left -->
+
+							    				<div class="media-body">
+							    					<h5 class="media-heading">Mikael Eriksson</h5>
+							    					<span>about a month ago</span>
+							    				</div><!-- media-body -->
+							    			</div><!-- media -->
+							    		</div><!-- col -->
+							    	</div><!-- row -->
+
+							    </div><!-- tab-info -->
+						  	</div><!-- tab-content -->
+						</div><!-- bordered-box -->
+					</div><!-- tabpanel-group-name -->
+				</div><!-- column-content -->
+
+				<div class="col-sm-4 column-sidebar">
+					<div class="sidebar-item sidebar-item-calendar">
+						<div class="bordered-box">
+							<h3 class="sidebar-item-title">Calendar</h3>
+							
+							<div class="items-holder">
+								<div class="item">
+									<div class="part-left">
+										<i class="fontello-calendar icon"></i>
+									</div><!-- left-part -->
+									
+									<div class="media-body">
+										<p class="title">
+											<a href="#">This is the Event Title #1</a>
+										</p>
+										<span class="date">Sept 14, 2014</span>
+									</div><!-- media-body -->
+								</div><!-- item -->
+
+								<div class="item">
+									<div class="part-left">
+										<i class="fontello-calendar icon"></i>
+									</div><!-- left-part -->
+									
+									<div class="media-body">
+										<p class="title">
+											<a href="#">This is the Event Title #1</a>
+										</p>
+										<span class="date">Sept 14, 2014</span>
+									</div><!-- media-body -->
+								</div><!-- item -->
+
+								<div class="item">
+									<div class="part-left">
+										<i class="fontello-calendar icon"></i>
+									</div><!-- left-part -->
+									
+									<div class="media-body">
+										<p class="title">
+											<a href="#">This is the Event Title #1</a>
+										</p>
+										<span class="date">Sept 14, 2014</span>
+									</div><!-- media-body -->
+								</div><!-- item -->
+							</div><!-- items-holder -->
+
+							<div class="text-center">
+								<a href="#" class="add-new-event">Add New Event +</a>
+							</div>
+						</div><!-- bordered-box -->
+					</div><!-- sidebar-item-links -->
+
+					<div class="sidebar-item sidebar-item-links">
+						<div class="bordered-box">
+							<h3 class="sidebar-item-title">Links</h3>
+							<ul class="list">
+								<li>
+									<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+								</li>
+								<li>
+									<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+								</li>
+								<li>
+									<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+								</li>
+								<li>
+									<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+								</li>
+								<li>
+									<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+								</li>
+							</ul>
+						</div><!-- bordered-box -->
+					</div><!-- sidebar-item-links -->
+
+					<div class="sidebar-item sidebar-item-members">
+						<div class="bordered-box">
+							<h3 class="sidebar-item-title">Members</h3>
+							<div class="item">
+								<a href="#" class="item-portrait">
+									<img src="assets/images/temp/member-thumb-01.jpg" alt="">
+								</a><!-- item-portrait -->
+
+								<div class="item-content">
+									<h4 class="name">
+										<a href="#">Mikael Robert Eriksson</a>
+									</h4>
+									<div class="post-holder">
+										<span class="post">IT Manager</span>
+										<span class="status">Admin</span>
+									</div><!-- post-holder -->
+								</div><!-- item-content -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="item-portrait">
+									<img src="assets/images/temp/member-thumb-02.jpg" alt="">
+								</a><!-- item-portrait -->
+
+								<div class="item-content">
+									<h4 class="name">
+										<a href="#" class="name">Iaroslav Zagorui</a>
+									</h4>
+									<div class="post-holder">
+										<span class="post">Senior Web Designer</span>
+									</div><!-- post-holder -->
+								</div><!-- item-content -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="item-portrait">
+									<img src="assets/images/temp/member-thumb-03.jpg" alt="">
+								</a><!-- item-portrait -->
+
+								<div class="item-content">
+									<h4 class="name">
+										<a href="#" class="name">Viorel Mocanu</a>
+									</h4>
+									<div class="post-holder">
+										<span class="post">Web Developer</span>
+									</div><!-- post-holder -->
+								</div><!-- item-content -->
+							</div><!-- item -->
+						</div><!-- bordered-box -->
+					</div><!-- sidebar-item-members -->
+
+					<div class="sidebar-item sidebar-item-tags-cloud">
+						<div class="bordered-box tegs-holder">
+							<h3 class="sidebar-item-title">Etiketter</h3>
+							<a href="#" class="teg teg-large">Analyser</a>
+							<a href="#" class="teg teg-medium">Applicationer</a>
+							<a href="#" class="teg">Conversion</a>
+							<a href="#" class="teg teg-medium">Finans</a>
+							<a href="#" class="teg teg-regular">Forecast</a>
+							<a href="#" class="teg teg-large">Teknik</a>
+							<a href="#" class="teg teg-regular">Investor relations</a>
+							<a href="#" class="teg teg-large">Rapporter</a>
+							<a href="#" class="teg teg-large">ROI</a>
+						</div><!-- bordered-box -->
+					</div><!-- sidebar-item-tags-cloud -->
+				</div><!-- column-sidebar -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- main-content -->
+
+
+	<div class="prefooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 column column-news-in-pictures">
+					<h3 class="title">News in pictures</h3>
+
+					<div class="news-in-pictures-holder">
+						<div class="items-row">
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-01.jpg" alt="">
+								</a>
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-02.jpg" alt="">
+								</a>
+							</div><!-- item -->
+						</div><!-- items-row -->
+
+						<div class="items-row">
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-03.jpg" alt="">
+								</a>
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-04.jpg" alt="">
+								</a>
+							</div><!-- item -->
+						</div><!-- items-row -->
+					</div><!-- news-in-pictures-holder -->
+				</div><!-- column-news-in-pictures -->
+
+				<div class="col-sm-6 col-md-4 col-md-offset-1 column column-most-viewed-posts">
+					<h3 class="title">Links</h3>
+
+					<div class="items-holder">
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->
+
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->
+
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->	
+					</div><!-- items-holder -->
+				</div><!-- column-most-viewed-posts -->
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-sm-6 col-md-4 column column-social-stream">
+					<h3 class="title">Social stream</h3>
+
+					<div class="items-holder">
+						<div class="item">
+							<a href="#" class="item-image">
+								<img src="assets/images/temp/twit-img-01.jpg" alt="">
+							</a>
+							<div class="item-content">
+								Brightstarr Team BrightStarr_SP @forrester big rise in Intranet as Service. Why not join @WeAreUnily &amp; Microsoft to see what all the fuss is about <a href="#">http://t.co/6fgJew2Tp6</a>
+							</div><!-- item-content -->
+						</div><!-- item -->
+
+						<div class="item">
+							<a href="#" class="item-image">
+								<img src="assets/images/temp/twit-img-02.jpg" alt="">
+							</a>
+							<div class="item-content">
+								Brightstarr Team BrightStarr_SP @forrester big rise in Intranet as Service. Why not join @WeAreUnily &amp; Microsoft to see what all the fuss is about <a href="#">http://t.co/6fgJew2Tp6</a>
+							</div><!-- item-content -->
+						</div><!-- item -->
+					</div><!-- items-holder -->
+				</div><!-- column-social-stream -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<p class="copyright">Copyright 2016 Yintra.com</p>
+
+			<ul class="footer-links-list">
+				<li>
+					<a href="#">Aktiv Finans AB</a>
+				</li>
+
+				<li>
+					<a href="#">Huvudkontor Linköping </a>
+				</li>
+
+				<li class="telephone">
+					<a href="tel:0134850150">Tel 013-485 01 50</a>
+				</li>
+
+				<li>
+					<a href="#">Fax 013-485 01 51</a>
+				</li>
+
+				<li class="email">
+					<a href="mailto:kundservice@aktivfinans.se">kundservice@aktivfinans.se</a>
+				</li>
+			</ul><!-- footer-links-list -->
+		</div><!-- container -->
+	</footer>
+
+
+	<script src="vendors/modernizr/modernizr.js"></script>
+	<script src="vendors/html5shiv/dist/html5shiv.min.js"></script>
+	<script src="vendors/respond/dest/respond.min.js"></script>
+	<script src="vendors/jquery/dist/jquery.min.js"></script>
+	<script src="vendors/input-file/input-file.js"></script>
+	<script src="vendors/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+	<script src="vendors/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="vendors/jquery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
+	<script src="vendors/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/jschab-bootstrab-tabdrop/js/bootstrap-tabdrop.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

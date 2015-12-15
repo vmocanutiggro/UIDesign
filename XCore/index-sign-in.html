@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<title>X-Core: Home Sign In</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="vendors/owlcarousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owlcarousel/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="vendors/jschab-bootstrap-tabdrop/css/tabdrop.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="part-left">
+					<a href="#" class="logo">
+						<img src="assets/images/elements/logo.svg" alt="">
+					</a>
+				</div><!-- part-left -->
+
+				<div class="part-right">
+					<div class="dropdown dropdown-sign-in">
+						<button class="dropdown-toggle btn" data-toggle="dropdown">Sign In</button>
+
+						<div class="dropdown-menu white right" role="menu">
+							<h3 class="title">Everyone in your familyshare has a single account</h3>
+
+							<form role="form" action="">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Enter email">
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password">
+								</div>
+
+								<div class="form-group btn-holder">
+									<button type="submit" class="btn">Log In</button>
+								</div>
+
+								<div class="form-group btn-holder">
+									<button type="submit" class="btn btn-facebook">Sign up with facebook</button>
+								</div>
+
+								<div class="links-holder">
+									<a href="#">Glömt ditt lösenord?</a>
+									<br>
+									<a href="#">Har du inget konto? Skaffa ett här!</a>
+								</div><!-- links-holder -->
+							</form>
+						</div>
+					</div><!-- dropdown-sign-in -->
+				</div><!-- part-right -->				
+
+				<div class="search-field-holder" id="search-field-desktop-place">
+					<div class="fluid-search-field" id="fluid-search-field">
+						<div class="dropdown dropdown-filter-options">
+							<button type="button" href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="fontello-menu-dropdown icon"></span>
+							</button>
+
+							<ul class="dropdown-menu" role="menu">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#" class="checked"><i class="fontello-magnifier icon"></i> All</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-doc icon"></i> Documents</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-doc-text icon"></i> Pages</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-users icon"></i> People</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="#"><i class="fontello-globe icon"></i> Site</a>
+								</li>
+							</ul>
+						</div><!-- dropdown-filter-options -->
+
+						<button type="submit" class="search-submit">
+							<i class="fontello-magnifier icon"></i>
+						</button>
+
+						<div class="search-input-holder">
+							<input type="search" class="search-input" placeholder="Sok pa aktiv finans">
+						</div><!-- search-input-holder -->
+					</div><!-- fluid-search-field -->
+				</div><!-- fluid-search-field-holder -->
+			</div><!-- container -->
+		</div><!-- header-top -->
+
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="navigation-bar" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom-navi">
+							<i class="fontello-menu"></i>
+						</button>
+						<div class="search-field-holder" id="search-field-mobile-place"></div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="header-bottom-navi">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">
+									<i class="fontello-home"></i>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Grupper<span class="dropdown-icon"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Grupper 1</a></li>
+									<li><a href="#">Grupper 2</a></li>
+									<li><a href="#">Grupper 3</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Outlook</a>
+							</li>
+							<li class="active">
+								<a href="#">Dokument</a>
+							</li>
+							<li>
+								<a href="#">Totaloverview</a>
+							</li>
+							<li>
+								<a href="#">Kontakter</a>
+							</li>
+						</ul>
+					</div><!-- navbar-collapse -->
+				</nav><!-- navigation-bar -->
+			</div><!-- container -->
+		</div><!-- header-bottom -->
+	</header>
+
+
+	<section class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 column-content">
+					<div class="alert-holder">
+						<div class="arrows-holder">
+							<i class="fontello-up-open icon text-up"></i>
+							<i class="fontello-down-open icon text-down"></i>
+						</div><!-- arrows-holder -->
+						
+						<div class="text-holder">
+							<ul class="alerts-list" id="alerts-list">
+								<li>We’ve won an award for our fantastic customer service! Well done everyone!</li>
+								<li>We’ve won an award for our fantastic customer service! Well done everyone! We’ve won an award for our fantastic customer service! Well done everyone! - 2</li>
+								<li>We’ve won an award for our fantastic customer service! Well done everyone! - 3</li>
+								<li>We’ve won an award for our fantastic customer service! Well done everyone! We’ve won an award for our fantastic customer service! Well done everyone! - 4</li>
+								<li>We’ve won an award for our fantastic customer service! Well done everyone! - 5</li>
+							</ul>
+						</div><!-- text-holder -->
+					</div><!-- alert-holder -->
+
+					<div class="images-carousel-holder">
+						<div class="owl-carousel">
+			                <div class="item">
+			                	<img src="assets/images/temp/carousel-img-01.jpg" alt="">
+			                	<span class="caption">
+			                		Showcase Latest information from the current deployments etc.
+			                		<br>
+			                		Ends with a small link down to the right in this field.
+			                	</span>
+			                </div>
+
+			                <div class="item">
+			                	<img src="assets/images/temp/carousel-img-02.jpg" alt="">
+			                	<span class="caption">
+			                		Showcase Latest information from the current deployments etc.
+			                		<br>
+			                		Ends with a small link down to the right in this field.
+			                	</span>
+			                </div>
+
+			                <div class="item">
+			                	<img src="assets/images/temp/carousel-img-03.jpg" alt="">
+			                	<span class="caption">
+			                		Showcase Latest information from the current deployments etc.
+			                		<br>
+			                		Ends with a small link down to the right in this field.
+			                	</span>
+			                </div>
+		              	</div><!-- owl-carousel -->
+					</div><!-- images-carousel-holder -->
+
+					<div class="article-demos-holder">
+						<div class="row custom-row">
+							<div class="col-sm-6 col-lg-4 custom-col">
+								<div class="item">
+									<h3 class="title">
+										<a href="#">New Article Demo</a>
+									</h3>
+
+									<a href="#" class="article-demo-img">
+										<img src="assets/images/temp/article-demo-img-01.jpg" alt="">
+									</a>
+
+									<div class="article-demo-text">Instagram has reportedly been blocked in China following a weekend of pro-democracy protests.</div>
+
+									<small class="publication-date">about a month ago</small>
+
+									<div class="comments-and-likes-holder">
+										<span class="comments">
+											0 comments <i class="fontello-comments"></i>
+										</span>
+										<span class="likes">
+											0 likes <i class="fontello-like"></i>
+										</span>
+									</div><!-- comments-and-likes-holder -->
+
+									<div class="actions-holder">
+										<a href="#" class="action-like">
+											<i class="fontello-like"></i> Like
+										</a>
+										<a href="#" class="action-read-more">
+											Read more...
+										</a>
+									</div><!-- actions-holder -->
+								</div><!-- item -->
+							</div>
+
+							<div class="col-sm-6 col-lg-4 custom-col">
+								<div class="item">
+									<h3 class="title">
+										<a href="#">New Article Demo</a>
+									</h3>
+
+									<a href="#" class="article-demo-img">
+										<img src="assets/images/temp/article-demo-img-01.jpg" alt="">
+									</a>
+
+									<div class="article-demo-text">Instagram has reportedly been blocked in China following a weekend of pro-democracy protests.</div>
+
+									<small class="publication-date">about a month ago</small>
+
+									<div class="comments-and-likes-holder">
+										<span class="comments">
+											0 comments <i class="fontello-comments"></i>
+										</span>
+										<span class="likes">
+											0 likes <i class="fontello-like"></i>
+										</span>
+									</div><!-- comments-and-likes-holder -->
+
+									<div class="actions-holder">
+										<a href="#" class="action-like">
+											<i class="fontello-like"></i> Like
+										</a>
+										<a href="#" class="action-read-more">
+											Read more...
+										</a>
+									</div><!-- actions-holder -->
+								</div><!-- item -->
+							</div>
+
+							<div class="col-sm-6 col-lg-4 custom-col">
+								<div class="item">
+									<h3 class="title">
+										<a href="#">New Article Demo</a>
+									</h3>
+
+									<a href="#" class="article-demo-img">
+										<img src="assets/images/temp/article-demo-img-01.jpg" alt="">
+									</a>
+
+									<div class="article-demo-text">Instagram has reportedly been blocked in China following a weekend of pro-democracy protests.</div>
+
+									<small class="publication-date">about a month ago</small>
+
+									<div class="comments-and-likes-holder">
+										<span class="comments">
+											0 comments <i class="fontello-comments"></i>
+										</span>
+										<span class="likes">
+											0 likes <i class="fontello-like"></i>
+										</span>
+									</div><!-- comments-and-likes-holder -->
+
+									<div class="actions-holder">
+										<a href="#" class="action-like">
+											<i class="fontello-like"></i> Like
+										</a>
+										<a href="#" class="action-read-more">
+											Read more...
+										</a>
+									</div><!-- actions-holder -->
+								</div><!-- item -->
+							</div>
+
+							<div class="col-sm-6 col-lg-4 custom-col">
+								<div class="item">
+									<h3 class="title">
+										<a href="#">New Article Demo</a>
+									</h3>
+
+									<a href="#" class="article-demo-img">
+										<img src="assets/images/temp/article-demo-img-01.jpg" alt="">
+									</a>
+
+									<div class="article-demo-text">Instagram has reportedly been blocked in China following a weekend of pro-democracy protests.</div>
+
+									<small class="publication-date">about a month ago</small>
+
+									<div class="comments-and-likes-holder">
+										<span class="comments">
+											0 comments <i class="fontello-comments"></i>
+										</span>
+										<span class="likes">
+											0 likes <i class="fontello-like"></i>
+										</span>
+									</div><!-- comments-and-likes-holder -->
+
+									<div class="actions-holder">
+										<a href="#" class="action-like">
+											<i class="fontello-like"></i> Like
+										</a>
+										<a href="#" class="action-read-more">
+											Read more...
+										</a>
+									</div><!-- actions-holder -->
+								</div><!-- item -->
+							</div>
+
+							<div class="col-sm-6 col-lg-4 custom-col">
+								<div class="item">
+									<h3 class="title">
+										<a href="#">New Article Demo</a>
+									</h3>
+
+									<a href="#" class="article-demo-img">
+										<img src="assets/images/temp/article-demo-img-01.jpg" alt="">
+									</a>
+
+									<div class="article-demo-text">Instagram has reportedly been blocked in China following a weekend of pro-democracy protests.</div>
+
+									<small class="publication-date">about a month ago</small>
+
+									<div class="comments-and-likes-holder">
+										<span class="comments">
+											0 comments <i class="fontello-comments"></i>
+										</span>
+										<span class="likes">
+											0 likes <i class="fontello-like"></i>
+										</span>
+									</div><!-- comments-and-likes-holder -->
+
+									<div class="actions-holder">
+										<a href="#" class="action-like">
+											<i class="fontello-like"></i> Like
+										</a>
+										<a href="#" class="action-read-more">
+											Read more...
+										</a>
+									</div><!-- actions-holder -->
+								</div><!-- item -->
+							</div>
+
+							<div class="col-sm-6 col-lg-4 custom-col">
+								<div class="item">
+									<h3 class="title">
+										<a href="#">New Article Demo New Article Demo</a>
+									</h3>
+
+									<a href="#" class="article-demo-img">
+										<img src="assets/images/temp/article-demo-img-01.jpg" alt="">
+									</a>
+
+									<div class="article-demo-text">Instagram has reportedly been blocked in China following a weekend of pro-democracy protests.</div>
+
+									<small class="publication-date">about a month ago</small>
+
+									<div class="comments-and-likes-holder">
+										<span class="comments">
+											0 comments <i class="fontello-comments"></i>
+										</span>
+										<span class="likes">
+											0 likes <i class="fontello-like"></i>
+										</span>
+									</div><!-- comments-and-likes-holder -->
+
+									<div class="actions-holder">
+										<a href="#" class="action-like">
+											<i class="fontello-like"></i> Like
+										</a>
+										<a href="#" class="action-read-more">
+											Read more...
+										</a>
+									</div><!-- actions-holder -->
+								</div><!-- item -->
+							</div>
+						</div><!-- row -->
+					</div><!-- article-demos-holder -->
+				</div><!-- column-content -->
+
+				<div class="col-sm-4 column-sidebar">
+					<div class="menu-tiles-holder">
+						<div class="custom-row">
+							<div class="item">
+								<a href="#" class="inner bg-tussock">
+									<i class="fontello-hr icon"></i>
+									<small class="title">HR</small>
+								</a><!-- inner -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="inner bg-persian-green">
+									<i class="fontello-laptop icon"></i>
+									<small class="title">IT</small>
+								</a><!-- inner -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="inner bg-lavender-purple">
+									<i class="fontello-sales icon"></i>
+									<small class="title">Sälj</small>
+								</a><!-- inner -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="inner bg-tussock">
+									<i class="fontello-market icon"></i>
+									<small class="title">Marknad</small>
+								</a><!-- inner -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="inner bg-persian-green">
+									<i class="fontello-consulting icon"></i>
+									<small class="title">F-Rådgivning</small>
+								</a><!-- inner -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="inner bg-lavender-purple">
+									<i class="fontello-backoffice icon"></i>
+									<small class="title">Backoffice</small>
+								</a><!-- inner -->
+							</div><!-- item -->
+						</div><!-- custom-row -->
+					</div><!-- menu-tiles-holder -->
+
+					<div class="sidebar-item sidebar-item-news">
+						<div class="bordered-box">
+							<h3 class="sidebar-item-title">Nieuws</h3>
+							<div class="item">
+								<a href="#" class="news-image">
+									<img src="assets/images/temp/news-thumb-01.jpg" alt="">
+								</a>
+
+								<div class="news-preamble">
+									<h3 class="title">
+										<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+									</h3>
+									<p>WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things. WinMoSquare is a cross between a friend-finder, a social city-guide and a game that rewards you for doing interesting things.</p>
+								</div><!-- news-preamble -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="news-image">
+									<img src="assets/images/temp/news-thumb-02.jpg" alt="">
+								</a>
+
+								<div class="news-preamble">
+									<h3 class="title">
+										<a href="#">Get your business</a>
+									</h3>
+									<p>We provide software development services for Windows Phone 7, Windows Mobile, and Web. Touchality hires only the most brilliant developers and designers.</p>
+								</div><!-- news-preamble -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="news-image">
+									<img src="assets/images/temp/news-thumb-03.jpg" alt="">
+								</a>
+
+								<div class="news-preamble">
+									<h3 class="title">
+										<a href="#">Critter: woof, meow</a>
+									</h3>
+									<p>Critter is a Windows Mobile Twitter application for you and your pets. You can use Critter to connect with friends and pals.</p>
+								</div><!-- news-preamble -->
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#" class="news-image">
+									<img src="assets/images/temp/news-thumb-04.jpg" alt="">
+								</a>
+
+								<div class="news-preamble">
+									<h3 class="title">
+										<a href="#">Andre Peay</a>
+									</h3>
+									<p>"I seriously can't live without Touchality's WinMoSquare. The last major upgrades have made it rock my socks."</p>
+								</div><!-- news-preamble -->
+							</div><!-- item -->
+						</div><!-- bordered-box -->
+					</div><!-- sidebar-item-news -->
+
+					<div class="sidebar-item sidebar-item-latest-video">
+						<div class="bordered-box">
+							<h3 class="sidebar-item-title">Latest Video</h3>
+							<div class="iframe-holder">
+								<iframe width="420" height="315" src="//www.youtube.com/embed/zfXBNQMj2SE?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<h3 class="title">
+								<a href="#">WinMoSquare Foursquare for Windows Mobile.</a>
+							</h3>
+						</div><!-- bordered-box -->
+					</div><!-- sidebar-item-latest-video -->
+				</div><!-- column-sidebar -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- main-content -->
+
+
+	<div class="prefooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 column column-news-in-pictures">
+					<h3 class="title">News in pictures</h3>
+
+					<div class="news-in-pictures-holder">
+						<div class="items-row">
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-01.jpg" alt="">
+								</a>
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-02.jpg" alt="">
+								</a>
+							</div><!-- item -->
+						</div><!-- items-row -->
+
+						<div class="items-row">
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-03.jpg" alt="">
+								</a>
+							</div><!-- item -->
+
+							<div class="item">
+								<a href="#">
+									<img src="assets/images/temp/news-in-pictures-04.jpg" alt="">
+								</a>
+							</div><!-- item -->
+						</div><!-- items-row -->
+					</div><!-- news-in-pictures-holder -->
+				</div><!-- column-news-in-pictures -->
+
+				<div class="col-sm-6 col-md-4 col-md-offset-1 column column-most-viewed-posts">
+					<h3 class="title">Links</h3>
+
+					<div class="items-holder">
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->
+
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->
+
+						<div class="item">
+							<h4 class="item-title">Title for this website</h4>
+							<a href="#" class="item-text">WinMoSquare Foursquare for Windows Mobile.</a>
+						</div><!-- item -->	
+					</div><!-- items-holder -->
+				</div><!-- column-most-viewed-posts -->
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-sm-6 col-md-4 column column-social-stream">
+					<h3 class="title">Social stream</h3>
+
+					<div class="items-holder">
+						<div class="item">
+							<a href="#" class="item-image">
+								<img src="assets/images/temp/twit-img-01.jpg" alt="">
+							</a>
+							<div class="item-content">
+								Brightstarr Team BrightStarr_SP @forrester big rise in Intranet as Service. Why not join @WeAreUnily &amp; Microsoft to see what all the fuss is about <a href="#">http://t.co/6fgJew2Tp6</a>
+							</div><!-- item-content -->
+						</div><!-- item -->
+
+						<div class="item">
+							<a href="#" class="item-image">
+								<img src="assets/images/temp/twit-img-02.jpg" alt="">
+							</a>
+							<div class="item-content">
+								Brightstarr Team BrightStarr_SP @forrester big rise in Intranet as Service. Why not join @WeAreUnily &amp; Microsoft to see what all the fuss is about <a href="#">http://t.co/6fgJew2Tp6</a>
+							</div><!-- item-content -->
+						</div><!-- item -->
+					</div><!-- items-holder -->
+				</div><!-- column-social-stream -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<p class="copyright">Copyright 2016 Yintra.com</p>
+
+			<ul class="footer-links-list">
+				<li>
+					<a href="#">Aktiv Finans AB</a>
+				</li>
+
+				<li>
+					<a href="#">Huvudkontor Linköping </a>
+				</li>
+
+				<li class="telephone">
+					<a href="tel:0134850150">Tel 013-485 01 50</a>
+				</li>
+
+				<li>
+					<a href="#">Fax 013-485 01 51</a>
+				</li>
+
+				<li class="email">
+					<a href="mailto:kundservice@aktivfinans.se">kundservice@aktivfinans.se</a>
+				</li>
+			</ul><!-- footer-links-list -->
+		</div><!-- container -->
+	</footer>
+
+
+	<script src="vendors/modernizr/modernizr.js"></script>
+	<script src="vendors/html5shiv/dist/html5shiv.min.js"></script>
+	<script src="vendors/respond/dest/respond.min.js"></script>
+	<script src="vendors/jquery/dist/jquery.min.js"></script>
+	<script src="vendors/input-file/input-file.js"></script>
+	<script src="vendors/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+	<script src="vendors/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="vendors/jquery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
+	<script src="vendors/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/jschab-bootstrab-tabdrop/js/bootstrap-tabdrop.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
