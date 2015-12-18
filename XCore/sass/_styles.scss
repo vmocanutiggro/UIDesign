@@ -1257,3 +1257,133 @@ hr {
 		}
 	}
 }
+
+
+/* ==========================================================================
+	CMS page
+========================================================================== */
+.cms-list {
+	padding: 0;
+	list-style: none;
+	li {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		border: 1px solid $site-mercury;
+		padding: 8px;
+		display: block;
+		color: $site-color-black;
+		line-height: 40px;
+		@include clearfix;
+		&:hover, &:focus, &.active {
+			border: 1px solid $site-color-picton-blue;
+			text-decoration: none;
+			color: $site-color-white;
+			background: $site-color-picton-blue;
+			.icon-wrapper {
+				background: $site-color-picton-blue;
+			}
+			i {
+				color: $site-color-white;
+			}
+		}
+	}
+	.icon-wrapper {
+		@include transition(150ms);
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background: $site-color-mercury;
+		margin-right: 16px;
+		float: left;
+		text-align: center;
+		i {
+			@include transition(150ms);
+			line-height: 40px;
+			font-size: 1.4rem;
+			color: $site-color-silver-chalice;
+		}
+	}
+}
+.cms-wrapper {
+	.caption {
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	ul {
+		padding: 0;
+		list-style: none;
+		margin-bottom: 0;
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			@include respond-to(tablets-small) {
+				margin-right: 0px;
+			}
+			&:first-child {
+				margin-right: 30px;
+				@include respond-to(tablets-small) {
+					margin-right: 14px;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		// span {
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	display: inline-block;
+		// 	border-radius: 3px;
+		// 	background: $site-color-mercury;
+		// 	text-align: center;
+		// 	i {
+		// 		font-size: 0.8rem;
+		// 	}
+		// 	&.active {
+		// 		background: $site-fern;
+		// 		i {
+		// 			color: $site-color-white;
+		// 		}
+		// 	}
+		// }
+		i {
+			color: $site-color-dove-gray;
+			&.active {
+				color: $site-fern;
+			}
+		}
+	}
+}
+
+.table-documents {
+	@extend .table;
+	@extend .table-hover;
+	margin-bottom: 0;
+	> tbody > tr > td {
+		//line-height: 1.385rem;
+		vertical-align: middle;
+	}
+	.icon {
+		color: $site-color-silver-chalice;
+		font-size: 1.385rem;
+	}
+	.delete {
+		.icon {
+			color: $site-color-dove-gray;
+		}
+	}
+	> tbody > tr:hover > td {
+		background: $site-color-picton-blue;
+		color: $site-color-white;
+		a {
+			color: $site-color-white;
+		}
+		.icon {
+			color: $site-color-white;
+		}
+	}
+}
