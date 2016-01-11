@@ -85,6 +85,24 @@
       "src": "fontawesome"
     },
     {
+      "uid": "757afacc32d82967975cbb3b45cfb41b",
+      "css": "desktop",
+      "code": 59428,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0357f7abbc0babf43509669f332e41e6",
+      "css": "mobile",
+      "code": 59429,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9937d762aee170b7350b15dd02dd34a3",
+      "css": "cab",
+      "code": 59426,
+      "src": "fontawesome"
+    },
+    {
       "uid": "33194d4a025fbf12baca54579afe4c8e",
       "css": "at",
       "code": 59408,
@@ -163,6 +181,12 @@
       "src": "entypo"
     },
     {
+      "uid": "d2c6b59d9a239140cb76be0627480855",
+      "css": "dot",
+      "code": 59430,
+      "src": "entypo"
+    },
+    {
       "uid": "aklhk54yg779pgovdsjr9r9w22hej00n",
       "css": "camera",
       "code": 59395,
@@ -178,6 +202,12 @@
       "uid": "wcb87qh0k9smu6zukdhbn5zip98zofkh",
       "css": "cancel-circle",
       "code": 59413,
+      "src": "modernpics"
+    },
+    {
+      "uid": "uaps3vfayj05q7h4rvb10m890xvaequb",
+      "css": "bell-1",
+      "code": 59427,
       "src": "modernpics"
     },
     {
@@ -197,6 +227,12 @@
       "css": "location",
       "code": 59397,
       "src": "mfglabs"
+    },
+    {
+      "uid": "5b1a68729f60f8be3769238379d1b8e9",
+      "css": "comment-1",
+      "code": 59425,
+      "src": "linecons"
     },
     {
       "uid": "21f6a88daf13c62e5a70f5ef6ad9e23f",

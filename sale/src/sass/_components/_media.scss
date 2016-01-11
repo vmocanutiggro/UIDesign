@@ -7,9 +7,6 @@
 	.tab-content {
 		margin-top: 20px !important;
 	}
-	.userpic {
-		width: 50px;
-	}
 	&.media-likes, &.media-comment {
 		padding: 10px;
 		border: medium none;
@@ -23,11 +20,8 @@
 		.userpic {
 			width: 100%;
 			display: block;
-			max-width: 50px;
 			img {
 				border-radius: 4px;
-				width: 50px;
-				height: 50px;
 			}
 		}
 		p {
