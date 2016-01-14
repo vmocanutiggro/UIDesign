@@ -11181,16 +11181,8 @@ textarea.elastic_textarea, textarea.form-control.elastic_textarea, textarea.elas
   margin-top: 0;
 }
 
-.breadcrumb {
-  background: none;
-  padding: 0;
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.breadcrumb > li + li:before {
-  font-family: 'fontello';
-  content: '\e825';
+.breadcrumb li + li:before {
+  content: '/';
 }
 
 /* BUTTONS styles */

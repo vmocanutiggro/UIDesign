@@ -423,19 +423,10 @@ textarea, textarea.form-control {
 }
 
 .breadcrumb {
-	background: none;
-	padding: 0;
-	margin-top: 15px;
-	margin-bottom: 0;
-	li {
-		&.active {
-			a {
-			}
+	li + li {
+		&:before {
+			content: '/';
 		}
-	}
-	> li + li:before {
-		font-family: 'fontello';
-		content: '\e825';
 	}
 }
 
