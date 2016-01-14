@@ -11181,6 +11181,10 @@ textarea.elastic_textarea, textarea.form-control.elastic_textarea, textarea.elas
   margin-top: 0;
 }
 
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
 .breadcrumb li + li:before {
   content: '/';
 }

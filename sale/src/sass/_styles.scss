@@ -423,6 +423,7 @@ textarea, textarea.form-control {
 }
 
 .breadcrumb {
+	margin-bottom: 20px;
 	li + li {
 		&:before {
 			content: '/';
