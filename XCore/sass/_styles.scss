@@ -1437,5 +1437,123 @@ hr {
 	}
 }
 
+.dropdown-large {
+	float: left;
+	margin-right: 25px;
+	margin-top: 11px;
+	background: #3da4ef;
+	padding: 8.5px 5px;
+	@include respond-to(tablets-small) {
+		margin-top: 0;
+		padding: 9.5px 6px;
+	}
+	@include respond-to(phones) {
+		padding: 8.5px 6px;
+		margin-right: 15px;
+	}
+	.dropdown-toggle {
+		color: #fff;
+		font-size: 20px;
+	}
+	.dropdown-menu {
+		background: #fff;
+		padding: 0px;
+		margin-top: 0 !important;
+		width: 100%;
+		&:before, &:after {
+			content: none;
+		}
+	}
+	.row {
+		>[class*='col-'] {
+			padding-left: 2.5px;
+			padding-right: 2.5px;
+		}
+	}
+}
+
+.office-item {
+	padding: 30px 10px;
+	background: #0073c6;
+	display: block;
+	color: $site-color-white;
+	margin-bottom: 2.5px;
+	text-align: center;
+	@include respond-to(phones) {
+		font-size: 12px;
+		padding: 15px 10px;
+	}
+	&.dark-blue {
+		background: #2c579b;
+	}
+	&.green {
+		background: #217345;
+	}
+	&.red {
+		background: #d24726;
+	}
+	&.pink {
+		background: #733781;
+	}
+	&.gray {
+		background: #58595b;
+	}
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $site-color-white;
+	}
+	.icon {
+		font-size: 50px;
+		display: block;
+		margin: 0 auto 20px auto;
+		text-align: center;
+		@include respond-to(phones) {
+			font-size: 50px;
+		}
+	}
+}
+
+
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+
+//-----------------------------
+//  Yamm Styles
+//-----------------------------
+
+.yamm {
+
+  // reset positions
+  .nav, .collapse, .dropup, .dropdown {
+    position: static;
+  }
+
+  // propagate menu position under container for fw navbars
+  .container {
+    position: relative;
+  }
+
+  // by default aligns menu to left
+  .dropdown-menu {
+    left: auto;
+  }
+
+  // Content with padding
+  .yamm-content {
+    padding: 2.5px 15px 0px 15px;
+  }
+
+  // Fullwidth menu
+  .dropdown.yamm-fw .dropdown-menu {
+    left: 0; right: 0;
+  }
+
+}
+
 
 
