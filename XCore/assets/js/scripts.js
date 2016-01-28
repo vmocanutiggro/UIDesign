@@ -161,6 +161,11 @@ $(document).ready(function(){
 	        $(this).closest('form').find('.checkbox').removeClass("active"); 
 	    }
 	});
+	$('.list-sort-by > li > a').click(function (e) {
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+		$(this).parent().next('.sub-menu').slideToggle('fast');
+	});
 
 });
 

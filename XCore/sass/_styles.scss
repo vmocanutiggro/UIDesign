@@ -1387,3 +1387,55 @@ hr {
 		}
 	}
 }
+
+.list-sort-by {
+	@extend .list-unstyled;
+	>li {
+		>a {
+			font-size: 16px;
+			color: $site-color-mine-shaft;
+			display: block;
+			padding: 10px;
+			&:focus {
+				text-decoration: none;
+			}
+			&:hover, &.active {
+				text-decoration: none;
+				background: $site-color-picton-blue;
+				color: $site-color-white;
+			}
+		}
+		&.active {
+			>a {
+				text-decoration: none;
+				background: $site-color-picton-blue;
+				color: $site-color-white;
+			}
+			.sub-menu {
+				display: block;
+			}
+		} 
+	}
+	.sub-menu {
+		@extend .list-unstyled;
+		margin: 10px 0;
+		display: none;
+		>li {
+			>a {
+				display: block;
+				padding: 5px 30px;
+				color: $site-color-mine-shaft;
+				&:focus {
+					text-decoration: none;
+				}
+				&:hover, &.active {
+					text-decoration: none;
+					color: $site-color-picton-blue;
+				}
+			}
+		}
+	}
+}
+
+
+
