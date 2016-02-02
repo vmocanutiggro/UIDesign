@@ -1062,10 +1062,11 @@ hr {
 	    text-align: center;
 	    i {
 	    	position: absolute;
-	    	top: 0;
+	    	top: 4px;
 	    	height: 100%;
 	    	right: 5px;
 	    	line-height: 34px;
+	    	z-index: 10;
 	    }
     }
 }
@@ -1553,6 +1554,12 @@ hr {
     left: 0; right: 0;
   }
 
+}
+
+.tt-dropdown-menu {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ccc;
 }
 
 
