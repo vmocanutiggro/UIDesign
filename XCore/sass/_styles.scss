@@ -1067,6 +1067,10 @@ hr {
 	    	right: 5px;
 	    	line-height: 34px;
 	    	z-index: 10;
+	    	&.icon-left {
+	    		right: auto;
+	    		left: 5px;
+	    	}
 	    }
     }
 }
@@ -1568,6 +1572,12 @@ hr {
 	background: #fff !important;
 	&:before {
 		border-color: transparent transparent #fff transparent;
+	}
+}
+
+.twitter-typeahead {
+	.form-control {
+		padding-left: 30px;
 	}
 }
 

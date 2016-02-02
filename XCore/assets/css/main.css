@@ -10252,6 +10252,11 @@ hr {
   z-index: 10;
 }
 
+.input_holder.with_icon i.icon-left {
+  right: auto;
+  left: 5px;
+}
+
 .search-field-holder .search-input-holder {
   border-left: 1px solid #d0d0d0;
 }
@@ -10812,6 +10817,10 @@ hr {
 
 .bootstrap-datetimepicker-widget:before {
   border-color: transparent transparent #fff transparent;
+}
+
+.twitter-typeahead .form-control, .twitter-typeahead .search-input {
+  padding-left: 30px;
 }
 
 /* TEGS */
