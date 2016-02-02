@@ -8423,6 +8423,15 @@ ul:last-child, ol:last-child {
   background: #90C2B9;
 }
 
+.list-site-map li a:before {
+  content: '|---';
+  margin-right: 2px;
+}
+
+.list-site-map li ul {
+  margin-left: 20px;
+}
+
 /* IMAGE WITH CAPTION */
 .block-with-caption-holder {
   position: relative;

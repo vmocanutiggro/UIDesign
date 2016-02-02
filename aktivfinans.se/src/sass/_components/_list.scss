@@ -26,3 +26,17 @@ ul, ol {
 		}
 	}
 }
+
+.list-site-map {
+	li {
+		a {
+			&:before {
+				content: '|---';
+				margin-right: 2px;
+			}
+		}
+		ul {
+			margin-left: 20px;
+		}
+	}
+}
