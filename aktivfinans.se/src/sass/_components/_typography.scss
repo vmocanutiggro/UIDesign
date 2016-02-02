@@ -1,0 +1,148 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+html, body {
+	font-family: $body-main-font;
+	color: $main-text-color;
+	-webkit-font-smoothing: antialiased;
+	font-size: $body-font-size;
+	line-height: 1.4;
+}
+body {
+	background-repeat: no-repeat;
+	background-position: top center;
+	// background-attachment: fixed;
+	padding-top: 120px;
+	@include respond-to(xs) {
+		padding-top: 0;
+	}
+}
+
+* {
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: $avenir-heavy-font;
+	line-height: 1.4;
+	&.title-border {
+		span {
+			border-bottom: 1px dashed $color-prussian-blue;
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	small, .small {
+		color: inherit;
+	}
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 50px;
+	@include respond-to(sm) {
+	}
+}
+h2 {
+	font-size: 24px;
+	@include respond-to(sm) {
+	}
+}
+h3 {
+	font-size: 16px;
+	@include respond-to(sm) {
+	}
+}
+h4 {
+	font-size: 14px;
+	@include respond-to(sm) {
+	}
+}
+h5 {
+	@include respond-to(sm) {
+	}
+}
+h6 {
+	@include respond-to(sm) {
+	}
+}
+
+
+a {
+	color: $link-color;
+	@include transition(250ms);
+	text-decoration: none;
+	&:hover, &:focus {
+		color: darken($link-color, 10%);
+		text-decoration: none;
+	}
+	&.underline {
+		text-decoration: underline;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+button {
+	@include transition(150ms);
+	border: none;
+	background: transparent;
+}
+p {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+b {
+	font-family: $avenir-heavy-font;
+}
+
+.divider {
+	height: 20px;
+	&.divider-large {
+		height: 50px;
+	}
+}
+
+.content-logo {
+	line-height: 30px;
+}
+
+.address-item, .holder-with-mb {
+	margin-bottom: 20px;
+}
+
+.holder-with-large-mb {
+	margin-bottom: 50px;
+}
+
+/*Font classes*/
+
+
+/*Color classes*/
+.text-info {
+	color: $text-info;
+}
+.text-success {
+	color: $text-success;
+}
+.text-white {
+	color: $color-white;
+}
+
+
+
+/*Background classes*/
+.bg-white {
+	background: $color-white;
+}
+
+

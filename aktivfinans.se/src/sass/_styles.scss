@@ -1,0 +1,56 @@
+/* STYLES */
+
+.content-holder {
+	padding: 60px 0px;
+	position: relative;
+	max-width: 620px;
+	margin: 0 auto;
+	@include clearfix();
+	@include respond-to(md) {
+		padding: 40px 0px;
+	}
+	@include respond-to(sm) {
+		padding: 30px 0px;
+	}
+	@include respond-to(xs) {
+		padding: 30px 15px;
+	}
+}
+
+.arrow-down {
+	display: block;
+	background: rgba($color-white, .75);
+	width: 104px;
+	height: 104px;
+	text-align: center;
+	border-radius: 50%;
+    color: $text-success;
+    font-weight: 700;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -52px;
+    &:hover, &:focus {
+    	color: darken($text-success, 15%);
+    	background: rgba($color-white, .9);
+    }
+    i {
+    	line-height: 115px;
+    	font-size: 65px;
+    	&:before {
+    		margin: 0;
+    	}
+    }
+    @include respond-to(sm) {
+    	height: 74px;
+    	width: 74px;
+    	margin-left: -37px;
+    	i {
+	    	line-height: 74px;
+	    	font-size: 40px;
+	    }
+    }
+    @include respond-to(xs) {
+    	display: none;
+    }
+}

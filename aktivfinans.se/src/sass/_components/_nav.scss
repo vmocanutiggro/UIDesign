@@ -1,0 +1,117 @@
+/* NAV */
+.navbar {
+	margin-bottom: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	@include respond-to(xs) {
+		background: $color-white;
+		position: static;
+	}
+	.nav {
+		>li {
+			>a {
+				font-family: $avenir-heavy-font;
+			}
+		}
+	}
+}
+.navbar-brand {
+	height: auto;
+	@include respond-to(xs) {
+		padding: 5px 15px;
+	}
+}
+.navbar-collapse {
+	padding: 0;
+	@include respond-to(xs) {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 8px;
+	}
+}
+.nav {
+	&.nav-list {
+		>li {
+			margin-right: 30px;
+			@include respond-to(sm) {
+				margin-right: 20px;
+			}
+			@include respond-to(xs) {
+				margin-right: 0px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			>a {
+				color: $text-info;
+				border-bottom: 8px solid transparent;
+				&:hover, &:focus {
+					background: transparent;
+					border-bottom: 8px solid $color-fall-green;
+				}
+				&.active {
+					font-family: $avenir-heavy-font;
+					border-bottom: 8px solid $color-fall-green;
+				}
+			}
+		}
+	}
+	&.nav-full-with {
+		width: 100%;
+		@include respond-to(xs) {
+			width: auto;
+		}
+	}
+	&.nav-top {
+		margin-top: 18px;
+	}
+}
+.navbar-nav {
+	&.nav-border {
+		border-bottom: 1px solid $color-santas-gray;
+		@include respond-to(xs) {
+			margin-right: -15px;
+		}
+	}
+	&.navbar-right {
+		margin-right: 0;
+	}
+	>li {
+		>a {
+			padding: 5px 0;
+			@include respond-to(xs) {
+				padding: 5px 15px;
+			}
+			&:hover, &:focus {
+				background: transparent;
+			}
+			&.btn {
+				font-family: $avenir-light-font;
+				@extend .btn;
+				@extend .btn-primary-outline;
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-top: 3px;
+				@include respond-to(xs) {
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}
+
+.navbar-toggle {
+	margin-right: 10px;
+	margin-top: 9px;
+	padding-bottom: 5px;
+	>span {
+		background: $color-prussian-blue;
+	}
+}
+
+
+
+

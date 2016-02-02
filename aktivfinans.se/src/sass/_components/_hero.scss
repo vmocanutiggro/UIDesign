@@ -1,0 +1,17 @@
+/* HERO */
+
+.hero-holder {
+	position: relative;
+	height: 100vh;
+	padding: 210px 0;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	margin-top: -120px;
+	@include respond-to(xs) {
+		height: auto;
+		padding: 10px 0 25px 0;
+		margin-top: 0;
+		background-attachment: fixed;
+	}
+}

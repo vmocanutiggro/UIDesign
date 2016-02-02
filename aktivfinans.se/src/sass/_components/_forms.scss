@@ -1,0 +1,48 @@
+/* FORMS */
+.form-control {
+	-webkit-appearance:none;
+}
+
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.form-group {
+	label {
+		text-transform: uppercase;
+	}
+}
+
+.checkbox, .radio {
+	label {
+		text-transform: none;
+	}
+}
+
+label {
+	font-size: 14px;
+}
+
+textarea {
+	resize: none;
+	min-height: 150px;
+}
+
+.form-horizontal {
+	.control-label {
+		text-align: left;
+	}
+}
+
+.form-logo-holder {
+	margin-bottom: 40px;
+	img {
+		width: 95px;
+		margin: 0 auto 25px auto;
+		display: block;
+	}
+}

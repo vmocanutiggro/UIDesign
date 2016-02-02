@@ -1,0 +1,94 @@
+/* BUTTONS */
+
+.btn {
+	border-radius: 25px;
+	padding: 6px 12px;
+	color: $color-white;
+	font-size: 11px;
+	&.btn-success {
+		background: $color-sushi;
+		border-color: $color-sushi;
+		&:hover, &:focus {
+			background: darken($color-sushi, 10%);
+			border-color: darken($color-sushi, 10%);
+		}
+	}
+	&.btn-success-secondary {
+		background: $color-fall-green;
+		border-color: $color-sushi;
+		color: $color-christi;
+		&:hover, &:focus {
+			background: darken($color-fall-green, 10%);
+		}
+	}
+	&.btn-inactive {
+		background: $color-spring-food;
+		border-color: $color-fall-green;
+		color: $color-fall-green;
+		opacity: 1;
+		&:hover, &:focus {
+			background: darken($color-spring-food, 10%);
+		}
+	}
+	&.btn-primary-outline {
+		background: transparent;
+		color: $color-prussian-blue;
+		border-color: $color-prussian-blue;
+		&:hover, &:focus {
+			background: $color-prussian-blue;
+			color: $color-white;
+		}
+	}
+	&.btn-primary {
+		background: $color-prussian-blue;
+		color: $color-white;
+		border-color: $color-prussian-blue;
+		&:hover, &:focus {
+			background: darken($color-prussian-blue, 10%);
+			border-color: $color-prussian-blue;
+			color: $color-white;
+		}
+	}
+	&.btn-warning {
+		background: $color-tangerine;
+		border-color: $color-tangerine;
+		&:hover, &:focus {
+			background: darken($color-tangerine, 10%);
+			border-color: darken($color-tangerine, 10%);
+			color: $color-white;
+		}
+	}
+	&.btn-sky {
+		background: $color-royal-blue;
+		border-color: $color-royal-blue;
+		&:hover, &:focus {
+			background: darken($color-royal-blue, 10%);
+			border-color: darken($color-royal-blue, 10%);
+			color: $color-white;
+		}
+	}
+	&.btn-link {
+		background: transparent;
+		color: $color-prussian-blue;
+		border-color: transparent;
+		&:hover, &:focus {
+			background: transparent;
+			border-color: transparent;
+			color: darken($color-prussian-blue, 10%);
+		}
+	}
+	&.btn-same-width {
+		min-width: 150px;
+	}
+	&.btn-bold {
+		font-family: $avenir-heavy-font;
+	}
+	&.btn-lg {
+		padding: 12px 30px;
+		font-size: 14px;
+		@include respond-to(xs) {
+			padding: 10px 24px;
+			font-size: 12px;
+		}
+	}
+}

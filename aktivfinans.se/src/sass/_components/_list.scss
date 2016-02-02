@@ -1,0 +1,28 @@
+/* LIST */
+
+ul, ol {
+	padding: 0;
+	margin-bottom: 20px;
+	list-style: none;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.list-bullet {
+	>li {
+		margin-left: 20px;
+		&:before {
+			content: '';
+			display: inline-block;
+			margin-left: -20px;
+			margin-top: -2px;
+			margin-right: 13px;
+			height: 6px;
+			width: 6px;
+			border-radius: 50%;
+			vertical-align: middle;
+			background: $color-shadow-green;
+		}
+	}
+}

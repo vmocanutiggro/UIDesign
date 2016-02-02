@@ -1,0 +1,17 @@
+/* PREFOOTER */
+
+.prefooter-holder {
+	.content-holder {
+		border-top: 1px solid $color-santas-gray;
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+}
+.prefooter-logo {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	@include respond-to(xs) {
+		float: none;
+	}
+}

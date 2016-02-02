@@ -1,0 +1,27 @@
+/* FOOTER */
+
+footer {
+	padding: 35px 0 20px 0;
+	background: $footer-bg;
+	color: $color-white;
+	font-size: 12px;
+	a {
+		color: $color-white;
+		&:hover, &:focus {
+			color: $color-sushi;
+		}
+	}
+	li {
+		>a {
+			display: inline-block;
+			padding: 2px 0;
+		}
+	}
+}
+.footer-logo {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.footer-cell-item {
+	margin-bottom: 20px;
+}
