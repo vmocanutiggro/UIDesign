@@ -1561,6 +1561,15 @@ hr {
 	background: #fff;
 	border: 1px solid #ccc;
 }
+.twitter-typeahead {
+	display: block !important;
+}
+.bootstrap-datetimepicker-widget {
+	background: #fff !important;
+	&:before {
+		border-color: transparent transparent #fff transparent;
+	}
+}
 
 
 
