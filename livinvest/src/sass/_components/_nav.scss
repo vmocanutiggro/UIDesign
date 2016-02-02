@@ -1,0 +1,50 @@
+/* NAV */
+
+.nav-header {
+	background: $nav-bg;
+	padding: 20px 0;
+	.btn-group {
+		float: right;
+		@include respond-to(xs) {
+			float: none;
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+		}
+		>a {
+			min-width: 140px;
+			@include respond-to(sm) {
+				min-width: 100px;
+			}
+			@include respond-to(xs) {
+				display: table-cell;
+				float: none;
+				&:not(:last-child) {
+					border-right: none;
+				}
+			}
+			@include respond-to(xs-small) {
+				font-size: 9px;
+			}
+			&.active {
+				font-family: $font-bold;
+			}
+		}
+	}
+}
+
+#logo {
+	width: 147px;
+	display: block;
+	@include respond-to(xs) {
+		margin: 0 auto 10px auto;
+	}
+	svg {
+		g {
+			fill: $logo-color;
+		}
+		.logo-image {
+			fill: $logo-bg;
+		}
+	}
+}

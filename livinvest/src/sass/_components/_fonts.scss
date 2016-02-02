@@ -1,0 +1,66 @@
+/* FONTS */
+
+/* HelveticaNeue */
+@font-face {
+    font-family:'HelveticaNeue-Regular';
+    src: url('../fonts/HelveticaNeue_gdi.eot');
+    src: url('../fonts/HelveticaNeue_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue_gdi.woff') format('woff'),
+        url('../fonts/HelveticaNeue_gdi.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue_gdi.svg#HelveticaNeue-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+@font-face {
+    font-family:'HelveticaNeue-Medium';
+    src: url('../fonts/HelveticaNeue-Medium_gdi.eot');
+    src: url('../fonts/HelveticaNeue-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Medium_gdi.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Medium_gdi.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Medium_gdi.svg#HelveticaNeue-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+@font-face {
+    font-family:'HelveticaNeue-Bold';
+    src: url('../fonts/HelveticaNeue-Bold_gdi.eot');
+    src: url('../fonts/HelveticaNeue-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Bold_gdi.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Bold_gdi.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Bold_gdi.svg#HelveticaNeue-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+
+
+/* Fontello */
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?73234182');
+    src: url('../fonts/fontello.eot?73234182#iefix') format('embedded-opentype'),
+    	 url('../fonts/fontello.woff?73234182') format('woff'),
+    	 url('../fonts/fontello.ttf?73234182') format('truetype'),
+    	 url('../fonts/fontello.svg?73234182#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="fontello-"]:before, [class*=" fontello-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+}

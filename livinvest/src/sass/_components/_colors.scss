@@ -1,0 +1,32 @@
+/* COLORS */
+
+/* For color names was used site - http://chir.ag/projects/name-that-color */
+
+/************************* 
+	Main colors start
+*************************/
+/* White group */
+$color-white: #ffffff;
+/* Black group */
+$color-black: #000000;
+/* Green group */
+$color-tropical-rain-forest: #006E5D;
+$color-lochinvar: #288D7F;
+/* Gray group */
+$color-thatch-green :#41361A;
+$color-dusty-gray: #9B9B9B;
+$color-mongoose: #B6A984;
+/* Yellow group */
+$color-tulip-tree: #E9B440;
+$color-wasabi: #8C8D28;
+/************************* 
+	Main colors end
+*************************/
+
+/************************* 
+	Local colors start
+*************************/
+$color-success: $color-tropical-rain-forest;
+/************************* 
+	Local colors end
+*************************/

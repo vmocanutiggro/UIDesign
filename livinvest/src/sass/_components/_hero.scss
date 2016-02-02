@@ -1,0 +1,21 @@
+/* HERO */
+
+.hero-section {
+	padding: 75px 0 200px 0;
+	background: url(../images/bg/hero-bg.jpg) no-repeat center center / cover;
+	position: relative;
+	@include respond-to(xs) {
+		padding: 25px 0 50px 0;
+	}
+}
+.hero-gradient {
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	@include gradient-vertical($start-color: $color-white, $end-color: transparent, $start-percent: 0%, $end-percent: 100%);
+	@include respond-to(xs) {
+		height: 20px;
+	}
+}

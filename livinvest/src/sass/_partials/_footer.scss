@@ -1,0 +1,14 @@
+/* FOOTER */
+
+footer {
+	background: $footer-bg;
+	padding: 25px 0;
+	text-align: center;
+	color: $color-white;
+	a {
+		color: $color-white;
+		&:hover, &:focus {
+			color: $link-color;
+		}
+	}
+}

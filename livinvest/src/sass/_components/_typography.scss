@@ -1,0 +1,95 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+html, body {
+	font-family: $body-main-font;
+	color: $main-text-color;
+	-webkit-font-smoothing: antialiased;
+	font-size: $body-font-size;
+}
+
+* {
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-bold;
+	margin-top: 0;
+	margin-bottom: 20px;
+	&.title-green {
+		color: $title-color;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	small {
+		color: inherit;
+	}
+	a {
+		color: inherit;
+	}
+}
+
+h1 {
+	font-size: 58px;
+	line-height: 68px;
+	@include respond-to(sm) {
+		font-size: 32px;
+		line-height: 38px;
+	}
+}
+h2 {
+	font-size: 32px;
+	line-height: 40px;
+	@include respond-to(sm) {
+		font-size: 21px;
+		line-height: 26px;
+	}
+}
+
+
+a {
+	color: $link-color;
+	@include transition(250ms);
+	text-decoration: underline;
+	&:hover {
+		color: darken($link-color, 10%);
+		text-decoration: none;
+	}
+}
+button {
+	@include transition(150ms);
+	border: none;
+	background: transparent;
+}
+p {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*Font classes*/
+.font-regular {
+	font-family: $font-regular;
+}
+.font-medium {
+	font-family: $font-medium;
+}
+.font-bold {
+	font-family: $font-bold;
+}
+
+
+/*Color classes*/
+
+
+
+
+/*Background classes*/
+
+
+
