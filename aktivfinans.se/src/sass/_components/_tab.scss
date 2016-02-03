@@ -1,0 +1,46 @@
+/* TAB */
+.nav-tabs {
+	border: none;
+	>li {
+		&.active {
+			>a {
+				@extend .btn-success;
+				border: none;
+				&:hover, &:focus {
+					border: none;
+					background: $color-sushi;
+				}
+			}
+		}
+		>a {
+			color: $color-white !important;
+			@extend .btn;
+			@extend .btn-success-secondary;
+			border-radius: 20px;
+			border: none;
+			&:hover, &:focus {
+				border: none;
+				background: $color-fall-green;
+			}
+		}
+	}
+}
+.nav-tabs-centered {
+	text-align: center;
+	>li {
+		display: inline-block;
+		float: none;
+		@include respond-to(xs-small) {
+			display: block;
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.tab-content {
+	margin: 25px 0;
+}
+

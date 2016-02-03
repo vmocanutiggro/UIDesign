@@ -35,7 +35,7 @@
 .nav {
 	&.nav-list {
 		>li {
-			margin-right: 30px;
+			margin-right: 25px;
 			@include respond-to(sm) {
 				margin-right: 20px;
 			}

@@ -1,0 +1,47 @@
+/* TABLE */
+
+
+.table {
+	thead, tbody {
+		tr {
+			td, th {
+				font-size: 13px;
+				@include respond-to(sm) {
+					font-size: 9px;
+				}
+				@include respond-to(xs) {
+					font-size: 12px;
+				}
+ 			}
+		}
+	}
+	thead {
+		tr {
+			th {
+				background: $color-santas-gray;
+				color: $color-white;
+				border: none;
+			}
+		}
+	}
+	.checkbox, .radio {
+		margin-top: 0;
+		margin-bottom: 0;
+		label {
+			@include respond-to(sm) {
+				font-size: 9px;
+			}
+			@include respond-to(xs) {
+				font-size: 12px;
+			}
+			input {
+				@include respond-to(sm) {
+					top: -3px;
+				}
+				@include respond-to(xs) {
+					top: -2px;
+				}
+			}
+		}
+	}
+}

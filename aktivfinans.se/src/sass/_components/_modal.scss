@@ -1,0 +1,16 @@
+/* MODAL */
+
+.modal {
+	.modal-dialog {
+		margin-top: 7%;
+	}
+	&.modal-medium {
+		.modal-dialog {
+			width: 480px;
+			@include respond-to(xs) {
+				width: auto;
+			}
+ 		}
+	}
+}
+

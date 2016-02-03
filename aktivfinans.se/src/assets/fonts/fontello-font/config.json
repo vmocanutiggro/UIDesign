@@ -23,6 +23,12 @@
       "css": "down-open-big",
       "code": 59394,
       "src": "entypo"
+    },
+    {
+      "uid": "6a06892e76b81e023da6ddfb38a26b37",
+      "css": "doc-text",
+      "code": 59395,
+      "src": "typicons"
     }
   ]
 }
