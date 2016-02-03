@@ -7990,6 +7990,16 @@ ol:last-child, ul:last-child {
 }
 
 /* '' */
+.icon-aktive-finans-phone:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-aktive-finans-mail-alt:before {
+  content: '\e805';
+}
+
+/* '' */
 /* FORMS */
 .form-control {
   -webkit-appearance: none;
@@ -8654,17 +8664,85 @@ ul:last-child, ol:last-child {
 }
 
 /* MODAL */
-.modal .modal-dialog {
-  margin-top: 7%;
+.modal-lg {
+  margin-top: 15px;
 }
 
-.modal.modal-medium .modal-dialog {
+.modal-md {
   width: 480px;
+  margin-top: 5%;
 }
 
 @media only screen and (max-width: 767px) {
-  .modal.modal-medium .modal-dialog {
+  .modal-md {
     width: auto;
+  }
+}
+
+.modal-sm {
+  margin-top: 7%;
+  width: 360px;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal-sm {
+    width: auto;
+  }
+}
+
+/* FLOATET BOX */
+.floatet-box-holder {
+  position: fixed;
+  z-index: 500;
+  right: 0;
+  top: 35%;
+  width: 60px;
+}
+
+@media only screen and (max-width: 991px) {
+  .floatet-box-holder {
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .floatet-box-holder {
+    width: 45px;
+  }
+}
+
+.floatet-box-holder > a {
+  display: block;
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 5px;
+  height: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.floatet-box-holder > a:last-child {
+  margin-bottom: 0;
+}
+
+.floatet-box-holder > a:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 767px) {
+  .floatet-box-holder > a {
+    height: auto;
+  }
+}
+
+.floatet-box-holder > a i {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .floatet-box-holder > a i {
+    font-size: 16px;
   }
 }
 
