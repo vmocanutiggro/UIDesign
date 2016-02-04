@@ -10,14 +10,21 @@ html, body {
 	line-height: 1.4;
 }
 body {
-	background-repeat: no-repeat;
-	background-position: top center;
-	// background-attachment: fixed;
-	background-size: cover;
 	padding-top: 120px;
+	position: relative;
 	@include respond-to(xs) {
 		padding-top: 0;
 	}
+}
+
+.image-holder {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-bottom: 60%;
+	background: url(../images/bg/body-bg-1.jpg) no-repeat top center / cover;
+	z-index: -1;
 }
 
 * {
