@@ -8191,22 +8191,22 @@ b {
   border-radius: 25px;
   padding: 6px 12px;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .btn.btn-success, .navbar-nav > li > a.btn-success.btn, .nav-tabs > li.active > a, .nav-tabs > li > a.btn-success {
-  background: #8DBA3E;
-  border-color: #8DBA3E;
+  background: #90C2B9;
+  border-color: #90C2B9;
 }
 
 .btn.btn-success:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li > a.btn-success:hover, .btn.btn-success:focus, .nav-tabs > li.active > a:focus, .nav-tabs > li > a.btn-success:focus {
-  background: #709431;
-  border-color: #709431;
+  background: #6fb0a4;
+  border-color: #6fb0a4;
 }
 
 .btn.btn-success-secondary, .navbar-nav > li > a.btn-success-secondary.btn, .nav-tabs.navbar-nav > li > a, .nav-tabs > li > a {
   background: #E1ECBA;
-  border-color: #8DBA3E;
+  border-color: #E1ECBA;
   color: #5C890E;
 }
 
