@@ -13,6 +13,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: top center;
 	// background-attachment: fixed;
+	background-size: cover;
 	padding-top: 120px;
 	@include respond-to(xs) {
 		padding-top: 0;
