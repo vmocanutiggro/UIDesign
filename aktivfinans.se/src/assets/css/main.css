@@ -8094,8 +8094,14 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 41px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 h2 {
@@ -8191,7 +8197,7 @@ b {
   border-radius: 25px;
   padding: 6px 12px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .btn.btn-success, .navbar-nav > li > a.btn-success.btn, .nav-tabs > li.active > a, .nav-tabs > li > a.btn-success {
