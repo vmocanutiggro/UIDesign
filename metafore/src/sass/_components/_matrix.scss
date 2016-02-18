@@ -1,0 +1,182 @@
+/* MATRIX */
+
+.matrix-holder {
+	text-align: center;
+	padding: 30px 75px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 50px;
+	@include respond-to(xs) {
+		padding: 0;
+	}
+}
+
+.matrix-gradien-holder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 0 75px;
+	width: 100%;
+	max-width: 920px;
+	z-index: -1;
+	left: 50%;
+	margin-left: -460px;
+	@include respond-to(md) {
+		max-width: 760px;
+		margin-left: -380px;
+	}
+	@include respond-to(sm) {
+		max-width: 540px;
+		margin-left: -270px;
+	}
+	>span {
+		height: 100%;
+		width: 32%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include gradient-vertical($start-color: #fff, $end-color: rgba(#51BBB4, .2), $start-percent: 0%, $end-percent: 70%);
+		&:nth-child(2) {
+			@include gradient-vertical($start-color: #fff, $end-color: rgba(#6A8898, .2), $start-percent: 0%, $end-percent: 70%);
+			left: 34%;
+		}
+		&:nth-child(3) {
+			@include gradient-vertical($start-color: #fff, $end-color: rgba(#ACCD6C, .2), $start-percent: 0%, $end-percent: 70%);
+			left: 68%;
+		}
+	}
+}
+
+.matrix-table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	padding: 15px 0;
+}
+
+.matrix-item {
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+	@extend .font-system;
+}
+
+.matrix-body-item {
+	border-top: 1px solid $color-mutted;
+	border-bottom: 1px solid $color-mutted;
+	position: relative;
+	margin-bottom: 25px;
+	.matrix-table {
+		background: $bg-white;
+		height: 90px;
+	}
+}
+.matrix-body-title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: $color-mutted;
+	margin-bottom: 0;
+	height: 25px;
+	line-height: 100%;
+	top: 50%;
+	left: -50px;
+	margin-top: -12.5px;
+	@include respond-to(sm) {
+		font-size: 16px;
+	}
+}
+
+.matrix-triangle {
+	height: 92px;
+	width: 46px;
+	position: absolute;
+	right: -46px;
+	top: -1px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 46px 0 46px 46px;
+	border-color: transparent transparent transparent $color-mutted;
+	&:before {
+		content: "";
+		position: absolute;
+		left: -46px;
+		top: -45px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 45px 0 45px 45px;
+		border-color: transparent transparent transparent #fff;
+	}
+}
+
+
+.matrix-mobile-item {
+	margin-bottom: 50px;
+	>.row {
+		margin: 0;
+		>[class*='col-'] {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.matrix-mobile-gradient-text {
+	text-align: right;
+	padding: 30px 10px;
+	margin-bottom: 0;
+	color: $color-primary;
+	@include gradient-horizontal($start-color: #fff, $end-color: rgba(#51BBB4, .2), $start-percent: 0%, $end-percent: 100%);
+	&:first-child {
+		margin-top: 5px;
+	}
+	&:nth-child(2) {
+		@include gradient-horizontal($start-color: #fff, $end-color: rgba(#6A8898, .2), $start-percent: 0%, $end-percent: 100%);
+	}
+	&:nth-child(3) {
+		@include gradient-horizontal($start-color: #fff, $end-color: rgba(#ACCD6C, .2), $start-percent: 0%, $end-percent: 100%);
+	}
+}
+.matrix-mobile-triangle-holder {
+	padding: 15px 5px;
+	border-left: 1px solid $color-mutted;
+	border-right: 1px solid $color-mutted;
+	max-width: 170px;
+	position: relative;
+	@extend .font-system;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+	}
+	&:before {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 30px 85px 0 85px;
+		border-color: $color-mutted transparent transparent transparent;
+		bottom: -30px;
+		left: -1px;
+	}
+	&:after {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 30px 85px 0 85px;
+		border-color: $bg-white transparent transparent transparent;
+		bottom: -29px;
+		left: -1px;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		height: 60px;
+	}
+}
+
+
+
+

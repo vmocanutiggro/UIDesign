@@ -1,0 +1,18 @@
+/* FOOTER */
+
+footer {
+	padding: 30px 0;
+	@include respond-to(xs) {
+		text-align: center;
+	}
+}
+.footer-logo {
+	margin-bottom: 10px;
+	display: inline-block;
+	img {
+		width: 100%;
+	}
+}
+.footer-title {
+	margin-bottom: 5px;
+}

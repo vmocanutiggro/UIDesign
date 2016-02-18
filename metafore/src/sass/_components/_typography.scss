@@ -1,0 +1,219 @@
+html, body {
+	font-family: $font-cardo;
+	color: $main-text-color;
+	-webkit-font-smoothing: antialiased;
+	font-size: $body-font-size;
+	// @include respond-to(xs) {
+	// 	font-size: $body-font-size-mobile;
+	// }
+}
+body {
+	&.aside-open {
+		overflow-y: hidden;
+	}
+}
+.content-holder {
+	position: relative;
+	z-index: 400;
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color-black, .4);
+		z-index: 400;
+		display: none;
+	}
+	&.active {
+		&:before {
+			display: block;
+		}
+	}
+}
+* {
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: $font-cardo;
+	font-weight: $font-regular;
+	color: $title-color;
+	line-height: 1.4;
+	&.title-margin {
+		margin-bottom: 50px;
+		@include respond-to(xs) {
+			margin-bottom: 30px;
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	font-size: 30px;
+	@include respond-to(sm) {
+	}
+}
+h2 {
+	font-size: 26px;
+	@include respond-to(sm) {
+	}
+}
+h3 {
+	font-size: 24px;
+	@include respond-to(sm) {
+	}
+}
+h4 {
+	font-size: 19px;
+	@include respond-to(sm) {
+	}
+}
+h5 {
+	@include respond-to(sm) {
+	}
+}
+h6 {
+	@include respond-to(sm) {
+	}
+}
+
+
+a {
+	color: $link-color;
+	@include transition(250ms);
+	text-decoration: none;
+	&:hover, &:focus {
+		color: darken($link-color, 10%);
+		text-decoration: none;
+	}
+	&.link-primary {
+		color: $color-primary;
+		&:hover, &:focus {
+			color: darken($color-primary, 10%);
+		}
+	}
+	&.underline {
+		text-decoration: underline;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+button {
+	@include transition(150ms);
+	border: none;
+	background: transparent;
+}
+p {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.lead {
+	font-size: 18px;
+	@include respond-to(xs) {
+		font-size: 16px;
+	}
+}
+
+address {
+	font-size: 18px;
+	color: $color-mutted;
+	@include respond-to(xs) {
+		font-size: 16px;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	a {
+		color: $color-mutted;
+		&:hover, &:focus {
+			color: darken($link-color, 10%);
+		}
+	}
+}
+
+/*Font classes*/
+.font-system {
+	// font-family: -apple-system, sans-serif;
+	// font-family: -moz-use-system-font;
+	// font-style: -moz-use-system-font;
+	// line-height: -moz-use-system-font;
+	// font-stretch: -moz-use-system-font;
+	// -x-system-font: caption;
+	// font-feature-settings: -moz-use-system-font;
+	// font-language-override: -moz-use-system-font;
+	// font-kerning: -moz-use-system-font;
+	// font-synthesis: -moz-use-system-font;
+	// font-variant-alternates: -moz-use-system-font;
+	// font-variant-caps: -moz-use-system-font;
+	// font-variant-east-asian: -moz-use-system-font;
+	// font-variant-ligatures: -moz-use-system-font;
+	// font-variant-numeric: -moz-use-system-font;
+	// font-variant-position: -moz-use-system-font;
+	font: caption;
+	font-family: -apple-system, sans-serif;
+}
+.font-italic {
+	font-style: italic;
+}
+.font-regular {
+	font-weight: $font-regular;
+}
+.font-bold {
+	font-weight: $font-bold;
+}
+
+
+/*Color classes*/
+.text-white {
+	color: $color-white;
+}
+.text-primary {
+	color: $color-primary;
+}
+.text-success {
+	color: $color-success;
+}
+.text-info {
+	color: $color-info;
+}
+.text-mutted {
+	color: $color-mutted;
+}
+
+.border-primary {
+	border-color: $color-primary;
+}
+.border-success {
+	border-color: $link-color;
+}
+
+
+
+/*Background classes*/
+.bg-primary {
+	background: $color-primary;
+}
+.bg-success {
+	background: $color-success;
+}
+.bg-info {
+	background: $color-info;
+}
+.bg-mutted {
+	background: $color-mutted;
+}
+
+
+

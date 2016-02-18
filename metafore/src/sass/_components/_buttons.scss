@@ -1,0 +1,18 @@
+/* BUTTONS */
+
+.btn {
+	border-radius: 25px;
+	@extend .font-system;
+	padding: 12px 50px;
+	font-size: 18px;
+	@include respond-to(xs) {
+		padding: 10px 34px;
+		font-size: 16px;
+	}
+	&.btn-success {
+		background: $color-chateau-green;
+		&:hover, &:focus {
+			background: darken($color-chateau-green, 10%);
+		}
+	}
+}

@@ -1,0 +1,111 @@
+/* RESET STYLES */
+
+* {
+	&:hover, &:focus, &:active {
+		outline: none !important;
+	}
+}
+
+a:hover, a:focus, a:visited {
+	text-decoration: none;
+	outline: none;
+	outline-offset: 0;
+}
+
+ol, ul {
+	margin-bottom: 20px;
+	padding-left: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.push-md-down {
+	@include respond-to(md) {
+  		margin-bottom: 15px;
+	}
+}
+.push-sm-down {
+	@include respond-to(sm) {
+  		margin-bottom: 15px;
+	}
+}
+.push-down {
+	@include respond-to(xs) {
+  		margin-bottom: 15px;
+	}
+}
+.mobile-text-center {
+	@include respond-to(xs) {
+  		text-align: center;
+	}
+}
+.mobile-text-left {
+	@include respond-to(xs) {
+  		text-align: left;
+	}
+}
+.relative {
+	position: relative;
+}
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.full-width {
+	width: 100%;
+	display: block;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+.mb5 {
+	margin-bottom: 5px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.mb25 {
+	margin-bottom: 25px;
+}
+
+.divider {
+	height: 25px;
+	&.divider-large {
+		height: 50px;
+	}
+}
+
+.img-floatet {
+	position: relative;
+	top: -20px;
+	margin-top: -140px;
+	@include respond-to(xs) {
+		top: 0;
+		margin-top: -110px;
+	}
+}
+
+.container-small {
+	margin-left: auto;
+	margin-right: auto;
+	width: 520px;
+	@include respond-to(sm) {
+		width: 600px;
+	}
+	@include respond-to(xs) {
+		width: auto;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+/* blockquote */
+
+.blockquote-holder {
+	font-size: 19px;
+	color: $color-white;
+	padding-left: 110px;
+	position: relative;
+	@include respond-to(xs) {
+		padding-left: 0px;
+		padding-top: 40px;
+		font-size: 16px;
+	}
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '"';
+		font-size: 160px;
+		color: $color-wild-willow;
+		font-style: italic;
+		line-height: 100%;
+		@include respond-to(xs) {
+			font-size: 75px;
+		}
+	}
+}
+.blockquote-body {
+	padding-top: 25px;
+	@include respond-to(xs) {
+		padding-top: 0;
+	}
+}

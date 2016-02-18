@@ -1,0 +1,115 @@
+/* ASIDE */
+
+.aside-holder {
+	width: 250px;
+	padding: 50px 40px 0 40px;
+	background: $aside-bg;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow-y: auto;
+	transform: translate3d(-240px, 0px, 0px);
+	z-index: 600;
+	@include transition(300ms);
+	@include respond-to(xs) {
+		transform: translate3d(-250px, 0px, 0px);
+	}
+	&.active {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	&:after {
+		content: "";
+	    display: block;
+	    height: 50px;
+	    width: 100%;
+	}
+}
+
+.nav-trigger {
+	z-index: 600;
+	@include transition(300ms);
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	height: 50px;
+	width: 50px;
+	border: 2px solid $color-white;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 1px $color-lynch, 0px 0px 0px 1px $color-lynch inset;
+	@include respond-to(xs) {
+		width: 35px;
+		height: 35px;
+		left: 5px;
+	}
+	&.active, &:hover {
+		border: 2px solid $color-lynch;
+		box-shadow: 0px 0px 0px 1px $color-white, 0px 0px 0px 1px $color-white inset;
+		>span {
+			background: $color-lynch;
+			box-shadow: 0px 0px 0px 1px $color-white;
+			&:before, &:after {
+				background: $color-lynch;
+				box-shadow: 0px 0px 0px 1px $color-white;
+			}
+		}
+	}
+	&.active {
+		transform: translate3d(240px, 0px, 0px);
+		@include respond-to(xs) {
+			transform: translate3d(250px, 0px, 0px);
+		}
+		span {
+			background: transparent;
+			box-shadow: none;
+			&:before, &:after {
+				top: 0;
+				box-shadow: 0px 0px 0px 1px $color-white;
+				background: $color-white;
+			}
+			&:before {
+				@include rotate(45deg);
+			}
+			&:after {
+				@include rotate(-45deg);
+			}
+		}
+	}
+	>span {
+		display: block;
+		height: 3px;
+		width: 23px;
+		background: $color-white;
+		position: absolute;
+		top: 50%;
+		margin-top: -1.5px;
+		left: 50%;
+		margin-left: -12.5px;
+		box-shadow: 0px 0px 0px 1px $color-lynch;
+		@include respond-to(xs) {
+			height: 2px;
+			margin-top: -1px;
+			width: 20px;
+			margin-left: -10px;
+		}
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 3px;
+			width: 23px;
+			background: $color-white;
+			position: absolute;
+			box-shadow: 0px 0px 0px 1px $color-lynch;
+			@include respond-to(xs) {
+				height: 2px;
+				width: 20px;
+			}
+		}
+		&:before {
+			top: -6px;
+		}
+		&:after {
+			bottom: -6px;
+		}
+	}
+}
