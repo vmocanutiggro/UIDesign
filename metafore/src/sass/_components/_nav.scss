@@ -33,6 +33,7 @@
 			margin-right: 0;
 		}
 		>a {
+			font-weight: bold;
 			color: $color-primary;
 			text-transform: uppercase;
 			@extend .font-system;

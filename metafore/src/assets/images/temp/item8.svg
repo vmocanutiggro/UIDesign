@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="102px" viewBox="0 0 200 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.213770115 L199.904892,0.213770115 L199.904892,101.609195 L0,101.609195 L0,0.213770115 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="METAFORE-PRODUKTEN-desktop" sketch:type="MSArtboardGroup" transform="translate(-630.000000, -3360.000000)">
+            <g id="Page-1" sketch:type="MSLayerGroup" transform="translate(630.000000, 3360.000000)">
+                <path d="M84.1226614,53.1295333 L106.829902,53.1295333 C100.544188,52.0903839 92.0162035,49.652154 86.2850881,43.9296023" id="Stroke-1" stroke="#6A8898" sketch:type="MSShapeGroup"></path>
+                <path d="M86.2850881,66.8837839 C92.0165949,61.1608414 100.544579,58.7230023 106.830294,57.6838529 L84.1226614,57.6838529" id="Stroke-3" stroke="#6A8898" sketch:type="MSShapeGroup"></path>
+                <path d="M89.5102935,40.7092552 C93.8965949,45.0893931 100.533777,47.203646 105.32908,48.2060598 C110.673894,49.3237609 114.99953,49.3468184 115.042583,49.3468184 L115.042583,42.4592782 L127.821448,55.2190483 L115.016751,68.3954161 L115.042583,61.4664506 C114.99953,61.4668414 110.673894,61.4898989 105.32908,62.6072092 C100.533777,63.609623 93.8965949,65.7242667 89.5102935,70.1040138" id="Stroke-5" stroke="#6A8898" sketch:type="MSShapeGroup"></path>
+                <mask id="mask-2" sketch:name="Clip 8" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M159.091977,42.4593563 L153.882192,42.4593563 L153.882192,36.7629885 L159.091977,36.7629885 L159.091977,42.4593563 Z" id="Fill-7" fill="#51BBB4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M165.733464,42.4593563 L160.523679,42.4593563 L160.523679,34.948092 L165.733464,34.948092 L165.733464,42.4593563 Z" id="Fill-9" fill="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M172.37456,42.4593563 L167.164775,42.4593563 L167.164775,32.1456322 L172.37456,32.1456322 L172.37456,42.4593563 Z" id="Fill-10" fill="#51BBB4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M179.016047,42.4593563 L173.806262,42.4593563 L173.806262,29.0742989 L179.016047,29.0742989 L179.016047,42.4593563 Z" id="Fill-11" fill="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M185.657534,42.4593563 L180.44775,42.4593563 L180.44775,25.1744598 L185.657534,25.1744598 L185.657534,42.4593563 Z" id="Fill-12" fill="#51BBB4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M192.299022,42.4593563 L187.089237,42.4593563 L187.089237,17.0445517 L192.299022,17.0445517 L192.299022,42.4593563 Z" id="Fill-13" fill="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M159.091977,85.7397931 L153.882192,85.7397931 L153.882192,80.0434253 L159.091977,80.0434253 L159.091977,85.7397931 Z" id="Fill-14" fill="#ACCD6C" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M165.733464,85.7397931 L160.523679,85.7397931 L160.523679,78.2285287 L165.733464,78.2285287 L165.733464,85.7397931 Z" id="Fill-15" fill="#4CB05B" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M172.37456,85.7397931 L167.164775,85.7397931 L167.164775,75.426069 L172.37456,75.426069 L172.37456,85.7397931 Z" id="Fill-16" fill="#ACCD6C" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M179.016047,85.7397931 L173.806262,85.7397931 L173.806262,72.3547356 L179.016047,72.3547356 L179.016047,85.7397931 Z" id="Fill-17" fill="#4CB05B" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M185.657534,85.7397931 L180.44775,85.7397931 L180.44775,68.4548966 L185.657534,68.4548966 L185.657534,85.7397931 Z" id="Fill-18" fill="#ACCD6C" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M192.299022,85.7397931 L187.089237,85.7397931 L187.089237,60.3249885 L192.299022,60.3249885 L192.299022,85.7397931 Z" id="Fill-19" fill="#4CB05B" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M159.091977,58.1357011 L153.882192,58.1357011 L153.882192,55.1214253 L159.091977,55.1214253 L159.091977,58.1357011 Z" id="Fill-20" fill="#ECAFB5" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M165.733464,58.1357011 L160.523679,58.1357011 L160.523679,54.1608276 L165.733464,54.1608276 L165.733464,58.1357011 Z" id="Fill-21" fill="#75595F" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M172.37456,58.1357011 L167.164775,58.1357011 L167.164775,52.6781149 L172.37456,52.6781149 L172.37456,58.1357011 Z" id="Fill-22" fill="#ECAFB5" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M179.016047,58.1357011 L173.806262,58.1357011 L173.806262,51.0527586 L179.016047,51.0527586 L179.016047,58.1357011 Z" id="Fill-23" fill="#75595F" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M185.657534,58.1357011 L180.44775,58.1357011 L180.44775,48.9889195 L185.657534,48.9889195 L185.657534,58.1357011 Z" id="Fill-24" fill="#ECAFB5" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M192.299022,58.1357011 L187.089237,58.1357011 L187.089237,44.6869425 L192.299022,44.6869425 L192.299022,58.1357011 Z" id="Fill-25" fill="#75595F" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M144.906301,90.995646 L144.906301,25.1669563 L157.206106,12.8859218 L199.709041,12.8859218 L199.709041,90.995646 L144.906301,90.995646 L144.906301,90.995646 Z" id="Stroke-26" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M157.063444,25.167269 L144.906497,25.167269 L157.20591,12.8858437 L157.063444,25.167269 L157.063444,25.167269 Z" id="Stroke-27" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M13.2849315,69.0993333 L7.59099804,69.0993333 L7.59099804,62.8738161 L13.2849315,62.8738161 L13.2849315,69.0993333 Z" id="Fill-28" fill="#51BBB4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M20.5432485,69.0993333 L14.8493151,69.0993333 L14.8493151,60.8904828 L20.5432485,60.8904828 L20.5432485,69.0993333 Z" id="Fill-29" fill="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M27.8015656,69.0993333 L22.1076321,69.0993333 L22.1076321,57.8277471 L27.8015656,57.8277471 L27.8015656,69.0993333 Z" id="Fill-30" fill="#51BBB4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M35.0598826,69.0993333 L29.3659491,69.0993333 L29.3659491,54.4711264 L35.0598826,54.4711264 L35.0598826,69.0993333 Z" id="Fill-31" fill="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M42.3181996,69.0993333 L36.6242661,69.0993333 L36.6242661,50.2090115 L42.3181996,50.2090115 L42.3181996,69.0993333 Z" id="Fill-32" fill="#51BBB4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M49.5765166,69.0993333 L43.8825832,69.0993333 L43.8825832,41.3236782 L49.5765166,41.3236782 L49.5765166,69.0993333 Z" id="Fill-33" fill="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M57.5263796,6.9327954 L63.5400783,6.9327954 L63.5400783,88.547646 L6.27784736,88.547646 L6.27784736,82.1310253" id="Stroke-34" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M63.4120548,13.4770529 L69.4257534,13.4770529 L69.4257534,95.0919034 L12.1635225,95.0919034 L12.1635225,88.6752828" id="Stroke-35" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M69.3468493,19.7988644 L75.3605479,19.7988644 L75.3605479,101.413715 L18.098317,101.413715 L18.098317,94.9970943" id="Stroke-36" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M0.472446184,82.0093678 L0.472446184,13.477092 L13.2771429,0.691137931 L57.5264579,0.691137931 L57.5264579,82.0093678 L0.472446184,82.0093678 L0.472446184,82.0093678 Z" id="Stroke-37" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M13.1289628,13.4770529 L0.47260274,13.4770529 L13.2772994,0.691098851 L13.1289628,13.4770529 L13.1289628,13.4770529 Z" id="Stroke-38" stroke="#6A8898" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M37.6351076,40.4339724 C41.1673973,37.6819264 43.4390215,33.3920644 43.4390215,28.5718805 C43.4390215,20.266892 36.6965558,13.5345011 28.3795303,13.5345011 L28.3795303,28.5718805 L37.6351076,40.4339724 Z" id="Fill-39" fill="#ACCD6C" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M36.483092,40.9381103 L27.2275147,29.0760184 L27.2275147,14.0386391 C27.2275147,14.0386391 24.6807436,14.0386391 22.2748728,14.8753517 C14.4200783,17.6062943 10.2701761,26.1785931 13.0055969,34.0212598 C15.7406262,41.8643172 24.3257534,46.0080184 32.1801566,43.2766851 C35.1793738,42.2336276 36.483092,40.9381103 36.483092,40.9381103" id="Fill-40" fill="#4CB05B" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -14,7 +14,7 @@
 	}
 	p {
 		font-size: 16px;
-		@include respond-to(xs) {
+		@include respond-to(sm) {
 			font-size: 14px;
 		}
 	}
@@ -22,4 +22,5 @@
 .holder-box-title {
 	@extend .font-system;
 	font-size: 18px;
+	font-weight: bold;
 }

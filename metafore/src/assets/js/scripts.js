@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$(this).closest('body').toggleClass('aside-open')
 		$(this).closest('body').find('.aside-holder').toggleClass('active');
-		$(this).closest('body').find('.content-holder').toggleClass('active');
+		//$(this).closest('body').find('.content-holder').toggleClass('active');
 	});
 
 });
