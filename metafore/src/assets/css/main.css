@@ -7851,7 +7851,7 @@ ol:last-child, ul:last-child {
 
 .logo-small {
   display: block;
-  max-width: 180px;
+  max-width: 160px;
   margin: 0 auto 30px auto;
 }
 
@@ -8533,8 +8533,9 @@ hr.hero-hr {
 .holder-box img {
   display: block;
   margin: 0 auto 20px auto;
-  min-height: 140px;
-  max-width: 225px;
+  min-height: 60px;
+  max-width: 160px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8844,6 +8845,7 @@ footer {
 
 .footer-logo img {
   width: 100%;
+  max-width: 180px;
 }
 
 .footer-title {
