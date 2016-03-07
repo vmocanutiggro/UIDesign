@@ -44,3 +44,24 @@
 }
 
 
+.list-site-map {
+	@extend .list-unstyled;
+	li {
+		a {
+			color: $color-primary;
+			&:before {
+				content: '|---';
+				margin-right: 2px;
+			}
+			&:hover, &:focus, &.active {
+				color: darken($link-color, 10%);
+			}
+		}
+		ul {
+			@extend .list-unstyled;
+			margin-left: 20px;
+		}
+	}
+}
+
+
