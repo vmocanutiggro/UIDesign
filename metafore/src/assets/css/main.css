@@ -8000,12 +8000,6 @@ body.aside-open:before {
   display: block;
 }
 
-.content-holder {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 *:hover, *:focus {
   outline: none;
 }
