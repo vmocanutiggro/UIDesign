@@ -45,6 +45,11 @@
 			&:last-child {
 				margin-right: 0;
 			}
+			&.open {
+				>a {
+					background: transparent;
+				}
+			}
 			>a {
 				color: $text-info;
 				border-bottom: 8px solid transparent;
