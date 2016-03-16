@@ -60,7 +60,7 @@
 				display: block;
 				padding: 5px 3px;
 				border-bottom: 2px solid transparent;
-				&:hover, &:focus {
+				&:hover, &:focus, &.active {
 					background: transparent;
 					border-bottom: 2px solid $color-fall-green;
 				}

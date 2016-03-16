@@ -8837,7 +8837,7 @@ ul:last-child, ol:last-child {
   border-bottom: 2px solid transparent;
 }
 
-.yamm .dropdown-menu > li > a:hover, .yamm .dropdown-menu > li > a:focus {
+.yamm .dropdown-menu > li > a:hover, .yamm .dropdown-menu > li > a:focus, .yamm .dropdown-menu > li > a.active {
   background: transparent;
   border-bottom: 2px solid #E1ECBA;
 }
