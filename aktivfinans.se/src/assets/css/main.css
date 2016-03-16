@@ -8454,6 +8454,16 @@ b {
   }
 }
 
+.navbar-nav > li .dropdown-menu {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav > li .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
 .navbar-toggle {
   margin-right: 10px;
   margin-top: 9px;
@@ -8957,4 +8967,8 @@ footer li > a {
   .arrow-down {
     display: none;
   }
+}
+
+main {
+  margin-top: 20px;
 }

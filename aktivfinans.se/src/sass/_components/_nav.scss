@@ -105,6 +105,12 @@
 				}
 			}
 		}
+		.dropdown-menu { 
+			margin-top: 10px;
+			@include respond-to(xs) {
+				margin-top: 0;
+			}
+		}
 	}
 }
 
