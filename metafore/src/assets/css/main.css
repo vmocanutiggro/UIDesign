@@ -8503,10 +8503,11 @@ hr.hero-hr {
 
 /* HERO */
 .section-hero {
-  height: 92vh;
+  height: 100vh;
   background: url(../images/bg/hero-bg.png) no-repeat center center/cover;
   padding: 8% 0;
   text-align: center;
+  position: relative;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8535,6 +8536,65 @@ hr.hero-hr {
   margin-bottom: 10px;
 }
 
+.scroll-down {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -30px;
+  -webkit-animation: bounce ease-in 2s infinite;
+          animation: bounce ease-in 2s infinite;
+}
+
+@media only screen and (max-width: 767px) {
+  .scroll-down {
+    position: static;
+    margin: 25px auto 0 auto;
+  }
+}
+
+.scroll-down img {
+  width: 100%;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40% {
+    -webkit-transform: translate(0, -3px);
+    -ms-transform: translate(0, -3px);
+    transform: translate(0, -3px);
+  }
+  60% {
+    -webkit-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  40% {
+    -webkit-transform: translate(0, -3px);
+    -ms-transform: translate(0, -3px);
+    transform: translate(0, -3px);
+  }
+  60% {
+    -webkit-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+  }
+}
+
 /* HOLDER BOX */
 .holder-box {
   text-align: center;
@@ -8544,8 +8604,7 @@ hr.hero-hr {
 .holder-box img {
   display: block;
   margin: 0 auto 20px auto;
-  min-height: 60px;
-  max-width: 160px;
+  max-width: 200px;
   width: 100%;
 }
 
