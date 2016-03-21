@@ -239,6 +239,72 @@
       "css": "chat",
       "code": 59403,
       "src": "websymbols"
+    },
+    {
+      "uid": "da0fd38d651815e3a12f6c030ff1fe5b",
+      "css": "newspaper",
+      "code": 59431,
+      "src": "entypo"
+    },
+    {
+      "uid": "31972e4e9d080eaa796290349ae6c1fd",
+      "css": "users-1",
+      "code": 59432,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5408be43f7c42bccee419c6be53fdef5",
+      "css": "doc-text",
+      "code": 59433,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "815503841e980c848f55e0271deacead",
+      "css": "link",
+      "code": 59434,
+      "src": "entypo"
+    },
+    {
+      "uid": "e6t4yvmv401e9gpo2anslq4uqy2iz692",
+      "css": "signal",
+      "code": 59435,
+      "src": "modernpics"
+    },
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59436,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f4cae16f34ae243a6144c18a003f2d8",
+      "css": "cancel-circled",
+      "code": 59437,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "43ab845088317bd348dee1d975700c48",
+      "css": "ok-circled",
+      "code": 59438,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4ba33d2607902cf690dd45df09774cb0",
+      "css": "plus-circled",
+      "code": 59439,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d35a1d35efeb784d1dc9ac18b9b6c2b6",
+      "css": "pencil",
+      "code": 59440,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2d76f2c8d13be40694ecadfea7fb83c3",
+      "css": "logout",
+      "code": 59441,
+      "src": "entypo"
     }
   ]
 }
