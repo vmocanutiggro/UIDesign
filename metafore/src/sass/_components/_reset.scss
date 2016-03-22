@@ -95,7 +95,7 @@ ol, ul {
 .container-small {
 	margin-left: auto;
 	margin-right: auto;
-	width: 520px;
+	width: 620px;
 	@include respond-to(sm) {
 		width: 600px;
 	}

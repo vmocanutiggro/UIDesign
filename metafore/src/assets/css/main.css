@@ -7834,7 +7834,7 @@ ol:last-child, ul:last-child {
 .container-small {
   margin-left: auto;
   margin-right: auto;
-  width: 520px;
+  width: 620px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -8137,8 +8137,8 @@ address a:hover, address a:focus {
 
 hr.hero-hr {
   border-color: #00052D;
-  max-width: 520px;
-  border-width: 2px;
+  max-width: 300px;
+  border-width: 3px;
 }
 
 /*Color classes*/
@@ -8220,6 +8220,12 @@ hr.hero-hr {
 
 .header-nav > li > a:hover, .header-nav > li > a:focus, .header-nav > li > a.active {
   color: #c9de9e;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-nav > li > a {
+    padding: 10px 0;
+  }
 }
 
 .footer-nav > li {
@@ -8368,6 +8374,7 @@ hr.hero-hr {
   .aside-holder {
     -webkit-transform: translate3d(-250px, 0px, 0px);
             transform: translate3d(-250px, 0px, 0px);
+    padding: 30px 20px;
   }
 }
 
@@ -8438,7 +8445,7 @@ hr.hero-hr {
 
 .nav-trigger.active span:before, .nav-trigger.active span:after {
   top: 0;
-  box-shadow: 0px 0px 0px 1px #6A8898;
+  box-shadow: 0px 0px 0px 1px #ffffff;
   background: #6A8898;
 }
 
@@ -8463,7 +8470,7 @@ hr.hero-hr {
   top: 50%;
   margin-top: -1.5px;
   left: 50%;
-  margin-left: -12.5px;
+  margin-left: -11.5px;
   box-shadow: 0px 0px 0px 1px #6A8898;
 }
 
@@ -8612,6 +8619,10 @@ hr.hero-hr {
   .holder-box img {
     min-height: auto;
   }
+}
+
+.holder-box img.img-large {
+  max-width: 280px;
 }
 
 .holder-box p {

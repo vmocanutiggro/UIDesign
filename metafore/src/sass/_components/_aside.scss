@@ -14,6 +14,7 @@
 	@include transition(300ms);
 	@include respond-to(xs) {
 		transform: translate3d(-250px, 0px, 0px);
+		padding: 30px 20px;
 	}
 	&.active {
 		transform: translate3d(0px, 0px, 0px);
@@ -64,7 +65,7 @@
 			box-shadow: none;
 			&:before, &:after {
 				top: 0;
-				box-shadow: 0px 0px 0px 1px $color-lynch;
+				box-shadow: 0px 0px 0px 1px $color-white;
 				background: $color-lynch;
 			}
 			&:before {
@@ -84,7 +85,7 @@
 		top: 50%;
 		margin-top: -1.5px;
 		left: 50%;
-		margin-left: -12.5px;
+		margin-left: -11.5px;
 		box-shadow: 0px 0px 0px 1px $color-lynch;
 		@include respond-to(xs) {
 			height: 2px;

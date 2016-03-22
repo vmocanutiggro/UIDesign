@@ -13,6 +13,9 @@
 			&:hover, &:focus, &.active {
 				color: darken($link-color, 10%);
 			}
+			@include respond-to(xs) {
+				padding: 10px 0;
+			}
 		}
 	}
 }

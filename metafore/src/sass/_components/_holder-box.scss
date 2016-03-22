@@ -11,6 +11,9 @@
 		@include respond-to(xs) {
 			min-height: auto;
 		}
+		&.img-large {
+			max-width: 280px;
+		}
 	}
 	p {
 		font-size: 16px;
