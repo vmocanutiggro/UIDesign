@@ -1,0 +1,13 @@
+/* MEDIA */
+.media {
+	margin-bottom: 25px;
+}
+.media-left-custom {
+	padding-right: 30px;
+	@include respond-to(sm) {
+		padding-right: 20px;
+	}
+}
+.media-body {
+	vertical-align: middle;
+}

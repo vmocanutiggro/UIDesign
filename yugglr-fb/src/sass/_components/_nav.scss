@@ -1,0 +1,99 @@
+/* NAV */
+
+.navbar {
+	background: transparent;
+	position: relative;
+	z-index: 40;
+}
+
+.navbar-floatet {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	padding: 30px 0 0 0;
+	margin-bottom: 0;
+	@include respond-to(xs) {
+		position: static;
+		padding: 5px 0;
+		background: darken($white, 30%);
+	}
+}
+.navbar-right {
+	margin-right: 0;
+	@include respond-to(xs) {
+		margin-right: -15px;
+	}
+}
+.nav-logo {
+	border-radius: 50%;
+	width: 135px;
+	display: block;
+	img {
+		width: 100%;
+	}
+	@include respond-to(sm) {
+		width: 100px;
+	}
+	@include respond-to(xs) {
+		height: 50px;
+		margin: 0px 0 0 15px;
+		padding-top: 6px;
+	}
+}
+.navbar-nav {
+	>li {
+		&.open {
+			>a {
+				background: transparent;
+			}
+		}
+		>a {
+			color: $white;
+			border-bottom: 1px solid $white;
+			@include respond-to(sm) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			@include respond-to(xs) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			&:hover, &:focus, &.active {
+				background: transparent;
+				color: $main-link-color;
+				border-color: $main-link-color;
+			}
+		}
+	}
+}
+.btn-navbar {
+	margin-left: 25px;
+	margin-top: 0px;
+	@include respond-to(xs) {
+		margin-left: 0;
+		margin-top: 20px;
+		float: none !important;
+	}
+}
+// .navbar-header {
+// 	@include respond-to(xs) {
+// 		float: left;
+// 		width: 95%;
+// 	}
+// }
+.navbar-collapse {
+	box-shadow: none;
+	float: right;
+	@include respond-to(xs) {
+		float: none;
+	}
+}
+.navbar-toggle {
+	border-color: $electric-violet;
+	margin-top: 8px;
+	>span {
+		background-color: $electric-violet;
+	}
+}
+

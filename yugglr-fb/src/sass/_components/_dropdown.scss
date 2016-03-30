@@ -1,0 +1,32 @@
+/* DROPDOWN */
+
+.language-dropdown {
+	float: right;
+	margin: 13px 0 0 10px;
+	@include respond-to(xs) {
+		position: absolute;
+		top: 7px;
+		right: 85px;
+	}
+	.dropdown-menu {
+		min-width: 60px;
+		width: 60px;
+		background: transparent;
+		box-shadow: none;
+		border: none;
+		left: 50%;
+		right: auto;
+		text-align: center;
+		transform: translate(-50%, 0);
+		padding: 0;
+		>li {
+			>a {
+				padding: 5px 7.5px;
+				background: rgba($white, .45);
+				&:hover, &:focus {
+					background: rgba($white, .85);
+				}
+			}
+		}
+	}
+}

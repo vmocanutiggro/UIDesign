@@ -1,0 +1,26 @@
+/* LIST */
+
+.footer-list {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	@include respond-to(xs) {
+		display: block;
+	}
+	>li {
+		display: table-cell;
+		@include respond-to(xs) {
+			text-align: center;
+			display: block;
+		}
+		>a {
+			font-size: 16px;
+			color: $white;
+			display: block;
+			padding: 10px 50px;
+			&:hover, &:focus {
+				color: darken($main-link-color, 10%);
+			}
+		}
+	}
+}

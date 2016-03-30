@@ -1,0 +1,20 @@
+/* SECTION */
+
+.section {
+	padding: 40px 0;
+	@include respond-to(xs) {
+		padding: 25px 0;
+	}
+}
+.section-large {
+	padding: 60px 0;
+	@include respond-to(xs) {
+		padding: 25px 0;
+	}
+}
+.section-no-padding-bot {
+	padding-bottom: 0;
+}
+.section-violet {
+	background: $mishka;
+}

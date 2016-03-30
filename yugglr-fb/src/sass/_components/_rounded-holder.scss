@@ -1,0 +1,16 @@
+/* ROUNDED HOLDER */
+
+.rounded-holder {
+	margin-bottom: 25px;
+	text-align: center;
+}
+.rounded-holder-image {
+	margin-bottom: 20px;
+	border-radius: 50%;
+	overflow-y: hidden;
+	img {
+		width: 100%;
+		border-radius: 50%;
+		display: block;
+	}
+}

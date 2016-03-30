@@ -1,0 +1,55 @@
+/* HERO */
+
+.hero-section {
+	padding: 8% 0 60px 0;
+	background: url(../images/bg/hero-bg.png) no-repeat center top / cover;
+	height: 100vh;
+	position: relative;
+	z-index: 10;
+	@include respond-to(sm) {
+		padding-top: 160px;
+	}
+	@include respond-to(xs) {
+		padding: 25px 0;
+		text-align: center;
+		height: auto;
+	}
+}
+.hero-divider {
+	border-color: $white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	@include respond-to(xs) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+.scroll-down {
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left: -30px;
+	animation: bounce ease-in 2s infinite;
+	@include respond-to(xs) {
+		position: static;
+		margin: 0 auto;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		@include translate(0, 0);
+  	}
+	40% {
+		@include translate(0, -3px);
+  	}
+	60% {
+    	@include translate(0, -2px);
+  	}
+}

@@ -1,0 +1,146 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+html, body {
+	font-family: $body-main-font;
+	color: $main-text-color;
+	-webkit-font-smoothing: antialiased;
+	font-size: $body-font-size;
+	font-weight: $font-light;
+	@include respond-to(xs) {
+		font-size: $body-font-size-mobile;
+	}
+}
+
+* {
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: $body-main-font;
+	font-weight: $font-extrabold;
+	line-height: 1.2;
+	color: $title-color;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1,.h1 {
+	font-size: 62px;
+	@include respond-to(sm) {
+		font-size: 40px;
+	}
+}
+h2, .h2 {
+	font-size: 58px;
+	@include respond-to(sm) {
+		font-size: 34px;
+	}
+}
+h3, .h3 {
+	font-size: 48px;
+	@include respond-to(sm) {
+		font-size: 26px;
+	}
+}
+h4, .h4 {
+	font-size: 26px;
+	@include respond-to(sm) {
+		font-size: 20px;
+	}
+}
+h5, .h5 {
+	font-size: 24px;
+	@include respond-to(sm) {
+		font-size: 18px;
+	}
+}
+h6, .h6 {
+	font-size: 16px;
+	@include respond-to(sm) {
+	}
+}
+
+.pre-title {
+	color: $electric-violet;
+	display: block;
+	font-size: 24px;
+	text-transform: uppercase;
+	@include respond-to(sm) {
+		font-size: 18px;
+	}
+}
+
+a {
+	color: $main-link-color;
+	@include transition(250ms);
+	text-decoration: none;
+	&:hover, &:focus {
+		color: darken($main-link-color, 10%);
+		text-decoration: none;
+	}
+}
+button {
+	@include transition(150ms);
+	border: none;
+	background: transparent;
+}
+p {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*Font classes*/
+.font-light {
+	font-weight: $font-light;
+}
+.font-regular {
+	font-weight: $font-regular;
+}
+.font-semibold {
+	font-weight: $font-semibold;
+}
+.font-bold {
+	font-weight: $font-bold;
+}
+.font-extrabold {
+	font-weight: $font-extrabold;
+}
+
+.font-system {
+	font: caption;
+	font-family: -apple-system, sans-serif;
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 100%;
+	@include respond-to(xs) {
+		font-size: 50px;
+	}
+}
+
+
+/*Color classes*/
+.text-white {
+	color: $white;
+}
+.text-mutted {
+	color: $text-mutted;
+}
+.text-black {
+	color: $black;
+}
+
+
+
+/*Background classes*/
+
+
+

@@ -1,0 +1,35 @@
+/* FOOTER */
+
+footer {
+	padding: 25px 0 40px 0;
+	background: $footer-bg;
+	color: $white;
+}
+
+.footer-top-part {
+	margin-bottom: 20px;
+	border-bottom: 1px solid $dusty-gray-boulder;
+}
+.footer-bottom-part {
+	position: relative;
+	padding-left: 75px;
+	@include respond-to(xs) {
+		padding-left: 0;
+	}
+}
+.footer-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	display: block;
+	@include respond-to(xs) {
+		position: static;
+		margin: 0 auto 25px auto;
+	}
+	img {
+		max-width: 100%;
+	}
+}
