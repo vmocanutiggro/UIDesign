@@ -4,7 +4,7 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	font-size: $body-font-size;
 	@include respond-to(sm) {
-		font-size: $body-font-size-tablet;
+		//font-size: $body-font-size-tablet;
 	}
 }
 body {
