@@ -1,5 +1,30 @@
 /* FONTS */
 
+/* Cardo */
+@font-face {
+  font-family:'Cardo-Regular';
+  src: url('../fonts/cardo/Cardo-Regular_gdi.eot');
+  src: url('../fonts/cardo/Cardo-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cardo/Cardo-Regular_gdi.woff') format('woff'),
+    url('../fonts/cardo/Cardo-Regular_gdi.ttf') format('truetype'),
+    url('../fonts/cardo/Cardo-Regular_gdi.svg#Cardo-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+@font-face {
+  font-family:'Cardo-Bold';
+  src: url('../fonts/cardo/Cardo-Bold_gdi.eot');
+  src: url('../fonts/cardo/Cardo-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cardo/Cardo-Bold_gdi.woff') format('woff'),
+    url('../fonts/cardo/Cardo-Bold_gdi.ttf') format('truetype'),
+    url('../fonts/cardo/Cardo-Bold_gdi.svg#Cardo-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
 
 
 

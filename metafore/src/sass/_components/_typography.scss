@@ -38,8 +38,7 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-top: 0;
 	margin-bottom: 20px;
-	font-family: $font-cardo;
-	font-weight: $font-regular;
+	font-family: $font-regular;
 	color: $title-color;
 	line-height: 1.4;
 	&.title-margin {
@@ -142,22 +141,6 @@ address {
 
 /*Font classes*/
 .font-system {
-	// font-family: -apple-system, sans-serif;
-	// font-family: -moz-use-system-font;
-	// font-style: -moz-use-system-font;
-	// line-height: -moz-use-system-font;
-	// font-stretch: -moz-use-system-font;
-	// -x-system-font: caption;
-	// font-feature-settings: -moz-use-system-font;
-	// font-language-override: -moz-use-system-font;
-	// font-kerning: -moz-use-system-font;
-	// font-synthesis: -moz-use-system-font;
-	// font-variant-alternates: -moz-use-system-font;
-	// font-variant-caps: -moz-use-system-font;
-	// font-variant-east-asian: -moz-use-system-font;
-	// font-variant-ligatures: -moz-use-system-font;
-	// font-variant-numeric: -moz-use-system-font;
-	// font-variant-position: -moz-use-system-font;
 	font: caption;
 	font-family: -apple-system, sans-serif;
 }
@@ -165,10 +148,10 @@ address {
 	font-style: italic;
 }
 .font-regular {
-	font-weight: $font-regular;
+	font-family: $font-regular;
 }
 .font-bold {
-	font-weight: $font-bold;
+	font-family: $font-bold;
 }
 
 
