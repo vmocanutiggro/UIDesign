@@ -58,6 +58,9 @@
 	@include respond-to(tablets-small) {
 		max-width: 160px;
 	}
+	@include respond-to(phones) {
+		max-width: 140px;
+	}
 	img {
 		@extend .img-responsive;
 	}

@@ -8454,6 +8454,12 @@ p:last-child {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .logo {
+    max-width: 140px;
+  }
+}
+
 .user-profile-holder .userpic-holder {
   float: left;
 }
@@ -10695,7 +10701,7 @@ hr {
 @media only screen and (max-width: 767px) {
   .dropdown-large {
     padding: 8.5px 6px;
-    margin-right: 15px;
+    margin-right: 5px;
   }
 }
 
@@ -10718,6 +10724,51 @@ hr {
 .dropdown-large .row > [class*='col-'] {
   padding-left: 2.5px;
   padding-right: 2.5px;
+}
+
+.dropdown-language {
+  float: left;
+  margin-right: 25px;
+  margin-top: 11px;
+  background: #3da4ef;
+  padding: 8.5px 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .dropdown-language {
+    margin-top: 0;
+    padding: 9.5px 6px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dropdown-language {
+    padding: 8.5px 6px;
+    margin-right: 5px;
+  }
+}
+
+.dropdown-language .dropdown-toggle {
+  color: #fff;
+  font-size: 20px;
+}
+
+.dropdown-language .dropdown-menu:before, .dropdown-language .dropdown-menu:after {
+  right: auto !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .dropdown-language .dropdown-menu:before, .dropdown-language .dropdown-menu:after {
+    content: none !important;
+  }
+}
+
+.dropdown-language .dropdown-menu:before {
+  left: 10px !important;
+}
+
+.dropdown-language .dropdown-menu:after {
+  left: 9px !important;
 }
 
 .office-item {
