@@ -167,6 +167,20 @@ $(document).ready(function(){
 		$(this).parent().next('.sub-menu').slideToggle('fast');
 	});
 
+	//Bootstrap select
+	$('.selectpicker').selectpicker();
+
+	//Input type file
+	$('input[type=file]').bootstrapFileInput();
+	$('.file-inputs').bootstrapFileInput();
+
+	//Open hidden block with map
+	$('.trigger').click(function(e){
+		e.preventDefault();
+		$(this).toggleClass("active")
+		$(this).next("div").stop('true','true').slideToggle("slow");
+	});
+
 });
 
 

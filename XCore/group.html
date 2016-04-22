@@ -256,7 +256,7 @@
 			<div class="row">
 				<div class="col-sm-8 column-content">
 					<div role="tabpanel" class="tabpanel-group-name">
-						<ul class="nav nav-tabs nav-tabs-drop" role="tablist">
+						<ul class="nav nav-tabs" role="tablist">
 					    	<li role="presentation" class="active">
 					    		<a href="#tab-feed" aria-controls="home" role="tab" data-toggle="tab">Feed</a>
 					    	</li>
@@ -281,7 +281,22 @@
 							    		<a href="#" class="settings">Settings</a>
 							    	</p>
 
-							    	<h2 class="semi-title">Groupname Aktivity Feed</h2>
+							    	<div class="row">
+
+							    		<div class="col-md-8 col-sm-12 push-down push-sm-down">
+							    			<h2 class="semi-title"><span class="sky-text">Groupname</span> Aktivity Feed</h2>
+							    		</div><!-- col -->
+
+							    		<div class="col-md-4 col-sm-12">
+							    			<select class="selectpicker filter_dropdown"  data-width="100%">
+							    				<option data-hidden="true">Show Everything</option>
+												<option>Some here</option>
+												<option>Some here</option>
+												<option>Some here</option>
+							    			</select>
+							    		</div><!-- col -->
+
+							    	</div><!-- row -->
 
 							    	<div class="media share_box_holder">
 							    		<div class="media_left_subholder userpic_holder">
@@ -298,7 +313,7 @@
 							    				</div><!-- share_box_tabs_switcher_holder -->
 
 							    				<div class="textarea_holder input_row">
-							    					<textarea id="" class="form-control elastic_textarea" placeholder="What's New?" rows="1" name=""></textarea>
+							    					<textarea id="" class="form-control" placeholder="What's New?" rows="1" name=""></textarea>
 							    				</div><!-- textarea_holder -->
 							    			</div><!-- share_box_controls_holder -->
 
@@ -308,7 +323,7 @@
 							    					<div class="input_row">
 							    						<div class="textarea_holder">
 							    							<textarea id="" class="form-control elastic_textarea" placeholder="Tell your family where you are..." rows="1" name=""></textarea>
-							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circled"></i></a>
 							    						</div><!-- textarea_holder -->
 							    					</div><!-- input_row -->
 
@@ -328,8 +343,8 @@
 
 							    							<div class="tab-pane" id="attach_document">
 							    								<input type="text" placeholder="Enter URL or choose file" class="form-control double_width pull-left">
-							    								<div class="fileinput fileinput-new custom_input_file pull-left" data-provides="fileinput">
-							    									<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    								<div class="pull-left custom_input_file">
+							    									<input type="file" title="File">
 							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
 							    									<div class="file_name_holder">
 							    										<span class="you_want_upload"><b>You want to upload :</b></span>
@@ -341,8 +356,8 @@
 
 							    							<div class="tab-pane" id="attach_picture">
 							    								<input type="text" placeholder="Enter URL or choose file" class="form-control double_width pull-left">
-							    								<div class="fileinput fileinput-new custom_input_file pull-left" data-provides="fileinput">
-							    									<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    								<div class="pull-left custom_input_file">
+							    									<input type="file" title="File">
 							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
 							    									<div class="file_name_holder">
 							    										<span class="you_want_upload"><b>You want to upload :</b></span>
@@ -376,12 +391,14 @@
 							    							</div><!-- label_holder -->
 
 							    							<div class="label_holder">
-							    								<label class="img_checkbox_label" for="temp_id_3"><input type="checkbox" id="temp_id_3"><span class="img_checkbox"><img src="images/public/user_pic_1.jpg" alt=""></span><a href="#" class="img_checkbox_name">Scarlett</a></label>
+							    								<label class="img_checkbox_label" for="temp_id_3"><input type="checkbox" id="temp_id_3"><span class="img_checkbox family"></span><a href="#" class="img_checkbox_name">Family</a></label>
 							    							</div><!-- label_holder -->
 
 							    							<div class="label_holder">
-							    								<label class="img_checkbox_label" for="temp_id_4"><input type="checkbox" id="temp_id_4"><span class="img_checkbox"><img src="images/public/user_pic_1.jpg" alt=""></span><a href="#" class="img_checkbox_name">Halle</a></label>
+							    								<label class="img_checkbox_label" for="temp_id_4"><input type="checkbox" id="temp_id_4"><span class="img_checkbox all"></span><a href="#" class="img_checkbox_name">All</a></label>
 							    							</div><!-- label_holder -->
+
+
 							    						</div><!-- img_checkbox_holder -->
 							    					</div><!-- input_row -->
 
@@ -422,7 +439,7 @@
 							    					<div class="input_row">
 							    						<div class="textarea_holder">
 							    							<textarea id="" class="form-control elastic_textarea" placeholder="Event Title..." rows="1" name=""></textarea>
-							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circled"></i></a>
 							    						</div><!-- textarea_holder -->
 							    					</div><!-- input_row -->
 
@@ -507,11 +524,10 @@
 							    												<div class="fileinput fileinput-new" data-provides="fileinput">
 							    													<div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
 							    													<div>
-							    														<span class="btn btn_custom btn_custom_small btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
-							    														<a href="#" class="btn btn_custom btn_custom_small btn_custom_gradiented_grey btn-file fileinput-exists" data-dismiss="fileinput">Remove</a>
+							    														<input type="file" title="File">
+							    														<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
 							    													</div>
-							    												</div>
-							    												<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
+							    												</div>							    												
 							    											</div><!-- input_holder -->
 							    										</div><!-- input_row -->
 							    									</div><!-- media-body -->
@@ -524,8 +540,8 @@
 
 							    									<div class="media-body">
 							    										<div class="input_row">
-							    											<div class="fileinput fileinput-new custom_input_file" data-provides="fileinput">
-							    												<span class="btn btn_custom btn_custom_small no_margin_left btn_custom_gradiented_grey btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							    											<div class="custom_input_file">
+							    												<input type="file" title="File">
 							    												<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green">Upload</button>
 							    												<div style="margin-top: 10px;">
 							    													<a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
@@ -700,9 +716,9 @@
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
 							    												<div class="userpic_holder">
-							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
 							    												</div>
-							    												<div class="online_status_holder"><i class="fontello-screen"></i></div>
+							    												<div class="online_status_holder"><i class="fontello-desktop"></i></div>
 							    												<div class="user_info">
 							    													<a href="#" class="username">Halle Berry</a>
 							    													<p class="info_line">5 hours ago</p>
@@ -713,7 +729,7 @@
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
 							    												<div class="userpic_holder">
-							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
 							    												</div>
 							    												<div class="online_status_holder status_online"><i class="fontello-phone"></i></div>
 							    												<div class="user_info">
@@ -726,7 +742,7 @@
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
 							    												<div class="userpic_holder">
-							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
 							    												</div>
 							    												<div class="online_status_holder"><i class="fontello-phone"></i></div>
 							    												<div class="user_info">
@@ -739,9 +755,9 @@
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
 							    												<div class="userpic_holder">
-							    													<a class="userpic" href="#"><img class="img-responsive" src="images/public/user_pic_1.jpg" alt=""></a>
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
 							    												</div>
-							    												<div class="online_status_holder status_online"><i class="fontello-screen"></i></div>
+							    												<div class="online_status_holder status_online"><i class="fontello-desktop"></i></div>
 							    												<div class="user_info">
 							    													<a href="#" class="username">Scarlett Johansson</a>
 							    													<p class="info_line">5 hours ago</p>
@@ -770,33 +786,57 @@
 							    										</div><!-- input_row -->
 
 							    										<ul class="friends_list">
-							    											<li class="favorite_group_item">
+							    											<li>
 							    												<div class="move_to_trash_holder">
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
-							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_1.jpg"></a>
-							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder"><i class="fontello-desktop"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Halle Berry</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
 							    											</li>
-							    											<li class="favorite_group_item">
+							    											<li>
 							    												<div class="move_to_trash_holder">
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
-							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_2.jpg"></a>
-							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder status_online"><i class="fontello-phone"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Scarlett Johansson</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
 							    											</li>
-							    											<li class="favorite_group_item">
+							    											<li>
 							    												<div class="move_to_trash_holder">
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
-							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_1.jpg"></a>
-							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder"><i class="fontello-phone"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Halle Johansson</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
 							    											</li>
-							    											<li class="favorite_group_item">
+							    											<li>
 							    												<div class="move_to_trash_holder">
 							    													<a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
 							    												</div>
-							    												<a class="logo_holder" href="#"><img alt="" src="images/public/favorite_group_2.jpg"></a>
-							    												<a href="#"><span class="underlined">Läxgänget</span></a>
+							    												<div class="userpic_holder">
+							    													<a class="userpic" href="#"><img class="img-responsive" src="assets/images/public/user_pic_1.jpg" alt=""></a>
+							    												</div>
+							    												<div class="online_status_holder status_online"><i class="fontello-desktop"></i></div>
+							    												<div class="user_info">
+							    													<a href="#" class="username">Scarlett Johansson</a>
+							    													<p class="info_line">5 hours ago</p>
+							    												</div>
 							    											</li>
 							    										</ul>
 							    									</div><!-- media-body -->
@@ -852,7 +892,7 @@
 							    					<div class="input_row">
 							    						<div class="textarea_holder">
 							    							<textarea id="" class="form-control elastic_textarea" placeholder="Tell your family where you are..." rows="1" name=""></textarea>
-							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circled"></i></a>
 							    						</div><!-- textarea_holder -->
 							    					</div><!-- input_row -->
 
@@ -877,12 +917,12 @@
 							    					<div class="input_row">
 							    						<div class="textarea_holder">
 							    							<textarea id="" class="form-control elastic_textarea" placeholder="Enter text for the photo..." rows="1" name=""></textarea>
-							    							<a href="#" class="btn_close"><i class="fontello-cancel-circle"></i></a>
+							    							<a href="#" class="btn_close"><i class="fontello-cancel-circled"></i></a>
 							    						</div><!-- textarea_holder -->
 							    					</div><!-- input_row -->
 
 							    					<div class="input_row share_attach_holder">
-							    						<ul class="nav nav-tabs">
+							    						<ul class="nav nav-tabs mb20">
 							    							<li class="active"><a href="#tab_photo_subtab_picture" data-toggle="tab">Picture</a></li>
 							    							<li><a href="#tab_photo_subtab_location" data-toggle="tab">Location</a></li>
 							    						</ul>
@@ -891,7 +931,7 @@
 							    							<div class="tab-pane fade in active" id="tab_photo_subtab_picture">
 							    								<div class="input_holder form-inline input_holder_inline">
 							    									<input type="text" class="form-control double_width full_width_m" placeholder="my_summer_holidays.jpg">
-							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_grey">Browse</button>
+							    									<input type="file" class="btn btn_custom btn_custom_small btn_custom_gradiented_grey" value="Browse">
 							    									<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green return_to_share_box">Upload</button>
 							    								</div>
 
@@ -909,11 +949,11 @@
 							    										</div><!-- label_holder -->
 
 							    										<div class="label_holder">
-							    											<label for="temp_id_0_3" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_3"><span class="img_checkbox"><img alt="" src="images/public/user_pic_1.jpg"></span><a class="img_checkbox_name" href="#">Scarlett</a></label>
+							    											<label for="temp_id_0_3" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_3"><span class="img_checkbox family"></span><a class="img_checkbox_name" href="#">Family</a></label>
 							    										</div><!-- label_holder -->
 
 							    										<div class="label_holder">
-							    											<label for="temp_id_0_4" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_4"><span class="img_checkbox"><img alt="" src="images/public/user_pic_1.jpg"></span><a class="img_checkbox_name" href="#">Halle</a></label>
+							    											<label for="temp_id_0_4" class="img_checkbox_label"><input type="checkbox" id="temp_id_0_4"><span class="img_checkbox family"></span><a class="img_checkbox_name" href="#">Family</a></label>
 							    										</div><!-- label_holder -->
 							    									</div><!-- img_checkbox_holder -->
 							    								</div><!-- input_row -->
@@ -1009,6 +1049,136 @@
 
 							    		</div><!-- add_box_body -->
 							    	</div><!-- add_box_item -->
+
+
+							    	<div class="media media_holder_post">
+		                                <div class="media_title_row">
+		                                    <div class="media_left_subholder userpic_holder">
+		                                        <a class="userpic" href="#"><img src="assets/images/temp/userpic.jpg" alt=""></a>
+		                                    </div><!-- post_item_side_column -->
+
+		                                    <div class="media-body">
+		                                        <div class="post_info_holder">
+		                                            <div class="post_type_icon_box">
+		                                                <i class="fontello-camera"></i>
+		                                            </div>
+
+		                                            <div class="post_info_box">
+		                                                <a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+		                                                <h4 class="subject_title">
+		                                                    <a href="#">Lisa Gustavsson</a>
+		                                                </h4>
+		                                                <p class="info_line">About an hour ago</p>
+		                                            </div><!-- post_item_titles_box -->
+		                                        </div><!-- post_title_holder -->
+		                                    </div><!-- media-body -->
+		                                </div><!-- media_title_row -->
+
+		                                <div class="post_content_holder">
+		                                    <div class="post_text_holder">
+		                                        <div class="media_data_holder">
+		                                            <img src="assets/images/public/post_img_1.jpg" alt="" class="img-responsive">
+		                                        </div><!-- media_holder -->
+		                                        <p>“This is a post test directly to the profile from another user. It should be multiline (can be anything from 1 line to several lines) and please make sure it adjusts in height”</p>
+		                                    </div><!-- post_text_holder -->
+
+		                                    <div class="row_with_icons post_actions_holder">
+
+		                                    	<a href="#" class="locaction_trigger_link trigger"><i class="fontello-location"></i>Location: <span class="location">Hantverkargatan 47, 112 21 Stockholm County, Sweden</span><i class="fontello-down-open"></i></a>
+
+		                                    	<div class="map_box">
+		                                    		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d505047.7799919842!2d36.28643457352469!3d60.36523492146174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1417028690071" width="100%" height="180" frameborder="0" style="border:0"></iframe>
+		                                    	</div><!-- map_box -->
+
+		                                    	<span class="item action_box action_box_comment">       
+		                                            <a href="#"><i class="fontello-comments"></i>Comments</a><span class="counter">0</span>
+		                                        </span>
+		                                        <span class="item action_box action_box_like">                 
+		                                            <a href="#"><i class="fontello-like"></i>Like</a><span class="counter">0</span>
+		                                        </span>		                                        
+		                                    </div><!-- row_with_icons -->
+
+		                                    <div class="reply_holder">
+		                                        <div class="ribbon_holder">
+		                                            <div class="form-group">
+		                                            	<div class="row">
+		                                            		<div class="col-md-10 col-sm-9 push-down">
+		                                            			<textarea name="" id="" class="form-control elastic_textarea" id="" rows="1" placeholder="Reply to this post"></textarea>
+		                                            		</div><!-- col -->
+
+		                                            		<div class="col-md-2 col-sm-3">
+		                                            			<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green btn-block">Send</button>
+		                                            		</div><!-- col -->
+		                                            	</div><!-- row -->
+		                                            </div><!-- form-group -->
+		                                        </div>
+		                                    </div><!-- reply_holder -->
+		                                </div><!-- post_content_holder -->
+		                            </div><!-- media_holder_post -->
+
+
+		                            <div class="media media_holder_post">
+		                                <div class="media_title_row">
+		                                    <div class="media_left_subholder userpic_holder">
+		                                        <a class="userpic" href="#"><img src="assets/images/temp/userpic.jpg" alt=""></a>
+		                                    </div><!-- post_item_side_column -->
+
+		                                    <div class="media-body">
+		                                        <div class="post_info_holder">
+		                                            <div class="post_type_icon_box">
+		                                                <i class="fontello-camera"></i>
+		                                            </div>
+
+		                                            <div class="post_info_box">
+		                                                <a href="#" class="move_to_trash"><i class="fontello-trash"></i></a>
+		                                                <h4 class="subject_title">
+		                                                    <a href="#">Lisa Gustavsson</a>
+		                                                </h4>
+		                                                <p class="info_line">About an hour ago</p>
+		                                            </div><!-- post_item_titles_box -->
+		                                        </div><!-- post_title_holder -->
+		                                    </div><!-- media-body -->
+		                                </div><!-- media_title_row -->
+
+		                                <div class="post_content_holder">
+		                                    <div class="post_text_holder">
+		                                        <p>Vad är bästa texten här och var bör postknappen ligga. Nu en alldeles för lång harang med saker. Och krysset var nu i vägen. Ska enter ge post som i facebook chat? Den gillar inte jag. Ska post ligga till höger på höger sida efter Enter your location?</p>
+		                                    </div><!-- post_text_holder -->
+
+		                                    <div class="row_with_icons post_actions_holder">
+
+		                                    	<a href="#" class="locaction_trigger_link trigger"><i class="fontello-location"></i>Location: <span class="location">Hantverkargatan 47, 112 21 Stockholm County, Sweden</span><i class="fontello-down-open"></i></a>
+
+		                                    	<div class="map_box">
+		                                    		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d505047.7799919842!2d36.28643457352469!3d60.36523492146174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1417028690071" width="100%" height="180" frameborder="0" style="border:0"></iframe>
+		                                    	</div><!-- map_box -->
+
+		                                    	<span class="item action_box action_box_comment">       
+		                                            <a href="#"><i class="fontello-comments"></i>Comments</a><span class="counter">0</span>
+		                                        </span>
+		                                        <span class="item action_box action_box_like">                 
+		                                            <a href="#"><i class="fontello-like"></i>Like</a><span class="counter">0</span>
+		                                        </span>		                                        
+		                                    </div><!-- row_with_icons -->
+
+		                                    <div class="reply_holder">
+		                                        <div class="ribbon_holder">
+		                                            <div class="form-group">
+		                                            	<div class="row">
+		                                            		<div class="col-md-10 col-sm-9 push-down">
+		                                            			<textarea name="" id="" class="form-control elastic_textarea" id="" rows="1" placeholder="Reply to this post"></textarea>
+		                                            		</div><!-- col -->
+
+		                                            		<div class="col-md-2 col-sm-3">
+		                                            			<button class="btn btn_custom btn_custom_small btn_custom_gradiented_green btn-block">Send</button>
+		                                            		</div><!-- col -->
+		                                            	</div><!-- row -->
+		                                            </div><!-- form-group -->
+		                                        </div>
+		                                    </div><!-- reply_holder -->
+		                                </div><!-- post_content_holder -->
+		                            </div><!-- media_holder_post -->
+
 							    </div><!-- tab-feed -->
 
 							    <div role="tabpanel" class="tab-pane" id="tab-document">
@@ -1325,41 +1495,12 @@
 							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 							    	<br>
 							    	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							    	<hr>
-
-							    	<div class="row">
-							    		<div class="col-md-9 col-sm-8 push-down">
-							    			<p>
-												<b>
-													<i class="fontello-tags color-gray-thin"></i> <span class="color-black-thin">Etiketter:</span>
-												</b>
-												<a href="#">Utveckling</a>,
-												<a href="#">Analys</a>,
-												<a href="#">Finans</a>,
-												<a href="#">Utland</a>
-											</p>
-							    		</div><!-- col -->
-
-							    		<div class="col-md-3 col-sm-4">
-							    			<div class="media">
-							    				<div class="media-left">
-							    					<a href="#">
-							    						<img src="assets/images/temp/member-thumb-01.jpg" alt="" class="media-object">
-							    					</a>
-							    				</div><!-- media-left -->
-
-							    				<div class="media-body">
-							    					<h5 class="media-heading">Mikael Eriksson</h5>
-							    					<span>about a month ago</span>
-							    				</div><!-- media-body -->
-							    			</div><!-- media -->
-							    		</div><!-- col -->
-							    	</div><!-- row -->
-
 							    </div><!-- tab-info -->
 						  	</div><!-- tab-content -->
 						</div><!-- bordered-box -->
 					</div><!-- tabpanel-group-name -->
+
+					<!-- <input type="range"> -->
 				</div><!-- column-content -->
 
 				<div class="col-sm-4 column-sidebar">
@@ -1377,7 +1518,7 @@
 										<p class="title">
 											<a href="#">This is the Event Title #1</a>
 										</p>
-										<span class="date">Sept 14, 2014</span>
+										<span class="date"><i class="fontello-clock"></i>Sept 14, 2014</span>
 									</div><!-- media-body -->
 								</div><!-- item -->
 
@@ -1390,7 +1531,7 @@
 										<p class="title">
 											<a href="#">This is the Event Title #1</a>
 										</p>
-										<span class="date">Sept 14, 2014</span>
+										<span class="date"><i class="fontello-clock"></i>Sept 14, 2014</span>
 									</div><!-- media-body -->
 								</div><!-- item -->
 
@@ -1403,7 +1544,7 @@
 										<p class="title">
 											<a href="#">This is the Event Title #1</a>
 										</p>
-										<span class="date">Sept 14, 2014</span>
+										<span class="date"><i class="fontello-clock"></i>Sept 14, 2014</span>
 									</div><!-- media-body -->
 								</div><!-- item -->
 							</div><!-- items-holder -->
@@ -1489,17 +1630,9 @@
 					</div><!-- sidebar-item-members -->
 
 					<div class="sidebar-item sidebar-item-tags-cloud">
-						<div class="bordered-box tegs-holder">
+						<div class="bordered-box">
 							<h3 class="sidebar-item-title">Etiketter</h3>
-							<a href="#" class="teg teg-large">Analyser</a>
-							<a href="#" class="teg teg-medium">Applicationer</a>
-							<a href="#" class="teg">Conversion</a>
-							<a href="#" class="teg teg-medium">Finans</a>
-							<a href="#" class="teg teg-regular">Forecast</a>
-							<a href="#" class="teg teg-large">Teknik</a>
-							<a href="#" class="teg teg-regular">Investor relations</a>
-							<a href="#" class="teg teg-large">Rapporter</a>
-							<a href="#" class="teg teg-large">ROI</a>
+							<img src="assets/images/temp/tags-cloud-plug.jpg" style="width: 100%;" alt="">
 						</div><!-- bordered-box -->
 					</div><!-- sidebar-item-tags-cloud -->
 				</div><!-- column-sidebar -->
@@ -1630,11 +1763,15 @@
 	<script src="vendors/respond/dest/respond.min.js"></script>
 	<script src="vendors/jquery/dist/jquery.min.js"></script>
 	<script src="vendors/input-file/input-file.js"></script>
-	<script src="vendors/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+	<script src="vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	<script src="vendors/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="vendors/jquery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
 	<script src="vendors/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
 	<script src="vendors/jschab-bootstrab-tabdrop/js/bootstrap-tabdrop.js"></script>
+	<script src="vendors/bootstrap-sass/dist/js/bootstrap.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
+
+	
+
 </body>
 </html>
