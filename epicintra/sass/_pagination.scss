@@ -1,0 +1,46 @@
+/* PAGINATION */
+
+.pagination {
+    >li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+        &:last-child {
+            margin-right: 0;
+            >a {
+                border-radius: 0;
+            }
+        }
+        &:first-child {
+            >a {
+                border-radius: 0;
+            }
+        }
+        &.active {
+            >a {
+                background: $site-color-regal-blue;
+                border-color: $site-color-regal-blue;
+                &:hover {
+                    background: $site-color-regal-blue;
+                }
+            }
+        }
+        >a {
+            float: none;
+            color: $site-color-mine-shaft;
+            &:hover {
+                background: lighten($site-color-regal-blue, 10%);
+                border-color: lighten($site-color-regal-blue, 10%);
+                color: $site-color-white;
+            }
+        }
+        >span {
+            border: none;
+            color: $site-color-black;
+            &:hover, &:focus {
+                background: inherit;
+                color: $site-color-black;
+            }
+        }
+    }
+}

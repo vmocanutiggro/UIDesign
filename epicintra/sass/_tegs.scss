@@ -1,0 +1,19 @@
+/* TEGS */
+
+.teg {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 2.5px;
+    &.teg-large, &.teg-medium, &.teg-regular {
+        font-weight: 700;
+    }
+    &.teg-large {
+        font-size: 22px;
+    }
+    &.teg-medium {
+        font-size: 18px;
+    }
+    &.teg-regular {
+        font-size: 14px;
+    }
+}

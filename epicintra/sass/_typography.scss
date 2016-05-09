@@ -1,0 +1,110 @@
+html, body {
+	font-family: $body-font-family;
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	color: $body-font-color;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $body-font-family;
+	font-weight: 600;
+	margin-top: 0;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	font-size: 2.308rem;
+	color: $site-color-mine-shaft;
+	font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 2.154rem;
+	color: $site-color-mine-shaft;
+	margin-bottom: 15px;
+	&.semi-title {
+		font-size: 1.692rem;
+	}
+}
+
+h3 {
+	font-size: 1.231rem;
+}
+
+h4 {
+	font-size: 1.154rem;
+	font-weight: 700;
+}
+
+small {
+	font-size: 0.923rem;
+	font-weight: 400;
+}
+
+a {
+	@include transition(150ms);
+	color: $body-link-color;
+	&:hover, &:focus {
+		outline: none;
+		text-decoration: underline;
+		color: $site-color-picton-blue;
+	}
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.preamble {
+    color: $site-color-dove-gray;
+    font-size: 1.077rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Color classes */
+.color-black-thin {
+	color: $site-color-mine-shaft;
+}
+.color-blue {
+	color: $site-color-picton-blue;
+}
+.color-gray-thin {
+	color: $color-silver-chalise;
+}
+.color-gray {
+	color: $site-color-dove-gray;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.row-padding-smaller {
+	margin-left: -5px;
+	margin-right: -5px;
+	@include respond-to(phones) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	>[class*='col-'] {
+		padding-left: 5px;
+		padding-right: 5px;
+		@include respond-to(phones) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+/* FORMS styles */
+.form-group {
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.form-group-large {
+		margin-bottom: 20px;
+	}
+}
+.form-control {
+	-webkit-appearance:none;
+	padding: 10px 12px;
+	height: 40px;
+	border-radius: 0;
+	box-shadow: none;
+	line-height: 1.385rem;
+	color: $site-color-dusty-gray;
+	background: $site-color-alabaster;
+	@include custom-placeholder($color: $site-color-dusty-gray, $font-size: 1rem, $line-height: 1.385rem);
+	&:focus {
+		box-shadow: none;
+	}
+}
+.search-input {
+	@extend .form-control;
+	&:focus {
+		box-shadow: none;
+		border: none;
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+.search-holder {
+	position: relative;
+	>.form-control {
+		padding-right: 30px;
+	}
+	.btn-search {
+		border: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		background: transparent;
+	}
+}
+
+.label-aligned {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	@include respond-to(phones) {
+		margin-top: 0;
+	}
+	&.label-aligned-mobile {
+		@include respond-to(phones) {
+			margin-top: 10px;
+		}
+	}
+}
+
+.uppgifter-form-icon {
+	font-size: 18px;
+	margin: 9px 0;
+	display: inline-block;
+}
+
+.checkbox-holder {
+	label {
+		font-weight: 400;
+		color: #666666;
+	}
+	input {
+		margin: 0 5px;
+	}
+}
+
+.uppgifter-holder {
+	&.non-active {
+		display: none;
+	}
+}
+.uppgifter-new-holder {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+

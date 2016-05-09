@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-tabdrop",
+  "homepage": "https://github.com/jschab/bootstrap-tabdrop",
+  "description": "dropdown tab tool for twitter bootstrap.",
+  "main": "js/bootstrap-tabdrop.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jschab/bootstrap-tabdrop.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.7.1",
+    "bootstrap": ">=2.0.4"
+  },
+  "_release": "4466f16954",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4466f16954e7fc2ec6cf41fed635b30501b431a4"
+  },
+  "_source": "git://github.com/jschab/bootstrap-tabdrop.git",
+  "_target": "*",
+  "_originalSource": "jschab-bootstrab-tabdrop",
+  "_direct": true
+}

@@ -1,0 +1,31 @@
+/* TABLE */
+
+.table-uppgifter {
+    border: 1px solid #cccccc;
+    >thead {
+        >tr {
+            td, th {
+                background: #e3e3e3;
+                border-color: #e3e3e3;
+                border-bottom: 1px solid #cccccc;
+                color: #3ca4ef;
+                &:first-child {
+                    border-left-color: #cccccc; 
+                }
+                &:last-child {
+                    border-right-color: #cccccc; 
+                }
+            }
+        }
+    }
+}
+
+.table-status {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 5px;
+    &.table-status-success {
+        background: #32b548;
+    }
+}
