@@ -1,26 +1,49 @@
 /* TAB */
 .nav-tabs {
 	border: none;
+	margin-bottom: 40px;
 	>li {
 		&.active {
 			>a {
-				@extend .btn-success;
-				border: none;
+				@extend .btn;
+				background: $color-sushi;
+				border-color: $color-sushi;
+				color: $color-white;
+				display: block;
+				&:before {
+					content: '';
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 11px 8.5px 0 8.5px;
+					border-color: $color-sushi transparent transparent transparent;
+					position: absolute;
+					bottom: -11px;
+					left: 50%;
+					margin-left: -8.5px;
+					@include respond-to(xs) {
+						content: none;
+					}
+				}
 				&:hover, &:focus {
-					border: none;
+					color: $color-white;
 					background: $color-sushi;
+					border-color: $color-sushi;
 				}
 			}
 		}
 		>a {
-			color: $color-white !important;
 			@extend .btn;
-			@extend .btn-success-secondary;
+			@extend .btn-primary-outline;
 			border-radius: 20px;
-			border: none;
+			text-transform: uppercase;
+			border-color: $color-prussian-blue;
+			font-family: $avenir-heavy-font;
+			position: relative;
+			transition: none;
 			&:hover, &:focus {
-				border: none;
-				background: $color-fall-green;
+				background: $color-prussian-blue;
+				color: $color-white;
 			}
 		}
 	}

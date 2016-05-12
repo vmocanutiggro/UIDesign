@@ -25,6 +25,14 @@ ul, ol {
 			background: $color-shadow-green;
 		}
 	}
+	&.list-bullet-square {
+		>li {
+			&:before {
+				border-radius: 0;
+				background: $color-copperfield;
+			}
+		}
+	}
 }
 
 .list-site-map {

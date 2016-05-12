@@ -110,6 +110,10 @@ p {
 	}
 }
 
+.lead {
+	font-size: 20px;
+}
+
 b {
 	font-family: $avenir-heavy-font;
 }
@@ -135,6 +139,10 @@ b {
 
 /*Font classes*/
 
+.font-bold {
+	font-family: $avenir-heavy-font;
+}
+
 
 /*Color classes*/
 .text-info {
@@ -145,6 +153,9 @@ b {
 }
 .text-white {
 	color: $color-white;
+}
+.text-mutted {
+	color: $color-slate-gray;
 }
 
 
