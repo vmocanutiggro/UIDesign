@@ -1,0 +1,29 @@
+/* HOLDER BOX */
+
+.holder-box {
+	text-align: center;
+	margin-bottom: 25px;
+	img {
+		display: block;
+		margin: 0 auto 20px auto;
+		max-width: 200px;
+		width: 100%;
+		@include respond-to(xs) {
+			min-height: auto;
+		}
+		&.img-large {
+			max-width: 240px;
+		}
+	}
+	p {
+		font-size: 16px;
+		@include respond-to(sm) {
+			font-size: 14px;
+		}
+	}
+}
+.holder-box-title {
+	@extend .font-system;
+	font-size: 18px;
+	font-weight: bold;
+}

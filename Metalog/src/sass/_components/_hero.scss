@@ -1,0 +1,66 @@
+/* HERO */
+
+.section-hero {
+	height: 100vh;
+	background: url(../images/bg/hero-bg.png) no-repeat center center / cover;
+	padding: 8% 0;
+	text-align: center;
+	position: relative;
+	@include respond-to(xs) {
+		height: auto;
+	}
+}
+
+
+
+.hero-logo {
+	display: block;
+	width: 100%;
+	max-width: 460px;
+	margin: 0 auto 20px auto;
+	@include respond-to(xs) {
+		max-width: 200px;
+	}
+}
+.hero-title {
+	font-style: italic;
+	color: $color-mutted;
+	font-weight: $font-regular;
+	margin-bottom: 10px;
+}
+
+
+.scroll-down {
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left: -30px;
+	animation: bounce ease-in 2s infinite;
+	@include respond-to(xs) {
+		position: static;
+		margin: 25px auto 0 auto;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		@include translate(0, 0);
+  	}
+	40% {
+		@include translate(0, -3px);
+  	}
+	60% {
+    	@include translate(0, -2px);
+  	}
+}
+
+
+
+
+

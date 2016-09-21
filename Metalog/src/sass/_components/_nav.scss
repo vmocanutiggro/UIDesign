@@ -1,0 +1,52 @@
+/* NAV */
+
+.header-nav {
+	@extend .list-unstyled;
+	>li {
+		>a {
+			@extend .font-system;
+			font-weight: bold;
+			color: $color-white;
+			display: block;
+			padding: 5px 0;
+			text-transform: uppercase;
+			&:hover, &:focus, &.active {
+				color: darken($link-color, 10%);
+			}
+			@include respond-to(xs) {
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+.footer-nav {
+	@extend .list-unstyled;
+	>li {
+		display: inline-block;
+		margin-right: 40px;
+		@include respond-to(sm) {
+			margin-right: 10px;
+		}
+		@include respond-to(xs) {
+			margin: 0;
+			width: 49%;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		>a {
+			font-weight: bold;
+			color: $color-primary;
+			text-transform: uppercase;
+			@extend .font-system;
+			&:hover, &:focus, &.active {
+				color: darken($link-color, 10%);
+			}
+			@include respond-to(xs) {
+				display: block;
+				padding: 5px 0;
+			}
+		}
+	}
+}
