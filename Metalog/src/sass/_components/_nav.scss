@@ -1,5 +1,39 @@
 /* NAV */
 
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background: $color-white;
+}
+
+.site-brand {
+	width: 210px;
+	height: auto;
+	display: block;
+	@include respond-to(xs) {
+		width: 140px;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.navbar-holder {
+	padding-left: 23px;
+	padding-left: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+    align-items: center;
+    min-height: 100px;
+    @include respond-to(xs) {
+    	padding: 0;
+    	min-height: 75px;
+    }
+}
+
+
+
 .header-nav {
 	@extend .list-unstyled;
 	>li {

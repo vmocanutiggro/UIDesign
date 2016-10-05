@@ -4,9 +4,16 @@ $(document).ready(function(){
 	$('.nav-trigger').click( function (e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$(this).closest('body').toggleClass('aside-open')
-		$(this).closest('body').find('.aside-holder').toggleClass('active');
-		//$(this).closest('body').find('.content-holder').toggleClass('active');
+		$('body').toggleClass('aside-open');
+		$('.aside-holder').toggleClass('active');
+		$('#aside-mask').toggleClass('active');
+	});
+
+	$("#aside-mask").on('click', function() {
+	    $(this).removeClass('active');
+		$('.nav-trigger').removeClass('aside-open, active');
+		$('.aside-holder').removeClass('active');
+		$('body').removeClass('aside-open');
 	});
 
 	/* ======== SCROLL TO ELEMENT ======== */
