@@ -9,8 +9,16 @@ $(document).ready(function(){
 		$('#aside-mask').toggleClass('active');
 	});
 
-	$("#aside-mask").on('click', function() {
+	$("#aside-mask").on('click', function (e) {
+		e.preventDefault();
 	    $(this).removeClass('active');
+		$('.nav-trigger').removeClass('aside-open, active');
+		$('.aside-holder').removeClass('active');
+		$('body').removeClass('aside-open');
+	});
+	$(".btn-close-aside").on('click', function (e) {
+		e.preventDefault();
+	    $('#aside-mask').removeClass('active');
 		$('.nav-trigger').removeClass('aside-open, active');
 		$('.aside-holder').removeClass('active');
 		$('body').removeClass('aside-open');

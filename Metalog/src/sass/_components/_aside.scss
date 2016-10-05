@@ -2,20 +2,16 @@
 
 .aside-holder {
 	width: 250px;
-	padding: 50px 40px 0 40px;
+	padding: 20px 20px 0px 20px;
 	background: $aside-bg;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	height: 100%;
 	overflow-y: auto;
-	transform: translate3d(-250px, 0px, 0px);
+	transform: translate3d(250px, 0px, 0px);
 	z-index: 600;
 	@include transition(300ms);
-	@include respond-to(xs) {
-		transform: translate3d(-250px, 0px, 0px);
-		padding: 30px 20px;
-	}
 	&.active {
 		transform: translate3d(0px, 0px, 0px);
 	}
@@ -53,26 +49,15 @@
 			}
 		}
 	}
-	&.active {
-		border: 2px solid $color-white;
-		@include respond-to(xs) {
-		}
-		span {
-			background: transparent;
-			box-shadow: none;
-			&:before, &:after {
-				top: 0;
-				box-shadow: 0px 0px 0px 1px $color-white;
-				background: $color-white;
-			}
-			&:before {
-				@include rotate(45deg);
-			}
-			&:after {
-				@include rotate(-45deg);
-			}
-		}
-	}
+	// &.active {
+	// 	border: 2px solid $color-white;
+	// 	span {
+	// 		background: $color-white;
+	// 		&:before, &:after {
+	// 			background: $color-white;
+	// 		}
+	// 	}
+	// }
 	>span {
 		display: block;
 		height: 3px;
@@ -123,4 +108,13 @@
 	&.active {
 		display: block;
 	}
+}
+
+.close-aside-holder {
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.btn-close-aside {
+	font-size: 32px;
 }
