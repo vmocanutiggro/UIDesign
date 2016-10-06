@@ -2,7 +2,7 @@
 
 .aside-holder {
 	width: 250px;
-	padding: 20px 20px 0px 20px;
+	padding: 5px 20px 0px 20px;
 	background: $aside-bg;
 	position: fixed;
 	top: 0;
@@ -29,8 +29,8 @@
 	display: block;
 	// top: 15px;
 	// right: 30px;
-	height: 50px;
-	width: 50px;
+	height: 35px;
+	width: 35px;
 	border: 2px solid $color-lynch;
 	border-radius: 50%;
 	z-index: 600;
@@ -60,14 +60,14 @@
 	// }
 	>span {
 		display: block;
-		height: 3px;
-		width: 23px;
+		height: 2px;
+		width: 20px;
 		background: $color-lynch;
 		position: absolute;
 		top: 50%;
 		margin-top: -1.5px;
 		left: 50%;
-		margin-left: -11.5px;
+		margin-left: -10px;
 		@include respond-to(xs) {
 			height: 2px;
 			margin-top: -1px;
@@ -77,8 +77,8 @@
 		&:before, &:after {
 			content: '';
 			display: block;
-			height: 3px;
-			width: 23px;
+			height: 2px;
+			width: 20px;
 			background: $color-lynch;
 			position: absolute;
 			@include respond-to(xs) {
@@ -87,10 +87,10 @@
 			}
 		}
 		&:before {
-			top: -6px;
+			top: -5px;
 		}
 		&:after {
-			bottom: -6px;
+			bottom: -5px;
 		}
 	}
 }
@@ -116,5 +116,5 @@
 }
 
 .btn-close-aside {
-	font-size: 32px;
+	font-size: 38px;
 }
