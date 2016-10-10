@@ -1,12 +1,21 @@
 /* NAV */
 
 $nav-height: 60px;
+$nav-bg: rgba($color-white, .6);
 
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
-	background: $color-white;
+	background: $nav-bg;
 	border: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	@include respond-to(xs) {
+		position: static;
+		background: $color-white;
+	}
 }
 
 .site-brand {

@@ -9,13 +9,13 @@
 }
 
 .section-has-bg {
-	background-position: center center;
+	background-position: 50% 0%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .section-empty {
-	height: calc(100vh - #{$nav-height});
+	height: 100vh;
 	@include respond-to(xs) {
 		height: 240px;
 	}
