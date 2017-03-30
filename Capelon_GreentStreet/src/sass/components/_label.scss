@@ -19,7 +19,7 @@
 	}
 	.arrow {
 		position: absolute;
-		height: 81px;
+		height: 82px;
 		@include respond-to(phones) {
 			display: none;
 		}
@@ -56,6 +56,7 @@
 	margin-bottom: 0;
 	position: relative;
 	z-index: 300;
+	min-height: 57px;
 	@include respond-to(phones) {
 		font-size: 18px;
 		line-height: 27px;
